@@ -11,7 +11,7 @@
         "is_atomic": true
       },
       "delete_workflow_instance": false,
-      "description": "Read-only guard atomic that proves two independent server selector sets identify the same Cisco Intersight physical server before a caller mutates a profile or starts OS installation. Select an intersight.endpoint target whose runtime user can read organizations and compute.PhysicalSummaries. The atomic OData-escapes exact inputs, bounds both queries with $inlinecount=allpages and $top=2, requires strict Count/Results completeness, validates organization and PhysicalSummary discriminators, URL-safe Moids, exact Name-or-Serial matching, Model, PermissionResources, and concrete compute.Blade or compute.RackUnit SourceObjectType, then requires the resolved Moid and type to equal the expected values. It performs no mutation and sends no custom headers.",
+      "description": "Read-only atomic that resolves one exact Cisco Intersight physical server from Device Organization and Server Name or Serial. Select an intersight.endpoint target whose runtime user can read organizations and compute.PhysicalSummaries. The atomic OData-escapes exact inputs, bounds both queries with $inlinecount=allpages and $top=2, requires strict Count/Results completeness, and validates organization and PhysicalSummary discriminators, URL-safe Moids, exact Name-or-Serial matching, Model, PermissionResources, and concrete compute.Blade or compute.RackUnit SourceObjectType. Optional expected Moid and type inputs retain backward-compatible cross-checking for existing callers. It performs no mutation and sends no custom headers.",
       "display_name": "Cisco Intersight - Resolve server identity",
       "runtime_user": {
         "override_target_runtime_user": false,
@@ -67,10 +67,10 @@
           "scope": "input",
           "name": "Expected Server Moid",
           "type": "datatype.string",
-          "description": "URL-safe server Moid independently resolved by the caller for profile assignment. It must exactly match the PhysicalSummary Moid.",
-          "is_required": true,
+          "description": "Optional backward-compatible identity cross-check. When supplied with Expected Server Object Type, it must exactly match the resolved PhysicalSummary Moid. Leave both expected fields empty for Name-or-Serial-only resolution.",
+          "is_required": false,
           "display_on_wizard": false,
-          "is_invisible": false,
+          "is_invisible": true,
           "variable_string_format": "text"
         },
         "unique_name": "variable_workflow_02XP0RZYOPW3N1oUZcN8IU7VgBRZ0lHGknu",
@@ -83,10 +83,10 @@
           "scope": "input",
           "name": "Expected Server Object Type",
           "type": "datatype.string",
-          "description": "Concrete server type independently resolved by the caller. Allowed values are compute.Blade and compute.RackUnit; it must exactly match PhysicalSummary SourceObjectType.",
-          "is_required": true,
+          "description": "Optional backward-compatible identity cross-check. When supplied with Expected Server Moid, enter compute.Blade or compute.RackUnit and require it to match PhysicalSummary SourceObjectType. Leave both expected fields empty for Name-or-Serial-only resolution.",
+          "is_required": false,
           "display_on_wizard": false,
-          "is_invisible": false,
+          "is_invisible": true,
           "variable_string_format": "text"
         },
         "unique_name": "variable_workflow_02XP0RZYOPW3O3MuTHk00Vm39NOEYWAZHlM",
@@ -99,7 +99,7 @@
           "scope": "output",
           "name": "Status Code",
           "type": "datatype.string",
-          "description": "HTTP-style final status: 200 for an exact cross-selector identity match, 400 for input validation, 404 for no match, 409 for ambiguity or identity conflict, 500 for helper execution failure, and 502 for API or response-contract failure.",
+          "description": "HTTP-style final status: 200 for one exact validated server resolution, 400 for input validation, 404 for no match, 409 for ambiguity or an optional expected-identity conflict, 500 for helper execution failure, and 502 for API or response-contract failure.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -131,7 +131,7 @@
           "scope": "output",
           "name": "Error Message",
           "type": "datatype.string",
-          "description": "Actionable failure detail. Empty only when exact organization, server identity, and expected-identity equality are proven.",
+          "description": "Actionable failure detail. Empty only when the exact organization-scoped server identity is resolved and any requested expected-identity cross-check passes.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -147,13 +147,45 @@
           "scope": "output",
           "name": "Result",
           "type": "datatype.string",
-          "description": "Structured JSON retaining Name, Serial, Model, Moid, concrete ObjectType, organization identity, selector, expected identity, and the validated outcome.",
+          "description": "Structured JSON retaining Name, Serial, Model, resolved Moid, concrete ObjectType, organization identity, selector, optional expected identity, and the validated outcome.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "json"
         },
         "unique_name": "variable_workflow_02XP0RZYOPW3S4XaXhhIwwHXztgoxnuGJTt",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Resolved Server Moid",
+          "type": "datatype.string",
+          "description": "Exact validated Moid of the organization-scoped physical server resolved from Server Name or Serial.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02XP0RZYOPW5A1b2C3d4E5f6G7h8I9j0Klm",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Resolved Server Object Type",
+          "type": "datatype.string",
+          "description": "Validated concrete type of the resolved physical server: compute.Blade or compute.RackUnit.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02XP0RZYOPW5B1c2D3e4F5g6H7i8J9k0Lmn",
         "object_type": "variable_workflow"
       }
     ],
@@ -166,7 +198,7 @@
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Validates all selectors and expected server identity fields before the runtime target is accessed.",
+          "description": "Validates Device Organization and Server Name or Serial, plus optional backward-compatible expected identity fields, before the runtime target is accessed.",
           "display_as_suggestion": false,
           "display_name": "Validate resolver inputs",
           "skip_execution": false
@@ -182,9 +214,9 @@
             "properties": {
               "action_timeout": 180,
               "continue_on_failure": true,
-              "description": "Validates four exact inputs, rejects URL query delimiters and controls, enforces a URL-safe expected Moid and concrete Blade/RackUnit type, and doubles apostrophes before any OData request.",
+              "description": "Validates the two required exact selectors and the optional expected-identity pair, rejects URL query delimiters and controls, and doubles apostrophes before any OData request.",
               "display_name": "Validate identity resolver inputs",
-              "script": "import json\nimport re\nimport sys\n\norganizationRaw = sys.argv[1]\nselectorRaw = sys.argv[2]\nexpectedMoidRaw = sys.argv[3]\nexpectedTypeRaw = sys.argv[4]\norganizationName = organizationRaw.strip()\nserverSelector = selectorRaw.strip()\nexpectedServerMoid = expectedMoidRaw.strip()\nexpectedServerObjectType = expectedTypeRaw.strip()\nerrors = []\n\nfor raw, clean, label in (\n    (organizationRaw, organizationName, \"Device Organization\"),\n    (selectorRaw, serverSelector, \"Server Name or Serial\"),\n    (expectedMoidRaw, expectedServerMoid, \"Expected Server Moid\"),\n    (expectedTypeRaw, expectedServerObjectType, \"Expected Server Object Type\")\n):\n    if raw != clean:\n        errors.append(label + \" must not contain surrounding whitespace.\")\n\ndef validate_odata(value, label, maximum):\n    if not value or len(value) > maximum or any(ord(ch) < 32 or ch in \"&?#%\" for ch in value):\n        errors.append(label + \" must contain 1-\" + str(maximum) + \" characters and must not contain controls or URL query-delimiter characters.\")\n\nvalidate_odata(organizationName, \"Device Organization\", 64)\nvalidate_odata(serverSelector, \"Server Name or Serial\", 128)\nif not re.fullmatch(r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\", expectedServerMoid):\n    errors.append(\"Expected Server Moid must be a URL-safe Intersight identifier.\")\nif expectedServerObjectType not in (\"compute.Blade\", \"compute.RackUnit\"):\n    errors.append(\"Expected Server Object Type must be exactly compute.Blade or compute.RackUnit.\")\n\nescapedOrganizationName = organizationName.replace(\"'\", \"''\")\nescapedServerSelector = serverSelector.replace(\"'\", \"''\")\npreparationStatus = \"invalid\" if errors else \"ready\"\nstatusCode = \"400\" if errors else \"200\"\nstatusMessage = \"Server identity input validation failed\" if errors else \"Server identity inputs and OData values were validated.\"\nerrorMessage = \" \".join(errors)\nresultJson = json.dumps({\n    \"validated\": not errors,\n    \"errors\": errors,\n    \"deviceOrganization\": organizationName,\n    \"serverNameOrSerial\": serverSelector,\n    \"expectedServerMoid\": expectedServerMoid,\n    \"expectedServerObjectType\": expectedServerObjectType\n}, separators=(\",\", \":\"))\nhelperReady = preparationStatus in (\"invalid\", \"ready\") and bool(statusCode and statusMessage and resultJson) and (preparationStatus != \"ready\" or all((escapedOrganizationName, escapedServerSelector, expectedServerMoid, expectedServerObjectType)))",
+              "script": "import json\nimport re\nimport sys\n\norganizationRaw = sys.argv[1]\nselectorRaw = sys.argv[2]\nexpectedMoidRaw = sys.argv[3]\nexpectedTypeRaw = sys.argv[4]\norganizationName = organizationRaw.strip()\nserverSelector = selectorRaw.strip()\nexpectedServerMoid = expectedMoidRaw.strip()\nexpectedServerObjectType = expectedTypeRaw.strip()\nerrors = []\n\nfor raw, clean, label in (\n    (organizationRaw, organizationName, \"Device Organization\"),\n    (selectorRaw, serverSelector, \"Server Name or Serial\"),\n    (expectedMoidRaw, expectedServerMoid, \"Expected Server Moid\"),\n    (expectedTypeRaw, expectedServerObjectType, \"Expected Server Object Type\")\n):\n    if raw != clean:\n        errors.append(label + \" must not contain surrounding whitespace.\")\n\ndef validate_odata(value, label, maximum):\n    if not value or len(value) > maximum or any(ord(ch) < 32 or ch in \"&?#%\" for ch in value):\n        errors.append(label + \" must contain 1-\" + str(maximum) + \" characters and must not contain controls or URL query-delimiter characters.\")\n\nvalidate_odata(organizationName, \"Device Organization\", 64)\nvalidate_odata(serverSelector, \"Server Name or Serial\", 128)\n\nexpectedPairComplete = bool(expectedServerMoid) and bool(expectedServerObjectType)\nif bool(expectedServerMoid) != bool(expectedServerObjectType):\n    errors.append(\"Expected Server Moid and Expected Server Object Type must either both be supplied or both be empty.\")\nelif expectedPairComplete:\n    if not re.fullmatch(r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\", expectedServerMoid):\n        errors.append(\"Expected Server Moid must be a URL-safe Intersight identifier.\")\n    if expectedServerObjectType not in (\"compute.Blade\", \"compute.RackUnit\"):\n        errors.append(\"Expected Server Object Type must be exactly compute.Blade or compute.RackUnit.\")\n\nescapedOrganizationName = organizationName.replace(\"'\", \"''\")\nescapedServerSelector = serverSelector.replace(\"'\", \"''\")\npreparationStatus = \"invalid\" if errors else \"ready\"\nstatusCode = \"400\" if errors else \"200\"\nstatusMessage = \"Server identity input validation failed\" if errors else \"Server identity inputs and OData values were validated.\"\nerrorMessage = \" \".join(errors)\nresultJson = json.dumps({\n    \"validated\": not errors,\n    \"errors\": errors,\n    \"deviceOrganization\": organizationName,\n    \"serverNameOrSerial\": serverSelector,\n    \"crossCheckRequested\": expectedPairComplete,\n    \"expectedServerMoid\": expectedServerMoid or None,\n    \"expectedServerObjectType\": expectedServerObjectType or None\n}, separators=(\",\", \":\"))\nhelperReady = preparationStatus in (\"invalid\", \"ready\") and bool(statusCode and statusMessage and resultJson) and (preparationStatus != \"ready\" or all((escapedOrganizationName, escapedServerSelector)))",
               "script_arguments": [
                 "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.input.variable_workflow_02XP0RZYOPW3L49jRXDkaTtjOTzrlLc84TG$",
                 "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.input.variable_workflow_02XP0RZYOPW3M200ZdqR2UUHnZgAewnimSC$",
@@ -955,15 +987,15 @@
           {
             "unique_name": "definition_activity_02XP0RZYOPW4O7ERzRz1iAO4WfIybAmABg7",
             "name": "Execute Python Script",
-            "title": "Inspect and match physical server identity",
+            "title": "Inspect and resolve physical server identity",
             "type": "python3.script",
             "base_type": "activity",
             "properties": {
               "action_timeout": 180,
               "continue_on_failure": true,
-              "description": "Requires strict Count/Results completeness; validates exact Name/Serial, Model, summary discriminators, URL-safe Moid, permission relationships, and concrete source type; then requires the resolved Moid and type to equal the expected server identity.",
-              "display_name": "Inspect and match physical server identity",
-              "script": "import json\nimport re\nimport sys\n\nselector = sys.argv[2]\norganizationName = sys.argv[3]\norganizationMoid = sys.argv[4]\nexpectedMoid = sys.argv[5]\nexpectedType = sys.argv[6]\nserverStatus = \"invalid-response\"\nstatusCode = \"502\"\nstatusMessage = \"Server lookup response was invalid\"\nerrorMessage = \"\"\nresultJson = \"{}\"\n\ndef safe_moid(value):\n    return isinstance(value, str) and re.fullmatch(r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\", value) is not None\n\ndef exact_text(value, maximum):\n    return isinstance(value, str) and bool(value) and value == value.strip() and len(value) <= maximum and not any(ord(ch) < 32 for ch in value)\n\ndef valid_permission(rel):\n    if not isinstance(rel, dict) or not safe_moid(rel.get(\"Moid\")):\n        return False\n    objectType = rel.get(\"ObjectType\")\n    if objectType is None:\n        return rel.get(\"Moid\") == organizationMoid and rel.get(\"ClassId\") in (None, \"mo.MoRef\")\n    if not isinstance(objectType, str) or not objectType.strip() or objectType != objectType.strip():\n        return False\n    return rel.get(\"ClassId\") in (None, \"mo.MoRef\", objectType)\n\nidentity = {\n    \"Name\": None,\n    \"Serial\": None,\n    \"Model\": None,\n    \"Moid\": None,\n    \"ObjectType\": None,\n    \"organization\": {\n        \"Name\": organizationName,\n        \"Moid\": organizationMoid,\n        \"ObjectType\": \"organization.Organization\"\n    }\n}\n\ntry:\n    payload = json.loads(sys.argv[1])\n    if not isinstance(payload, dict):\n        raise ValueError(\"PhysicalSummary response must be a JSON object.\")\n    count = payload.get(\"Count\")\n    values = payload.get(\"Results\")\n    if isinstance(count, bool) or not isinstance(count, int) or count < 0:\n        raise ValueError(\"PhysicalSummary response Count must be a non-negative integer.\")\n    if not isinstance(values, list):\n        raise ValueError(\"PhysicalSummary response is missing a Results array.\")\n    if count > 2:\n        raise ValueError(\"PhysicalSummary response Count exceeds the bounded two-result page, so the exact result set is truncated.\")\n    if count != len(values):\n        raise ValueError(\"PhysicalSummary response Count does not equal the returned Results length; the bounded page is incomplete.\")\n    if count == 0:\n        serverStatus = \"not-found\"\n        statusCode = \"404\"\n        statusMessage = \"Physical server was not found\"\n        errorMessage = \"No exact organization-scoped PhysicalSummary matched Server Name or Serial.\"\n    elif count > 1:\n        serverStatus = \"ambiguous\"\n        statusCode = \"409\"\n        statusMessage = \"Physical server lookup was ambiguous\"\n        errorMessage = \"Multiple organization-scoped PhysicalSummaries matched Server Name or Serial.\"\n    else:\n        item = values[0]\n        problems = []\n        if not isinstance(item, dict):\n            problems.append(\"PhysicalSummary result is not an object.\")\n        else:\n            name = item.get(\"Name\")\n            serial = item.get(\"Serial\")\n            model = item.get(\"Model\")\n            moid = item.get(\"Moid\")\n            sourceType = item.get(\"SourceObjectType\")\n            permissions = item.get(\"PermissionResources\")\n            identity.update({\"Name\": name, \"Serial\": serial, \"Model\": model, \"Moid\": moid, \"ObjectType\": sourceType})\n            if not exact_text(name, 128):\n                problems.append(\"PhysicalSummary Name must be a non-empty exact string without surrounding whitespace or controls.\")\n            if not exact_text(serial, 128):\n                problems.append(\"PhysicalSummary Serial must be a non-empty exact string without surrounding whitespace or controls.\")\n            if name != selector and serial != selector:\n                problems.append(\"PhysicalSummary matches neither the exact Name nor exact Serial selector.\")\n            if not exact_text(model, 256):\n                problems.append(\"PhysicalSummary Model must be a non-empty exact string without surrounding whitespace or controls.\")\n            if not safe_moid(moid):\n                problems.append(\"PhysicalSummary Moid is missing or not URL-safe.\")\n            if item.get(\"ObjectType\") != \"compute.PhysicalSummary\" or item.get(\"ClassId\") != \"compute.PhysicalSummary\":\n                problems.append(\"PhysicalSummary discriminators are invalid.\")\n            if sourceType not in (\"compute.Blade\", \"compute.RackUnit\"):\n                problems.append(\"PhysicalSummary SourceObjectType must be compute.Blade or compute.RackUnit.\")\n            if not isinstance(permissions, list) or not permissions:\n                problems.append(\"PhysicalSummary PermissionResources must be a non-empty array.\")\n            elif not all(valid_permission(rel) for rel in permissions):\n                problems.append(\"PhysicalSummary contains an invalid PermissionResources relationship.\")\n            else:\n                matches = [rel for rel in permissions if rel.get(\"Moid\") == organizationMoid and rel.get(\"ObjectType\") in (None, \"organization.Organization\")]\n                if len(matches) != 1:\n                    problems.append(\"PhysicalSummary must contain exactly one matching organization permission relationship.\")\n        if problems:\n            serverStatus = \"invalid-response\"\n            statusCode = \"502\"\n            statusMessage = \"Server lookup response was invalid\"\n            errorMessage = \" \".join(problems)\n        elif identity[\"Moid\"] != expectedMoid or identity[\"ObjectType\"] != expectedType:\n            serverStatus = \"identity-mismatch\"\n            statusCode = \"409\"\n            statusMessage = \"Resolved server does not match expected identity\"\n            errorMessage = \"The Name-or-Serial selector resolved a different server Moid or concrete ObjectType. No mutation is safe.\"\n        else:\n            serverStatus = \"exact\"\n            statusCode = \"200\"\n            statusMessage = \"Physical server identity resolved and matched\"\n            errorMessage = \"\"\n    resultJson = json.dumps({\n        \"status\": serverStatus,\n        \"message\": errorMessage or statusMessage,\n        \"selector\": selector,\n        \"expected\": {\"Moid\": expectedMoid, \"ObjectType\": expectedType},\n        \"server\": identity\n    }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    serverStatus = \"invalid-response\"\n    statusCode = \"502\"\n    statusMessage = \"Server lookup response was invalid\"\n    errorMessage = str(exc)\n    resultJson = json.dumps({\n        \"status\": serverStatus,\n        \"error\": errorMessage,\n        \"selector\": selector,\n        \"expected\": {\"Moid\": expectedMoid, \"ObjectType\": expectedType},\n        \"server\": identity\n    }, separators=(\",\", \":\"))\n\nhelperReady = serverStatus in (\"not-found\", \"ambiguous\", \"invalid-response\", \"identity-mismatch\", \"exact\") and bool(statusCode and statusMessage and resultJson)",
+              "description": "Requires strict Count/Results completeness; validates exact Name/Serial, Model, summary discriminators, URL-safe Moid, permission relationships, and concrete source type; then applies the optional expected-identity cross-check when supplied.",
+              "display_name": "Inspect and resolve physical server identity",
+              "script": "import json\nimport re\nimport sys\n\nselector = sys.argv[2]\norganizationName = sys.argv[3]\norganizationMoid = sys.argv[4]\nexpectedMoid = sys.argv[5]\nexpectedType = sys.argv[6]\ncrossCheckRequested = bool(expectedMoid and expectedType)\nserverStatus = \"invalid-response\"\nstatusCode = \"502\"\nstatusMessage = \"Server lookup response was invalid\"\nerrorMessage = \"\"\nresultJson = \"{}\"\nresolvedServerMoid = \"\"\nresolvedServerObjectType = \"\"\n\ndef safe_moid(value):\n    return isinstance(value, str) and re.fullmatch(r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\", value) is not None\n\ndef exact_text(value, maximum):\n    return isinstance(value, str) and bool(value) and value == value.strip() and len(value) <= maximum and not any(ord(ch) < 32 for ch in value)\n\ndef valid_permission(rel):\n    if not isinstance(rel, dict) or not safe_moid(rel.get(\"Moid\")):\n        return False\n    objectType = rel.get(\"ObjectType\")\n    if objectType is None:\n        return rel.get(\"Moid\") == organizationMoid and rel.get(\"ClassId\") in (None, \"mo.MoRef\")\n    if not isinstance(objectType, str) or not objectType.strip() or objectType != objectType.strip():\n        return False\n    return rel.get(\"ClassId\") in (None, \"mo.MoRef\", objectType)\n\nidentity = {\n    \"Name\": None,\n    \"Serial\": None,\n    \"Model\": None,\n    \"Moid\": None,\n    \"ObjectType\": None,\n    \"organization\": {\n        \"Name\": organizationName,\n        \"Moid\": organizationMoid,\n        \"ObjectType\": \"organization.Organization\"\n    }\n}\n\ntry:\n    payload = json.loads(sys.argv[1])\n    if not isinstance(payload, dict):\n        raise ValueError(\"PhysicalSummary response must be a JSON object.\")\n    count = payload.get(\"Count\")\n    values = payload.get(\"Results\")\n    if isinstance(count, bool) or not isinstance(count, int) or count < 0:\n        raise ValueError(\"PhysicalSummary response Count must be a non-negative integer.\")\n    if not isinstance(values, list):\n        raise ValueError(\"PhysicalSummary response is missing a Results array.\")\n    if count > 2:\n        raise ValueError(\"PhysicalSummary response Count exceeds the bounded two-result page, so the exact result set is truncated.\")\n    if count != len(values):\n        raise ValueError(\"PhysicalSummary response Count does not equal the returned Results length; the bounded page is incomplete.\")\n    if count == 0:\n        serverStatus = \"not-found\"\n        statusCode = \"404\"\n        statusMessage = \"Physical server was not found\"\n        errorMessage = \"No exact organization-scoped PhysicalSummary matched Server Name or Serial.\"\n    elif count > 1:\n        serverStatus = \"ambiguous\"\n        statusCode = \"409\"\n        statusMessage = \"Physical server lookup was ambiguous\"\n        errorMessage = \"Multiple organization-scoped PhysicalSummaries matched Server Name or Serial.\"\n    else:\n        item = values[0]\n        problems = []\n        if not isinstance(item, dict):\n            problems.append(\"PhysicalSummary result is not an object.\")\n        else:\n            name = item.get(\"Name\")\n            serial = item.get(\"Serial\")\n            model = item.get(\"Model\")\n            moid = item.get(\"Moid\")\n            sourceType = item.get(\"SourceObjectType\")\n            permissions = item.get(\"PermissionResources\")\n            identity.update({\"Name\": name, \"Serial\": serial, \"Model\": model, \"Moid\": moid, \"ObjectType\": sourceType})\n            if not exact_text(name, 128):\n                problems.append(\"PhysicalSummary Name must be a non-empty exact string without surrounding whitespace or controls.\")\n            if not exact_text(serial, 128):\n                problems.append(\"PhysicalSummary Serial must be a non-empty exact string without surrounding whitespace or controls.\")\n            if name != selector and serial != selector:\n                problems.append(\"PhysicalSummary matches neither the exact Name nor exact Serial selector.\")\n            if not exact_text(model, 256):\n                problems.append(\"PhysicalSummary Model must be a non-empty exact string without surrounding whitespace or controls.\")\n            if not safe_moid(moid):\n                problems.append(\"PhysicalSummary Moid is missing or not URL-safe.\")\n            if item.get(\"ObjectType\") != \"compute.PhysicalSummary\" or item.get(\"ClassId\") != \"compute.PhysicalSummary\":\n                problems.append(\"PhysicalSummary discriminators are invalid.\")\n            if sourceType not in (\"compute.Blade\", \"compute.RackUnit\"):\n                problems.append(\"PhysicalSummary SourceObjectType must be compute.Blade or compute.RackUnit.\")\n            if not isinstance(permissions, list) or not permissions:\n                problems.append(\"PhysicalSummary PermissionResources must be a non-empty array.\")\n            elif not all(valid_permission(rel) for rel in permissions):\n                problems.append(\"PhysicalSummary contains an invalid PermissionResources relationship.\")\n            else:\n                matches = [rel for rel in permissions if rel.get(\"Moid\") == organizationMoid and rel.get(\"ObjectType\") in (None, \"organization.Organization\")]\n                if len(matches) != 1:\n                    problems.append(\"PhysicalSummary must contain exactly one matching organization permission relationship.\")\n        if problems:\n            serverStatus = \"invalid-response\"\n            statusCode = \"502\"\n            statusMessage = \"Server lookup response was invalid\"\n            errorMessage = \" \".join(problems)\n        elif crossCheckRequested and (identity[\"Moid\"] != expectedMoid or identity[\"ObjectType\"] != expectedType):\n            serverStatus = \"identity-mismatch\"\n            statusCode = \"409\"\n            statusMessage = \"Resolved server does not match expected identity\"\n            errorMessage = \"The Name-or-Serial selector resolved a different server Moid or concrete ObjectType. No mutation is safe.\"\n        else:\n            serverStatus = \"exact\"\n            statusCode = \"200\"\n            statusMessage = \"Physical server identity resolved\"\n            errorMessage = \"\"\n            resolvedServerMoid = identity[\"Moid\"]\n            resolvedServerObjectType = identity[\"ObjectType\"]\n    resultJson = json.dumps({\n        \"status\": serverStatus,\n        \"message\": errorMessage or statusMessage,\n        \"selector\": selector,\n        \"crossCheckPerformed\": crossCheckRequested,\n        \"expected\": {\"Moid\": expectedMoid, \"ObjectType\": expectedType} if crossCheckRequested else None,\n        \"server\": identity\n    }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    serverStatus = \"invalid-response\"\n    statusCode = \"502\"\n    statusMessage = \"Server lookup response was invalid\"\n    errorMessage = str(exc)\n    resultJson = json.dumps({\n        \"status\": serverStatus,\n        \"error\": errorMessage,\n        \"selector\": selector,\n        \"crossCheckPerformed\": crossCheckRequested,\n        \"expected\": {\"Moid\": expectedMoid, \"ObjectType\": expectedType} if crossCheckRequested else None,\n        \"server\": identity\n    }, separators=(\",\", \":\"))\n\nhelperReady = serverStatus in (\"not-found\", \"ambiguous\", \"invalid-response\", \"identity-mismatch\", \"exact\") and bool(statusCode and statusMessage and resultJson) and (serverStatus != \"exact\" or all((resolvedServerMoid, resolvedServerObjectType)))",
               "script_arguments": [
                 "$activity.definition_activity_02XP0RZYOPW4J2ouVsLDu5ei4pmzb8MvK33.output.response_body$",
                 "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.input.variable_workflow_02XP0RZYOPW3M200ZdqR2UUHnZgAewnimSC$",
@@ -996,6 +1028,16 @@
                 {
                   "script_query": "resultJson",
                   "script_query_name": "resultJson",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "resolvedServerMoid",
+                  "script_query_name": "resolvedServerMoid",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "resolvedServerObjectType",
+                  "script_query_name": "resolvedServerObjectType",
                   "script_query_type": "string"
                 },
                 {
@@ -1113,14 +1155,14 @@
           {
             "unique_name": "definition_activity_02XP0RZYOPW4T5QtSibFk5rLLRVjD0s9940",
             "name": "Condition Block",
-            "title": "Require exact matching server identity",
+            "title": "Require exact resolved server identity",
             "type": "logic.if_else",
             "base_type": "activity",
             "properties": {
               "conditions": [],
               "continue_on_failure": false,
-              "description": "Stops unless one validated PhysicalSummary matches both the Name-or-Serial selector and the independently supplied expected Moid and concrete type.",
-              "display_name": "Require exact matching server identity",
+              "description": "Stops unless one validated organization-scoped PhysicalSummary matches Server Name or Serial and any requested expected-identity cross-check.",
+              "display_name": "Require exact resolved server identity",
               "skip_execution": false
             },
             "object_type": "definition_activity",
@@ -1128,7 +1170,7 @@
               {
                 "unique_name": "definition_activity_02XP0RZYOPW4U2vcoFaJDTXksScbHFuAXiu",
                 "name": "Condition Branch",
-                "title": "Server identity was not resolved and matched",
+                "title": "Server identity was not resolved exactly",
                 "type": "logic.condition_block",
                 "base_type": "activity",
                 "properties": {
@@ -1138,8 +1180,8 @@
                     "right_operand": "exact"
                   },
                   "continue_on_failure": false,
-                  "description": "Handles zero or duplicate results, incomplete responses, invalid resource fields, and cross-selector identity conflicts.",
-                  "display_name": "Server identity was not resolved and matched",
+                  "description": "Handles zero or duplicate results, incomplete responses, invalid resource fields, and optional expected-identity conflicts.",
+                  "display_name": "Server identity was not resolved exactly",
                   "skip_execution": false
                 },
                 "object_type": "definition_activity",
@@ -1152,7 +1194,7 @@
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Copies the validated server failure or identity-mismatch contract into all four standard outputs.",
+                      "description": "Copies the validated server resolution failure or optional identity-mismatch contract into all four standard outputs.",
                       "display_name": "Set server resolution failure outputs",
                       "skip_execution": false,
                       "variables_to_update": [
@@ -1185,9 +1227,9 @@
                     "properties": {
                       "completion_type": "failed-completed",
                       "continue_on_failure": false,
-                      "description": "Ends the atomic after the server resolution or cross-selector mismatch is reported.",
+                      "description": "Ends the atomic after the server resolution failure or optional identity mismatch is reported.",
                       "display_name": "Completed - Server identity mismatch or failure",
-                      "result_message": "Physical server identity was not resolved and matched",
+                      "result_message": "Physical server identity was not resolved exactly",
                       "skip_execution": false
                     },
                     "object_type": "definition_activity"
@@ -1214,7 +1256,7 @@
                 },
                 {
                   "variable_to_update": "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.output.variable_workflow_02XP0RZYOPW3Q1Io0affE4HM2aGWeHqSXNk$",
-                  "variable_value_new": "Physical server identity resolved and matched"
+                  "variable_value_new": "Physical server identity resolved"
                 },
                 {
                   "variable_to_update": "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.output.variable_workflow_02XP0RZYOPW3R45iQYYj5qHrCworx4Fc9Oi$",
@@ -1223,6 +1265,14 @@
                 {
                   "variable_to_update": "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.output.variable_workflow_02XP0RZYOPW3S4XaXhhIwwHXztgoxnuGJTt$",
                   "variable_value_new": "$activity.definition_activity_02XP0RZYOPW4O7ERzRz1iAO4WfIybAmABg7.output.script_queries.resultJson$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.output.variable_workflow_02XP0RZYOPW5A1b2C3d4E5f6G7h8I9j0Klm$",
+                  "variable_value_new": "$activity.definition_activity_02XP0RZYOPW4O7ERzRz1iAO4WfIybAmABg7.output.script_queries.resolvedServerMoid$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.output.variable_workflow_02XP0RZYOPW5B1c2D3e4F5g6H7i8J9k0Lmn$",
+                  "variable_value_new": "$activity.definition_activity_02XP0RZYOPW4O7ERzRz1iAO4WfIybAmABg7.output.script_queries.resolvedServerObjectType$"
                 }
               ]
             },
@@ -1237,9 +1287,9 @@
             "properties": {
               "completion_type": "succeeded",
               "continue_on_failure": false,
-              "description": "Ends the read-only atomic successfully after both selector sets identify the same server.",
+              "description": "Ends the read-only atomic successfully after one exact organization-scoped server identity is resolved.",
               "display_name": "Completed - Server identity resolved",
-              "result_message": "Physical server identity resolved and matched",
+              "result_message": "Physical server identity resolved",
               "skip_execution": false
             },
             "object_type": "definition_activity"
