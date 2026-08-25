@@ -141,7 +141,7 @@
           "scope": "output",
           "name": "Status Code",
           "type": "datatype.string",
-          "description": "Terminal workflow status. 200 is returned only after exact healthy Server Profile association and activation are verified; all timeouts and incomplete states fail.",
+          "description": "Terminal workflow status. 202 means Cisco Intersight accepted the validated Server Profile deploy-and-activate request; completion is not monitored. Validation, lookup, or submission failures return their corresponding 4xx or 5xx status.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -157,7 +157,7 @@
           "scope": "output",
           "name": "Status Message",
           "type": "datatype.string",
-          "description": "Concise terminal profile deployment outcome.",
+          "description": "Concise profile deployment submission outcome.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -173,7 +173,7 @@
           "scope": "output",
           "name": "Error Message",
           "type": "datatype.string",
-          "description": "Actionable failure detail. Empty only for verified completed deployment and activation.",
+          "description": "Actionable failure detail. Empty when the deploy-and-activate request was validated and accepted.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -189,7 +189,7 @@
           "scope": "output",
           "name": "Result",
           "type": "datatype.string",
-          "description": "Structured evidence from the terminal stage, including exact profile and target identity, deployment state, queued actions, running workflows, and retry-safety context.",
+          "description": "Structured submission evidence including exact profile and target identity, request mode, returned action and scheduled actions, immediate configuration state, and retry-safety context. It does not prove deployment or activation completion.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -204,7 +204,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "Creates and fully activates one new Cisco Intersight Server Profile from an exact same-organization template. A read-only identity check first proves that the independent server selector, target Moid, and concrete type identify the same organization-permitted Blade or Rack Unit. The workflow refuses an existing destination name, waits up to ten minutes for derivation, and waits up to thirty minutes for ordered Deploy and Activate actions. Success requires the exact profile to be associated with the exact target, ConfigState and ConfigStateSummary Associated, OperState Ok, empty error and inconsistency evidence, and no scheduled actions or running workflows. Timeouts and incomplete states fail and require inspection before retry. Activation can reboot the server. This workflow does not start an operating-system installation. Import the four dependent atomics first and select an authorized intersight.endpoint target.",
+      "description": "Creates one new Cisco Intersight Server Profile from an exact same-organization template. A read-only identity check first proves that the independent server selector, target Moid, and concrete type identify the same organization-permitted Blade or Rack Unit. The workflow refuses an existing destination name, waits up to ten minutes for derivation, assigns the exact target, and submits ordered Deploy then Activate actions. Success means Cisco Intersight accepted the validated deploy-and-activate request; deployment, activation, and association completion are not monitored. Activation can reboot the server. This workflow does not start an operating-system installation. Import the four dependent atomics first and select an authorized intersight.endpoint target.",
       "display_name": "Cisco Intersight - Deploy new Server Profile from template",
       "runtime_user": {
         "override_target_runtime_user": false,
@@ -946,7 +946,7 @@
         "base_type": "subworkflow",
         "properties": {
           "continue_on_failure": true,
-          "description": "Uses the explicit confirmation as Server activation and reboot authorization. The atomic submits ordered Deploy then Activate actions and waits up to thirty minutes for exact healthy association with no scheduled actions or running workflows.",
+          "description": "Uses the explicit confirmation as Server activation and reboot authorization. The atomic submits ordered Deploy then Activate actions and returns after validating that Cisco Intersight accepted the request; deployment and activation completion are not monitored.",
           "display_name": "Deploy assigned Server Profile",
           "skip_execution": false,
           "input": {
@@ -954,8 +954,8 @@
             "variable_workflow_02XOKCY8L72AV3SCRCe50H1Zw1Zc8mJRT0i": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.input.variable_workflow_02XRJDF2FZKO05zDHFGFbwUnUS3Ub57Q4Rv$",
             "variable_workflow_02XOKCY8L72AW6LO5DAi2pYfZWkyy2rr2KZ": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.input.variable_workflow_02XRJDF2G9L081scFdTMjtuRR6h3aHuF6kv$",
             "variable_workflow_02XOKCY8L72F90jHIBV6230oPiJD1whSniP": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.input.variable_workflow_02XRJDF2GY94G0G2ikYQtdX13UReBhBc0YJ$",
-            "variable_workflow_02XOKCY8L72AX6V72SldzHcdmWAQGiavXZT": true,
-            "variable_workflow_02XOKCY8L72AY0cI7K8umHRmYp7fRCqL9bD": 1800
+            "variable_workflow_02XOKCY8L72AX6V72SldzHcdmWAQGiavXZT": false,
+            "variable_workflow_02XOKCY8L72AY0cI7K8umHRmYp7fRCqL9bD": 0
           },
           "runtime_user": {
             "target_default": true
@@ -1063,7 +1063,7 @@
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Requires successful child execution and exact Status Code 200, proving the exact Server Profile is fully associated, activated, healthy, and free of queued or running work. Every timeout or incomplete result follows the failed branch.",
+          "description": "Requires successful child execution and exact Status Code 202, proving that Cisco Intersight accepted the validated deploy-and-activate request. Completion is not monitored.",
           "display_name": "Validate profile deployment result",
           "skip_execution": false,
           "conditions": []
@@ -1078,7 +1078,7 @@
             "base_type": "activity",
             "properties": {
               "continue_on_failure": false,
-              "description": "Copies the complete deployment atomic contract and stops. Inspect accepted or timeout evidence before retrying because the external operation may still be active.",
+              "description": "Copies the complete deployment atomic contract and stops. Inspect any evidence that the request may have been accepted before retrying because the external operation might still be active.",
               "display_name": "Profile deployment failed",
               "skip_execution": false,
               "condition": {
@@ -1091,7 +1091,7 @@
                 "right_operand": {
                   "left_operand": "$activity.definition_activity_02XRJDF2C0UJS0DZSku4BFW4Vc8TwoPkgua.output.variable_workflow_02XOKCY8L72AZ7aIjxWGkWDqYrz2NmxwgMO$",
                   "operator": "ne",
-                  "right_operand": "200"
+                  "right_operand": "202"
                 }
               }
             },
@@ -1152,26 +1152,26 @@
       {
         "unique_name": "definition_activity_02XRJDF2CPFKW6fk25BxFCMgkKh39fT0bRs",
         "name": "Set Variables",
-        "title": "Set verified profile deployment success outputs",
+        "title": "Set accepted profile deployment outputs",
         "type": "core.set_multiple_variables",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Returns success only after the deploy atomic proves exact healthy association and activation.",
-          "display_name": "Set verified profile deployment success outputs",
+          "description": "Copies the deploy atomic's validated request-acceptance contract without claiming deployment or activation completion.",
+          "display_name": "Set accepted profile deployment outputs",
           "skip_execution": false,
           "variables_to_update": [
             {
               "variable_to_update": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.output.variable_workflow_02XRJDF2H35TK5URwAdNvukp83v9cAbAOGA$",
-              "variable_value_new": "200"
+              "variable_value_new": "$activity.definition_activity_02XRJDF2C0UJS0DZSku4BFW4Vc8TwoPkgua.output.variable_workflow_02XOKCY8L72AZ7aIjxWGkWDqYrz2NmxwgMO$"
             },
             {
               "variable_to_update": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.output.variable_workflow_02XRJDF2H82IO75psWsDQxtm7VkUvusYNBF$",
-              "variable_value_new": "Server Profile deployment and activation completed"
+              "variable_value_new": "$activity.definition_activity_02XRJDF2C0UJS0DZSku4BFW4Vc8TwoPkgua.output.variable_workflow_02XOKCY8L72B10P5q8XBVm5VJub4UHTzOmW$"
             },
             {
               "variable_to_update": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.output.variable_workflow_02XRJDF2HCYG01lGGNcDAc18eyeQyRRRP01$",
-              "variable_value_new": ""
+              "variable_value_new": "$activity.definition_activity_02XRJDF2C0UJS0DZSku4BFW4Vc8TwoPkgua.output.variable_workflow_02XOKCY8L72B25grZ2GAqHsh72n4dESjp00$"
             },
             {
               "variable_to_update": "$workflow.definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.output.variable_workflow_02XRJDF2HHVWW29Zke90vEcSV1AVcP5KoxV$",
@@ -1184,16 +1184,16 @@
       {
         "unique_name": "definition_activity_02XRJDF2CUBI87En4ukGQN2cQq3ufcatIzC",
         "name": "Completed",
-        "title": "Completed - Server Profile deployed and activated",
+        "title": "Completed - Server Profile deployment accepted",
         "type": "logic.completed",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Ends successfully only after all four outputs contain the verified completed deployment contract.",
-          "display_name": "Completed - Server Profile deployed and activated",
+          "description": "Ends successfully after all four outputs contain the validated deployment request-acceptance contract.",
+          "display_name": "Completed - Server Profile deployment accepted",
           "skip_execution": false,
           "completion_type": "succeeded",
-          "result_message": "Server Profile deployment and activation completed"
+          "result_message": "Server Profile deploy-and-activate request accepted; completion is not monitored"
         },
         "object_type": "definition_activity"
       }
