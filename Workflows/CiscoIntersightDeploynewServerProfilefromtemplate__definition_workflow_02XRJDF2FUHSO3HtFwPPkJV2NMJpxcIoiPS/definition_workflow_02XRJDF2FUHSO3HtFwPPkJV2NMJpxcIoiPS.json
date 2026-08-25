@@ -109,7 +109,7 @@
           "scope": "output",
           "name": "Status Code",
           "type": "datatype.string",
-          "description": "Terminal workflow status. 202 means Cisco Intersight accepted the validated Server Profile deploy-and-activate request; completion is not monitored. Validation, lookup, or submission failures return their corresponding 4xx or 5xx status.",
+          "description": "Terminal workflow status. Any 2xx value means Cisco Intersight accepted the validated Server Profile deploy-and-activate request; completion is not monitored. Validation, lookup, or submission failures return their corresponding 4xx or 5xx status.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -1029,7 +1029,7 @@
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Requires successful child execution and exact Status Code 202, proving that Cisco Intersight accepted the validated deploy-and-activate request. Completion is not monitored.",
+          "description": "Requires successful child execution and any 2xx Status Code, proving that Cisco Intersight accepted the validated deploy-and-activate request. Completion is not monitored.",
           "display_name": "Validate profile deployment result",
           "skip_execution": false,
           "conditions": []
@@ -1056,8 +1056,8 @@
                 "operator": "or",
                 "right_operand": {
                   "left_operand": "$activity.definition_activity_02XRJDF2C0UJS0DZSku4BFW4Vc8TwoPkgua.output.variable_workflow_02XOKCY8L72AZ7aIjxWGkWDqYrz2NmxwgMO$",
-                  "operator": "ne",
-                  "right_operand": "202"
+                  "operator": "mregex",
+                  "right_operand": "^(?!2[0-9]{2}$).*$"
                 }
               }
             },
