@@ -18,6 +18,12 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 START_MARKER = "<!-- BEGIN GENERATED WORKFLOW CATALOG -->"
 END_MARKER = "<!-- END GENERATED WORKFLOW CATALOG -->"
+VALIDATED_WORKFLOW_IDS = frozenset(
+    {
+        "definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS",
+        "definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -109,6 +115,10 @@ def summary(description: str) -> str:
     return markdown_text(first_sentence)
 
 
+def validation_indicator(definition: Definition, validated_ids: set[str]) -> str:
+    return "✅ Validated" if definition.unique_name in validated_ids else "❌ Not validated"
+
+
 def render_catalog(definitions: list[Definition]) -> str:
     atomics = sorted(
         (item for item in definitions if item.kind == "Atomics"),
@@ -119,6 +129,14 @@ def render_catalog(definitions: list[Definition]) -> str:
         key=lambda item: item.name.casefold(),
     )
     atomics_by_id = {item.unique_name: item for item in atomics}
+    definitions_by_id = {item.unique_name: item for item in definitions}
+
+    missing_validated_workflows = VALIDATED_WORKFLOW_IDS - definitions_by_id.keys()
+    if missing_validated_workflows:
+        raise ValueError(
+            "Validated workflow IDs are missing from the repository: "
+            + ", ".join(sorted(missing_validated_workflows))
+        )
 
     unknown_dependencies = sorted(
         {
@@ -134,12 +152,17 @@ def render_catalog(definitions: list[Definition]) -> str:
             + ", ".join(unknown_dependencies)
         )
 
+    validated_ids = set(VALIDATED_WORKFLOW_IDS)
+    for workflow in workflows:
+        if workflow.unique_name in VALIDATED_WORKFLOW_IDS:
+            validated_ids.update(workflow.dependencies)
+
     lines = [
         START_MARKER,
         "# Workflows",
         "",
-        "| Workflow | Purpose | Required atomics |",
-        "|---|---|---|",
+        "| Validation | Workflow | Purpose | Required atomics |",
+        "|:---:|---|---|---|",
     ]
 
     for workflow in workflows:
@@ -149,6 +172,7 @@ def render_catalog(definitions: list[Definition]) -> str:
         )
         dependencies = f"<ul>{dependencies}</ul>" if dependencies else "None"
         lines.append(
+            f"| {validation_indicator(workflow, validated_ids)} "
             f"| {markdown_link(workflow)} | {summary(workflow.description)} "
             f"| {dependencies} |"
         )
@@ -158,12 +182,15 @@ def render_catalog(definitions: list[Definition]) -> str:
             "",
             "# Atomics",
             "",
-            "| Atomic workflow | Purpose |",
-            "|---|---|",
+            "| Validation | Atomic workflow | Purpose |",
+            "|:---:|---|---|",
         ]
     )
     for atomic in atomics:
-        lines.append(f"| {markdown_link(atomic)} | {summary(atomic.description)} |")
+        lines.append(
+            f"| {validation_indicator(atomic, validated_ids)} "
+            f"| {markdown_link(atomic)} | {summary(atomic.description)} |"
+        )
 
     lines.extend(["", END_MARKER])
     return "\n".join(lines)
