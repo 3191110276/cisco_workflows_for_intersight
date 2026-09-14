@@ -1,4 +1,4 @@
-# Cisco Intersight workflows
+# Cisco Workflows for Intersight
 
 Importable Cisco Intersight workflow definitions for Cisco Workflows. Reusable
 atomic workflows are stored in [`Atomics`](./Atomics), while end-to-end workflows
