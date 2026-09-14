@@ -116,7 +116,7 @@ def summary(description: str) -> str:
 
 
 def validation_indicator(definition: Definition, validated_ids: set[str]) -> str:
-    return "✅ Validated" if definition.unique_name in validated_ids else "❌ Not validated"
+    return "✅" if definition.unique_name in validated_ids else "❌"
 
 
 def render_catalog(definitions: list[Definition]) -> str:
