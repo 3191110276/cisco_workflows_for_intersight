@@ -4,39 +4,19 @@ Importable Cisco Intersight workflow definitions for Cisco Workflows. Reusable
 atomic workflows are stored in [`Atomics`](./Atomics), while end-to-end workflows
 that compose them are stored in [`Workflows`](./Workflows).
 
-## Updating this README
-
-The workflow catalog below is generated directly from the exported JSON metadata.
-After adding, removing, or updating a definition, regenerate it with:
-
-```shell
-python3 scripts/generate_readme.py
-```
-
-To verify that the catalog is current without changing files (for example, in CI),
-run:
-
-```shell
-python3 scripts/generate_readme.py --check
-```
-
 See [`TODO.md`](./TODO.md) for implementation details, validation notes, and the
 remaining live-tenant test gates.
 
 <!-- BEGIN GENERATED WORKFLOW CATALOG -->
-## Workflow catalog
+# Workflows
 
-This catalog is generated from **3 workflows** and **51 atomic workflows** checked into this repository.
+| Workflow | Purpose | Required atomics |
+|---|---|---|
+| [Cisco Intersight - Deploy new Server Profile from template](Workflows/CiscoIntersightDeploynewServerProfilefromtemplate__definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS/definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.json) | Creates one new Cisco Intersight Server Profile from an exact same-organization template. | <ul><li><a href="Atomics/CiscoIntersightResolveserveridentity__definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX/definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.json">Cisco Intersight - Resolve server identity</a></li><li><a href="Atomics/CiscoIntersightDeriveprofilefromtemplate__definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn/definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn.json">Cisco Intersight - Derive profile from template</a></li><li><a href="Atomics/CiscoIntersightAssignprofile__definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq/definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq.json">Cisco Intersight - Assign profile</a></li><li><a href="Atomics/CiscoIntersightDeployprofile__definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd/definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd.json">Cisco Intersight - Deploy profile</a></li></ul> |
+| [Cisco Intersight - Firmware upgrade](Workflows/CiscoIntersightFirmwareupgrade__definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE/definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.json) | Starts a Cisco Repository firmware upgrade through the existing Cisco Intersight atomic for one server, one UCS-X chassis, or one IMM Domain (both FIs). | <ul><li><a href="Atomics/CiscoIntersightStartfirmwareupgrade__definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH/definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH.json">Cisco Intersight - Start firmware upgrade</a></li></ul> |
+| [Cisco Intersight - Server onboarding](Workflows/CiscoIntersightServeronboarding__definition_workflow_02XP0846QAE6G5KrAUiM9x5PKuEEyyS08ZX/definition_workflow_02XP0846QAE6G5KrAUiM9x5PKuEEyyS08ZX.json) | Onboards one Cisco Intersight Blade or Rack server with five atomics: prove the target identity, derive and assign a same-organization Server Profile, submit ordered Deploy then Activate actions with reboot authorization, wait up to thirty minutes for exact healthy association with no queued or running work, then start vMedia OS installation. | <ul><li><a href="Atomics/CiscoIntersightResolveserveridentity__definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX/definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.json">Cisco Intersight - Resolve server identity</a></li><li><a href="Atomics/CiscoIntersightDeriveprofilefromtemplate__definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn/definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn.json">Cisco Intersight - Derive profile from template</a></li><li><a href="Atomics/CiscoIntersightAssignprofile__definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq/definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq.json">Cisco Intersight - Assign profile</a></li><li><a href="Atomics/CiscoIntersightDeployprofile__definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd/definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd.json">Cisco Intersight - Deploy profile</a></li><li><a href="Atomics/CiscoIntersightStartoperatingsysteminstallation__definition_workflow_02XOKCY8L727M4UlIx2U1dJfQxJhDndV8ZP/definition_workflow_02XOKCY8L727M4UlIx2U1dJfQxJhDndV8ZP.json">Cisco Intersight - Start operating system installation</a></li></ul> |
 
-### Workflows (3)
-
-| Workflow | Purpose | Inputs | Required atomics |
-|---|---|---:|---|
-| [Cisco Intersight - Deploy new Server Profile from template](Workflows/CiscoIntersightDeploynewServerProfilefromtemplate__definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS/definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.json) | Creates one new Cisco Intersight Server Profile from an exact same-organization template. | 6 | <ul><li><a href="Atomics/CiscoIntersightResolveserveridentity__definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX/definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.json">Cisco Intersight - Resolve server identity</a></li><li><a href="Atomics/CiscoIntersightDeriveprofilefromtemplate__definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn/definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn.json">Cisco Intersight - Derive profile from template</a></li><li><a href="Atomics/CiscoIntersightAssignprofile__definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq/definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq.json">Cisco Intersight - Assign profile</a></li><li><a href="Atomics/CiscoIntersightDeployprofile__definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd/definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd.json">Cisco Intersight - Deploy profile</a></li></ul> |
-| [Cisco Intersight - Firmware upgrade](Workflows/CiscoIntersightFirmwareupgrade__definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE/definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.json) | Starts a Cisco Repository firmware upgrade through the existing Cisco Intersight atomic for one server, one UCS-X chassis, or one IMM Domain (both FIs). | 11 | <ul><li><a href="Atomics/CiscoIntersightStartfirmwareupgrade__definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH/definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH.json">Cisco Intersight - Start firmware upgrade</a></li></ul> |
-| [Cisco Intersight - Server onboarding](Workflows/CiscoIntersightServeronboarding__definition_workflow_02XP0846QAE6G5KrAUiM9x5PKuEEyyS08ZX/definition_workflow_02XP0846QAE6G5KrAUiM9x5PKuEEyyS08ZX.json) | Onboards one Cisco Intersight Blade or Rack server with five atomics: prove the target identity, derive and assign a same-organization Server Profile, submit ordered Deploy then Activate actions with reboot authorization, wait up to thirty minutes for exact healthy association with no queued or running work, then start vMedia OS installation. | 16 | <ul><li><a href="Atomics/CiscoIntersightResolveserveridentity__definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX/definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.json">Cisco Intersight - Resolve server identity</a></li><li><a href="Atomics/CiscoIntersightDeriveprofilefromtemplate__definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn/definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn.json">Cisco Intersight - Derive profile from template</a></li><li><a href="Atomics/CiscoIntersightAssignprofile__definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq/definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq.json">Cisco Intersight - Assign profile</a></li><li><a href="Atomics/CiscoIntersightDeployprofile__definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd/definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd.json">Cisco Intersight - Deploy profile</a></li><li><a href="Atomics/CiscoIntersightStartoperatingsysteminstallation__definition_workflow_02XOKCY8L727M4UlIx2U1dJfQxJhDndV8ZP/definition_workflow_02XOKCY8L727M4UlIx2U1dJfQxJhDndV8ZP.json">Cisco Intersight - Start operating system installation</a></li></ul> |
-
-### Atomic workflows (51)
+# Atomics
 
 | Atomic workflow | Purpose |
 |---|---|

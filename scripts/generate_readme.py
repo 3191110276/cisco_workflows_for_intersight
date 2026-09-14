@@ -26,7 +26,6 @@ class Definition:
     name: str
     description: str
     unique_name: str
-    input_count: int
     dependencies: tuple[str, ...]
     path: Path
 
@@ -49,13 +48,6 @@ def load_definition(path: Path, kind: str) -> Definition:
     description = properties.get("description", "")
     if not isinstance(description, str):
         description = str(description)
-    variables = workflow.get("variables", [])
-    input_count = sum(
-        1
-        for variable in variables
-        if isinstance(variable, dict)
-        and variable.get("properties", {}).get("scope") == "input"
-    )
     raw_dependencies = document.get("atomic_workflows", []) if kind == "Workflows" else []
     if not isinstance(raw_dependencies, list) or not all(
         isinstance(item, str) for item in raw_dependencies
@@ -67,7 +59,6 @@ def load_definition(path: Path, kind: str) -> Definition:
         name=name.strip(),
         description=" ".join(description.split()),
         unique_name=unique_name.strip(),
-        input_count=input_count,
         dependencies=tuple(raw_dependencies),
         path=path,
     )
@@ -145,17 +136,10 @@ def render_catalog(definitions: list[Definition]) -> str:
 
     lines = [
         START_MARKER,
-        "## Workflow catalog",
+        "# Workflows",
         "",
-        (
-            f"This catalog is generated from **{len(workflows)} workflows** and "
-            f"**{len(atomics)} atomic workflows** checked into this repository."
-        ),
-        "",
-        f"### Workflows ({len(workflows)})",
-        "",
-        "| Workflow | Purpose | Inputs | Required atomics |",
-        "|---|---|---:|---|",
+        "| Workflow | Purpose | Required atomics |",
+        "|---|---|---|",
     ]
 
     for workflow in workflows:
@@ -166,13 +150,13 @@ def render_catalog(definitions: list[Definition]) -> str:
         dependencies = f"<ul>{dependencies}</ul>" if dependencies else "None"
         lines.append(
             f"| {markdown_link(workflow)} | {summary(workflow.description)} "
-            f"| {workflow.input_count} | {dependencies} |"
+            f"| {dependencies} |"
         )
 
     lines.extend(
         [
             "",
-            f"### Atomic workflows ({len(atomics)})",
+            "# Atomics",
             "",
             "| Atomic workflow | Purpose |",
             "|---|---|",
