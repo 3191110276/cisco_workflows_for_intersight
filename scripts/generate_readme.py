@@ -92,10 +92,14 @@ def markdown_text(value: str) -> str:
     return value.replace("\\", "\\\\").replace("|", "\\|")
 
 
+def display_name(definition: Definition) -> str:
+    return definition.name.removeprefix("Cisco Intersight - ")
+
+
 def markdown_link(definition: Definition) -> str:
     relative_path = definition.path.relative_to(ROOT).as_posix()
     target = quote(relative_path, safe="/._-~")
-    return f"[{markdown_text(definition.name)}]({target})"
+    return f"[{markdown_text(display_name(definition))}]({target})"
 
 
 def html_link(definition: Definition) -> str:
@@ -103,7 +107,7 @@ def html_link(definition: Definition) -> str:
     target = quote(relative_path, safe="/._-~")
     return (
         f'<a href="{html.escape(target, quote=True)}">'
-        f"{html.escape(definition.name)}</a>"
+        f"{html.escape(display_name(definition))}</a>"
     )
 
 
