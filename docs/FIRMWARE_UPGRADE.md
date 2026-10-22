@@ -5,9 +5,10 @@ UCS-X Chassis or IMM Domain. It has no Action selector or status-check action.
 
 Supply **Target Type**, **Device Organization**, **Target Name** and
 **Firmware Version**. Optional inputs are **Server Upgrade Mode**,
-**Enable Fabric Evacuation**, **Enable PSU Upgrade**, **Enable PDB FPGA Upgrade**
-and **Skip Wait for I/O Connectivity**. Keep options for other target types at
-their defaults. Server Upgrade Mode remains a text input with the default
+**Enable Fabric Evacuation**, **Enable PSU Upgrade** and **Enable PDB FPGA Upgrade**.
+Keep options for other target types at their defaults.
+The workflow always sets **Skip Wait for I/O Connectivity** to **false**, so
+it waits for I/O connectivity; this setting is not exposed as an input. Server Upgrade Mode remains a text input with the default
 **Start Immediately**.
 
 The workflow validates the target and image, skips submission when installed
@@ -34,3 +35,6 @@ only if you use it separately. It is not required by the upgrade workflow.
 
 Local graph regression tests use API stubs and do not execute hardware upgrades.
 This revision still requires import and runtime validation in Cisco Workflows.
+
+For the I/O wait input removal alone, re-import **Firmware upgrade**. The
+submission atomic is unchanged.
