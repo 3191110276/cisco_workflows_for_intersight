@@ -7,13 +7,15 @@ that compose them are stored in [`Workflows`](./Workflows).
 For profile deployment across organizations, see the [organization inputs and
 import instructions](docs/PROFILE_ORGANIZATIONS.md).
 
+For firmware upgrades, see the [inputs and import instructions](docs/FIRMWARE_UPGRADE.md).
+
 <!-- BEGIN GENERATED WORKFLOW CATALOG -->
 # Workflows
 
 | Validation | Workflow | Purpose | Required atomics |
 |:---:|---|---|---|
 | ✅ | [Deploy new Server Profile from template](Workflows/CiscoIntersightDeploynewServerProfilefromtemplate__definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS/definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS.json) | Creates, assigns, deploys, and activates one new Cisco Intersight Server Profile from a template. | <ul><li><a href="Atomics/CiscoIntersightResolveserveridentity__definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX/definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX.json">Resolve server identity</a></li><li><a href="Atomics/CiscoIntersightDeriveprofilefromtemplate__definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn/definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn.json">Derive profile from template</a></li><li><a href="Atomics/CiscoIntersightAssignprofile__definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq/definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq.json">Assign profile</a></li><li><a href="Atomics/CiscoIntersightDeployprofile__definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd/definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd.json">Deploy profile</a></li></ul> |
-| ❌ | [Firmware upgrade](Workflows/CiscoIntersightFirmwareupgrade__definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE/definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.json) | Upgrade firmware or check an existing upgrade for one Server, UCS-X Chassis or IMM Domain. | <ul><li><a href="Atomics/CiscoIntersightStartfirmwareupgrade__definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH/definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH.json">Start firmware upgrade</a></li><li><a href="Atomics/CiscoIntersightGetfirmwareupgradestatus__definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413/definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.json">Get firmware upgrade status</a></li></ul> |
+| ❌ | [Firmware upgrade](Workflows/CiscoIntersightFirmwareupgrade__definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE/definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.json) | Starts a Cisco Repository firmware upgrade for one Server, UCS-X Chassis or IMM Domain. | <ul><li><a href="Atomics/CiscoIntersightStartfirmwareupgrade__definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH/definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH.json">Start firmware upgrade</a></li></ul> |
 
 # Atomics
 

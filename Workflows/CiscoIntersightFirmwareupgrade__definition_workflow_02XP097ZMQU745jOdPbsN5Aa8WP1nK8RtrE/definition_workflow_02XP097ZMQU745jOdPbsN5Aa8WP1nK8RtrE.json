@@ -9,28 +9,12 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "Upgrade firmware",
-          "scope": "input",
-          "name": "Action",
-          "type": "datatype.string",
-          "description": "Choose exactly Upgrade firmware or Check upgrade status. Upgrade firmware submits for the selected target type. Check upgrade status only reads an existing operation and never submits firmware.",
-          "is_required": true,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02ZCONS20FIX00ca8305eb4245303dd5984",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
           "value": "",
           "scope": "input",
           "name": "Target Type",
           "type": "datatype.string",
-          "description": "Required for Action Upgrade firmware. Required exact target family: Server, UCS-X Chassis, or Domain. A Domain upgrade covers both Fabric Interconnects; individual FI selection is not supported.",
-          "is_required": false,
+          "description": "Required exact target family: Server, UCS-X Chassis, or Domain. A Domain upgrade covers both Fabric Interconnects; individual FI selection is not supported.",
+          "is_required": true,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "text"
@@ -45,8 +29,8 @@
           "scope": "input",
           "name": "Device Organization",
           "type": "datatype.string",
-          "description": "Required for Action Upgrade firmware. Exact Cisco Intersight organization used by the atomic to resolve the firmware target.",
-          "is_required": false,
+          "description": "Exact Cisco Intersight organization used by the atomic to resolve the firmware target.",
+          "is_required": true,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "text"
@@ -61,8 +45,8 @@
           "scope": "input",
           "name": "Target Name",
           "type": "datatype.string",
-          "description": "Required for Action Upgrade firmware. Exact organization-scoped server, UCS-X chassis, or Domain name. The atomic validates identity and cardinality.",
-          "is_required": false,
+          "description": "Exact organization-scoped server, UCS-X chassis, or Domain name. The atomic validates identity and cardinality.",
+          "is_required": true,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "text"
@@ -77,8 +61,8 @@
           "scope": "input",
           "name": "Firmware Version",
           "type": "datatype.string",
-          "description": "Required for Action Upgrade firmware. Exact Cisco Repository firmware catalog version. No production version is prepopulated.",
-          "is_required": false,
+          "description": "Exact Cisco Repository firmware catalog version. No production version is prepopulated.",
+          "is_required": true,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "text"
@@ -93,7 +77,7 @@
           "scope": "input",
           "name": "Server Upgrade Mode",
           "type": "datatype.string",
-          "description": "Used only for Action Upgrade firmware. Server-only mode: Start Immediately or Mount Only. Keep Start Immediately for chassis and Domain targets.",
+          "description": "Server-only mode: Start Immediately or Mount Only. Keep Start Immediately for chassis and Domain targets.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -109,7 +93,7 @@
           "scope": "input",
           "name": "Enable Fabric Evacuation",
           "type": "datatype.boolean",
-          "description": "Used only for Action Upgrade firmware. Domain switch-upgrade option. Keep true for server and UCS-X chassis targets.",
+          "description": "Domain switch-upgrade option. Keep true for server and UCS-X chassis targets.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -125,7 +109,7 @@
           "scope": "input",
           "name": "Enable PSU Upgrade",
           "type": "datatype.boolean",
-          "description": "Used only for Action Upgrade firmware. Domain switch-upgrade option. Keep false for server and UCS-X chassis targets.",
+          "description": "Domain switch-upgrade option. Keep false for server and UCS-X chassis targets.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -141,7 +125,7 @@
           "scope": "input",
           "name": "Enable PDB FPGA Upgrade",
           "type": "datatype.boolean",
-          "description": "Used only for Action Upgrade firmware. Domain switch-upgrade option. Keep false for server and UCS-X chassis targets.",
+          "description": "Domain switch-upgrade option. Keep false for server and UCS-X chassis targets.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -157,7 +141,7 @@
           "scope": "input",
           "name": "Skip Wait for I/O Connectivity",
           "type": "datatype.boolean",
-          "description": "Used only for Action Upgrade firmware. Domain option mapped by the atomic to SkipWaitForIoPathConnectivity. Keep false for server and chassis targets.",
+          "description": "Domain option mapped by the atomic to SkipWaitForIoPathConnectivity. Keep false for server and chassis targets.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
@@ -349,125 +333,13 @@
           "scope": "output",
           "name": "Upgrade Status ID",
           "type": "datatype.string",
-          "description": "Firmware UpgradeStatus Moid, when available. Otherwise check using Upgrade ID to Check and Upgrade Resource Type.",
+          "description": "Firmware UpgradeStatus Moid, when available. The Upgrade ID and Upgrade Resource Type identify the operation when this is empty.",
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
           "variable_string_format": "text"
         },
         "unique_name": "variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "input",
-          "name": "Upgrade Status ID to Check",
-          "type": "datatype.string",
-          "description": "Used only for Action Check upgrade status. Optional 24-character hexadecimal firmware UpgradeStatus Moid. Supply this, or the Upgrade ID and Upgrade Resource Type to Check pair.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX003642a8a383d7d8a11c9cd",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "input",
-          "name": "Upgrade ID to Check",
-          "type": "datatype.string",
-          "description": "Used only for Action Check upgrade status. Optional 24-character hexadecimal created upgrade resource Moid. Required with Upgrade Resource Type when Upgrade Status ID is unavailable.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00b624e6745e9835e72f1f3",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "input",
-          "name": "Upgrade Resource Type to Check",
-          "type": "datatype.string",
-          "description": "Used only for Action Check upgrade status. Concrete type from submission: firmware.Upgrade, firmware.ChassisUpgrade, or firmware.SwitchUpgrade. Required with Upgrade ID.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00365e2559bcd20106b7b3f",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "Download Stage",
-          "type": "datatype.string",
-          "description": "Current download or flashing stage, when reported.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00de73b4535dece2d0ebbb9",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "Download Percentage",
-          "type": "datatype.string",
-          "description": "Percentage from 0 to 100. Empty when missing or reported as unknown.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00740182bc02d49d2c0b80f",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "Overall Status",
-          "type": "datatype.string",
-          "description": "Native Intersight overall upgrade status, when reported.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00c0151ee75e1faaf41d51e",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "output",
-          "name": "Overall Percentage",
-          "type": "datatype.string",
-          "description": "Percentage from 0 to 100. Empty when missing or reported as unknown.",
-          "is_required": false,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02Z9OCT19FIX00c2c8c601e4dc19cf3aca7",
         "object_type": "variable_workflow"
       }
     ],
@@ -476,7 +348,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "Upgrade firmware or check an existing upgrade for one Server, UCS-X Chassis or IMM Domain. Choose Action Upgrade firmware and supply Target Type, Device Organization, Target Name and Firmware Version; only options for the chosen target apply. Validates target and image, skips verified installed firmware, returns IDs for an active upgrade, or submits once. Choose Action Check upgrade status and supply Upgrade Status ID to Check, or Upgrade ID to Check plus Upgrade Resource Type to Check. This action reads one progress snapshot without submitting or polling. Both actions return tracking IDs, Result and actionable messages on the selected Intersight endpoint.",
+      "description": "Starts a Cisco Repository firmware upgrade for one Server, UCS-X Chassis or IMM Domain. Supply Target Type, Device Organization, Target Name and Firmware Version; only options for the chosen target apply. Validates the target and image, skips verified installed firmware, returns IDs for an active upgrade, or submits once. Returns tracking IDs, Result and actionable messages on the selected Intersight endpoint. A 202 result means the request was accepted; monitor progress in Intersight.",
       "display_name": "Cisco Intersight - Firmware upgrade",
       "runtime_user": {
         "override_target_runtime_user": false,
@@ -491,1044 +363,674 @@
     "object_type": "definition_workflow",
     "actions": [
       {
-        "unique_name": "definition_activity_02ZCONS20FIX00c2384ee44559eefab91a3",
-        "name": "Choose firmware action",
-        "title": "Choose firmware action",
-        "type": "logic.if_else",
+        "unique_name": "definition_activity_02XP097ZMTK6W4nIvVHiGL0TWVIWXVce27w",
+        "name": "Group",
+        "title": "Start firmware upgrade",
+        "type": "logic.group",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": false,
-          "description": "Choose firmware action",
-          "display_name": "Choose firmware action",
-          "skip_execution": false,
-          "conditions": []
+          "description": "Starts the firmware upgrade exactly once and classifies the returned submission contract without monitoring completion.",
+          "display_name": "Start firmware upgrade",
+          "skip_execution": false
         },
         "object_type": "definition_activity",
-        "blocks": [
+        "actions": [
           {
-            "unique_name": "definition_activity_02ZCONS20FIX00af089f762acb1dc5e7bae",
-            "name": "Upgrade firmware",
-            "title": "Upgrade firmware",
-            "type": "logic.condition_block",
+            "unique_name": "definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C",
+            "name": "Cisco Intersight - Start firmware upgrade",
+            "title": "Cisco Intersight - Start firmware upgrade",
+            "type": "workflow.atomic_workflow",
+            "base_type": "subworkflow",
+            "properties": {
+              "atomic": {
+                "atomic_group": "Cisco Intersight"
+              },
+              "continue_on_failure": true,
+              "description": "Invokes the existing atomic exactly once. The atomic validates inputs, target, image, duplicate-upgrade state, readiness, request shape, and the concrete create response. It returns immediately after a valid Intersight resource is accepted and never polls for completion.",
+              "display_name": "Cisco Intersight - Start firmware upgrade",
+              "input": {
+                "variable_workflow_02XOKCY8L72EU4Ct7gaVW8C4Pa5cMvhsQep": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMR5007IVLfM9hDRScyhlxiNmOsN$",
+                "variable_workflow_02XOKCY8L72EV4hVC2itz7f90bDXiyFWcjx": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro$",
+                "variable_workflow_02XOKCY8L72EW72L40EM6CEzqmFQ3yyKK5K": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY$",
+                "variable_workflow_02XOKCY8L72EX1RkGpfzpo5bPLzLwO72huv": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRI481zkWRkl9UrUkQOTsHQ6oXA$",
+                "variable_workflow_02XOKCY8L72EY16ebaEgWbOBKrtxoN1Vj77": "Cisco Repository",
+                "variable_workflow_02XOKCY8L72EZ5xHAMXofX8gFmlRDbvgLyo": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRL7C71KcjtJsNbr5aegGIjGYSw$",
+                "variable_workflow_02XOKCY8L72F11FuIg9iLvGAKsBh8PwNKSO": "",
+                "variable_workflow_02XOKCY8L72F21x4c2y8tMSdq7vU7LuBePF": "",
+                "variable_workflow_02XOKCY8L72F41ABnkoFXs3Tgpx64WaFykc": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMS1EO3HhBXGo3g8UqoOt4bPOhks$",
+                "variable_workflow_02XOKCY8L72F65NtFQOcQHYPgBhSNMIbDgJ": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMS7KW5Rn23xl4MNJI7oE3uTqEtp$",
+                "variable_workflow_02XOKCY8L72F76CTIQR4IHpG9nauQLScMPI": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMSAO01AQ5ekP3CjkqyL2XsJUr3v$",
+                "variable_workflow_02XOKCY8L72F86veqdoyHUqzYOW3qzhK2NE": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMSEIW5z3eTHuxkF1WFdF1XgoIAi$"
+              },
+              "runtime_user": {
+                "target_default": true
+              },
+              "skip_execution": false,
+              "target": {
+                "target_type": "intersight.endpoint",
+                "use_workflow_target": true
+              },
+              "workflow_id": "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH",
+              "workflow_name": "Cisco Intersight - Start firmware upgrade"
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02XP097ZMTQD46Pa3EMdJa1UOITmEjOATFA",
+            "name": "Group",
+            "title": "Classify firmware upgrade atomic result",
+            "type": "logic.group",
             "base_type": "activity",
             "properties": {
-              "continue_on_failure": false,
-              "description": "Upgrade firmware",
-              "display_name": "Upgrade firmware",
-              "skip_execution": false,
-              "condition": {
-                "left_operand": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02ZCONS20FIX00ca8305eb4245303dd5984$",
-                "operator": "eq",
-                "right_operand": "Upgrade firmware"
-              }
+              "continue_on_failure": true,
+              "description": "Checks the returned result and tracking IDs. Distinguishes a new request, installed firmware, an active upgrade and failure without submitting again.",
+              "display_name": "Classify firmware upgrade atomic result",
+              "skip_execution": false
             },
             "object_type": "definition_activity",
             "actions": [
               {
-                "unique_name": "definition_activity_02XP097ZMTK6W4nIvVHiGL0TWVIWXVce27w",
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0XIsepHS9zYbZrx1TArrne",
                 "name": "Group",
-                "title": "Start firmware upgrade",
+                "title": "Prepare serialized input strings",
                 "type": "logic.group",
                 "base_type": "activity",
                 "properties": {
                   "continue_on_failure": false,
-                  "description": "Starts the firmware upgrade exactly once and classifies the returned submission contract without monitoring completion.",
-                  "display_name": "Start firmware upgrade",
+                  "description": "Prepares the selected firmware inputs for submission.",
+                  "display_name": "Prepare serialized input strings",
                   "skip_execution": false
                 },
                 "object_type": "definition_activity",
                 "actions": [
                   {
-                    "unique_name": "definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C",
-                    "name": "Cisco Intersight - Start firmware upgrade",
-                    "title": "Cisco Intersight - Start firmware upgrade",
-                    "type": "workflow.atomic_workflow",
-                    "base_type": "subworkflow",
-                    "properties": {
-                      "atomic": {
-                        "atomic_group": "Cisco Intersight"
-                      },
-                      "continue_on_failure": true,
-                      "description": "Invokes the existing atomic exactly once. The atomic validates inputs, target, image, duplicate-upgrade state, readiness, request shape, and the concrete create response. It returns immediately after a valid Intersight resource is accepted and never polls for completion.",
-                      "display_name": "Cisco Intersight - Start firmware upgrade",
-                      "input": {
-                        "variable_workflow_02XOKCY8L72EU4Ct7gaVW8C4Pa5cMvhsQep": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMR5007IVLfM9hDRScyhlxiNmOsN$",
-                        "variable_workflow_02XOKCY8L72EV4hVC2itz7f90bDXiyFWcjx": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro$",
-                        "variable_workflow_02XOKCY8L72EW72L40EM6CEzqmFQ3yyKK5K": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY$",
-                        "variable_workflow_02XOKCY8L72EX1RkGpfzpo5bPLzLwO72huv": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRI481zkWRkl9UrUkQOTsHQ6oXA$",
-                        "variable_workflow_02XOKCY8L72EY16ebaEgWbOBKrtxoN1Vj77": "Cisco Repository",
-                        "variable_workflow_02XOKCY8L72EZ5xHAMXofX8gFmlRDbvgLyo": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRL7C71KcjtJsNbr5aegGIjGYSw$",
-                        "variable_workflow_02XOKCY8L72F11FuIg9iLvGAKsBh8PwNKSO": "",
-                        "variable_workflow_02XOKCY8L72F21x4c2y8tMSdq7vU7LuBePF": "",
-                        "variable_workflow_02XOKCY8L72F41ABnkoFXs3Tgpx64WaFykc": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMS1EO3HhBXGo3g8UqoOt4bPOhks$",
-                        "variable_workflow_02XOKCY8L72F65NtFQOcQHYPgBhSNMIbDgJ": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMS7KW5Rn23xl4MNJI7oE3uTqEtp$",
-                        "variable_workflow_02XOKCY8L72F76CTIQR4IHpG9nauQLScMPI": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMSAO01AQ5ekP3CjkqyL2XsJUr3v$",
-                        "variable_workflow_02XOKCY8L72F86veqdoyHUqzYOW3qzhK2NE": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMSEIW5z3eTHuxkF1WFdF1XgoIAi$"
-                      },
-                      "runtime_user": {
-                        "target_default": true
-                      },
-                      "skip_execution": false,
-                      "target": {
-                        "target_type": "intersight.endpoint",
-                        "use_workflow_target": true
-                      },
-                      "workflow_id": "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH",
-                      "workflow_name": "Cisco Intersight - Start firmware upgrade"
-                    },
-                    "object_type": "definition_activity"
-                  },
-                  {
-                    "unique_name": "definition_activity_02XP097ZMTQD46Pa3EMdJa1UOITmEjOATFA",
-                    "name": "Group",
-                    "title": "Classify firmware upgrade atomic result",
-                    "type": "logic.group",
-                    "base_type": "activity",
-                    "properties": {
-                      "continue_on_failure": true,
-                      "description": "Checks the returned result and tracking IDs. Distinguishes a new request, installed firmware, an active upgrade and failure without submitting again.",
-                      "display_name": "Classify firmware upgrade atomic result",
-                      "skip_execution": false
-                    },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_02Z3AAXNVAM5J0XIsepHS9zYbZrx1TArrne",
-                        "name": "Group",
-                        "title": "Prepare serialized input strings",
-                        "type": "logic.group",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Prepares the selected firmware inputs for submission.",
-                          "display_name": "Prepare serialized input strings",
-                          "skip_execution": false
-                        },
-                        "object_type": "definition_activity",
-                        "actions": [
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0xq6Z0VQKZRTN6smrzSV1h",
-                            "name": "Set Variables",
-                            "title": "Reset compact text outputs",
-                            "type": "core.set_multiple_variables",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Reset compact text outputs",
-                              "display_name": "Reset compact text outputs",
-                              "skip_execution": false,
-                              "variables_to_update": [
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
-                                  "variable_value_new": ""
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
-                                  "variable_value_new": ""
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
-                                  "variable_value_new": ""
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
-                                  "variable_value_new": ""
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
-                                  "variable_value_new": ""
-                                }
-                              ]
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0d8lG7DqMRYK995BvmVhsh",
-                            "name": "JSONPath Query",
-                            "title": "Convert typed Boolean inputs to text",
-                            "type": "corejava.jsonpathquery",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Prepares the selected Domain options for submission.",
-                              "display_name": "Convert typed Boolean inputs to text",
-                              "skip_execution": false,
-                              "input_json": "{\"arg1\":$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.succeeded$}",
-                              "jsonpath_queries": [
-                                {
-                                  "jsonpath_query": "$.arg1",
-                                  "jsonpath_query_name": "arg1",
-                                  "jsonpath_query_type": "string",
-                                  "set_default_value": false,
-                                  "default_value": "",
-                                  "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
-                                }
-                              ]
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0uGnsoU3DKzDqfIbpilTIT",
-                            "name": "Trim String",
-                            "title": "Trim validation input",
-                            "type": "core.trim_string",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Trim validation input",
-                              "display_name": "Trim validation input",
-                              "skip_execution": false,
-                              "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FB2SWbHrLitH1r33pOWfN8gq$",
-                              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
-                              "trim_leading": true,
-                              "trim_trailing": true,
-                              "continue_on_empty_source_string": true
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0YEEt7NeWphy1OVAjDxom6",
-                            "name": "Trim String",
-                            "title": "Trim validation input",
-                            "type": "core.trim_string",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Trim validation input",
-                              "display_name": "Trim validation input",
-                              "skip_execution": false,
-                              "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FC5jxSq28zDsRALUWd6rcj9a$",
-                              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
-                              "trim_leading": true,
-                              "trim_trailing": true,
-                              "continue_on_empty_source_string": true
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Hr8REpVCFsjlVcw4Ypx2h",
-                            "name": "Trim String",
-                            "title": "Trim validation input",
-                            "type": "core.trim_string",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Trim validation input",
-                              "display_name": "Trim validation input",
-                              "skip_execution": false,
-                              "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FD6jGidJVfqHludVA351HjQE$",
-                              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
-                              "trim_leading": true,
-                              "trim_trailing": true,
-                              "continue_on_empty_source_string": true
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0gXLyXBFZIEP17yUUkOPnj",
-                            "name": "Trim String",
-                            "title": "Trim validation input",
-                            "type": "core.trim_string",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Trim validation input",
-                              "display_name": "Trim validation input",
-                              "skip_execution": false,
-                              "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FE2gpBJF68reaRfWGtPqw6Tw$",
-                              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
-                              "trim_leading": true,
-                              "trim_trailing": true,
-                              "continue_on_empty_source_string": true
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02Z3AAXNVAM5J0aaEZ9a65FlUGa1RoAInT4",
-                            "name": "Set Variables",
-                            "title": "Publish compact text outputs",
-                            "type": "core.set_multiple_variables",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Publish compact text outputs",
-                              "display_name": "Publish compact text outputs",
-                              "skip_execution": false,
-                              "variables_to_update": [
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
-                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0d8lG7DqMRYK995BvmVhsh.output.jsonpath_queries.arg1$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
-                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0uGnsoU3DKzDqfIbpilTIT.output.trimmed$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
-                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0YEEt7NeWphy1OVAjDxom6.output.trimmed$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
-                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Hr8REpVCFsjlVcw4Ypx2h.output.trimmed$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
-                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0gXLyXBFZIEP17yUUkOPnj.output.trimmed$"
-                                }
-                              ]
-                            },
-                            "object_type": "definition_activity"
-                          }
-                        ]
-                      },
-                      {
-                        "unique_name": "definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7",
-                        "name": "Execute Python Script",
-                        "title": "Classify firmware upgrade atomic result",
-                        "type": "python3.script",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": true,
-                          "description": "Checks the returned result and tracking IDs. Distinguishes a new request, installed firmware, an active upgrade and failure without submitting again.",
-                          "display_name": "Classify firmware upgrade atomic result",
-                          "skip_execution": false,
-                          "action_timeout": 180,
-                          "script": "import json\nimport re\nimport sys\nactivitySucceeded = sys.argv[9] == 'true'\natomicStatusCode = sys.argv[10]\natomicStatusMessage = sys.argv[11]\natomicErrorMessage = sys.argv[12]\natomicResultRaw = sys.argv[13]\nfirmwareVersion = sys.argv[6]\ndeviceOrganization = sys.argv[7]\nrequestedTargetName = sys.argv[8]\nresult = None\ntry:\n    candidate = json.loads(atomicResultRaw) if atomicResultRaw else None\n    if isinstance(candidate, dict):\n        result = candidate\nexcept Exception:\n    result = None\noutcome = 'failure'\noutputStatusCode = '502'\noutputStatusMessage = 'Firmware upgrade atomic failed or returned an unusable contract'\noutputErrorMessage = 'The firmware upgrade atomic did not return a usable submission contract. Inspect the atomic execution before retrying; this wrapper never resubmits.'\nrequestAccepted = isinstance(result, dict) and result.get('requestAccepted') is True\ncompleted = isinstance(result, dict) and result.get('completed') is True\natomicState = str(result.get('status') or '') if isinstance(result, dict) else ''\nidentityReady = isinstance(result, dict) and all((isinstance(result.get(key), str) and bool(result.get(key)) for key in ('targetType', 'targetMoid', 'imageMoid', 'createdMoid')))\nif activitySucceeded and result is not None and requestAccepted and identityReady and completed and (atomicState == 'completed') and (atomicStatusCode == '200'):\n    outcome = 'completed'\n    outputStatusCode = '200'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade completed immediately'\n    outputErrorMessage = ''\nelif activitySucceeded and result is not None and requestAccepted and identityReady and (not completed) and (atomicState == 'accepted') and (atomicStatusCode == '202'):\n    outcome = 'accepted'\n    outputStatusCode = '202'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade resource accepted; completion is not monitored'\n    outputErrorMessage = ''\nelif activitySucceeded and result is not None and atomicStatusCode == '200' and result.get('requestAccepted') is False and result.get('newRequestSubmitted') is False and result.get('noOp') is True and result.get('status') in ('already-installed', 'already-in-progress'):\n    installed = result.get('status') == 'already-installed' and result.get('completed') is True and result.get('installedStateVerified') is True\n    existing = result.get('status') == 'already-in-progress' and result.get('completed') is False and result.get('resourceReused') is True and identityReady\n    if installed or existing:\n        outcome = result['status']\n        outputStatusCode = '200'\n        outputStatusMessage = atomicStatusMessage or result.get('message') or 'No new firmware request was submitted'\n        outputErrorMessage = ''\nelif activitySucceeded and result is not None and atomicStatusCode == '200' and result.get('status') == 'already-in-progress' and result.get('submissionReconciled') is True and result.get('submissionAttempted') is True and result.get('newRequestSubmitted') is True and result.get('noOp') is False and result.get('completed') is False and result.get('resourceReused') is True and identityReady:\n    outcome = 'already-in-progress'\n    outputStatusCode = '200'\n    outputStatusMessage = atomicStatusMessage or result.get('message') or 'An active firmware upgrade was found after submission'\n    outputErrorMessage = ''\nelif result is not None:\n    outputStatusCode = atomicStatusCode if re.fullmatch('[45][0-9][0-9]', atomicStatusCode) is not None else '502'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade atomic reported failure'\n    outputErrorMessage = atomicErrorMessage or atomicStatusMessage or 'The firmware upgrade atomic reported failure without an error message. Inspect its Result before retrying.'\nif isinstance(result, dict):\n    result['deviceOrganization'] = deviceOrganization\n    result['requestedTargetName'] = requestedTargetName\n    result['requestedFirmwareVersion'] = firmwareVersion\n    result['wrapperDisposition'] = outcome\n    result['wrapperStatusCode'] = outputStatusCode\n    result['atomicStatusCode'] = atomicStatusCode or None\n    result['atomicActivitySucceeded'] = activitySucceeded\n    result['atomicStatusMessage'] = atomicStatusMessage or None\n    result['atomicErrorMessage'] = atomicErrorMessage or None\n    result['resourceIdentifiersAvailable'] = identityReady\n    if atomicErrorMessage:\n        result['atomicWarning'] = atomicErrorMessage\n    outputResultJson = json.dumps(result, separators=(',', ':'))\nelse:\n    outputResultJson = json.dumps({'status': 'failed', 'requestAccepted': False, 'atomicActivitySucceeded': activitySucceeded, 'atomicStatusCode': atomicStatusCode or None, 'atomicStatusMessage': atomicStatusMessage or None, 'atomicErrorMessage': atomicErrorMessage or None, 'deviceOrganization': deviceOrganization, 'requestedTargetName': requestedTargetName, 'requestedFirmwareVersion': firmwareVersion, 'wrapperDisposition': outcome, 'wrapperStatusCode': outputStatusCode, 'atomicResultRaw': atomicResultRaw or None, 'retryRequiresInspection': True}, separators=(',', ':'))\nhelperReady = outcome in ('failure', 'accepted', 'completed', 'already-installed', 'already-in-progress') and re.fullmatch('[1-5][0-9][0-9]', outputStatusCode) is not None and bool(outputStatusMessage and outputResultJson) and (outcome == 'failure' and bool(outputErrorMessage) or (outcome in ('accepted', 'completed', 'already-installed', 'already-in-progress') and outputErrorMessage == ''))\n\ncreatedMoid, createdResourceType, upgradeStatusMoid = sys.argv[14:17]\nif not isinstance(createdMoid, str) or re.fullmatch('[0-9a-fA-F]{24}', createdMoid) is None or createdResourceType not in ('firmware.Upgrade', 'firmware.ChassisUpgrade', 'firmware.SwitchUpgrade'):\n    createdMoid = createdResourceType = ''\nif not createdMoid or not isinstance(upgradeStatusMoid, str) or re.fullmatch('[0-9a-fA-F]{24}', upgradeStatusMoid) is None:\n    upgradeStatusMoid = ''\n",
-                          "script_arguments": [
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.succeeded$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FB2SWbHrLitH1r33pOWfN8gq$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FC5jxSq28zDsRALUWd6rcj9a$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FD6jGidJVfqHludVA351HjQE$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FE2gpBJF68reaRfWGtPqw6Tw$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRI481zkWRkl9UrUkQOTsHQ6oXA$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
-                            "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX009ec5598919d62a4b35b64$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX00b8fb744dcedf7aab870cf$",
-                            "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX001f99c70a82ed21c1f00d9$"
-                          ],
-                          "script_queries": [
-                            {
-                              "script_query": "outcome",
-                              "script_query_name": "outcome",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "outputStatusCode",
-                              "script_query_name": "outputStatusCode",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "outputStatusMessage",
-                              "script_query_name": "outputStatusMessage",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "outputErrorMessage",
-                              "script_query_name": "outputErrorMessage",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "outputResultJson",
-                              "script_query_name": "outputResultJson",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "helperReady",
-                              "script_query_name": "helperReady",
-                              "script_query_type": "boolean"
-                            },
-                            {
-                              "script_query": "createdMoid",
-                              "script_query_name": "createdMoid",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "createdResourceType",
-                              "script_query_name": "createdResourceType",
-                              "script_query_type": "string"
-                            },
-                            {
-                              "script_query": "upgradeStatusMoid",
-                              "script_query_name": "upgradeStatusMoid",
-                              "script_query_type": "string"
-                            }
-                          ]
-                        },
-                        "object_type": "definition_activity"
-                      }
-                    ]
-                  },
-                  {
-                    "unique_name": "definition_activity_02XP097ZMTTG86Dn3e4nftmOmFnH4TcLoua",
-                    "name": "Condition Block",
-                    "title": "Classification helper failure",
-                    "type": "logic.if_else",
-                    "base_type": "activity",
-                    "properties": {
-                      "continue_on_failure": false,
-                      "description": "Stops if the upgrade outcome cannot be validated.",
-                      "display_name": "Classification helper failure",
-                      "skip_execution": false,
-                      "conditions": []
-                    },
-                    "object_type": "definition_activity",
-                    "blocks": [
-                      {
-                        "unique_name": "definition_activity_02XP097ZMTWJC3LyfsJI9RFDBY1sEMippPX",
-                        "name": "Condition Branch",
-                        "title": "Classification helper failure",
-                        "type": "logic.condition_block",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Handles an unsuccessful or incomplete outcome validation.",
-                          "display_name": "Classification helper failure",
-                          "skip_execution": false,
-                          "condition": {
-                            "left_operand": {
-                              "left_operand": "$activity.definition_activity_02XP097ZMTQD46Pa3EMdJa1UOITmEjOATFA.output.succeeded$",
-                              "operator": "ne",
-                              "right_operand": true
-                            },
-                            "operator": "or",
-                            "right_operand": {
-                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.helperReady$",
-                              "operator": "ne",
-                              "right_operand": true
-                            }
-                          }
-                        },
-                        "object_type": "definition_activity",
-                        "actions": [
-                          {
-                            "unique_name": "definition_activity_02XP097ZMTZMG2UObpd9uOxKJLfcHpt5iQ2",
-                            "name": "Set Variables",
-                            "title": "Set classification helper failure outputs",
-                            "type": "core.set_multiple_variables",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Sets the result, status and available tracking IDs for an unusable classifier contract.",
-                              "display_name": "Set classification helper failure outputs",
-                              "skip_execution": false,
-                              "variables_to_update": [
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-                                  "variable_value_new": "500"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-                                  "variable_value_new": "Firmware result classification failed"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
-                                  "variable_value_new": "The classifier failed or returned an incomplete contract. Inspect both the atomic and classifier executions before retrying; the upgrade might already have started."
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-                                  "variable_value_new": "{\"status\":\"failed\",\"requestAccepted\":null,\"wrapperDisposition\":\"failure\",\"wrapperStatusCode\":\"500\",\"retryRequiresInspection\":true}"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373$",
-                                  "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX009ec5598919d62a4b35b64$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9$",
-                                  "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX00b8fb744dcedf7aab870cf$"
-                                },
-                                {
-                                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2$",
-                                  "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX001f99c70a82ed21c1f00d9$"
-                                }
-                              ]
-                            },
-                            "object_type": "definition_activity"
-                          },
-                          {
-                            "unique_name": "definition_activity_02XP097ZMU2PK6NnAgeJ7h07TTNSnZ73wqr",
-                            "name": "Completed",
-                            "title": "Completed - classification helper failure",
-                            "type": "logic.completed",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Ends this terminal path after the result and available tracking IDs are set.",
-                              "display_name": "Completed - classification helper failure",
-                              "skip_execution": false,
-                              "completion_type": "failed-completed",
-                              "result_message": "Firmware result classification failed"
-                            },
-                            "object_type": "definition_activity"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "unique_name": "definition_activity_02XP097ZMUBYW4YX5S7PChUmu5r9GDvvWSh",
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0xq6Z0VQKZRTN6smrzSV1h",
                     "name": "Set Variables",
-                    "title": "Publish firmware submission outcome",
+                    "title": "Reset compact text outputs",
                     "type": "core.set_multiple_variables",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Returns the result, status message, error details and available upgrade tracking IDs.",
-                      "display_name": "Publish firmware submission outcome",
+                      "description": "Reset compact text outputs",
+                      "display_name": "Reset compact text outputs",
                       "skip_execution": false,
                       "variables_to_update": [
                         {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusCode$"
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
+                          "variable_value_new": ""
                         },
                         {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
+                          "variable_value_new": ""
                         },
                         {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputErrorMessage$"
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
+                          "variable_value_new": ""
                         },
                         {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputResultJson$"
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
+                          "variable_value_new": ""
                         },
                         {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.createdMoid$"
-                        },
-                        {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.createdResourceType$"
-                        },
-                        {
-                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2$",
-                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.upgradeStatusMoid$"
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
+                          "variable_value_new": ""
                         }
                       ]
                     },
                     "object_type": "definition_activity"
                   },
                   {
-                    "unique_name": "definition_activity_02XP097ZMU5SO5W9IBHO6lhYEVjIdOGt6vJ",
-                    "name": "Condition Block",
-                    "title": "Firmware upgrade failed",
-                    "type": "logic.if_else",
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0d8lG7DqMRYK995BvmVhsh",
+                    "name": "JSONPath Query",
+                    "title": "Convert typed Boolean inputs to text",
+                    "type": "corejava.jsonpathquery",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Propagates genuine atomic validation, lookup, readiness, submission, or terminal-status failure.",
-                      "display_name": "Firmware upgrade failed",
+                      "description": "Prepares the selected Domain options for submission.",
+                      "display_name": "Convert typed Boolean inputs to text",
                       "skip_execution": false,
-                      "conditions": []
+                      "input_json": "{\"arg1\":$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.succeeded$}",
+                      "jsonpath_queries": [
+                        {
+                          "jsonpath_query": "$.arg1",
+                          "jsonpath_query_name": "arg1",
+                          "jsonpath_query_type": "string",
+                          "set_default_value": false,
+                          "default_value": "",
+                          "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                        }
+                      ]
                     },
-                    "object_type": "definition_activity",
-                    "blocks": [
-                      {
-                        "unique_name": "definition_activity_02XP097ZMU8VS3VsOTfRTiKr47F5FCgG7Ox",
-                        "name": "Condition Branch",
-                        "title": "Firmware upgrade failed",
-                        "type": "logic.condition_block",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Matches the classifier's failure disposition.",
-                          "display_name": "Firmware upgrade failed",
-                          "skip_execution": false,
-                          "condition": {
-                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
-                            "operator": "eq",
-                            "right_operand": "failure"
-                          }
-                        },
-                        "object_type": "definition_activity",
-                        "actions": [
-                          {
-                            "unique_name": "definition_activity_02XP097ZMUF204FjMuDnY5sawQf0dg417Iw",
-                            "name": "Completed",
-                            "title": "Completed - firmware upgrade failed",
-                            "type": "logic.completed",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Ends this terminal path after the result and available tracking IDs are set.",
-                              "display_name": "Completed - firmware upgrade failed",
-                              "skip_execution": false,
-                              "completion_type": "failed-completed",
-                              "result_message": "Firmware upgrade failed"
-                            },
-                            "object_type": "definition_activity"
-                          }
-                        ]
-                      }
-                    ]
+                    "object_type": "definition_activity"
                   },
                   {
-                    "unique_name": "definition_activity_02XP097ZMUI542bDuLqhU71ToOgtyY3oRE1",
-                    "name": "Condition Block",
-                    "title": "Firmware request accepted or active upgrade found",
-                    "type": "logic.if_else",
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0uGnsoU3DKzDqfIbpilTIT",
+                    "name": "Trim String",
+                    "title": "Trim validation input",
+                    "type": "core.trim_string",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Returns after a new upgrade is accepted or an active upgrade is verified following an unsuccessful submission. The returned IDs can be used to check progress.",
-                      "display_name": "Firmware request accepted or active upgrade found",
+                      "description": "Trim validation input",
+                      "display_name": "Trim validation input",
                       "skip_execution": false,
-                      "conditions": []
+                      "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FB2SWbHrLitH1r33pOWfN8gq$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true
                     },
-                    "object_type": "definition_activity",
-                    "blocks": [
-                      {
-                        "unique_name": "definition_activity_02XP097ZMUL884sqNsI18uAdU9ARF9iTwRH",
-                        "name": "Condition Branch",
-                        "title": "Firmware request accepted or active upgrade found",
-                        "type": "logic.condition_block",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Returns after a new upgrade is accepted or an active upgrade is verified following an unsuccessful submission. The returned IDs can be used to check progress.",
-                          "display_name": "Firmware request accepted or active upgrade found",
-                          "skip_execution": false,
-                          "condition": {
-                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
-                            "operator": "eq",
-                            "right_operand": "accepted"
-                          }
-                        },
-                        "object_type": "definition_activity",
-                        "actions": [
-                          {
-                            "unique_name": "definition_activity_02XP097ZMUS6814W4D6Q4qrjMLjWEzzvh2y",
-                            "name": "Completed",
-                            "title": "Completed - firmware upgrade accepted",
-                            "type": "logic.completed",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Ends this successful accepted path after the result and available tracking IDs are set.",
-                              "display_name": "Completed - firmware upgrade accepted",
-                              "skip_execution": false,
-                              "completion_type": "succeeded",
-                              "result_message": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
-                            },
-                            "object_type": "definition_activity"
-                          }
-                        ]
-                      }
-                    ]
+                    "object_type": "definition_activity"
                   },
                   {
-                    "unique_name": "definition_activity_02XP097ZMUV9C4sgEZV52SeZtibNwEz7NTl",
-                    "name": "Condition Block",
-                    "title": "Firmware upgrade completed or already handled",
-                    "type": "logic.if_else",
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0YEEt7NeWphy1OVAjDxom6",
+                    "name": "Trim String",
+                    "title": "Trim validation input",
+                    "type": "core.trim_string",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Returns successful 200 only when the concrete resource in the create response already reports SUCCESSFUL; no later status was polled.",
-                      "display_name": "Firmware upgrade completed or already handled",
+                      "description": "Trim validation input",
+                      "display_name": "Trim validation input",
                       "skip_execution": false,
-                      "conditions": []
+                      "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FC5jxSq28zDsRALUWd6rcj9a$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true
                     },
-                    "object_type": "definition_activity",
-                    "blocks": [
-                      {
-                        "unique_name": "definition_activity_02XP097ZMUYCG5PdZLucOh0StLzTcFBKSbv",
-                        "name": "Condition Branch",
-                        "title": "Firmware upgrade completed or already handled",
-                        "type": "logic.condition_block",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Matches the classifier's immediate create-response completion disposition.",
-                          "display_name": "Firmware upgrade completed or already handled",
-                          "skip_execution": false,
-                          "condition": {
-                            "left_operand": {
-                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
-                              "operator": "eq",
-                              "right_operand": "completed"
-                            },
-                            "operator": "or",
-                            "right_operand": {
-                              "left_operand": {
-                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
-                                "operator": "eq",
-                                "right_operand": "already-installed"
-                              },
-                              "operator": "or",
-                              "right_operand": {
-                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
-                                "operator": "eq",
-                                "right_operand": "already-in-progress"
-                              }
-                            }
-                          }
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Hr8REpVCFsjlVcw4Ypx2h",
+                    "name": "Trim String",
+                    "title": "Trim validation input",
+                    "type": "core.trim_string",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Trim validation input",
+                      "display_name": "Trim validation input",
+                      "skip_execution": false,
+                      "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FD6jGidJVfqHludVA351HjQE$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0gXLyXBFZIEP17yUUkOPnj",
+                    "name": "Trim String",
+                    "title": "Trim validation input",
+                    "type": "core.trim_string",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Trim validation input",
+                      "display_name": "Trim validation input",
+                      "skip_execution": false,
+                      "source": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FE2gpBJF68reaRfWGtPqw6Tw$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f \u0085\u00a0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u2028\u2029\u202f\u205f\u3000",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0aaEZ9a65FlUGa1RoAInT4",
+                    "name": "Set Variables",
+                    "title": "Publish compact text outputs",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish compact text outputs",
+                      "display_name": "Publish compact text outputs",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0d8lG7DqMRYK995BvmVhsh.output.jsonpath_queries.arg1$"
                         },
-                        "object_type": "definition_activity",
-                        "actions": [
-                          {
-                            "unique_name": "definition_activity_02XP097ZMV4IO7hSq8f5F8QMCyq2kKn4ocj",
-                            "name": "Completed",
-                            "title": "Completed - firmware upgrade completed",
-                            "type": "logic.completed",
-                            "base_type": "activity",
-                            "properties": {
-                              "continue_on_failure": false,
-                              "description": "Ends this immediate create-response completion path after the result and available tracking IDs are set.",
-                              "display_name": "Completed - firmware upgrade completed",
-                              "skip_execution": false,
-                              "completion_type": "succeeded",
-                              "result_message": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
-                            },
-                            "object_type": "definition_activity"
-                          }
-                        ]
-                      }
-                    ]
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0uGnsoU3DKzDqfIbpilTIT.output.trimmed$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0YEEt7NeWphy1OVAjDxom6.output.trimmed$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Hr8REpVCFsjlVcw4Ypx2h.output.trimmed$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0gXLyXBFZIEP17yUUkOPnj.output.trimmed$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7",
+                "name": "Execute Python Script",
+                "title": "Classify firmware upgrade atomic result",
+                "type": "python3.script",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": true,
+                  "description": "Checks the returned result and tracking IDs. Distinguishes a new request, installed firmware, an active upgrade and failure without submitting again.",
+                  "display_name": "Classify firmware upgrade atomic result",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "script": "import json\nimport re\nimport sys\nactivitySucceeded = sys.argv[9] == 'true'\natomicStatusCode = sys.argv[10]\natomicStatusMessage = sys.argv[11]\natomicErrorMessage = sys.argv[12]\natomicResultRaw = sys.argv[13]\nfirmwareVersion = sys.argv[6]\ndeviceOrganization = sys.argv[7]\nrequestedTargetName = sys.argv[8]\nresult = None\ntry:\n    candidate = json.loads(atomicResultRaw) if atomicResultRaw else None\n    if isinstance(candidate, dict):\n        result = candidate\nexcept Exception:\n    result = None\noutcome = 'failure'\noutputStatusCode = '502'\noutputStatusMessage = 'Firmware upgrade atomic failed or returned an unusable contract'\noutputErrorMessage = 'The firmware upgrade atomic did not return a usable submission contract. Inspect the atomic execution before retrying; this wrapper never resubmits.'\nrequestAccepted = isinstance(result, dict) and result.get('requestAccepted') is True\ncompleted = isinstance(result, dict) and result.get('completed') is True\natomicState = str(result.get('status') or '') if isinstance(result, dict) else ''\nidentityReady = isinstance(result, dict) and all((isinstance(result.get(key), str) and bool(result.get(key)) for key in ('targetType', 'targetMoid', 'imageMoid', 'createdMoid')))\nif activitySucceeded and result is not None and requestAccepted and identityReady and completed and (atomicState == 'completed') and (atomicStatusCode == '200'):\n    outcome = 'completed'\n    outputStatusCode = '200'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade completed immediately'\n    outputErrorMessage = ''\nelif activitySucceeded and result is not None and requestAccepted and identityReady and (not completed) and (atomicState == 'accepted') and (atomicStatusCode == '202'):\n    outcome = 'accepted'\n    outputStatusCode = '202'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade resource accepted; completion is not monitored'\n    outputErrorMessage = ''\nelif activitySucceeded and result is not None and atomicStatusCode == '200' and result.get('requestAccepted') is False and result.get('newRequestSubmitted') is False and result.get('noOp') is True and result.get('status') in ('already-installed', 'already-in-progress'):\n    installed = result.get('status') == 'already-installed' and result.get('completed') is True and result.get('installedStateVerified') is True\n    existing = result.get('status') == 'already-in-progress' and result.get('completed') is False and result.get('resourceReused') is True and identityReady\n    if installed or existing:\n        outcome = result['status']\n        outputStatusCode = '200'\n        outputStatusMessage = atomicStatusMessage or result.get('message') or 'No new firmware request was submitted'\n        outputErrorMessage = ''\nelif activitySucceeded and result is not None and atomicStatusCode == '200' and result.get('status') == 'already-in-progress' and result.get('submissionReconciled') is True and result.get('submissionAttempted') is True and result.get('newRequestSubmitted') is True and result.get('noOp') is False and result.get('completed') is False and result.get('resourceReused') is True and identityReady:\n    outcome = 'already-in-progress'\n    outputStatusCode = '200'\n    outputStatusMessage = atomicStatusMessage or result.get('message') or 'An active firmware upgrade was found after submission'\n    outputErrorMessage = ''\nelif result is not None:\n    outputStatusCode = atomicStatusCode if re.fullmatch('[45][0-9][0-9]', atomicStatusCode) is not None else '502'\n    outputStatusMessage = atomicStatusMessage or 'Firmware upgrade atomic reported failure'\n    outputErrorMessage = atomicErrorMessage or atomicStatusMessage or 'The firmware upgrade atomic reported failure without an error message. Inspect its Result before retrying.'\nif isinstance(result, dict):\n    result['deviceOrganization'] = deviceOrganization\n    result['requestedTargetName'] = requestedTargetName\n    result['requestedFirmwareVersion'] = firmwareVersion\n    result['wrapperDisposition'] = outcome\n    result['wrapperStatusCode'] = outputStatusCode\n    result['atomicStatusCode'] = atomicStatusCode or None\n    result['atomicActivitySucceeded'] = activitySucceeded\n    result['atomicStatusMessage'] = atomicStatusMessage or None\n    result['atomicErrorMessage'] = atomicErrorMessage or None\n    result['resourceIdentifiersAvailable'] = identityReady\n    if atomicErrorMessage:\n        result['atomicWarning'] = atomicErrorMessage\n    outputResultJson = json.dumps(result, separators=(',', ':'))\nelse:\n    outputResultJson = json.dumps({'status': 'failed', 'requestAccepted': False, 'atomicActivitySucceeded': activitySucceeded, 'atomicStatusCode': atomicStatusCode or None, 'atomicStatusMessage': atomicStatusMessage or None, 'atomicErrorMessage': atomicErrorMessage or None, 'deviceOrganization': deviceOrganization, 'requestedTargetName': requestedTargetName, 'requestedFirmwareVersion': firmwareVersion, 'wrapperDisposition': outcome, 'wrapperStatusCode': outputStatusCode, 'atomicResultRaw': atomicResultRaw or None, 'retryRequiresInspection': True}, separators=(',', ':'))\nhelperReady = outcome in ('failure', 'accepted', 'completed', 'already-installed', 'already-in-progress') and re.fullmatch('[1-5][0-9][0-9]', outputStatusCode) is not None and bool(outputStatusMessage and outputResultJson) and (outcome == 'failure' and bool(outputErrorMessage) or (outcome in ('accepted', 'completed', 'already-installed', 'already-in-progress') and outputErrorMessage == ''))\n\ncreatedMoid, createdResourceType, upgradeStatusMoid = sys.argv[14:17]\nif not isinstance(createdMoid, str) or re.fullmatch('[0-9a-fA-F]{24}', createdMoid) is None or createdResourceType not in ('firmware.Upgrade', 'firmware.ChassisUpgrade', 'firmware.SwitchUpgrade'):\n    createdMoid = createdResourceType = ''\nif not createdMoid or not isinstance(upgradeStatusMoid, str) or re.fullmatch('[0-9a-fA-F]{24}', upgradeStatusMoid) is None:\n    upgradeStatusMoid = ''\n",
+                  "script_arguments": [
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.succeeded$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FB2SWbHrLitH1r33pOWfN8gq$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FC5jxSq28zDsRALUWd6rcj9a$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FD6jGidJVfqHludVA351HjQE$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02XOKCY8L72FE2gpBJF68reaRfWGtPqw6Tw$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRI481zkWRkl9UrUkQOTsHQ6oXA$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0mxo5556Np39lNBw9S2Klv$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0fARF6p8C7TudDcfyfOiU9$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0oUwxqTl1t7HBXL9hMMvct$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J09P0MuTh41yNJp3mTAFTqN$",
+                    "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.local.variable_workflow_02Z3AAXNVAM5J0TLyn0Z2sEzqYi5qRAjeCZ$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX009ec5598919d62a4b35b64$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX00b8fb744dcedf7aab870cf$",
+                    "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX001f99c70a82ed21c1f00d9$"
+                  ],
+                  "script_queries": [
+                    {
+                      "script_query": "outcome",
+                      "script_query_name": "outcome",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "outputStatusCode",
+                      "script_query_name": "outputStatusCode",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "outputStatusMessage",
+                      "script_query_name": "outputStatusMessage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "outputErrorMessage",
+                      "script_query_name": "outputErrorMessage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "outputResultJson",
+                      "script_query_name": "outputResultJson",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "helperReady",
+                      "script_query_name": "helperReady",
+                      "script_query_type": "boolean"
+                    },
+                    {
+                      "script_query": "createdMoid",
+                      "script_query_name": "createdMoid",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "createdResourceType",
+                      "script_query_name": "createdResourceType",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "upgradeStatusMoid",
+                      "script_query_name": "upgradeStatusMoid",
+                      "script_query_type": "string"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02XP097ZMTTG86Dn3e4nftmOmFnH4TcLoua",
+            "name": "Condition Block",
+            "title": "Classification helper failure",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stops if the upgrade outcome cannot be validated.",
+              "display_name": "Classification helper failure",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02XP097ZMTWJC3LyfsJI9RFDBY1sEMippPX",
+                "name": "Condition Branch",
+                "title": "Classification helper failure",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Handles an unsuccessful or incomplete outcome validation.",
+                  "display_name": "Classification helper failure",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": "$activity.definition_activity_02XP097ZMTQD46Pa3EMdJa1UOITmEjOATFA.output.succeeded$",
+                      "operator": "ne",
+                      "right_operand": true
+                    },
+                    "operator": "or",
+                    "right_operand": {
+                      "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.helperReady$",
+                      "operator": "ne",
+                      "right_operand": true
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02XP097ZMTZMG2UObpd9uOxKJLfcHpt5iQ2",
+                    "name": "Set Variables",
+                    "title": "Set classification helper failure outputs",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Sets the result, status and available tracking IDs for an unusable classifier contract.",
+                      "display_name": "Set classification helper failure outputs",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
+                          "variable_value_new": "500"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
+                          "variable_value_new": "Firmware result classification failed"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
+                          "variable_value_new": "The classifier failed or returned an incomplete contract. Inspect both the atomic and classifier executions before retrying; the upgrade might already have started."
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
+                          "variable_value_new": "{\"status\":\"failed\",\"requestAccepted\":null,\"wrapperDisposition\":\"failure\",\"wrapperStatusCode\":\"500\",\"retryRequiresInspection\":true}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373$",
+                          "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX009ec5598919d62a4b35b64$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9$",
+                          "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX00b8fb744dcedf7aab870cf$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2$",
+                          "variable_value_new": "$activity.definition_activity_02XP097ZMTNA06kBbKf5aOFVNtDChP5Up2C.output.variable_workflow_02Z9OCT19FIX001f99c70a82ed21c1f00d9$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02XP097ZMU2PK6NnAgeJ7h07TTNSnZ73wqr",
+                    "name": "Completed",
+                    "title": "Completed - classification helper failure",
+                    "type": "logic.completed",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Ends this terminal path after the result and available tracking IDs are set.",
+                      "display_name": "Completed - classification helper failure",
+                      "skip_execution": false,
+                      "completion_type": "failed-completed",
+                      "result_message": "Firmware result classification failed"
+                    },
+                    "object_type": "definition_activity"
                   }
                 ]
               }
             ]
           },
           {
-            "unique_name": "definition_activity_02ZCONS20FIX00d90f84584f48b5d98ef04",
-            "name": "Check upgrade status",
-            "title": "Check upgrade status",
-            "type": "logic.condition_block",
+            "unique_name": "definition_activity_02XP097ZMUBYW4YX5S7PChUmu5r9GDvvWSh",
+            "name": "Set Variables",
+            "title": "Publish firmware submission outcome",
+            "type": "core.set_multiple_variables",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": false,
-              "description": "Check upgrade status",
-              "display_name": "Check upgrade status",
+              "description": "Returns the result, status message, error details and available upgrade tracking IDs.",
+              "display_name": "Publish firmware submission outcome",
               "skip_execution": false,
-              "condition": {
-                "left_operand": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02ZCONS20FIX00ca8305eb4245303dd5984$",
-                "operator": "eq",
-                "right_operand": "Check upgrade status"
-              }
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusCode$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputErrorMessage$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputResultJson$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.createdMoid$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.createdResourceType$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.upgradeStatusMoid$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02XP097ZMU5SO5W9IBHO6lhYEVjIdOGt6vJ",
+            "name": "Condition Block",
+            "title": "Firmware upgrade failed",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Propagates genuine atomic validation, lookup, readiness, submission, or terminal-status failure.",
+              "display_name": "Firmware upgrade failed",
+              "skip_execution": false,
+              "conditions": []
             },
             "object_type": "definition_activity",
-            "actions": [
+            "blocks": [
               {
-                "unique_name": "definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269",
-                "name": "Get firmware upgrade status",
-                "title": "Get firmware upgrade status",
-                "type": "workflow.atomic_workflow",
-                "base_type": "subworkflow",
+                "unique_name": "definition_activity_02XP097ZMU8VS3VsOTfRTiKr47F5FCgG7Ox",
+                "name": "Condition Branch",
+                "title": "Firmware upgrade failed",
+                "type": "logic.condition_block",
+                "base_type": "activity",
                 "properties": {
-                  "continue_on_failure": true,
-                  "description": "Get firmware upgrade status",
-                  "display_name": "Get firmware upgrade status",
+                  "continue_on_failure": false,
+                  "description": "Matches the classifier's failure disposition.",
+                  "display_name": "Firmware upgrade failed",
                   "skip_execution": false,
-                  "atomic": {
-                    "atomic_group": "Cisco Intersight"
-                  },
-                  "workflow_id": "definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413",
-                  "input": {
-                    "variable_workflow_02Z9OCT19FIX00fb8cf3f5903617acf4137": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02Z9OCT19FIX003642a8a383d7d8a11c9cd$",
-                    "variable_workflow_02Z9OCT19FIX00b0ac3f3b1970b0e191bb4": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02Z9OCT19FIX00b624e6745e9835e72f1f3$",
-                    "variable_workflow_02Z9OCT19FIX00048ee88d94ec9dd05a9e0": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.input.variable_workflow_02Z9OCT19FIX00365e2559bcd20106b7b3f$"
-                  },
-                  "workflow_name": "Cisco Intersight - Get firmware upgrade status",
-                  "target": {
-                    "target_type": "intersight.endpoint",
-                    "use_workflow_target": true
-                  },
-                  "runtime_user": {
-                    "target_default": true
+                  "condition": {
+                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
+                    "operator": "eq",
+                    "right_operand": "failure"
                   }
                 },
-                "object_type": "definition_activity"
-              },
-              {
-                "unique_name": "definition_activity_02Z9OCT19FIX007f349d37fa430bbaf5f63",
-                "name": "Copy firmware status snapshot outputs",
-                "title": "Copy firmware status snapshot outputs",
-                "type": "core.set_multiple_variables",
-                "base_type": "activity",
-                "properties": {
-                  "continue_on_failure": false,
-                  "description": "Copy firmware status snapshot outputs",
-                  "display_name": "Copy firmware status snapshot outputs",
-                  "skip_execution": false,
-                  "variables_to_update": [
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00de73b4535dece2d0ebbb9$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00740182bc02d49d2c0b80f$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00c0151ee75e1faaf41d51e$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883$"
-                    },
-                    {
-                      "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02Z9OCT19FIX00c2c8c601e4dc19cf3aca7$",
-                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da$"
-                    }
-                  ]
-                },
-                "object_type": "definition_activity"
-              },
-              {
-                "unique_name": "definition_activity_02Z9OCT19FIX00c1e72fbf1bb714041086e",
-                "name": "Handle unavailable status atomic outputs",
-                "title": "Handle unavailable status atomic outputs",
-                "type": "logic.if_else",
-                "base_type": "activity",
-                "properties": {
-                  "continue_on_failure": false,
-                  "description": "Handle unavailable status atomic outputs",
-                  "display_name": "Handle unavailable status atomic outputs",
-                  "skip_execution": false,
-                  "conditions": []
-                },
                 "object_type": "definition_activity",
-                "blocks": [
+                "actions": [
                   {
-                    "unique_name": "definition_activity_02Z9OCT19FIX0048105bc6bb4b5a45cad76",
-                    "name": "Handle unavailable status atomic outputs branch",
-                    "title": "Handle unavailable status atomic outputs branch",
-                    "type": "logic.condition_block",
+                    "unique_name": "definition_activity_02XP097ZMUF204FjMuDnY5sawQf0dg417Iw",
+                    "name": "Completed",
+                    "title": "Completed - firmware upgrade failed",
+                    "type": "logic.completed",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Handle unavailable status atomic outputs branch",
-                      "display_name": "Handle unavailable status atomic outputs branch",
+                      "description": "Ends this terminal path after the result and available tracking IDs are set.",
+                      "display_name": "Completed - firmware upgrade failed",
                       "skip_execution": false,
-                      "condition": {
-                        "left_operand": {
-                          "left_operand": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-                          "operator": "eq",
-                          "right_operand": ""
-                        },
-                        "operator": "or",
-                        "right_operand": {
-                          "left_operand": {
-                            "left_operand": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-                            "operator": "eq",
-                            "right_operand": ""
-                          },
-                          "operator": "or",
-                          "right_operand": {
-                            "left_operand": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-                            "operator": "eq",
-                            "right_operand": ""
-                          }
-                        }
-                      }
+                      "completion_type": "failed-completed",
+                      "result_message": "Firmware upgrade failed"
                     },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_02Z9OCT19FIX00d6170c6c1559b86731e46",
-                        "name": "Publish unavailable status atomic failure",
-                        "title": "Publish unavailable status atomic failure",
-                        "type": "core.set_multiple_variables",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "Publish unavailable status atomic failure",
-                          "display_name": "Publish unavailable status atomic failure",
-                          "skip_execution": false,
-                          "variables_to_update": [
-                            {
-                              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-                              "variable_value_new": "502"
-                            },
-                            {
-                              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-                              "variable_value_new": "Firmware status atomic did not return a usable result"
-                            },
-                            {
-                              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
-                              "variable_value_new": "Inspect this execution and retry the read-only status check."
-                            },
-                            {
-                              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-                              "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
-                            }
-                          ]
-                        },
-                        "object_type": "definition_activity"
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02XP097ZMUI542bDuLqhU71ToOgtyY3oRE1",
+            "name": "Condition Block",
+            "title": "Firmware request accepted or active upgrade found",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Returns after a new upgrade is accepted or an active upgrade is verified following an unsuccessful submission. The returned IDs can be used to check progress.",
+              "display_name": "Firmware request accepted or active upgrade found",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02XP097ZMUL884sqNsI18uAdU9ARF9iTwRH",
+                "name": "Condition Branch",
+                "title": "Firmware request accepted or active upgrade found",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Returns after a new upgrade is accepted or an active upgrade is verified following an unsuccessful submission. The returned IDs can be used to check progress.",
+                  "display_name": "Firmware request accepted or active upgrade found",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
+                    "operator": "eq",
+                    "right_operand": "accepted"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02XP097ZMUS6814W4D6Q4qrjMLjWEzzvh2y",
+                    "name": "Completed",
+                    "title": "Completed - firmware upgrade accepted",
+                    "type": "logic.completed",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Ends this successful accepted path after the result and available tracking IDs are set.",
+                      "display_name": "Completed - firmware upgrade accepted",
+                      "skip_execution": false,
+                      "completion_type": "succeeded",
+                      "result_message": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02XP097ZMUV9C4sgEZV52SeZtibNwEz7NTl",
+            "name": "Condition Block",
+            "title": "Firmware upgrade completed or already handled",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Returns successful 200 only when the concrete resource in the create response already reports SUCCESSFUL; no later status was polled.",
+              "display_name": "Firmware upgrade completed or already handled",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02XP097ZMUYCG5PdZLucOh0StLzTcFBKSbv",
+                "name": "Condition Branch",
+                "title": "Firmware upgrade completed or already handled",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Matches the classifier's immediate create-response completion disposition.",
+                  "display_name": "Firmware upgrade completed or already handled",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
+                      "operator": "eq",
+                      "right_operand": "completed"
+                    },
+                    "operator": "or",
+                    "right_operand": {
+                      "left_operand": {
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
+                        "operator": "eq",
+                        "right_operand": "already-installed"
                       },
-                      {
-                        "unique_name": "definition_activity_02Z9OCT19FIX00247acd60c710a9d456636",
-                        "name": "End unavailable status atomic failure",
-                        "title": "End unavailable status atomic failure",
-                        "type": "logic.completed",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "End unavailable status atomic failure",
-                          "display_name": "End unavailable status atomic failure",
-                          "skip_execution": false,
-                          "completion_type": "failed-completed",
-                          "result_message": "Firmware status lookup failed"
-                        },
-                        "object_type": "definition_activity"
+                      "operator": "or",
+                      "right_operand": {
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outcome$",
+                        "operator": "eq",
+                        "right_operand": "already-in-progress"
                       }
-                    ]
+                    }
                   }
-                ]
-              },
-              {
-                "unique_name": "definition_activity_02Z9OCT19FIX00f04ac1f679ca4cc1b0b04",
-                "name": "Propagate status lookup or upgrade failure",
-                "title": "Propagate status lookup or upgrade failure",
-                "type": "logic.if_else",
-                "base_type": "activity",
-                "properties": {
-                  "continue_on_failure": false,
-                  "description": "Propagate status lookup or upgrade failure",
-                  "display_name": "Propagate status lookup or upgrade failure",
-                  "skip_execution": false,
-                  "conditions": []
                 },
                 "object_type": "definition_activity",
-                "blocks": [
+                "actions": [
                   {
-                    "unique_name": "definition_activity_02Z9OCT19FIX009448fbc860d96cc290184",
-                    "name": "Propagate status lookup or upgrade failure branch",
-                    "title": "Propagate status lookup or upgrade failure branch",
-                    "type": "logic.condition_block",
+                    "unique_name": "definition_activity_02XP097ZMV4IO7hSq8f5F8QMCyq2kKn4ocj",
+                    "name": "Completed",
+                    "title": "Completed - firmware upgrade completed",
+                    "type": "logic.completed",
                     "base_type": "activity",
                     "properties": {
                       "continue_on_failure": false,
-                      "description": "Propagate status lookup or upgrade failure branch",
-                      "display_name": "Propagate status lookup or upgrade failure branch",
+                      "description": "Ends this immediate create-response completion path after the result and available tracking IDs are set.",
+                      "display_name": "Completed - firmware upgrade completed",
                       "skip_execution": false,
-                      "condition": {
-                        "left_operand": "$activity.definition_activity_02Z9OCT19FIX002b1f8885b9a8958a48269.output.succeeded$",
-                        "operator": "ne",
-                        "right_operand": true
-                      }
+                      "completion_type": "succeeded",
+                      "result_message": "$activity.definition_activity_02Z3AAXNVAM5J0Xr99sP4dzby0tAgyCedA7.output.script_queries.outputStatusMessage$"
                     },
-                    "object_type": "definition_activity",
-                    "actions": [
-                      {
-                        "unique_name": "definition_activity_02Z9OCT19FIX00cd8c386314478028f0732",
-                        "name": "End failed firmware status check",
-                        "title": "End failed firmware status check",
-                        "type": "logic.completed",
-                        "base_type": "activity",
-                        "properties": {
-                          "continue_on_failure": false,
-                          "description": "End failed firmware status check",
-                          "display_name": "End failed firmware status check",
-                          "skip_execution": false,
-                          "completion_type": "failed-completed",
-                          "result_message": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$"
-                        },
-                        "object_type": "definition_activity"
-                      }
-                    ]
+                    "object_type": "definition_activity"
                   }
                 ]
-              },
-              {
-                "unique_name": "definition_activity_02Z9OCT19FIX005e7e57b68d70c60df3594",
-                "name": "End firmware status check",
-                "title": "End firmware status check",
-                "type": "logic.completed",
-                "base_type": "activity",
-                "properties": {
-                  "continue_on_failure": false,
-                  "description": "End firmware status check",
-                  "display_name": "End firmware status check",
-                  "skip_execution": false,
-                  "completion_type": "succeeded",
-                  "result_message": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$"
-                },
-                "object_type": "definition_activity"
               }
             ]
           }
         ]
-      },
-      {
-        "unique_name": "definition_activity_02ZCONS20FIX00adfcbc24737f2cc8497b3",
-        "name": "Report unsupported firmware action",
-        "title": "Report unsupported firmware action",
-        "type": "core.set_multiple_variables",
-        "base_type": "activity",
-        "properties": {
-          "continue_on_failure": false,
-          "description": "Report unsupported firmware action",
-          "display_name": "Report unsupported firmware action",
-          "skip_execution": false,
-          "variables_to_update": [
-            {
-              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB$",
-              "variable_value_new": "400"
-            },
-            {
-              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$",
-              "variable_value_new": "Choose Action Upgrade firmware or Check upgrade status."
-            },
-            {
-              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu$",
-              "variable_value_new": "Unsupported firmware action. No request was sent."
-            },
-            {
-              "variable_to_update": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS$",
-              "variable_value_new": "{\"status\":\"invalid-input\",\"submissionAttempted\":false,\"monitoringPerformed\":false}"
-            }
-          ]
-        },
-        "object_type": "definition_activity"
-      },
-      {
-        "unique_name": "definition_activity_02ZCONS20FIX00e6c610f246b7f0b312d82",
-        "name": "End unsupported firmware action",
-        "title": "End unsupported firmware action",
-        "type": "logic.completed",
-        "base_type": "activity",
-        "properties": {
-          "continue_on_failure": false,
-          "description": "End unsupported firmware action",
-          "display_name": "End unsupported firmware action",
-          "skip_execution": false,
-          "completion_type": "failed-completed",
-          "result_message": "$workflow.definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE.output.variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr$"
-        },
-        "object_type": "definition_activity"
       }
     ],
     "categories": [
@@ -1536,12 +1038,10 @@
     ]
   },
   "atomic_workflows": [
-    "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH",
-    "definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413"
+    "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH"
   ],
   "dependent_workflows": [
-    "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH",
-    "definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413"
+    "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH"
   ],
   "categories": {
     "category_02XOKCY8L6Z5M6cXFxME8ifMx23VYaCm3qv": {
