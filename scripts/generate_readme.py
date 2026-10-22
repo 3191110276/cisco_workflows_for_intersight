@@ -18,9 +18,14 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 START_MARKER = "<!-- BEGIN GENERATED WORKFLOW CATALOG -->"
 END_MARKER = "<!-- END GENERATED WORKFLOW CATALOG -->"
-# Changed dependencies require fresh cloud validation; historical passes do not
-# certify the current native migration.
-VALIDATED_WORKFLOW_IDS = frozenset()
+# Validation marks requested by the user on October 22, 2026.
+VALIDATED_WORKFLOW_IDS = frozenset({
+    'definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS',
+    'definition_workflow_02XP0RZYOPW3K5uNxe1lxsEKYitrytU7ppX',
+    'definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn',
+    'definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq',
+    'definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd',
+})
 INTERNAL_HELPER_IDS = frozenset({
     "definition_workflow_02Z3AAXNVAM5J0U5WnISWfQYpmPub7WNRcv",  # JSON field facts
     "definition_workflow_02Z3AAXNVAM5J0xM0D2y8biAn7z2tVtcqCp",  # Error formatter
