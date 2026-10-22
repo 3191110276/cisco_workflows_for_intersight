@@ -25,22 +25,6 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "default",
-          "scope": "input",
-          "name": "Device Organization",
-          "type": "datatype.string",
-          "description": "Exact Cisco Intersight organization used by the atomic to resolve the firmware target.",
-          "is_required": true,
-          "display_on_wizard": false,
-          "is_invisible": false,
-          "variable_string_format": "text"
-        },
-        "unique_name": "variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
           "value": "",
           "scope": "input",
           "name": "Target Name",
@@ -52,6 +36,22 @@
           "variable_string_format": "text"
         },
         "unique_name": "variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "default",
+          "scope": "input",
+          "name": "Device Organization",
+          "type": "datatype.string",
+          "description": "Exact Cisco Intersight organization used by the atomic to resolve the firmware target.",
+          "is_required": true,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro",
         "object_type": "variable_workflow"
       },
       {
@@ -987,7 +987,32 @@
     ],
     "categories": [
       "category_02XOKCY8L6Z5M6cXFxME8ifMx23VYaCm3qv"
-    ]
+    ],
+    "metadata": {
+      "ui_metadata": {
+        "variable_order": {
+          "export": {
+            "inputs": [
+              "variable_workflow_02XP097ZMR5007IVLfM9hDRScyhlxiNmOsN",
+              "variable_workflow_02XP097ZMRE9C0bi6pO5ISuM2ZGJ95EOtDY",
+              "variable_workflow_02XP097ZMRAEG0RtLK75VPJkOePrwQ2Uvro",
+              "variable_workflow_02XP097ZMRI481zkWRkl9UrUkQOTsHQ6oXA",
+              "variable_workflow_02XP097ZMRL7C71KcjtJsNbr5aegGIjGYSw",
+              "variable_workflow_02XP097ZMS1EO3HhBXGo3g8UqoOt4bPOhks"
+            ],
+            "outputs": [
+              "variable_workflow_02XP097ZMSQVC5NPPZVadB0iGowVZ8EPuSB",
+              "variable_workflow_02XP097ZMSTYG5ZEBXf3NFJdUXqyicwx7hr",
+              "variable_workflow_02XP097ZMSX1K3tEom7RolyCVL9LHOSBZlu",
+              "variable_workflow_02XP097ZMT04O77VYzU0ubBjmfCEgK4bDfS",
+              "variable_workflow_02Z9OCT19FIX00fbae44f886148ebd5e373",
+              "variable_workflow_02Z9OCT19FIX00dbd4a8a900593fdb76ba9",
+              "variable_workflow_02Z9OCT19FIX00ca4eb61ac623b2e1eb6d2"
+            ]
+          }
+        }
+      }
+    }
   },
   "atomic_workflows": [
     "definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH"

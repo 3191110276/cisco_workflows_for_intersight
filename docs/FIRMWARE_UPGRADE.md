@@ -3,8 +3,8 @@
 **Cisco Intersight - Firmware upgrade** starts an upgrade for one Server,
 UCS-X Chassis or IMM Domain. It has no Action selector or status-check action.
 
-Supply **Target Type**, **Device Organization**, **Target Name** and
-**Firmware Version**. Optional inputs are **Server Upgrade Mode** and
+Supply **Target Type**, **Target Name**, **Device Organization** and
+**Firmware Version**. Target Type and Target Name are the first two inputs. Optional inputs are **Server Upgrade Mode** and
 **Enable Fabric Evacuation**.
 Keep options for other target types at their defaults.
 The workflow always sets **Skip Wait for I/O Connectivity** to **false**, so
