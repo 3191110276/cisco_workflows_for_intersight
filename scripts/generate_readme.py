@@ -25,6 +25,9 @@ VALIDATED_WORKFLOW_IDS = frozenset({
     'definition_workflow_02XOKCY8L727P2I1njlKiu2ypB4dBBGZlFn',
     'definition_workflow_02XOKCY8L72750O16dIOUNNs1cg8DXkf6Hq',
     'definition_workflow_02XOKCY8L727B7OOCP8uxBfJRJdbgfhqpkd',
+    'definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE',
+    'definition_workflow_02XOKCY8L727N6XRbUaRIiFCevRevuGnIMH',
+    'definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413',
 })
 INTERNAL_HELPER_IDS = frozenset({
     "definition_workflow_02Z3AAXNVAM5J0U5WnISWfQYpmPub7WNRcv",  # JSON field facts

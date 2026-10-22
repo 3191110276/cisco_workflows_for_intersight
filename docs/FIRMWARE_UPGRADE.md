@@ -39,7 +39,8 @@ remains available for direct callers. Its wording is also updated; re-import it
 only if you use it separately. It is not required by the upgrade workflow.
 
 Local graph regression tests use API stubs and do not execute hardware upgrades.
-This revision still requires import and runtime validation in Cisco Workflows.
+The firmware workflow, Start firmware upgrade atomic and Get firmware upgrade
+status atomic are marked validated at the user’s request on October 22, 2026.
 
 For removal of the I/O wait, PSU and PDB FPGA inputs alone, re-import
 **Firmware upgrade**. The submission atomic is unchanged.
