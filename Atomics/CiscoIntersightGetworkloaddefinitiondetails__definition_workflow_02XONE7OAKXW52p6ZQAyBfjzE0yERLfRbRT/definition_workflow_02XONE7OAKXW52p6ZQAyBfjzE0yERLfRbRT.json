@@ -160,6 +160,491 @@
         },
         "unique_name": "variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf",
         "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Build organization-scoped definition family route - status",
+          "type": "datatype.string",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0PoctPH27fVEQ63YUQ1dPa",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Build organization-scoped definition family route - statusCode",
+          "type": "datatype.integer",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0fp1isV4G0F0D8N93eTp2w",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Build organization-scoped definition family route - message",
+          "type": "datatype.string",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J09tkM5zBabpf0Zwd6d750o",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Build organization-scoped definition family route - resultJson",
+          "type": "datatype.string",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0I2Hnlqbjq9GFSrAD3FG4h",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Build organization-scoped definition family route - ready",
+          "type": "datatype.boolean",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0OztGNjkh1g8jerVksWqGh",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native 15: definitionUrl",
+          "type": "datatype.string",
+          "description": "Native activity state for Build organization-scoped definition family route.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0L1xMfpGHDyvm7Z53TjA0Y",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - status",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - status",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0RrcWuIY95g6i0lg9FrwrZ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Inspect exact organization match - statusCode",
+          "type": "datatype.integer",
+          "description": "Inspect exact organization match - statusCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0YsOMySiiNKupsIu7yWVGD",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - message",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J00sKCEJoqYPOWYfC8fGwqQ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - resultJson",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - resultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0BeG0npqktbUF2lxgkEBcd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Inspect exact organization match - ready",
+          "type": "datatype.boolean",
+          "description": "Inspect exact organization match - ready",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Yn7J2TMSc2iTEmDytzScW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationMoid",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationMoid",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "OData literal escape result 223",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0hNTALLGoD7VkiB0Nh8vXP",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline scope returned",
+          "type": "datatype.boolean",
+          "description": "Organization inline scope returned",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "local",
+          "name": "Organization inline 1 Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Organization resolver did not complete",
+          "scope": "local",
+          "name": "Organization inline 2 Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Organization resolution did not complete.",
+          "scope": "local",
+          "name": "Organization inline 3 Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}",
+          "scope": "local",
+          "name": "Organization inline 4 Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Organization inline 5 Organization Moid",
+          "type": "datatype.string",
+          "description": "Organization Moid",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{}",
+          "scope": "local",
+          "name": "Organization inline 6 Organization JSON",
+          "type": "datatype.string",
+          "description": "Organization JSON",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J05Zd58QE2lpGkU4NcDM9KA",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Organization inline 7 HTTP Status Code",
+          "type": "datatype.integer",
+          "description": "HTTP Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline 8 Request Succeeded",
+          "type": "datatype.boolean",
+          "description": "Request Succeeded",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline 9 Inspection Complete",
+          "type": "datatype.boolean",
+          "description": "Inspection Complete",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Organization inline 10 Organization Status",
+          "type": "datatype.string",
+          "description": "Organization Status",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native definition selector status",
+          "type": "datatype.string",
+          "description": "Native definition selector status",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0P2ZH9aR5fM5oZLO2NI2Pi",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Native definition selector statusCode",
+          "type": "datatype.integer",
+          "description": "Native definition selector statusCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0U7eYU5B54L0SXQx9exSu3",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native definition selector message",
+          "type": "datatype.string",
+          "description": "Native definition selector message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native definition selector resultJson",
+          "type": "datatype.string",
+          "description": "Native definition selector resultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ilJybsf5WFtEIpKRw7hVr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Native definition selector ready",
+          "type": "datatype.boolean",
+          "description": "Native definition selector ready",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0NBBhV8F0qI8RMojMdl4DW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native definition selector organizationUrl",
+          "type": "datatype.string",
+          "description": "Native definition selector organizationUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0nizWH0hIval03fIIiM0yC",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native definition selector ordered errors",
+          "type": "datatype.string",
+          "description": "Native definition selector ordered errors",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry",
+        "object_type": "variable_workflow"
       }
     ],
     "actions": [
@@ -180,78 +665,599 @@
         "actions": [
           {
             "unique_name": "definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6",
-            "name": "Execute Python Script",
+            "name": "Group",
             "title": "Validate definition selector and build lookup routes",
-            "type": "python3.script",
+            "type": "logic.group",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": true,
-              "description": "Validates the exact-name and version selector, escapes OData string literals, and creates organization and family lookup URLs.",
+              "description": "Uses native Trim String and Replace String for argument-derived preparation, followed by the existing validator. A failed native activity stops this group before later API operations.",
               "display_name": "Validate definition selector and build lookup routes",
-              "skip_execution": false,
-              "action_timeout": 180,
-              "script": "import json\nimport re\nimport sys\n\norganization = sys.argv[1].strip()\ndefinitionName = sys.argv[2].strip()\nselection = sys.argv[3].strip()\ntry:\n    requestedVersion = int(sys.argv[4])\nexcept Exception:\n    requestedVersion = 0\nincludeBlueprints = str(sys.argv[5]).strip().lower() == \"true\"\nerrors = []\nif not organization:\n    errors.append(\"Workload Organization must not be blank.\")\nif not re.fullmatch(r\"[A-Za-z0-9][A-Za-z0-9 _-]{0,31}\", definitionName):\n    errors.append(\"Workload Definition Name does not meet the public-schema pattern.\")\nif selection not in (\"Preferred\", \"Latest\", \"Specific\"):\n    errors.append(\"Version Selection must be Preferred, Latest, or Specific.\")\nif selection == \"Specific\" and requestedVersion < 1:\n    errors.append(\"Workload Definition Version must be at least 1 for Specific selection.\")\nstatus, statusCode = (\"invalid\", 400) if errors else (\"ok\", 200)\nmessage = \" \".join(errors) if errors else \"Definition selector is valid.\"\nresultJson = json.dumps({\"error\": message}, separators=(\",\", \":\")) if errors else \"{}\"\nready = True\norganizationUrl = \"/api/v1/organization/Organizations?$filter=Name eq '%s'&$select=Moid,Name\" % organization.replace(\"'\", \"''\")\n",
-              "script_arguments": [
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWA3Gruu8nKtNavCNUkNY6yLU$",
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWB00UGNmYKHVRpjQylFh6wQB$",
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWC5gubmCQCix7QdD4iaOCjWC$",
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWD1eKVFskJjgnrFbleTGoJCj$",
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWE2NE1N2mxIj1021AUUzakI8$"
-              ],
-              "script_queries": [
-                {
-                  "script_query": "status",
-                  "script_query_name": "status",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "statusCode",
-                  "script_query_name": "statusCode",
-                  "script_query_type": "integer"
-                },
-                {
-                  "script_query": "message",
-                  "script_query_name": "message",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "resultJson",
-                  "script_query_name": "resultJson",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "ready",
-                  "script_query_name": "ready",
-                  "script_query_type": "boolean"
-                },
-                {
-                  "script_query": "organizationUrl",
-                  "script_query_name": "organizationUrl",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "definitionName",
-                  "script_query_name": "definitionName",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "selection",
-                  "script_query_name": "selection",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "requestedVersion",
-                  "script_query_name": "requestedVersion",
-                  "script_query_type": "integer"
-                },
-                {
-                  "script_query": "includeBlueprints",
-                  "script_query_name": "includeBlueprints",
-                  "script_query_type": "boolean"
-                }
-              ]
+              "skip_execution": false
             },
-            "object_type": "definition_activity"
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0nSzsl9GmoOWJcjB1UVZjq",
+                "name": "Trim String",
+                "title": "Trim Workload Organization",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+                  "display_name": "Trim Workload Organization",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWA3Gruu8nKtNavCNUkNY6yLU$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx",
+                "name": "Trim String",
+                "title": "Trim Workload Definition Name",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+                  "display_name": "Trim Workload Definition Name",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWB00UGNmYKHVRpjQylFh6wQB$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y",
+                "name": "Trim String",
+                "title": "Trim Version Selection",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+                  "display_name": "Trim Version Selection",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWC5gubmCQCix7QdD4iaOCjWC$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J01Zdu6MPfnNTP7PF4pH0dR",
+                "name": "Group",
+                "title": "Escape Workload Organization for OData",
+                "type": "logic.group",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Inline guarded OData literal escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+                  "display_name": "Escape Workload Organization for OData",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0seQAiEAN8QtYmiKjrYjq0",
+                    "name": "Set Variables",
+                    "title": "Initialize fresh literal result",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Initialize fresh literal result",
+                      "display_name": "Initialize fresh literal result",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0hNTALLGoD7VkiB0Nh8vXP$",
+                          "variable_value_new": ""
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J016Q6k4X4OzPODL5FIZbLa",
+                    "name": "Condition",
+                    "title": "Replace only nonempty source",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Replace only nonempty source",
+                      "display_name": "Replace only nonempty source",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0YtiwLbxdsmozC6iqa5Gbe",
+                        "name": "Condition Branch",
+                        "title": "Replace only nonempty source branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace only nonempty source branch",
+                          "display_name": "Replace only nonempty source branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0nSzsl9GmoOWJcjB1UVZjq.output.trimmed$",
+                            "operator": "ne",
+                            "right_operand": ""
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0ZXnqM2DL4UUcak0Ik1SlC",
+                            "name": "Replace String",
+                            "title": "Replace nonempty literal text",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Replace nonempty literal text",
+                              "display_name": "Replace nonempty literal text",
+                              "skip_execution": false,
+                              "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0nSzsl9GmoOWJcjB1UVZjq.output.trimmed$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "'",
+                                  "replacement_string": "''"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0jmidwJ1s4ccIDY7ZftIMR",
+                            "name": "Set Variables",
+                            "title": "Publish inline replaced text",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Publish inline replaced text",
+                              "display_name": "Publish inline replaced text",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0hNTALLGoD7VkiB0Nh8vXP$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0ZXnqM2DL4UUcak0Ik1SlC.output.result_string$"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0hPtbDQ1yPiKXbGpVdnCbQ",
+                "name": "Group",
+                "title": "Validate definition selector and build lookup routes",
+                "type": "logic.group",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Native fixed nonblank/name/selection/version checks preserve ordered diagnostics and typed Integer/Boolean facts. Existing native Trim and escaping remain; failures stop before any API request.",
+                  "display_name": "Validate definition selector and build lookup routes",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0dUMFFmqDHPCE2qnRLwY0W",
+                    "name": "Set Variables",
+                    "title": "Initialize native definition selector outputs",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Initialize native definition selector outputs",
+                      "display_name": "Initialize native definition selector outputs",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0P2ZH9aR5fM5oZLO2NI2Pi$",
+                          "variable_value_new": "ok"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0U7eYU5B54L0SXQx9exSu3$",
+                          "variable_value_new": 200
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P$",
+                          "variable_value_new": "Definition selector is valid."
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ilJybsf5WFtEIpKRw7hVr$",
+                          "variable_value_new": "{}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0NBBhV8F0qI8RMojMdl4DW$",
+                          "variable_value_new": true
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nizWH0hIval03fIIiM0yC$",
+                          "variable_value_new": "/api/v1/organization/Organizations?$filter=Name eq '$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0hNTALLGoD7VkiB0Nh8vXP$'&$select=Moid,Name"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                          "variable_value_new": ""
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0h3OfROUeSA5AAqYlSwSyy",
+                    "name": "Condition",
+                    "title": "Require nonblank normalized organization",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Require nonblank normalized organization",
+                      "display_name": "Require nonblank normalized organization",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0SgGw7oHc91cGjuGbZloGX",
+                        "name": "Condition Branch",
+                        "title": "Require nonblank normalized organization branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Require nonblank normalized organization branch",
+                          "display_name": "Require nonblank normalized organization branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0nSzsl9GmoOWJcjB1UVZjq.output.trimmed$",
+                            "operator": "eq",
+                            "right_operand": ""
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0LSpmIqknO1hvxaYpSZ7el",
+                            "name": "Set Variables",
+                            "title": "Append ordered fixed selector diagnostic",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append ordered fixed selector diagnostic",
+                              "display_name": "Append ordered fixed selector diagnostic",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$Workload Organization must not be blank. "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0njdivfWl2pxXToXiMNHHJ",
+                    "name": "Condition",
+                    "title": "Require schema-valid normalized definition name",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Require schema-valid normalized definition name",
+                      "display_name": "Require schema-valid normalized definition name",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0yuDvXkMAxdUb7c3WIz2WH",
+                        "name": "Condition Branch",
+                        "title": "Require schema-valid normalized definition name branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Require schema-valid normalized definition name branch",
+                          "display_name": "Require schema-valid normalized definition name branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$",
+                            "operator": "mregex",
+                            "right_operand": "^(?![A-Za-z0-9][A-Za-z0-9 _-]{0,31}$)[\\s\\S]*$"
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0UMOzgkxv3WrB8Gvx3sz3Q",
+                            "name": "Set Variables",
+                            "title": "Append ordered fixed selector diagnostic",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append ordered fixed selector diagnostic",
+                              "display_name": "Append ordered fixed selector diagnostic",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$Workload Definition Name does not meet the public-schema pattern. "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0rJlrRy2td3uNjjfQI0O6h",
+                    "name": "Condition",
+                    "title": "Require known version selection",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Require known version selection",
+                      "display_name": "Require known version selection",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0nUXI2FSjhUfwxVXsMqwuK",
+                        "name": "Condition Branch",
+                        "title": "Require known version selection branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Require known version selection branch",
+                          "display_name": "Require known version selection branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": {
+                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                                "operator": "ne",
+                                "right_operand": "Preferred"
+                              },
+                              "operator": "and",
+                              "right_operand": {
+                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                                "operator": "ne",
+                                "right_operand": "Latest"
+                              }
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                              "operator": "ne",
+                              "right_operand": "Specific"
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0zUEDJxEPetdbk0mb8zRwI",
+                            "name": "Set Variables",
+                            "title": "Append ordered fixed selector diagnostic",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append ordered fixed selector diagnostic",
+                              "display_name": "Append ordered fixed selector diagnostic",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$Version Selection must be Preferred, Latest, or Specific. "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J03Y9OGNEzf7Vq2B6OeLTSv",
+                    "name": "Condition",
+                    "title": "Require positive version for Specific",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Require positive version for Specific",
+                      "display_name": "Require positive version for Specific",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0jPGT5yz93ExYETt5emfQH",
+                        "name": "Condition Branch",
+                        "title": "Require positive version for Specific branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Require positive version for Specific branch",
+                          "display_name": "Require positive version for Specific branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                              "operator": "eq",
+                              "right_operand": "Specific"
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWD1eKVFskJjgnrFbleTGoJCj$",
+                              "operator": "lt",
+                              "right_operand": 1
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0sVMJp5qkfjblad9pMZC7H",
+                            "name": "Set Variables",
+                            "title": "Append ordered fixed selector diagnostic",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append ordered fixed selector diagnostic",
+                              "display_name": "Append ordered fixed selector diagnostic",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$Workload Definition Version must be at least 1 for Specific selection. "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0wepngyRKAuGCoNjHECIVw",
+                    "name": "Trim String",
+                    "title": "Trim final fixed selector diagnostics",
+                    "type": "core.trim_string",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Trim final fixed selector diagnostics",
+                      "display_name": "Trim final fixed selector diagnostics",
+                      "skip_execution": false,
+                      "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fTayc78oGMDkFelAlbiry$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0pjyf9GNOOIpck1X1jXGOC",
+                    "name": "Condition",
+                    "title": "Publish native selector rejection",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish native selector rejection",
+                      "display_name": "Publish native selector rejection",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0CcvfByddmvICALylxErbb",
+                        "name": "Condition Branch",
+                        "title": "Publish native selector rejection branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish native selector rejection branch",
+                          "display_name": "Publish native selector rejection branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0wepngyRKAuGCoNjHECIVw.output.trimmed$",
+                            "operator": "ne",
+                            "right_operand": ""
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0FlgPORcD9JekLu22bzKst",
+                            "name": "Set Variables",
+                            "title": "Set complete native selector rejection",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Set complete native selector rejection",
+                              "display_name": "Set complete native selector rejection",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0P2ZH9aR5fM5oZLO2NI2Pi$",
+                                  "variable_value_new": "invalid"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0U7eYU5B54L0SXQx9exSu3$",
+                                  "variable_value_new": 400
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0wepngyRKAuGCoNjHECIVw.output.trimmed$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ilJybsf5WFtEIpKRw7hVr$",
+                                  "variable_value_new": "{\"error\":\"$activity.definition_activity_02Z3AAXNVAM5J0wepngyRKAuGCoNjHECIVw.output.trimmed$\"}"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXWM1NAbe78jJ788VdVPPrTL5T",
@@ -288,14 +1294,14 @@
                       },
                       "operator": "and",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.ready$",
+                        "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0NBBhV8F0qI8RMojMdl4DW$",
                         "operator": "eq",
                         "right_operand": true
                       }
                     },
                     "operator": "and",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.status$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0P2ZH9aR5fM5oZLO2NI2Pi$",
                       "operator": "ne",
                       "right_operand": "ok"
                     }
@@ -317,19 +1323,19 @@
                       "variables_to_update": [
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW70IDiw7iQ2eujGCkBF9G52N$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.statusCode$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0U7eYU5B54L0SXQx9exSu3$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW840ZlH1q0Yh7oQQ6t1DArvM$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.resultJson$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ilJybsf5WFtEIpKRw7hVr$"
                         }
                       ]
                     },
@@ -347,7 +1353,7 @@
                       "display_name": "Completed - definition selector preparation rejected",
                       "skip_execution": false,
                       "completion_type": "failed-completed",
-                      "result_message": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.message$"
+                      "result_message": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yh6KeRiooP365OysKm58P$"
                     },
                     "object_type": "definition_activity"
                   }
@@ -372,7 +1378,7 @@
                     },
                     "operator": "or",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.ready$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0NBBhV8F0qI8RMojMdl4DW$",
                       "operator": "ne",
                       "right_operand": true
                     }
@@ -451,28 +1457,890 @@
         "actions": [
           {
             "unique_name": "definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw",
-            "name": "Generic Cisco Intersight API Request",
+            "name": "Group",
             "title": "Get workload organization",
-            "type": "intersight.api_request",
+            "type": "logic.group",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": true,
-              "description": "Reads the exact Cisco Intersight organization by its OData-escaped name. A generic request is used because no purpose-built atomic for this operation is included in the export. Replace this generic request with a supported purpose-built atomic when one becomes available.",
+              "description": "Resolves this exact organization through the shared resolver, inheriting the selected Intersight target. Request success and HTTP status are propagated separately from validation outcomes.",
               "display_name": "Get workload organization",
-              "skip_execution": false,
-              "action_timeout": 180,
-              "api_method": "GET",
-              "api_url": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.organizationUrl$",
-              "content_type": "application/json",
-              "endpoint": "primary",
-              "runtime_user": {
-                "target_default": true
-              },
-              "target": {
-                "use_workflow_target": true
-              }
+              "skip_execution": false
             },
-            "object_type": "definition_activity"
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu",
+                "name": "Trim String",
+                "title": "Prepare exact organization name for shared lookup",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+                  "display_name": "Prepare exact organization name for shared lookup",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWA3Gruu8nKtNavCNUkNY6yLU$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J04eRNQ2IqtzRZAnusv3Fx3",
+                "name": "Group",
+                "title": "Resolve organization through shared atomic",
+                "type": "logic.group",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": true,
+                  "description": "Embedded exact organization resolution with private return gates, fresh defaults, original HTTP status, sanitized details and strict identity validation.",
+                  "display_name": "Resolve organization through shared atomic",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0ZY5vU8xswu0hd7rLfh0Zr",
+                    "name": "Set Variables",
+                    "title": "Initialize fresh organization resolution scope",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Initialize fresh organization resolution scope",
+                      "display_name": "Initialize fresh organization resolution scope",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                          "variable_value_new": false
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                          "variable_value_new": 500
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$",
+                          "variable_value_new": "Organization resolver did not complete"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$",
+                          "variable_value_new": "Organization resolution did not complete."
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$",
+                          "variable_value_new": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl$",
+                          "variable_value_new": ""
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J05Zd58QE2lpGkU4NcDM9KA$",
+                          "variable_value_new": "{}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                          "variable_value_new": 0
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
+                          "variable_value_new": false
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2$",
+                          "variable_value_new": false
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                          "variable_value_new": "helper-failure"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J05ASBasqSEd0wwd57p99Wx",
+                    "name": "Set Variables",
+                    "title": "Initialize complete organization output contract",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Initialize complete organization output contract",
+                      "display_name": "Initialize complete organization output contract",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                          "variable_value_new": 500
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$",
+                          "variable_value_new": "Organization resolver did not complete"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$",
+                          "variable_value_new": "Organization resolution did not complete."
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$",
+                          "variable_value_new": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl$",
+                          "variable_value_new": ""
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J05Zd58QE2lpGkU4NcDM9KA$",
+                          "variable_value_new": "{}"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                          "variable_value_new": 0
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
+                          "variable_value_new": false
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2$",
+                          "variable_value_new": false
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                          "variable_value_new": "helper-failure"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0hBXX0Lpv9zzaqhedFyxpz",
+                    "name": "Trim String",
+                    "title": "Check surrounding organization whitespace",
+                    "type": "core.trim_string",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": true,
+                      "description": "Check surrounding organization whitespace",
+                      "display_name": "Check surrounding organization whitespace",
+                      "skip_execution": false,
+                      "source": "$activity.definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu.output.trimmed$",
+                      "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                      "trim_leading": true,
+                      "trim_trailing": true,
+                      "continue_on_empty_source_string": true,
+                      "action_timeout": 180
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0JfCqYL8Xw2J8sr34DcpEV",
+                    "name": "Condition",
+                    "title": "Reject invalid exact organization input",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Reject invalid exact organization input",
+                      "display_name": "Reject invalid exact organization input",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0B6jzWahm2g00WK03TwqTs",
+                        "name": "Condition Branch",
+                        "title": "Reject invalid exact organization input branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Reject invalid exact organization input branch",
+                          "display_name": "Reject invalid exact organization input branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0hBXX0Lpv9zzaqhedFyxpz.output.succeeded$",
+                              "operator": "ne",
+                              "right_operand": true
+                            },
+                            "operator": "or",
+                            "right_operand": {
+                              "left_operand": {
+                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0hBXX0Lpv9zzaqhedFyxpz.output.succeeded$",
+                                "operator": "eq",
+                                "right_operand": true
+                              },
+                              "operator": "and",
+                              "right_operand": {
+                                "left_operand": {
+                                  "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu.output.trimmed$",
+                                  "operator": "ne",
+                                  "right_operand": "$activity.definition_activity_02Z3AAXNVAM5J0hBXX0Lpv9zzaqhedFyxpz.output.trimmed$"
+                                },
+                                "operator": "or",
+                                "right_operand": {
+                                  "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu.output.trimmed$",
+                                  "operator": "mregex",
+                                  "right_operand": "(?s)^(?:$|.{65,}|.*[\\x00-\\x1f&?#%].*)$"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0bmfjER3RQnABipW0NP2WV",
+                            "name": "Set Variables",
+                            "title": "Set invalid organization input outputs",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Set invalid organization input outputs",
+                              "display_name": "Set invalid organization input outputs",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                  "variable_value_new": 400
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$",
+                                  "variable_value_new": "Organization input is invalid"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$",
+                                  "variable_value_new": "Provide an exact 1-64 character organization name without surrounding whitespace, controls or URL query delimiters, and Identifier Format URL-safe or Hex24."
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                                  "variable_value_new": "invalid-response"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$",
+                                  "variable_value_new": "{\"status\":\"invalid-input\",\"error\":\"Organization name or identifier format is invalid\"}"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0qIYeGn9ZBlWSmKCXVkQnr",
+                            "name": "Set Variables",
+                            "title": "Return from organization resolution scope",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Return from organization resolution scope",
+                              "display_name": "Return from organization resolution scope",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                  "variable_value_new": true
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0TuFLiEnJhMRECHljM3ufn",
+                    "name": "Condition",
+                    "title": "Continue only while organization scope has not returned",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Continue only while organization scope has not returned",
+                      "display_name": "Continue only while organization scope has not returned",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0xM1Hxd7lHIPIGqlZPe905",
+                        "name": "Condition Branch",
+                        "title": "Continue only while organization scope has not returned branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Continue only while organization scope has not returned branch",
+                          "display_name": "Continue only while organization scope has not returned branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                            "operator": "eq",
+                            "right_operand": false
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0u393qzrRbvQYv0mEzddt3",
+                            "name": "Replace String",
+                            "title": "Escape organization name for OData",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "The preceding exact-name guard rejects empty/invalid input before this native apostrophe replacement executes.",
+                              "display_name": "Escape organization name for OData",
+                              "skip_execution": false,
+                              "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu.output.trimmed$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "'",
+                                  "replacement_string": "''"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw",
+                            "name": "Intersight API Request",
+                            "title": "Get exact organization once",
+                            "type": "intersight.api_request",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": true,
+                              "description": "One exact-name read with all-pages Count and a two-row bound. The shared resolver owns this generic request so callers do not duplicate lookup rules.",
+                              "display_name": "Get exact organization once",
+                              "skip_execution": false,
+                              "action_timeout": 180,
+                              "api_method": "GET",
+                              "api_url": "/api/v1/organization/Organizations?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0u393qzrRbvQYv0mEzddt3.output.result_string$'&$select=Moid,Name,ObjectType,ClassId&$inlinecount=allpages&$top=2",
+                              "content_type": "application/json",
+                              "endpoint": "primary",
+                              "runtime_user": {
+                                "target_default": true
+                              },
+                              "target": {
+                                "use_workflow_target": true
+                              }
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0EtZXJNNo5ZUXqacEo95yP",
+                            "name": "Set Variables",
+                            "title": "Retain underlying organization request evidence",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Retain underlying organization request evidence",
+                              "display_name": "Retain underlying organization request evidence",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw.output.status_code$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw.output.succeeded$"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa",
+                            "name": "Execute Python Script",
+                            "title": "Validate typed organization envelope and identity",
+                            "type": "python3.script",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": true,
+                              "description": "Strict JSON type/cardinality/identity checks and bounded, sanitized API error response validation share one activity so the resolver can fit when embedded in atomics. Native steps retain exact input guards, escaping, GET, output publication and HTTP fallback if this activity fails. No credential access or API calls occur in Python.",
+                              "display_name": "Validate typed organization envelope and identity",
+                              "skip_execution": false,
+                              "action_timeout": 180,
+                              "script": "import json\nimport re\nimport sys\n\n# HTTP evidence is independent from strict organization identity inspection.\n# The connector contract supplies an integral HTTP status and Boolean success.\ntry:\n    httpStatus = int(sys.argv[4])\nexcept (ValueError, TypeError):\n    httpStatus = 0\nrequestSucceeded = sys.argv[5].strip().lower() == \"true\"\nif not requestSucceeded or httpStatus != 200:\n    statusCode = httpStatus if 300 <= httpStatus < 600 else 502\n    lookupStatus = \"api-failure\"\n    message = \"Organization lookup API request failed\"\n    errorMessage = \"The organization request failed or returned a non-200 response.\"\n    organizationMoid, organizationJson, inspectionComplete = \"\", \"{}\", False\n    safeCode, safeMessage = \"\", \"\"\n    try:\n        payload = json.loads(sys.argv[1])\n        # Preserve the native String projection used by the old safe allowlists.\n        def text(value):\n            return value if isinstance(value, str) else json.dumps(value, separators=(\",\", \":\"), ensure_ascii=False)\n        code = text(payload[\"Code\"]) if isinstance(payload, dict) and \"Code\" in payload else \"\"\n        detail = text(payload[\"Message\"]) if isinstance(payload, dict) and \"Message\" in payload else \"\"\n        if re.fullmatch(r\"[A-Za-z0-9_.:-]{1,128}\", code):\n            safeCode = code\n        if re.fullmatch(r\"[A-Za-z0-9 _.,:()/+\\-]{1,500}\", detail) and not re.search(r\"authorization|password|secret|token|api.?key|bearer|https?://\", detail, re.IGNORECASE):\n            safeMessage = detail\n    except Exception:\n        pass\n    if safeMessage:\n        errorMessage = safeMessage\n    resultJson = json.dumps({\"status\":\"api-failure\", \"upstreamStatus\":httpStatus, \"Code\":safeCode, \"Message\":safeMessage}, separators=(\",\", \":\"))\nelse:\n    import json\n    import re\n    import sys\n    statusCode, lookupStatus, message = 502, \"invalid-response\", \"Organization response is invalid\"\n    organizationMoid, organizationJson = \"\", \"{}\"\n    inspectionComplete = False\n    try:\n        payload = json.loads(sys.argv[1])\n        if not isinstance(payload, dict): raise ValueError(\"Organization response must be an object\")\n        count, rows = payload.get(\"Count\"), payload.get(\"Results\")\n        if isinstance(count, bool) or not isinstance(count, int) or count < 0: raise ValueError(\"Count must be a nonnegative integer\")\n        if not isinstance(rows, list): raise ValueError(\"Results must be an array\")\n        if count != len(rows): raise ValueError(\"Count and Results length differ; the bounded page is incomplete\")\n        if count > 2: raise ValueError(\"Count exceeds the two-row lookup bound\")\n        if count == 0: statusCode, lookupStatus, message = 404, \"not-found\", \"No organization matched the exact requested name\"\n        elif count != 1: statusCode, lookupStatus, message = 409, \"ambiguous\", \"More than one organization matched the exact requested name\"\n        else:\n            item = rows[0]\n            if not isinstance(item, dict) or item.get(\"Name\") != sys.argv[2]: raise ValueError(\"Organization Name does not match exactly\")\n            if item.get(\"ObjectType\") != \"organization.Organization\" or item.get(\"ClassId\") != \"organization.Organization\": raise ValueError(\"Organization discriminators do not match\")\n            moid = item.get(\"Moid\")\n            pattern = r\"[0-9a-fA-F]{24}\" if sys.argv[3] == \"Hex24\" else r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\"\n            if not isinstance(moid, str) or re.fullmatch(pattern, moid) is None: raise ValueError(\"Organization Moid is missing or malformed\")\n            organizationMoid = moid\n            projected = {key:item[key] for key in (\"Moid\", \"Name\", \"ObjectType\", \"ClassId\")}\n            organizationJson = json.dumps(projected, separators=(\",\", \":\"))\n            resultJson = json.dumps({\"Count\":1,\"Results\":[projected]}, separators=(\",\", \":\"))\n            statusCode, lookupStatus, message = 200, \"exact\", \"Organization resolved exactly\"\n        inspectionComplete = True\n    except Exception as exc:\n        statusCode, lookupStatus, message, inspectionComplete = 502, \"invalid-response\", str(exc), True\n    errorMessage = \"\" if statusCode == 200 else message\n    if statusCode != 200: resultJson = json.dumps({\"status\":lookupStatus,\"error\":message}, separators=(\",\", \":\"))\n",
+                              "script_arguments": [
+                                "$activity.definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw.output.response_body$",
+                                "$activity.definition_activity_02Z3AAXNVAM5J0cMiQ4cvKkkelFWp1MFvOu.output.trimmed$",
+                                "URL-safe",
+                                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                                "$activity.definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw.output.succeeded$"
+                              ],
+                              "script_queries": [
+                                {
+                                  "script_query": "statusCode",
+                                  "script_query_name": "statusCode",
+                                  "script_query_type": "integer"
+                                },
+                                {
+                                  "script_query": "lookupStatus",
+                                  "script_query_name": "lookupStatus",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "message",
+                                  "script_query_name": "message",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "organizationMoid",
+                                  "script_query_name": "organizationMoid",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "organizationJson",
+                                  "script_query_name": "organizationJson",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "resultJson",
+                                  "script_query_name": "resultJson",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "errorMessage",
+                                  "script_query_name": "errorMessage",
+                                  "script_query_type": "string"
+                                },
+                                {
+                                  "script_query": "inspectionComplete",
+                                  "script_query_name": "inspectionComplete",
+                                  "script_query_type": "boolean"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0eXFy9nrc0JLw71tcp2Acq",
+                            "name": "Condition",
+                            "title": "Stop if organization validation did not execute",
+                            "type": "logic.if_else",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Stop if organization validation did not execute",
+                              "display_name": "Stop if organization validation did not execute",
+                              "skip_execution": false,
+                              "conditions": []
+                            },
+                            "object_type": "definition_activity",
+                            "blocks": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J02hdauQ97zhoiL5PBdv58q",
+                                "name": "Condition Branch",
+                                "title": "Stop if organization validation did not execute branch",
+                                "type": "logic.condition_block",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Stop if organization validation did not execute branch",
+                                  "display_name": "Stop if organization validation did not execute branch",
+                                  "skip_execution": false,
+                                  "condition": {
+                                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.succeeded$",
+                                    "operator": "ne",
+                                    "right_operand": true
+                                  }
+                                },
+                                "object_type": "definition_activity",
+                                "actions": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0TKwwG4ssx2zUMNJlHGY8d",
+                                    "name": "Condition",
+                                    "title": "Keep HTTP failure when response validation cannot run",
+                                    "type": "logic.if_else",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Keep HTTP failure when response validation cannot run",
+                                      "display_name": "Keep HTTP failure when response validation cannot run",
+                                      "skip_execution": false,
+                                      "conditions": []
+                                    },
+                                    "object_type": "definition_activity",
+                                    "blocks": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0DRMZLc8uomrIkP8pB8t9f",
+                                        "name": "Condition Branch",
+                                        "title": "Keep HTTP failure when response validation cannot run branch",
+                                        "type": "logic.condition_block",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Keep HTTP failure when response validation cannot run branch",
+                                          "display_name": "Keep HTTP failure when response validation cannot run branch",
+                                          "skip_execution": false,
+                                          "condition": {
+                                            "left_operand": {
+                                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0ScdL28tfOwIcGXcL7ICdw.output.succeeded$",
+                                              "operator": "ne",
+                                              "right_operand": true
+                                            },
+                                            "operator": "or",
+                                            "right_operand": {
+                                              "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                                              "operator": "ne",
+                                              "right_operand": 200
+                                            }
+                                          }
+                                        },
+                                        "object_type": "definition_activity",
+                                        "actions": [
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0paysBA5BnrRl8oCWGDDw2",
+                                            "name": "Set Variables",
+                                            "title": "Set safe organization API fallback",
+                                            "type": "core.set_multiple_variables",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Set safe organization API fallback",
+                                              "display_name": "Set safe organization API fallback",
+                                              "skip_execution": false,
+                                              "variables_to_update": [
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                                  "variable_value_new": 502
+                                                },
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$",
+                                                  "variable_value_new": "Organization lookup API request failed"
+                                                },
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$",
+                                                  "variable_value_new": "The organization request failed or returned a non-200 response."
+                                                },
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                                                  "variable_value_new": "api-failure"
+                                                },
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$",
+                                                  "variable_value_new": "{\"status\":\"api-failure\",\"upstreamStatus\":$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$,\"Code\":\"\",\"Message\":\"\"}"
+                                                }
+                                              ]
+                                            },
+                                            "object_type": "definition_activity"
+                                          },
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0mnCputr5B3KJSAWref9yA",
+                                            "name": "Condition",
+                                            "title": "Keep bounded original organization HTTP failure",
+                                            "type": "logic.if_else",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Keep bounded original organization HTTP failure",
+                                              "display_name": "Keep bounded original organization HTTP failure",
+                                              "skip_execution": false,
+                                              "conditions": []
+                                            },
+                                            "object_type": "definition_activity",
+                                            "blocks": [
+                                              {
+                                                "unique_name": "definition_activity_02Z3AAXNVAM5J0Y7XlKabBXa3eHXuJPQwj5",
+                                                "name": "Condition Branch",
+                                                "title": "Keep bounded original organization HTTP failure branch",
+                                                "type": "logic.condition_block",
+                                                "base_type": "activity",
+                                                "properties": {
+                                                  "continue_on_failure": false,
+                                                  "description": "Keep bounded original organization HTTP failure branch",
+                                                  "display_name": "Keep bounded original organization HTTP failure branch",
+                                                  "skip_execution": false,
+                                                  "condition": {
+                                                    "left_operand": {
+                                                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                                                      "operator": "gte",
+                                                      "right_operand": 300
+                                                    },
+                                                    "operator": "and",
+                                                    "right_operand": {
+                                                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
+                                                      "operator": "lt",
+                                                      "right_operand": 600
+                                                    }
+                                                  }
+                                                },
+                                                "object_type": "definition_activity",
+                                                "actions": [
+                                                  {
+                                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0ihRDWXSWpQ5U5erTmm0FZ",
+                                                    "name": "Set Variables",
+                                                    "title": "Copy original organization HTTP failure",
+                                                    "type": "core.set_multiple_variables",
+                                                    "base_type": "activity",
+                                                    "properties": {
+                                                      "continue_on_failure": false,
+                                                      "description": "Copy original organization HTTP failure",
+                                                      "display_name": "Copy original organization HTTP failure",
+                                                      "skip_execution": false,
+                                                      "variables_to_update": [
+                                                        {
+                                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "object_type": "definition_activity"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J06Q1KXYetd0kDk3reF8oTd",
+                                    "name": "Set Variables",
+                                    "title": "Return from organization resolution scope",
+                                    "type": "core.set_multiple_variables",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Return from organization resolution scope",
+                                      "display_name": "Return from organization resolution scope",
+                                      "skip_execution": false,
+                                      "variables_to_update": [
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                          "variable_value_new": true
+                                        }
+                                      ]
+                                    },
+                                    "object_type": "definition_activity"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J06YcfVDYennoZjZSDHvZgm",
+                            "name": "Condition",
+                            "title": "Continue only while organization scope has not returned",
+                            "type": "logic.if_else",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Continue only while organization scope has not returned",
+                              "display_name": "Continue only while organization scope has not returned",
+                              "skip_execution": false,
+                              "conditions": []
+                            },
+                            "object_type": "definition_activity",
+                            "blocks": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0RmAUqEOdyAbyl8RIrFD9V",
+                                "name": "Condition Branch",
+                                "title": "Continue only while organization scope has not returned branch",
+                                "type": "logic.condition_block",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Continue only while organization scope has not returned branch",
+                                  "display_name": "Continue only while organization scope has not returned branch",
+                                  "skip_execution": false,
+                                  "condition": {
+                                    "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                    "operator": "eq",
+                                    "right_operand": false
+                                  }
+                                },
+                                "object_type": "definition_activity",
+                                "actions": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0rzgSy5y75wTXcpsvZq03t",
+                                    "name": "Set Variables",
+                                    "title": "Publish exact organization resolution contract",
+                                    "type": "core.set_multiple_variables",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Publish exact organization resolution contract",
+                                      "display_name": "Publish exact organization resolution contract",
+                                      "skip_execution": false,
+                                      "variables_to_update": [
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.statusCode$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.lookupStatus$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.message$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.errorMessage$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.organizationMoid$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J05Zd58QE2lpGkU4NcDM9KA$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.organizationJson$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.resultJson$"
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2$",
+                                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0WW3gq7ZSAcmrjt9jm8AHa.output.script_queries.inspectionComplete$"
+                                        }
+                                      ]
+                                    },
+                                    "object_type": "definition_activity"
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0PRWiJI0YMy81erLLCanqd",
+                                    "name": "Condition",
+                                    "title": "Stop when organization identity is not exact",
+                                    "type": "logic.if_else",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Stop when organization identity is not exact",
+                                      "display_name": "Stop when organization identity is not exact",
+                                      "skip_execution": false,
+                                      "conditions": []
+                                    },
+                                    "object_type": "definition_activity",
+                                    "blocks": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0a1pBQ1vVIpdN4g5gbyRLY",
+                                        "name": "Condition Branch",
+                                        "title": "Stop when organization identity is not exact branch",
+                                        "type": "logic.condition_block",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Stop when organization identity is not exact branch",
+                                          "display_name": "Stop when organization identity is not exact branch",
+                                          "skip_execution": false,
+                                          "condition": {
+                                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                            "operator": "ne",
+                                            "right_operand": 200
+                                          }
+                                        },
+                                        "object_type": "definition_activity",
+                                        "actions": [
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0r4A6taJhgyzLgwJv1x9mF",
+                                            "name": "Set Variables",
+                                            "title": "Return from organization resolution scope",
+                                            "type": "core.set_multiple_variables",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Return from organization resolution scope",
+                                              "display_name": "Return from organization resolution scope",
+                                              "skip_execution": false,
+                                              "variables_to_update": [
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                                  "variable_value_new": true
+                                                }
+                                              ]
+                                            },
+                                            "object_type": "definition_activity"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Xk6te4z0WDhGnvudxBdJ4",
+                                    "name": "Condition",
+                                    "title": "Continue only while organization scope has not returned",
+                                    "type": "logic.if_else",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Continue only while organization scope has not returned",
+                                      "display_name": "Continue only while organization scope has not returned",
+                                      "skip_execution": false,
+                                      "conditions": []
+                                    },
+                                    "object_type": "definition_activity",
+                                    "blocks": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J00L26mSsEjm49D9sSl0arp",
+                                        "name": "Condition Branch",
+                                        "title": "Continue only while organization scope has not returned branch",
+                                        "type": "logic.condition_block",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Continue only while organization scope has not returned branch",
+                                          "display_name": "Continue only while organization scope has not returned branch",
+                                          "skip_execution": false,
+                                          "condition": {
+                                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                            "operator": "eq",
+                                            "right_operand": false
+                                          }
+                                        },
+                                        "object_type": "definition_activity",
+                                        "actions": [
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0zbNmGiFd27flI8NBWJImi",
+                                            "name": "Set Variables",
+                                            "title": "Return from organization resolution scope",
+                                            "type": "core.set_multiple_variables",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Return from organization resolution scope",
+                                              "display_name": "Return from organization resolution scope",
+                                              "skip_execution": false,
+                                              "variables_to_update": [
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0dCELJOYsUtjGaVJ4lLWvy$",
+                                                  "variable_value_new": true
+                                                }
+                                              ]
+                                            },
+                                            "object_type": "definition_activity"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXWS1Wr85IU3YWSXTVI9zWLnZE",
@@ -502,7 +2370,7 @@
                   "skip_execution": false,
                   "condition": {
                     "left_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.succeeded$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
                       "operator": "ne",
                       "right_operand": true
                     },
@@ -510,13 +2378,13 @@
                     "right_operand": {
                       "left_operand": {
                         "left_operand": {
-                          "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.succeeded$",
+                          "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
                           "operator": "eq",
                           "right_operand": true
                         },
                         "operator": "and",
                         "right_operand": {
-                          "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.status_code$",
+                          "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
                           "operator": "lt",
                           "right_operand": 1
                         }
@@ -525,13 +2393,13 @@
                       "right_operand": {
                         "left_operand": {
                           "left_operand": {
-                            "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.succeeded$",
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0IrBXtTHIvniqgpgHbrUHj$",
                             "operator": "eq",
                             "right_operand": true
                           },
                           "operator": "and",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.status_code$",
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
                             "operator": "gt",
                             "right_operand": 0
                           }
@@ -539,13 +2407,13 @@
                         "operator": "and",
                         "right_operand": {
                           "left_operand": {
-                            "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.status_code$",
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
                             "operator": "lt",
                             "right_operand": 200
                           },
                           "operator": "or",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.status_code$",
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0tsjSWMzUXXmrSrLujQBhU$",
                             "operator": "gte",
                             "right_operand": 300
                           }
@@ -582,11 +2450,81 @@
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.response_body$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$"
                         }
                       ]
                     },
                     "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Q8PLAABDj9nYAiR0Nfh3J",
+                    "name": "Condition",
+                    "title": "Preserve shared organization failure details",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Preserve shared organization failure details",
+                      "display_name": "Preserve shared organization failure details",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0jUExryskEeUItqr507sem",
+                        "name": "Condition Branch",
+                        "title": "Preserve shared organization failure details branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Preserve shared organization failure details branch",
+                          "display_name": "Preserve shared organization failure details branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                            "operator": "mregex",
+                            "right_operand": "^(?:api-failure|invalid-response|helper-failure|not-found|ambiguous)$"
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0HIEesw0qKLHjFk9utjc0s",
+                            "name": "Set Variables",
+                            "title": "Copy complete shared organization failure contract",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Copy complete shared organization failure contract",
+                              "display_name": "Copy complete shared organization failure contract",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW70IDiw7iQ2eujGCkBF9G52N$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW840ZlH1q0Yh7oQQ6t1DArvM$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "unique_name": "definition_activity_02XONE7OAKXWQ64ROlDZrfqCs1w31Ai4Rio",
@@ -610,55 +2548,205 @@
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY",
-            "name": "Execute Python Script",
+            "name": "Group",
             "title": "Inspect exact organization match",
-            "type": "python3.script",
+            "type": "logic.group",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": true,
-              "description": "Parses the organization response, enforces exact-one cardinality, and returns the selected Moid.",
+              "description": "Uses native Trim String for argument-derived preparation, followed by the existing validator. A failed native activity stops this group before later API operations.",
               "display_name": "Inspect exact organization match",
-              "skip_execution": false,
-              "action_timeout": 180,
-              "script": "import json\nimport sys\n\nstatus = \"ok\"\nstatusCode = 200\nmessage = \"Organization resolved\"\nresultJson = \"{}\"\nready = False\norganizationMoid = \"\"\ntry:\n    body = json.loads(sys.argv[1])\n    rows = body.get(\"Results\") if isinstance(body, dict) else None\n    if not isinstance(rows, list):\n        raise ValueError(\"Organization response does not contain a Results array.\")\n    expectedName = sys.argv[2].strip()\n    if len(rows) != 1:\n        status = \"not-found\" if len(rows) == 0 else \"conflict\"\n        statusCode = 404 if len(rows) == 0 else 409\n        message = \"Organization lookup must return exactly one result; received %d.\" % len(rows)\n        resultJson = json.dumps({\"error\": message, \"resultCount\": len(rows)}, separators=(\",\", \":\"))\n    elif rows[0].get(\"Name\") != expectedName:\n        status = \"identity-mismatch\"\n        statusCode = 409\n        message = \"Organization response does not preserve the exact requested Name.\"\n        resultJson = json.dumps({\"error\": message}, separators=(\",\", \":\"))\n    else:\n        organizationMoid = str(rows[0].get(\"Moid\") or \"\")\n        if not organizationMoid:\n            raise ValueError(\"The exact organization result has no Moid.\")\n        resultJson = json.dumps({\"organization\": rows[0]}, separators=(\",\", \":\"))\n    ready = True\nexcept Exception as exc:\n    status = \"malformed\"\n    statusCode = 502\n    message = str(exc)\n    resultJson = json.dumps({\"error\": message}, separators=(\",\", \":\"))\n    ready = True\n",
-              "script_arguments": [
-                "$activity.definition_activity_02XONE7OAKXWO43hGOX5sIGNwBwSpTJUHsw.output.response_body$",
-                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWA3Gruu8nKtNavCNUkNY6yLU$"
-              ],
-              "script_queries": [
-                {
-                  "script_query": "status",
-                  "script_query_name": "status",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "statusCode",
-                  "script_query_name": "statusCode",
-                  "script_query_type": "integer"
-                },
-                {
-                  "script_query": "message",
-                  "script_query_name": "message",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "resultJson",
-                  "script_query_name": "resultJson",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "ready",
-                  "script_query_name": "ready",
-                  "script_query_type": "boolean"
-                },
-                {
-                  "script_query": "organizationMoid",
-                  "script_query_name": "organizationMoid",
-                  "script_query_type": "string"
-                }
-              ]
+              "skip_execution": false
             },
-            "object_type": "definition_activity"
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0AbM4rQ3r0bZci6Br59z1l",
+                "name": "Trim String",
+                "title": "Trim Workload Organization",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+                  "display_name": "Trim Workload Organization",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "source": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWA3Gruu8nKtNavCNUkNY6yLU$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0QuppCFTzO8Rb5h7Dbsb3l",
+                "name": "Group",
+                "title": "Inspect exact organization match",
+                "type": "logic.group",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Adapts the shared resolver output to this workflow's existing organization-state labels using native conditions and variables. Typed response validation is owned by the shared resolver.",
+                  "display_name": "Inspect exact organization match",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J08VJvylaPiTZEUnEMGo1nU",
+                    "name": "Condition",
+                    "title": "Require a complete exact shared organization",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Require a complete exact shared organization",
+                      "display_name": "Require a complete exact shared organization",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0SywuMzmWAd7vJZeIsK53W",
+                        "name": "Condition Branch",
+                        "title": "Require a complete exact shared organization branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Require a complete exact shared organization branch",
+                          "display_name": "Require a complete exact shared organization branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": {
+                                "left_operand": {
+                                  "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0nmakbmiBv8GDQJKlL5R47$",
+                                  "operator": "ne",
+                                  "right_operand": "exact"
+                                },
+                                "operator": "or",
+                                "right_operand": {
+                                  "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2$",
+                                  "operator": "ne",
+                                  "right_operand": true
+                                }
+                              },
+                              "operator": "or",
+                              "right_operand": {
+                                "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$",
+                                "operator": "ne",
+                                "right_operand": 200
+                              }
+                            },
+                            "operator": "or",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl$",
+                              "operator": "eq",
+                              "right_operand": ""
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0ylT2ZteuBPMnIvwgZwgD7",
+                            "name": "Set Variables",
+                            "title": "Publish shared organization resolution failure",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Publish shared organization resolution failure",
+                              "display_name": "Publish shared organization resolution failure",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW70IDiw7iQ2eujGCkBF9G52N$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW840ZlH1q0Yh7oQQ6t1DArvM$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ULW6OS20L6xqR42HdXfyv$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
+                                  "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0MvFqS7OiTs9JP9fNRhGRz",
+                            "name": "Completed",
+                            "title": "Shared organization resolution was not exact",
+                            "type": "logic.completed",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Shared organization resolution was not exact",
+                              "display_name": "Shared organization resolution was not exact",
+                              "skip_execution": false,
+                              "completion_type": "failed-completed",
+                              "result_message": "Shared organization resolution was not exact"
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0cwy4BU0dnMszKeAbLJA1f",
+                    "name": "Set Variables",
+                    "title": "Publish exact organization contract",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish exact organization contract",
+                      "display_name": "Publish exact organization contract",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0RrcWuIY95g6i0lg9FrwrZ$",
+                          "variable_value_new": "ok"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0YsOMySiiNKupsIu7yWVGD$",
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0f5TzWR54Wkg9hSI40ZVOU$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J00sKCEJoqYPOWYfC8fGwqQ$",
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Aff4W9SE8eT4YdUODN8Qv$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0BeG0npqktbUF2lxgkEBcd$",
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0y9O4FhccEiDLfxhdcKDA2$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yn7J2TMSc2iTEmDytzScW$",
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Y7OYqohb4OAANxlWDBIa2$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$",
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0sRJZmLh2awJUZEe9b6cJl$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXX04NWFIJ0dLwF8YKU7fly77H",
@@ -695,14 +2783,14 @@
                       },
                       "operator": "and",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.ready$",
+                        "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yn7J2TMSc2iTEmDytzScW$",
                         "operator": "eq",
                         "right_operand": true
                       }
                     },
                     "operator": "and",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.status$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0RrcWuIY95g6i0lg9FrwrZ$",
                       "operator": "ne",
                       "right_operand": "ok"
                     }
@@ -724,19 +2812,19 @@
                       "variables_to_update": [
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW70IDiw7iQ2eujGCkBF9G52N$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.statusCode$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0YsOMySiiNKupsIu7yWVGD$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW840ZlH1q0Yh7oQQ6t1DArvM$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J00sKCEJoqYPOWYfC8fGwqQ$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J00sKCEJoqYPOWYfC8fGwqQ$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.resultJson$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0BeG0npqktbUF2lxgkEBcd$"
                         }
                       ]
                     },
@@ -754,7 +2842,7 @@
                       "display_name": "Completed - organization inspection rejected",
                       "skip_execution": false,
                       "completion_type": "failed-completed",
-                      "result_message": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.message$"
+                      "result_message": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J00sKCEJoqYPOWYfC8fGwqQ$"
                     },
                     "object_type": "definition_activity"
                   }
@@ -779,7 +2867,7 @@
                     },
                     "operator": "or",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.ready$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0Yn7J2TMSc2iTEmDytzScW$",
                       "operator": "ne",
                       "right_operand": true
                     }
@@ -841,57 +2929,233 @@
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL",
-            "name": "Execute Python Script",
+            "name": "Group",
             "title": "Build organization-scoped definition family route",
-            "type": "python3.script",
+            "type": "logic.group",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": true,
-              "description": "Constructs a bounded OData query for only the requested Preferred, Latest, or Specific selector after organization resolution.",
+              "description": "Uses native variable assignments and conditions to build URLs after upstream name/version and organization validation. Names already exclude apostrophes, so no second escaping script is required.",
               "display_name": "Build organization-scoped definition family route",
-              "skip_execution": false,
-              "action_timeout": 180,
-              "script": "import json\nimport sys\n\nname = sys.argv[1].replace(\"'\", \"''\")\norganizationMoid = sys.argv[2]\nselection = sys.argv[3]\nversion = int(sys.argv[4])\nbase = \"/api/v1/workload/WorkloadDefinitions?$filter=Name eq '%s' and Organization.Moid eq '%s'\" % (name, organizationMoid)\nif selection == \"Preferred\": definitionUrl = base + \" and PreferredVersion eq true&$top=2\"\nelif selection == \"Specific\": definitionUrl = base + \" and Version eq %d&$top=2\" % version\nelse: definitionUrl = base + \"&$orderby=Version desc&$top=1\"\nstatus, statusCode, message, resultJson, ready = \"ok\", 200, \"Definition route built\", \"{}\", bool(organizationMoid)\n",
-              "script_arguments": [
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.definitionName$",
-                "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.organizationMoid$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.selection$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.requestedVersion$"
-              ],
-              "script_queries": [
-                {
-                  "script_query": "status",
-                  "script_query_name": "status",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "statusCode",
-                  "script_query_name": "statusCode",
-                  "script_query_type": "integer"
-                },
-                {
-                  "script_query": "message",
-                  "script_query_name": "message",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "resultJson",
-                  "script_query_name": "resultJson",
-                  "script_query_type": "string"
-                },
-                {
-                  "script_query": "ready",
-                  "script_query_name": "ready",
-                  "script_query_type": "boolean"
-                },
-                {
-                  "script_query": "definitionUrl",
-                  "script_query_name": "definitionUrl",
-                  "script_query_type": "string"
-                }
-              ]
+              "skip_execution": false
             },
-            "object_type": "definition_activity"
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0ahavTDQb3R1chQKlHhgv5",
+                "name": "Set Variables",
+                "title": "Set validated workload definition routes",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Set validated workload definition routes",
+                  "display_name": "Set validated workload definition routes",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0L1xMfpGHDyvm7Z53TjA0Y$",
+                      "variable_value_new": "/api/v1/workload/WorkloadDefinitions?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$' and Organization.Moid eq '$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$'&$orderby=Version desc&$top=1"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0PoctPH27fVEQ63YUQ1dPa$",
+                      "variable_value_new": "ok"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fp1isV4G0F0D8N93eTp2w$",
+                      "variable_value_new": 200
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J09tkM5zBabpf0Zwd6d750o$",
+                      "variable_value_new": "Validated workload definition route built"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0I2Hnlqbjq9GFSrAD3FG4h$",
+                      "variable_value_new": "{}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0OztGNjkh1g8jerVksWqGh$",
+                      "variable_value_new": false
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0sXYWxXpI8NefTQHFzNqsT",
+                "name": "Condition",
+                "title": "Validate route readiness",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Validate route readiness",
+                  "display_name": "Validate route readiness",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0lf6Sc8isXi7m81udWB7kH",
+                    "name": "Condition Block",
+                    "title": "Validated route inputs are present",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Validated route inputs are present",
+                      "display_name": "Validated route inputs are present",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$",
+                        "operator": "ne",
+                        "right_operand": ""
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0yAZ6MZ593s3dY2MirOwSi",
+                        "name": "Set Variables",
+                        "title": "Mark workload definition routes ready",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Mark workload definition routes ready",
+                          "display_name": "Mark workload definition routes ready",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0OztGNjkh1g8jerVksWqGh$",
+                              "variable_value_new": true
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0GIChqV2q3A0L6la0KkPTf",
+                "name": "Condition",
+                "title": "Select workload definition route",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Select workload definition route",
+                  "display_name": "Select workload definition route",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0RGwPrCGW6pSSpddlT06qD",
+                    "name": "Condition Block",
+                    "title": "Selected version lookup mode",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Selected version lookup mode",
+                      "display_name": "Selected version lookup mode",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                        "operator": "eq",
+                        "right_operand": "Preferred"
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J00g1TrYs7sepQ7BQuwL48i",
+                        "name": "Set Variables",
+                        "title": "Set selected version route",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Set selected version route",
+                          "display_name": "Set selected version route",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0L1xMfpGHDyvm7Z53TjA0Y$",
+                              "variable_value_new": "/api/v1/workload/WorkloadDefinitions?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$' and Organization.Moid eq '$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$' and PreferredVersion eq true&$top=2"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0Mk9DKKlvgjR3Yj6LtYN7v",
+                "name": "Condition",
+                "title": "Select workload definition route",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Select workload definition route",
+                  "display_name": "Select workload definition route",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0wupD6OtyYkfBxPYFbro2k",
+                    "name": "Condition Block",
+                    "title": "Selected version lookup mode",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Selected version lookup mode",
+                      "display_name": "Selected version lookup mode",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                        "operator": "eq",
+                        "right_operand": "Specific"
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J07WicimtwQ9S6nKrmqePod",
+                        "name": "Set Variables",
+                        "title": "Set selected version route",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Set selected version route",
+                          "display_name": "Set selected version route",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0L1xMfpGHDyvm7Z53TjA0Y$",
+                              "variable_value_new": "/api/v1/workload/WorkloadDefinitions?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$' and Organization.Moid eq '$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$' and Version eq $workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWD1eKVFskJjgnrFbleTGoJCj$&$top=2"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "unique_name": "definition_activity_02XONE7OAKXX844R75GSsB606u3qkSixZwa",
@@ -928,14 +3192,14 @@
                       },
                       "operator": "and",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.ready$",
+                        "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0OztGNjkh1g8jerVksWqGh$",
                         "operator": "eq",
                         "right_operand": true
                       }
                     },
                     "operator": "and",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.status$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0PoctPH27fVEQ63YUQ1dPa$",
                       "operator": "ne",
                       "right_operand": "ok"
                     }
@@ -957,19 +3221,19 @@
                       "variables_to_update": [
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW70IDiw7iQ2eujGCkBF9G52N$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.statusCode$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0fp1isV4G0F0D8N93eTp2w$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW840ZlH1q0Yh7oQQ6t1DArvM$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J09tkM5zBabpf0Zwd6d750o$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW96DeERBWDRG54moiKl8KMwf$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.message$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J09tkM5zBabpf0Zwd6d750o$"
                         },
                         {
                           "variable_to_update": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.output.variable_workflow_02XONE7OAKXW63FdtntoE2SQSHoIVCw9Pix$",
-                          "variable_value_new": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.resultJson$"
+                          "variable_value_new": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0I2Hnlqbjq9GFSrAD3FG4h$"
                         }
                       ]
                     },
@@ -987,7 +3251,7 @@
                       "display_name": "Completed - definition route preparation rejected",
                       "skip_execution": false,
                       "completion_type": "failed-completed",
-                      "result_message": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.message$"
+                      "result_message": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J09tkM5zBabpf0Zwd6d750o$"
                     },
                     "object_type": "definition_activity"
                   }
@@ -1012,7 +3276,7 @@
                     },
                     "operator": "or",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.ready$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0OztGNjkh1g8jerVksWqGh$",
                       "operator": "ne",
                       "right_operand": true
                     }
@@ -1102,7 +3366,7 @@
               "skip_execution": false,
               "action_timeout": 180,
               "api_method": "GET",
-              "api_url": "$activity.definition_activity_02XONE7OAKXX11pCpXux6it4xgyQls4LHJL.output.script_queries.definitionUrl$",
+              "api_url": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0L1xMfpGHDyvm7Z53TjA0Y$",
               "content_type": "application/json",
               "endpoint": "primary",
               "runtime_user": {
@@ -1263,10 +3527,10 @@
               "script": "import json\nimport sys\n\nbody = json.loads(sys.argv[1])\nname, selection, organizationMoid = sys.argv[2], sys.argv[3], sys.argv[5]\nrequestedVersion = int(sys.argv[4])\nrows = body.get(\"Results\") if isinstance(body, dict) else None\nstatus, statusCode, message, resultJson, ready = \"ok\", 200, \"Definition version selected\", \"{}\", False\ndefinitionMoid = \"\"\nselectedVersion = 0\ndefinitionItemUrl = \"\"\ntry:\n    if not isinstance(rows, list):\n        raise ValueError(\"Definition response does not contain a Results array.\")\n    exact = [row for row in rows if row.get(\"Name\") == name and isinstance(row.get(\"Organization\"), dict) and row[\"Organization\"].get(\"Moid\") == organizationMoid]\n    versions = [int(row.get(\"Version\", 0)) for row in exact]\n    if len(exact) != len(rows):\n        status, statusCode, message = \"identity-mismatch\", 409, \"Definition response contains an identity outside the exact requested filter.\"\n        chosen = []\n    elif len(versions) != len(set(versions)):\n        status, statusCode, message = \"conflict\", 409, \"The definition family contains duplicate version identities.\"\n        chosen = []\n    elif selection == \"Preferred\":\n        chosen = [row for row in exact if row.get(\"PreferredVersion\") is True]\n    elif selection == \"Specific\":\n        chosen = [row for row in exact if int(row.get(\"Version\", 0)) == requestedVersion]\n    else:\n        chosen = [] if not exact else [max(exact, key=lambda row: int(row.get(\"Version\", 0)))]\n    if status == \"ok\" and len(chosen) != 1:\n        status = \"not-found\" if len(chosen) == 0 else \"conflict\"\n        statusCode = 404 if len(chosen) == 0 else 409\n        message = \"Version selection must identify exactly one definition; received %d.\" % len(chosen)\n    if status == \"ok\":\n        definitionMoid = str(chosen[0].get(\"Moid\") or \"\")\n        selectedVersion = int(chosen[0].get(\"Version\", 0))\n        if not definitionMoid or selectedVersion < 1:\n            raise ValueError(\"Selected definition has no Moid.\")\n        definitionItemUrl = \"/api/v1/workload/WorkloadDefinitions/\" + definitionMoid\n        resultJson = json.dumps({\"selected\": chosen[0]}, separators=(\",\", \":\"))\n    else:\n        resultJson = json.dumps({\"error\": message, \"familyVersionCount\": len(exact)}, separators=(\",\", \":\"))\n    ready = True\nexcept Exception as exc:\n    status, statusCode, message = \"malformed\", 502, str(exc)\n    resultJson, ready = json.dumps({\"error\": message}, separators=(\",\", \":\")), True\n",
               "script_arguments": [
                 "$activity.definition_activity_02XONE7OAKXXA2JLCFoSbQeSPbbJDdmd08A.output.response_body$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.definitionName$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.selection$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.requestedVersion$",
-                "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.organizationMoid$"
+                "$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0775YkEG9ZDjNDxaOjrG1y.output.trimmed$",
+                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWD1eKVFskJjgnrFbleTGoJCj$",
+                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$"
               ],
               "script_queries": [
                 {
@@ -1667,8 +3931,8 @@
               "script_arguments": [
                 "$activity.definition_activity_02XONE7OAKXXN0oBckI5QLYZ15balHzoRrr.output.response_body$",
                 "$activity.definition_activity_02XONE7OAKXXF3QkCn6sJJrVFIEeAGqlb89.output.script_queries.definitionMoid$",
-                "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.organizationMoid$",
-                "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.definitionName$",
+                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0ac5G3bE6ulQ7UwI7sErDx.output.trimmed$",
                 "$activity.definition_activity_02XONE7OAKXXF3QkCn6sJJrVFIEeAGqlb89.output.script_queries.selectedVersion$"
               ],
               "script_queries": [
@@ -2076,8 +4340,8 @@
             "type": "python3.script",
             "base_type": "activity",
             "properties": {
-              "continue_on_failure": true,
-              "description": "Verifies metadata organization identity and creates the single-definition result used when blueprint expansion is omitted or empty.",
+              "continue_on_failure": false,
+              "description": "Compact strict metadata identity validation and JSON result assembly retained. The complete native result scope includes two strict JSON inspectors and exceeds this atomic activity budget; native input trimming/escaping and collection checks remain.",
               "display_name": "Verify metadata and assemble base result",
               "skip_execution": false,
               "action_timeout": 180,
@@ -2085,7 +4349,7 @@
               "script_arguments": [
                 "$activity.definition_activity_02XONE7OAKXY02U764TyaeIfCGayH1vowfM.output.response_body$",
                 "$activity.definition_activity_02XONE7OAKXXS35UtcAV9eljzAEiuw5vhNj.output.script_queries.metadataMoid$",
-                "$activity.definition_activity_02XONE7OAKXWT4FzxjrelLvuFLkLEzuGGDY.output.script_queries.organizationMoid$",
+                "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.local.variable_workflow_02Z3AAXNVAM5J0ZuokqIpIyJ28nxTzrb8k7$",
                 "$activity.definition_activity_02XONE7OAKXXS35UtcAV9eljzAEiuw5vhNj.output.script_queries.definitionJson$"
               ],
               "script_queries": [
@@ -2335,7 +4599,7 @@
                   "skip_execution": false,
                   "condition": {
                     "left_operand": {
-                      "left_operand": "$activity.definition_activity_02XONE7OAKXWF7ljHffulk3TnekBHq4OQT6.output.script_queries.includeBlueprints$",
+                      "left_operand": "$workflow.definition_workflow_02XONE7OAKXW52p6ZQAyBfjzE0yERLfRbRT.input.variable_workflow_02XONE7OAKXWE2NE1N2mxIj1021AUUzakI8$",
                       "operator": "eq",
                       "right_operand": false
                     },

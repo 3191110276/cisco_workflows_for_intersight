@@ -1,0 +1,1881 @@
+{
+  "categories": {
+    "category_02XOKCY8L6Z5M6cXFxME8ifMx23VYaCm3qv": {
+      "unique_name": "category_02XOKCY8L6Z5M6cXFxME8ifMx23VYaCm3qv",
+      "name": "Cisco Intersight - Firmware Management",
+      "title": "Cisco Intersight - Firmware Management",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  },
+  "workflow": {
+    "unique_name": "definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413",
+    "name": "Cisco Intersight - Get firmware upgrade status",
+    "title": "Cisco Intersight - Get firmware upgrade status",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Upgrade Status ID",
+          "type": "datatype.string",
+          "description": "Optional 24-character hexadecimal firmware UpgradeStatus Moid. Supply this, or the Upgrade ID and Upgrade Resource Type to Check pair.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00fb8cf3f5903617acf4137",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Upgrade ID",
+          "type": "datatype.string",
+          "description": "Optional 24-character hexadecimal created upgrade resource Moid. Required with Upgrade Resource Type when Upgrade Status ID is unavailable.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00b0ac3f3b1970b0e191bb4",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Upgrade Resource Type",
+          "type": "datatype.string",
+          "description": "Concrete type from submission: firmware.Upgrade, firmware.ChassisUpgrade, or firmware.SwitchUpgrade. Required with Upgrade ID.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00048ee88d94ec9dd05a9e0",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.string",
+          "description": "HTTP-style lookup result. 200 means a snapshot was read, even if the observed upgrade itself failed.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Human-readable progress snapshot or lookup failure.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Lookup failure or observed upgrade errors; empty when no error was reported.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Structured snapshot, completion state, tracking identifiers, progress and sanitized errors.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Resolved Upgrade ID",
+          "type": "datatype.string",
+          "description": "Created upgrade resource Moid resolved from the request or UpgradeStatus relationship.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Resolved Upgrade Resource Type",
+          "type": "datatype.string",
+          "description": "Concrete firmware upgrade resource type resolved from the request or status relationship.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Resolved Upgrade Status ID",
+          "type": "datatype.string",
+          "description": "Firmware UpgradeStatus Moid, when it has been published.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Download Stage",
+          "type": "datatype.string",
+          "description": "Current download or flashing stage, when reported.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Download Percentage",
+          "type": "datatype.string",
+          "description": "Percentage from 0 to 100. Empty when missing or reported as unknown.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Overall Status",
+          "type": "datatype.string",
+          "description": "Native Intersight overall upgrade status, when reported.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Overall Percentage",
+          "type": "datatype.string",
+          "description": "Percentage from 0 to 100. Empty when missing or reported as unknown.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Resolved Status Moid",
+          "type": "datatype.string",
+          "description": "",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX00af2e148111fec0ff5576a",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Status API Succeeded Text",
+          "type": "datatype.string",
+          "description": "",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z9OCT19FIX003ff6dde678e1bcbb54173",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Reads one Cisco Intersight firmware upgrade progress snapshot for a Server, UCS-X Chassis or IMM Domain. Provide Upgrade Status ID, or Upgrade ID and Upgrade Resource Type to Check to resolve its status relationship. Reports download stage and percentage, overall status and percentage, and errors. Missing or unknown percentages remain empty. No polling, retry, firmware submission or hardware mutation is performed. Requires read access to the supplied upgrade and status resources on the selected Intersight endpoint.",
+      "display_name": "Cisco Intersight - Get firmware upgrade status",
+      "runtime_user": {
+        "override_target_runtime_user": false,
+        "specify_on_workflow_start": false,
+        "target_default": true
+      },
+      "target": {
+        "target_type": "intersight.endpoint",
+        "specify_on_workflow_start": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035",
+        "name": "Validate firmware status lookup inputs",
+        "title": "Validate firmware status lookup inputs",
+        "type": "python3.script",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Validate firmware status lookup inputs",
+          "display_name": "Validate firmware status lookup inputs",
+          "skip_execution": false,
+          "action_timeout": 180,
+          "script": "import json\nimport re\nimport sys\n\nCOLLECTIONS = {'firmware.Upgrade':'Upgrades', 'firmware.ChassisUpgrade':'ChassisUpgrades', 'firmware.SwitchUpgrade':'SwitchUpgrades'}\ndef moid(value):\n    return isinstance(value, str) and re.fullmatch('[0-9a-fA-F]{24}', value) is not None\ndef safe_text(value, maximum=500):\n    if not isinstance(value, str) or len(value) > maximum or any(ord(c) < 32 for c in value):\n        return ''\n    if re.search(r'authorization|password|secret|token|api.?key|bearer|https?://', value, re.IGNORECASE):\n        return ''\n    return value\ndef envelope(raw, code, succeeded):\n    code = int(code)\n    if code != 200 or succeeded != 'true':\n        raise LookupError(str(code if 400 <= code < 600 else 502))\n    value = json.loads(raw)\n    if not isinstance(value, dict):\n        raise ValueError('Response must be a JSON object.')\n    return value\ndef identity(value, expected_moid, expected_type):\n    if value.get('Moid') != expected_moid or value.get('ObjectType') != expected_type or value.get('ClassId') != expected_type:\n        raise ValueError('Returned resource identity does not match the requested resource.')\ndef relation(value, expected_type):\n    return isinstance(value, dict) and moid(value.get('Moid')) and value.get('ObjectType') == expected_type and value.get('ClassId') in (None, 'mo.MoRef', expected_type)\nstatusCode, statusMessage, errorMessage = '502', 'Firmware status lookup failed', ''\nresultJson, route, statusUrl, resourceUrl = '{}', '', '', ''\nupgradeMoid, upgradeType, statusMoid = '', '', ''\ndownloadStage, downloadPercentage, overallStatus, overallPercentage = '', '', '', ''\noperationFailed, helperReady = False, False\n\nstatusMoid, upgradeMoid, upgradeType = sys.argv[1:4]\nerrors = []\nif statusMoid and not moid(statusMoid):\n    errors.append('Upgrade Status ID must be exactly 24 hexadecimal characters.')\nif upgradeMoid and not moid(upgradeMoid):\n    errors.append('Upgrade ID must be exactly 24 hexadecimal characters.')\nif bool(upgradeMoid) != bool(upgradeType):\n    errors.append('Provide Upgrade ID and Upgrade Resource Type to Check together.')\nif upgradeType and upgradeType not in COLLECTIONS:\n    errors.append('Upgrade Resource Type must be firmware.Upgrade, firmware.ChassisUpgrade, or firmware.SwitchUpgrade.')\nif not statusMoid and not upgradeMoid:\n    errors.append('Provide Upgrade Status ID, or Upgrade ID and Upgrade Resource Type.')\nroute = 'error' if errors else 'status' if statusMoid else 'resource'\nstatusCode = '400' if errors else '200'\nstatusMessage = 'Invalid firmware status inputs' if errors else 'Firmware status lookup inputs validated'\nerrorMessage = ' '.join(errors)\nstatusUrl = '/api/v1/firmware/UpgradeStatuses/' + statusMoid if route == 'status' else ''\nresourceUrl = '/api/v1/firmware/' + COLLECTIONS[upgradeType] + '/' + upgradeMoid if route == 'resource' else ''\nresultJson = json.dumps({'status':'invalid-input' if errors else 'ready', 'errors':errors, 'monitoringPerformed':False}, separators=(',', ':'))\nif errors:\n    statusMoid = upgradeMoid = upgradeType = ''\nhelperReady = True\n",
+          "script_arguments": [
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00fb8cf3f5903617acf4137$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00b0ac3f3b1970b0e191bb4$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00048ee88d94ec9dd05a9e0$"
+          ],
+          "script_queries": [
+            {
+              "script_query": "statusCode",
+              "script_query_name": "statusCode",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusMessage",
+              "script_query_name": "statusMessage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "errorMessage",
+              "script_query_name": "errorMessage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "resultJson",
+              "script_query_name": "resultJson",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "route",
+              "script_query_name": "route",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusUrl",
+              "script_query_name": "statusUrl",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "resourceUrl",
+              "script_query_name": "resourceUrl",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "upgradeMoid",
+              "script_query_name": "upgradeMoid",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "upgradeType",
+              "script_query_name": "upgradeType",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusMoid",
+              "script_query_name": "statusMoid",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "downloadStage",
+              "script_query_name": "downloadStage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "downloadPercentage",
+              "script_query_name": "downloadPercentage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "overallStatus",
+              "script_query_name": "overallStatus",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "overallPercentage",
+              "script_query_name": "overallPercentage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "operationFailed",
+              "script_query_name": "operationFailed",
+              "script_query_type": "boolean"
+            },
+            {
+              "script_query": "helperReady",
+              "script_query_name": "helperReady",
+              "script_query_type": "boolean"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX005a7d5d652f04b7cc5050b",
+        "name": "Stop if status input validation cannot execute",
+        "title": "Stop if status input validation cannot execute",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop if status input validation cannot execute",
+          "display_name": "Stop if status input validation cannot execute",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00bf10d2c612fd04877e4f6",
+            "name": "Stop if status input validation cannot execute branch",
+            "title": "Stop if status input validation cannot execute branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop if status input validation cannot execute branch",
+              "display_name": "Stop if status input validation cannot execute branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.succeeded$",
+                "operator": "ne",
+                "right_operand": true
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX007cf32a7c31c4f20d8924f",
+                "name": "Publish status input validation execution failure",
+                "title": "Publish status input validation execution failure",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish status input validation execution failure",
+                  "display_name": "Publish status input validation execution failure",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                      "variable_value_new": "500"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                      "variable_value_new": "Firmware status inspection could not execute"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                      "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                      "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00abf93bef1e6b8b2698a17",
+                "name": "End status input validation execution failure",
+                "title": "End status input validation execution failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End status input validation execution failure",
+                  "display_name": "End status input validation execution failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "Firmware status inspection failed"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00f9f085946695a00cd1205",
+        "name": "Stop if status input validation is incomplete",
+        "title": "Stop if status input validation is incomplete",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop if status input validation is incomplete",
+          "display_name": "Stop if status input validation is incomplete",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00f58eebee2da6b7bf6b998",
+            "name": "Stop if status input validation is incomplete branch",
+            "title": "Stop if status input validation is incomplete branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop if status input validation is incomplete branch",
+              "display_name": "Stop if status input validation is incomplete branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.helperReady$",
+                "operator": "ne",
+                "right_operand": true
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX0066fb8d3797f190dc82aa7",
+                "name": "Publish status input validation contract failure",
+                "title": "Publish status input validation contract failure",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish status input validation contract failure",
+                  "display_name": "Publish status input validation contract failure",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                      "variable_value_new": "500"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                      "variable_value_new": "Firmware status inspector returned an incomplete contract"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                      "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                      "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00a457643d2eecbeaccd2fa",
+                "name": "End status input validation contract failure",
+                "title": "End status input validation contract failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End status input validation contract failure",
+                  "display_name": "End status input validation contract failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "Firmware status inspection failed"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00402b0cef23a79e915677c",
+        "name": "Reject invalid firmware status inputs",
+        "title": "Reject invalid firmware status inputs",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Reject invalid firmware status inputs",
+          "display_name": "Reject invalid firmware status inputs",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00b5c6ee03ddaa4eca89d4a",
+            "name": "Reject invalid firmware status inputs branch",
+            "title": "Reject invalid firmware status inputs branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Reject invalid firmware status inputs branch",
+              "display_name": "Reject invalid firmware status inputs branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.route$",
+                "operator": "eq",
+                "right_operand": "error"
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00a0e6962a39b31ffb3de05",
+                "name": "Publish invalid status inputs",
+                "title": "Publish invalid status inputs",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish invalid status inputs",
+                  "display_name": "Publish invalid status inputs",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.statusCode$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.statusMessage$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.errorMessage$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.resultJson$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.upgradeMoid$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.upgradeType$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.statusMoid$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.downloadStage$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.downloadPercentage$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.overallStatus$"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.overallPercentage$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00532814effe42701801bbf",
+                "name": "End invalid status inputs",
+                "title": "End invalid status inputs",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End invalid status inputs",
+                  "display_name": "End invalid status inputs",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.statusMessage$"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00d5496b5ade3202be40ca1",
+        "name": "Initialize status relationship lookup",
+        "title": "Initialize status relationship lookup",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Initialize status relationship lookup",
+          "display_name": "Initialize status relationship lookup",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX00af2e148111fec0ff5576a$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.statusMoid$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00a13b8ba57d8c85ab3fc5c",
+        "name": "Resolve status from Upgrade ID",
+        "title": "Resolve status from Upgrade ID",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Resolve status from Upgrade ID",
+          "display_name": "Resolve status from Upgrade ID",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX0063c4cda7c76cd273db93f",
+            "name": "Resolve status from Upgrade ID branch",
+            "title": "Resolve status from Upgrade ID branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Resolve status from Upgrade ID branch",
+              "display_name": "Resolve status from Upgrade ID branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.route$",
+                "operator": "eq",
+                "right_operand": "resource"
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX007907bf0cced7b3e819f5f",
+                "name": "Read created firmware upgrade resource",
+                "title": "Read created firmware upgrade resource",
+                "type": "intersight.api_request",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": true,
+                  "description": "Read created firmware upgrade resource",
+                  "display_name": "Read created firmware upgrade resource",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "api_method": "GET",
+                  "api_url": "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.resourceUrl$",
+                  "content_type": "application/json",
+                  "endpoint": "primary",
+                  "runtime_user": {
+                    "target_default": true
+                  },
+                  "target": {
+                    "use_workflow_target": true
+                  }
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00c17b862832e49139e42a4",
+                "name": "Serialize resource lookup success",
+                "title": "Serialize resource lookup success",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Serialize resource lookup success",
+                  "display_name": "Serialize resource lookup success",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX003ff6dde678e1bcbb54173$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX007907bf0cced7b3e819f5f.output.succeeded$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889",
+                "name": "Resolve firmware UpgradeStatus relationship",
+                "title": "Resolve firmware UpgradeStatus relationship",
+                "type": "python3.script",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": true,
+                  "description": "Resolve firmware UpgradeStatus relationship",
+                  "display_name": "Resolve firmware UpgradeStatus relationship",
+                  "skip_execution": false,
+                  "action_timeout": 180,
+                  "script": "import json\nimport re\nimport sys\n\nCOLLECTIONS = {'firmware.Upgrade':'Upgrades', 'firmware.ChassisUpgrade':'ChassisUpgrades', 'firmware.SwitchUpgrade':'SwitchUpgrades'}\ndef moid(value):\n    return isinstance(value, str) and re.fullmatch('[0-9a-fA-F]{24}', value) is not None\ndef safe_text(value, maximum=500):\n    if not isinstance(value, str) or len(value) > maximum or any(ord(c) < 32 for c in value):\n        return ''\n    if re.search(r'authorization|password|secret|token|api.?key|bearer|https?://', value, re.IGNORECASE):\n        return ''\n    return value\ndef envelope(raw, code, succeeded):\n    code = int(code)\n    if code != 200 or succeeded != 'true':\n        raise LookupError(str(code if 400 <= code < 600 else 502))\n    value = json.loads(raw)\n    if not isinstance(value, dict):\n        raise ValueError('Response must be a JSON object.')\n    return value\ndef identity(value, expected_moid, expected_type):\n    if value.get('Moid') != expected_moid or value.get('ObjectType') != expected_type or value.get('ClassId') != expected_type:\n        raise ValueError('Returned resource identity does not match the requested resource.')\ndef relation(value, expected_type):\n    return isinstance(value, dict) and moid(value.get('Moid')) and value.get('ObjectType') == expected_type and value.get('ClassId') in (None, 'mo.MoRef', expected_type)\nstatusCode, statusMessage, errorMessage = '502', 'Firmware status lookup failed', ''\nresultJson, route, statusUrl, resourceUrl = '{}', '', '', ''\nupgradeMoid, upgradeType, statusMoid = '', '', ''\ndownloadStage, downloadPercentage, overallStatus, overallPercentage = '', '', '', ''\noperationFailed, helperReady = False, False\n\nupgradeMoid, upgradeType = sys.argv[4:6]\ntry:\n    payload = envelope(sys.argv[1], sys.argv[2], sys.argv[3])\n    identity(payload, upgradeMoid, upgradeType)\n    native_status = payload.get('Status')\n    if native_status not in ('NONE', 'IN_PROGRESS', 'SUCCESSFUL', 'FAILED', 'TERMINATED'):\n        raise ValueError('Upgrade resource Status is missing or unsupported.')\n    link = payload.get('UpgradeStatus')\n    if link in (None, {}):\n        route = 'pending'\n        statusCode = '200'\n        overallStatus = native_status\n        operationFailed = native_status in ('FAILED', 'TERMINATED')\n        errorMessage = 'Firmware upgrade reports ' + native_status + '.' if operationFailed else ''\n        statusMessage = 'Firmware upgrade reports ' + native_status + '; detailed status is not available.'\n        if native_status in ('NONE', 'IN_PROGRESS'):\n            statusMessage += ' Run Cisco Intersight - Firmware upgrade with Action Check upgrade status again using the same Upgrade ID and Upgrade Resource Type.'\n        resultJson = json.dumps({'status':'failed' if operationFailed else 'completed' if native_status == 'SUCCESSFUL' else 'pending', 'createdMoid':upgradeMoid, 'createdObjectType':upgradeType, 'upgradeStatusMoid':None, 'observedStatus':native_status, 'overallStatus':native_status, 'completed':native_status in ('SUCCESSFUL', 'FAILED', 'TERMINATED'), 'successful':True if native_status == 'SUCCESSFUL' else False if operationFailed else None, 'statusAvailable':False, 'monitoringPerformed':False}, separators=(',', ':'))\n    else:\n        if not relation(link, 'firmware.UpgradeStatus'):\n            raise ValueError('UpgradeStatus relationship is malformed.')\n        statusMoid = link['Moid']\n        route = 'status'\n        statusUrl = '/api/v1/firmware/UpgradeStatuses/' + statusMoid\n        statusCode, statusMessage = '200', 'Firmware UpgradeStatus relationship resolved'\nexcept LookupError as exc:\n    statusCode, errorMessage, route = str(exc), 'Upgrade resource lookup failed. Verify the identifiers and read access on this Intersight endpoint.', 'error'\nexcept (ValueError, TypeError, KeyError) as exc:\n    errorMessage, route = str(exc), 'error'\nif route == 'error':\n    resultJson = json.dumps({'status':'lookup-failed', 'message':errorMessage, 'createdMoid':upgradeMoid, 'createdObjectType':upgradeType, 'monitoringPerformed':False}, separators=(',', ':'))\nhelperReady = True\n",
+                  "script_arguments": [
+                    "$activity.definition_activity_02Z9OCT19FIX007907bf0cced7b3e819f5f.output.response_body$",
+                    "$activity.definition_activity_02Z9OCT19FIX007907bf0cced7b3e819f5f.output.status_code$",
+                    "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX003ff6dde678e1bcbb54173$",
+                    "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00b0ac3f3b1970b0e191bb4$",
+                    "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00048ee88d94ec9dd05a9e0$"
+                  ],
+                  "script_queries": [
+                    {
+                      "script_query": "statusCode",
+                      "script_query_name": "statusCode",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "statusMessage",
+                      "script_query_name": "statusMessage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "errorMessage",
+                      "script_query_name": "errorMessage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "resultJson",
+                      "script_query_name": "resultJson",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "route",
+                      "script_query_name": "route",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "statusUrl",
+                      "script_query_name": "statusUrl",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "resourceUrl",
+                      "script_query_name": "resourceUrl",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "upgradeMoid",
+                      "script_query_name": "upgradeMoid",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "upgradeType",
+                      "script_query_name": "upgradeType",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "statusMoid",
+                      "script_query_name": "statusMoid",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "downloadStage",
+                      "script_query_name": "downloadStage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "downloadPercentage",
+                      "script_query_name": "downloadPercentage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "overallStatus",
+                      "script_query_name": "overallStatus",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "overallPercentage",
+                      "script_query_name": "overallPercentage",
+                      "script_query_type": "string"
+                    },
+                    {
+                      "script_query": "operationFailed",
+                      "script_query_name": "operationFailed",
+                      "script_query_type": "boolean"
+                    },
+                    {
+                      "script_query": "helperReady",
+                      "script_query_name": "helperReady",
+                      "script_query_type": "boolean"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00dd5e163e87846f729be53",
+                "name": "Stop if status relationship resolution cannot execute",
+                "title": "Stop if status relationship resolution cannot execute",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Stop if status relationship resolution cannot execute",
+                  "display_name": "Stop if status relationship resolution cannot execute",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z9OCT19FIX002b91cfe253707ea1c9ee0",
+                    "name": "Stop if status relationship resolution cannot execute branch",
+                    "title": "Stop if status relationship resolution cannot execute branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Stop if status relationship resolution cannot execute branch",
+                      "display_name": "Stop if status relationship resolution cannot execute branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.succeeded$",
+                        "operator": "ne",
+                        "right_operand": true
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00b22a6b5ec55c69cb70264",
+                        "name": "Publish status relationship resolution execution failure",
+                        "title": "Publish status relationship resolution execution failure",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish status relationship resolution execution failure",
+                          "display_name": "Publish status relationship resolution execution failure",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                              "variable_value_new": "500"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                              "variable_value_new": "Firmware status inspection could not execute"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                              "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                              "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00f621e838d524fd02b2457",
+                        "name": "End status relationship resolution execution failure",
+                        "title": "End status relationship resolution execution failure",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "End status relationship resolution execution failure",
+                          "display_name": "End status relationship resolution execution failure",
+                          "skip_execution": false,
+                          "completion_type": "failed-completed",
+                          "result_message": "Firmware status inspection failed"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX0021a709bb762d8b441d7d7",
+                "name": "Stop if status relationship resolution is incomplete",
+                "title": "Stop if status relationship resolution is incomplete",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Stop if status relationship resolution is incomplete",
+                  "display_name": "Stop if status relationship resolution is incomplete",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z9OCT19FIX0043c3ac61f4880ac661283",
+                    "name": "Stop if status relationship resolution is incomplete branch",
+                    "title": "Stop if status relationship resolution is incomplete branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Stop if status relationship resolution is incomplete branch",
+                      "display_name": "Stop if status relationship resolution is incomplete branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.helperReady$",
+                        "operator": "ne",
+                        "right_operand": true
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00de2a19c10260191f57fb6",
+                        "name": "Publish status relationship resolution contract failure",
+                        "title": "Publish status relationship resolution contract failure",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish status relationship resolution contract failure",
+                          "display_name": "Publish status relationship resolution contract failure",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                              "variable_value_new": "500"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                              "variable_value_new": "Firmware status inspector returned an incomplete contract"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                              "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                              "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00174ed2d9f8a8e99331586",
+                        "name": "End status relationship resolution contract failure",
+                        "title": "End status relationship resolution contract failure",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "End status relationship resolution contract failure",
+                          "display_name": "End status relationship resolution contract failure",
+                          "skip_execution": false,
+                          "completion_type": "failed-completed",
+                          "result_message": "Firmware status inspection failed"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00f07a0df7ca91a56aca509",
+                "name": "Stop on resource lookup failure",
+                "title": "Stop on resource lookup failure",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Stop on resource lookup failure",
+                  "display_name": "Stop on resource lookup failure",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z9OCT19FIX004b7cdfcb08497d1e8127e",
+                    "name": "Stop on resource lookup failure branch",
+                    "title": "Stop on resource lookup failure branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Stop on resource lookup failure branch",
+                      "display_name": "Stop on resource lookup failure branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.route$",
+                        "operator": "eq",
+                        "right_operand": "error"
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00c251c26ae6e246711f5a4",
+                        "name": "Publish resource lookup failure",
+                        "title": "Publish resource lookup failure",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish resource lookup failure",
+                          "display_name": "Publish resource lookup failure",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusCode$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMessage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.errorMessage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.resultJson$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.upgradeMoid$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.upgradeType$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMoid$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.downloadStage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.downloadPercentage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.overallStatus$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.overallPercentage$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00f69f0aafe3c43301c2211",
+                        "name": "End resource lookup failure",
+                        "title": "End resource lookup failure",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "End resource lookup failure",
+                          "display_name": "End resource lookup failure",
+                          "skip_execution": false,
+                          "completion_type": "failed-completed",
+                          "result_message": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMessage$"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00cbf53c7d284f2e38af7b0",
+                "name": "Return while detailed status is unavailable",
+                "title": "Return while detailed status is unavailable",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Return while detailed status is unavailable",
+                  "display_name": "Return while detailed status is unavailable",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z9OCT19FIX001be0524c2ce412a066b18",
+                    "name": "Return while detailed status is unavailable branch",
+                    "title": "Return while detailed status is unavailable branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Return while detailed status is unavailable branch",
+                      "display_name": "Return while detailed status is unavailable branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.route$",
+                        "operator": "eq",
+                        "right_operand": "pending"
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX004dbc0dbbd9a93ed2a5d1e",
+                        "name": "Publish status relationship pending",
+                        "title": "Publish status relationship pending",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish status relationship pending",
+                          "display_name": "Publish status relationship pending",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusCode$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMessage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.errorMessage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.resultJson$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.upgradeMoid$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.upgradeType$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMoid$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.downloadStage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.downloadPercentage$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.overallStatus$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da$",
+                              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.overallPercentage$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00d51009de9a2e2703efe07",
+                        "name": "Return failed resource without detailed status",
+                        "title": "Return failed resource without detailed status",
+                        "type": "logic.if_else",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Return failed resource without detailed status",
+                          "display_name": "Return failed resource without detailed status",
+                          "skip_execution": false,
+                          "conditions": []
+                        },
+                        "object_type": "definition_activity",
+                        "blocks": [
+                          {
+                            "unique_name": "definition_activity_02Z9OCT19FIX007ac8c7c540f0233deed9f",
+                            "name": "Return failed resource without detailed status branch",
+                            "title": "Return failed resource without detailed status branch",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Return failed resource without detailed status branch",
+                              "display_name": "Return failed resource without detailed status branch",
+                              "skip_execution": false,
+                              "condition": {
+                                "left_operand": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.operationFailed$",
+                                "operator": "eq",
+                                "right_operand": true
+                              }
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_02Z9OCT19FIX00014ea863c940e913dcf74",
+                                "name": "End failed resource snapshot",
+                                "title": "End failed resource snapshot",
+                                "type": "logic.completed",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "End failed resource snapshot",
+                                  "display_name": "End failed resource snapshot",
+                                  "skip_execution": false,
+                                  "completion_type": "failed-completed",
+                                  "result_message": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMessage$"
+                                },
+                                "object_type": "definition_activity"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z9OCT19FIX00facacd02252d0a3341d00",
+                        "name": "End resource snapshot without detailed status",
+                        "title": "End resource snapshot without detailed status",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "End resource snapshot without detailed status",
+                          "display_name": "End resource snapshot without detailed status",
+                          "skip_execution": false,
+                          "completion_type": "succeeded",
+                          "result_message": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMessage$"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00d45187a402df36d2330d6",
+                "name": "Store resolved UpgradeStatus identity",
+                "title": "Store resolved UpgradeStatus identity",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Store resolved UpgradeStatus identity",
+                  "display_name": "Store resolved UpgradeStatus identity",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX00af2e148111fec0ff5576a$",
+                      "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0061278484dd5648d1e4889.output.script_queries.statusMoid$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX0047eaf6cfc0a2369dd42f7",
+        "name": "Read firmware UpgradeStatus snapshot",
+        "title": "Read firmware UpgradeStatus snapshot",
+        "type": "intersight.api_request",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Read firmware UpgradeStatus snapshot",
+          "display_name": "Read firmware UpgradeStatus snapshot",
+          "skip_execution": false,
+          "action_timeout": 180,
+          "api_method": "GET",
+          "api_url": "/api/v1/firmware/UpgradeStatuses/$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX00af2e148111fec0ff5576a$",
+          "content_type": "application/json",
+          "endpoint": "primary",
+          "runtime_user": {
+            "target_default": true
+          },
+          "target": {
+            "use_workflow_target": true
+          }
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00b57eb40a3c107a932757f",
+        "name": "Serialize status lookup success",
+        "title": "Serialize status lookup success",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Serialize status lookup success",
+          "display_name": "Serialize status lookup success",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX003ff6dde678e1bcbb54173$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX0047eaf6cfc0a2369dd42f7.output.succeeded$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX009950753d0f66d726281ca",
+        "name": "Inspect firmware upgrade progress snapshot",
+        "title": "Inspect firmware upgrade progress snapshot",
+        "type": "python3.script",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Inspect firmware upgrade progress snapshot",
+          "display_name": "Inspect firmware upgrade progress snapshot",
+          "skip_execution": false,
+          "action_timeout": 180,
+          "script": "import json\nimport re\nimport sys\n\nCOLLECTIONS = {'firmware.Upgrade':'Upgrades', 'firmware.ChassisUpgrade':'ChassisUpgrades', 'firmware.SwitchUpgrade':'SwitchUpgrades'}\ndef moid(value):\n    return isinstance(value, str) and re.fullmatch('[0-9a-fA-F]{24}', value) is not None\ndef safe_text(value, maximum=500):\n    if not isinstance(value, str) or len(value) > maximum or any(ord(c) < 32 for c in value):\n        return ''\n    if re.search(r'authorization|password|secret|token|api.?key|bearer|https?://', value, re.IGNORECASE):\n        return ''\n    return value\ndef envelope(raw, code, succeeded):\n    code = int(code)\n    if code != 200 or succeeded != 'true':\n        raise LookupError(str(code if 400 <= code < 600 else 502))\n    value = json.loads(raw)\n    if not isinstance(value, dict):\n        raise ValueError('Response must be a JSON object.')\n    return value\ndef identity(value, expected_moid, expected_type):\n    if value.get('Moid') != expected_moid or value.get('ObjectType') != expected_type or value.get('ClassId') != expected_type:\n        raise ValueError('Returned resource identity does not match the requested resource.')\ndef relation(value, expected_type):\n    return isinstance(value, dict) and moid(value.get('Moid')) and value.get('ObjectType') == expected_type and value.get('ClassId') in (None, 'mo.MoRef', expected_type)\nstatusCode, statusMessage, errorMessage = '502', 'Firmware status lookup failed', ''\nresultJson, route, statusUrl, resourceUrl = '{}', '', '', ''\nupgradeMoid, upgradeType, statusMoid = '', '', ''\ndownloadStage, downloadPercentage, overallStatus, overallPercentage = '', '', '', ''\noperationFailed, helperReady = False, False\n\nstatusMoid, upgradeMoid, upgradeType = sys.argv[4:7]\ntry:\n    payload = envelope(sys.argv[1], sys.argv[2], sys.argv[3])\n    identity(payload, statusMoid, 'firmware.UpgradeStatus')\n    owner = payload.get('Upgrade')\n    if owner not in (None, {}):\n        owner_type = owner.get('ObjectType') if isinstance(owner, dict) else None\n        if owner_type not in COLLECTIONS or not relation(owner, owner_type):\n            raise ValueError('UpgradeStatus owner relationship is malformed.')\n        if upgradeMoid and (owner['Moid'] != upgradeMoid or owner_type != upgradeType):\n            raise ValueError('UpgradeStatus belongs to a different upgrade resource.')\n        upgradeMoid, upgradeType = owner['Moid'], owner_type\n    elif upgradeMoid and sys.argv[7] != 'resource':\n        raise ValueError('UpgradeStatus does not confirm the requested upgrade relationship.')\n    def percentage(key):\n        value = payload.get(key)\n        if value is None or value == -1 and type(value) is int:\n            return ''\n        if type(value) is not int or not 0 <= value <= 100:\n            raise ValueError(key + ' must be an integer percentage or -1 for unknown.')\n        return str(value)\n    reported_download = percentage('DownloadPercentage')\n    connector_download = percentage('DownloadProgress')\n    downloadPercentage = reported_download or connector_download\n    overallPercentage = percentage('OverallPercentage')\n    raw_stage = payload.get('DownloadStage')\n    if raw_stage is not None and (not isinstance(raw_stage, str) or len(raw_stage) > 128):\n        raise ValueError('DownloadStage must be a bounded string.')\n    downloadStage = safe_text(raw_stage, 128)\n    raw_overall = payload.get('Overallstatus')\n    if raw_overall is not None and (not isinstance(raw_overall, str) or len(raw_overall) > 128):\n        raise ValueError('Overallstatus must be a bounded string.')\n    overallStatus = safe_text(raw_overall, 128)\n    errors = {}\n    omitted = False\n    for key in ('OverallError', 'DownloadError', 'SdCardDownloadError'):\n        value = payload.get(key)\n        if value is not None and not isinstance(value, str):\n            raise ValueError(key + ' must be a string.')\n        if value:\n            clean = safe_text(value)\n            omitted = omitted or not clean\n            errors[key] = clean or 'Error detail omitted; inspect the Intersight upgrade.'\n    normalized = overallStatus.lower()\n    known = {'none', 'started', 'prepare initiating', 'prepare initiated', 'prepared', 'download initiating', 'download initiated', 'downloading', 'downloaded', 'upgrade initiating on fabric a', 'upgrade initiated on fabric a', 'upgrading fabric a', 'rebooting fabric a', 'upgraded fabric a', 'upgrade initiating on fabric b', 'upgrade initiated on fabric b', 'upgrading fabric b', 'rebooting fabric b', 'upgraded fabric b', 'upgrade initiating', 'upgrade initiated', 'upgrading', 'oob images staging', 'oob images staged', 'rebooting', 'upgraded', 'success', 'failed', 'terminated', 'pending', 'readyforcache', 'caching', 'cached', 'cachingfailed'}\n    operationFailed = normalized in ('failed', 'terminated', 'cachingfailed') or bool(errors)\n    finished = normalized in ('success', 'failed', 'terminated', 'cachingfailed')\n    errorMessage = ' '.join(dict.fromkeys(errors.values()))\n    if operationFailed and not errorMessage:\n        errorMessage = 'Firmware upgrade reports ' + overallStatus + '.'\n    statusCode = '200'\n    route = 'snapshot'\n    statusMessage = 'Firmware upgrade status: ' + (overallStatus or 'not reported') + '.'\n    if downloadStage:\n        statusMessage += ' Download stage: ' + downloadStage + '.'\n    if downloadPercentage:\n        statusMessage += ' Download: ' + downloadPercentage + '%.'\n    if overallPercentage:\n        statusMessage += ' Overall: ' + overallPercentage + '%.'\n    resultJson = json.dumps({'status':'failed' if operationFailed else 'completed' if normalized == 'success' else 'unknown' if normalized in ('', 'none') or normalized not in known else 'in-progress', 'createdMoid':upgradeMoid or None, 'createdObjectType':upgradeType or None, 'upgradeStatusMoid':statusMoid, 'downloadStage':downloadStage or None, 'downloadPercentage':int(downloadPercentage) if downloadPercentage else None, 'overallStatus':overallStatus or None, 'overallPercentage':int(overallPercentage) if overallPercentage else None, 'errors':errors, 'errorDetailsOmitted':omitted, 'completed':finished, 'successful':True if normalized == 'success' and not operationFailed else False if operationFailed else None, 'statusAvailable':True, 'monitoringPerformed':False}, separators=(',', ':'))\nexcept LookupError as exc:\n    statusCode, errorMessage, route = str(exc), 'Upgrade status lookup failed. Verify the identifiers and read access on this Intersight endpoint.', 'error'\nexcept (ValueError, TypeError, KeyError) as exc:\n    errorMessage, route = str(exc), 'error'\nif route == 'error':\n    downloadStage = downloadPercentage = overallStatus = overallPercentage = ''\n    resultJson = json.dumps({'status':'lookup-failed', 'message':errorMessage, 'createdMoid':upgradeMoid or None, 'createdObjectType':upgradeType or None, 'upgradeStatusMoid':statusMoid, 'monitoringPerformed':False}, separators=(',', ':'))\nhelperReady = True\n",
+          "script_arguments": [
+            "$activity.definition_activity_02Z9OCT19FIX0047eaf6cfc0a2369dd42f7.output.response_body$",
+            "$activity.definition_activity_02Z9OCT19FIX0047eaf6cfc0a2369dd42f7.output.status_code$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX003ff6dde678e1bcbb54173$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.local.variable_workflow_02Z9OCT19FIX00af2e148111fec0ff5576a$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00b0ac3f3b1970b0e191bb4$",
+            "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.input.variable_workflow_02Z9OCT19FIX00048ee88d94ec9dd05a9e0$",
+            "$activity.definition_activity_02Z9OCT19FIX00e7c72bef9c4de40a06035.output.script_queries.route$"
+          ],
+          "script_queries": [
+            {
+              "script_query": "statusCode",
+              "script_query_name": "statusCode",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusMessage",
+              "script_query_name": "statusMessage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "errorMessage",
+              "script_query_name": "errorMessage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "resultJson",
+              "script_query_name": "resultJson",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "route",
+              "script_query_name": "route",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusUrl",
+              "script_query_name": "statusUrl",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "resourceUrl",
+              "script_query_name": "resourceUrl",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "upgradeMoid",
+              "script_query_name": "upgradeMoid",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "upgradeType",
+              "script_query_name": "upgradeType",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "statusMoid",
+              "script_query_name": "statusMoid",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "downloadStage",
+              "script_query_name": "downloadStage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "downloadPercentage",
+              "script_query_name": "downloadPercentage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "overallStatus",
+              "script_query_name": "overallStatus",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "overallPercentage",
+              "script_query_name": "overallPercentage",
+              "script_query_type": "string"
+            },
+            {
+              "script_query": "operationFailed",
+              "script_query_name": "operationFailed",
+              "script_query_type": "boolean"
+            },
+            {
+              "script_query": "helperReady",
+              "script_query_name": "helperReady",
+              "script_query_type": "boolean"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX0046b878ba50254abf73b9a",
+        "name": "Stop if status snapshot inspection cannot execute",
+        "title": "Stop if status snapshot inspection cannot execute",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop if status snapshot inspection cannot execute",
+          "display_name": "Stop if status snapshot inspection cannot execute",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00c61854434d35eb455c3f6",
+            "name": "Stop if status snapshot inspection cannot execute branch",
+            "title": "Stop if status snapshot inspection cannot execute branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop if status snapshot inspection cannot execute branch",
+              "display_name": "Stop if status snapshot inspection cannot execute branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.succeeded$",
+                "operator": "ne",
+                "right_operand": true
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00b173380f867753c6fa46c",
+                "name": "Publish status snapshot inspection execution failure",
+                "title": "Publish status snapshot inspection execution failure",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish status snapshot inspection execution failure",
+                  "display_name": "Publish status snapshot inspection execution failure",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                      "variable_value_new": "500"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                      "variable_value_new": "Firmware status inspection could not execute"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                      "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                      "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX0017e7773fee823bab682ab",
+                "name": "End status snapshot inspection execution failure",
+                "title": "End status snapshot inspection execution failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End status snapshot inspection execution failure",
+                  "display_name": "End status snapshot inspection execution failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "Firmware status inspection failed"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00b2d744d66e0c29090adcf",
+        "name": "Stop if status snapshot inspection is incomplete",
+        "title": "Stop if status snapshot inspection is incomplete",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop if status snapshot inspection is incomplete",
+          "display_name": "Stop if status snapshot inspection is incomplete",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00f794d68ce06fbbbffc1a1",
+            "name": "Stop if status snapshot inspection is incomplete branch",
+            "title": "Stop if status snapshot inspection is incomplete branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop if status snapshot inspection is incomplete branch",
+              "display_name": "Stop if status snapshot inspection is incomplete branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.helperReady$",
+                "operator": "ne",
+                "right_operand": true
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX006513e359bb85d1527e041",
+                "name": "Publish status snapshot inspection contract failure",
+                "title": "Publish status snapshot inspection contract failure",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish status snapshot inspection contract failure",
+                  "display_name": "Publish status snapshot inspection contract failure",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+                      "variable_value_new": "500"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+                      "variable_value_new": "Firmware status inspector returned an incomplete contract"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+                      "variable_value_new": "Inspect this workflow execution and retry the read-only status check."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+                      "variable_value_new": "{\"status\":\"inspection-failed\",\"monitoringPerformed\":false}"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00aaa42f37117d0fb47f9b4",
+                "name": "End status snapshot inspection contract failure",
+                "title": "End status snapshot inspection contract failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End status snapshot inspection contract failure",
+                  "display_name": "End status snapshot inspection contract failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "Firmware status inspection failed"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX002ed84abb60f7208c7e019",
+        "name": "Publish firmware progress snapshot",
+        "title": "Publish firmware progress snapshot",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Publish firmware progress snapshot",
+          "display_name": "Publish firmware progress snapshot",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005146995b25c5b5e74da10$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusCode$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00766018e97a0d31e909f02$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusMessage$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0052de53979ffd4858c9b6f$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.errorMessage$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00639f25b866643bf427cd5$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.resultJson$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0055694d81065fd239e8064$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.upgradeMoid$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00fc79f3eb245fdea3b6d7f$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.upgradeType$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00bbd65f1169da7710b3fe5$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusMoid$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX005f7bb1e8e6144e94185db$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.downloadStage$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0079689944bfd3965fb474a$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.downloadPercentage$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX00af1ec2988bb3ea5acc883$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.overallStatus$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z9OCT19FIX0040ae20ce543829d5ec413.output.variable_workflow_02Z9OCT19FIX0013f7c58883e4718cac4da$",
+              "variable_value_new": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.overallPercentage$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX00cfb114d7cb77d70bb9f08",
+        "name": "Stop on status snapshot lookup failure",
+        "title": "Stop on status snapshot lookup failure",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop on status snapshot lookup failure",
+          "display_name": "Stop on status snapshot lookup failure",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX00cc5968a354b36655c772f",
+            "name": "Stop on status snapshot lookup failure branch",
+            "title": "Stop on status snapshot lookup failure branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop on status snapshot lookup failure branch",
+              "display_name": "Stop on status snapshot lookup failure branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.route$",
+                "operator": "eq",
+                "right_operand": "error"
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX0041c74761c065419f6a455",
+                "name": "End status snapshot lookup failure",
+                "title": "End status snapshot lookup failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End status snapshot lookup failure",
+                  "display_name": "End status snapshot lookup failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusMessage$"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX002aeb1ead52d4c5f31f166",
+        "name": "Report observed upgrade failure",
+        "title": "Report observed upgrade failure",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Report observed upgrade failure",
+          "display_name": "Report observed upgrade failure",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z9OCT19FIX001a61b162db5b5424ebf7c",
+            "name": "Report observed upgrade failure branch",
+            "title": "Report observed upgrade failure branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Report observed upgrade failure branch",
+              "display_name": "Report observed upgrade failure branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.operationFailed$",
+                "operator": "eq",
+                "right_operand": true
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z9OCT19FIX00b6c729bed5573bcc052b4",
+                "name": "End observed firmware upgrade failure",
+                "title": "End observed firmware upgrade failure",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "End observed firmware upgrade failure",
+                  "display_name": "End observed firmware upgrade failure",
+                  "skip_execution": false,
+                  "completion_type": "failed-completed",
+                  "result_message": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusMessage$"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z9OCT19FIX0022965b5b7f2a6225f3982",
+        "name": "End firmware progress snapshot",
+        "title": "End firmware progress snapshot",
+        "type": "logic.completed",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "End firmware progress snapshot",
+          "display_name": "End firmware progress snapshot",
+          "skip_execution": false,
+          "completion_type": "succeeded",
+          "result_message": "$activity.definition_activity_02Z9OCT19FIX009950753d0f66d726281ca.output.script_queries.statusMessage$"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_02XOKCY8L6Z5M6cXFxME8ifMx23VYaCm3qv"
+    ]
+  }
+}

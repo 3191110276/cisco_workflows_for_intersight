@@ -18,12 +18,15 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 START_MARKER = "<!-- BEGIN GENERATED WORKFLOW CATALOG -->"
 END_MARKER = "<!-- END GENERATED WORKFLOW CATALOG -->"
-VALIDATED_WORKFLOW_IDS = frozenset(
-    {
-        "definition_workflow_02XRJDF2FUHSO3HtFwPPkJV2NMJpxcIoiPS",
-        "definition_workflow_02XP097ZMQU745jOdPbsN5Aa8WP1nK8RtrE",
-    }
-)
+# Changed dependencies require fresh cloud validation; historical passes do not
+# certify the current native migration.
+VALIDATED_WORKFLOW_IDS = frozenset()
+INTERNAL_HELPER_IDS = frozenset({
+    "definition_workflow_02Z3AAXNVAM5J0U5WnISWfQYpmPub7WNRcv",  # JSON field facts
+    "definition_workflow_02Z3AAXNVAM5J0xM0D2y8biAn7z2tVtcqCp",  # Error formatter
+    "definition_workflow_02Z3AAXNVAM5J0GKOTHddwSfPM4yIPtuayy",  # Collection facts
+    "definition_workflow_02Z3AAXNVAM5J0ZVf4y38LuOgNTLyGMs1pX",  # Organization recipe
+})
 
 
 @dataclass(frozen=True)
@@ -54,7 +57,7 @@ def load_definition(path: Path, kind: str) -> Definition:
     description = properties.get("description", "")
     if not isinstance(description, str):
         description = str(description)
-    raw_dependencies = document.get("atomic_workflows", []) if kind == "Workflows" else []
+    raw_dependencies = document.get("atomic_workflows", [])
     if not isinstance(raw_dependencies, list) or not all(
         isinstance(item, str) for item in raw_dependencies
     ):
@@ -94,6 +97,11 @@ def markdown_text(value: str) -> str:
 
 def display_name(definition: Definition) -> str:
     return definition.name.removeprefix("Cisco Intersight - ")
+
+
+def is_internal_helper(definition: Definition) -> bool:
+    return (definition.name.startswith("Cisco Intersight - Native ")
+            or definition.unique_name in INTERNAL_HELPER_IDS)
 
 
 def markdown_link(definition: Definition) -> str:
@@ -145,7 +153,7 @@ def render_catalog(definitions: list[Definition]) -> str:
     unknown_dependencies = sorted(
         {
             dependency
-            for workflow in workflows
+            for workflow in definitions
             for dependency in workflow.dependencies
             if dependency not in atomics_by_id
         }
@@ -186,15 +194,26 @@ def render_catalog(definitions: list[Definition]) -> str:
             "",
             "# Atomics",
             "",
-            "| Validation | Atomic workflow | Purpose |",
-            "|:---:|---|---|",
+            "Import the listed dependencies before parent workflows. Development recipes and characterization helpers are listed separately below.",
+            "",
+            "| Validation | Atomic workflow | Purpose | Dependencies |",
+            "|:---:|---|---|---|",
         ]
     )
     for atomic in atomics:
+        if is_internal_helper(atomic):
+            continue
+        dependencies = ", ".join(markdown_link(atomics_by_id[item]) for item in atomic.dependencies) or "None"
         lines.append(
             f"| {validation_indicator(atomic, validated_ids)} "
-            f"| {markdown_link(atomic)} | {summary(atomic.description)} |"
+            f"| {markdown_link(atomic)} | {summary(atomic.description)} | {dependencies} |"
         )
+
+    internal = [item for item in atomics if is_internal_helper(item)]
+    if internal:
+        lines.extend(["", "<details>", f"<summary>Shared dependencies and development recipes ({len(internal)})</summary>", "", "Required parent dependencies are linked in the workflow table. Other exports here preserve migration recipes and characterization contracts. All atomic exports are now flat after repairing the remaining 23 internal helpers. Check cloud import and runtime validation separately for each export. Local checks do not certify warning-free imports.", "", "| Helper | Purpose |", "|---|---|"])
+        lines.extend(f"| {markdown_link(item)} | {summary(item.description)} |" for item in internal)
+        lines.extend(["", "</details>"])
 
     lines.extend(["", END_MARKER])
     return "\n".join(lines)

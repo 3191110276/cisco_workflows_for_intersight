@@ -1,0 +1,687 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF",
+    "name": "Cisco Intersight - Native Start operating system instal 8fae47c3",
+    "title": "Cisco Intersight - Native Start operating system instal 8fae47c3",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 1 - script_queries.configApiUrlTemplate",
+          "type": "datatype.string",
+          "description": "Source 1 - script_queries.configApiUrlTemplate",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0i9y1H6bbWCcTUy6fraLuV",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 2 - script_queries.duplicateApiUrlTemplate",
+          "type": "datatype.string",
+          "description": "Source 2 - script_queries.duplicateApiUrlTemplate",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0y2B1XZMLKA4cjUReWpegy",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 3 - script_queries.imageApiUrlTemplate",
+          "type": "datatype.string",
+          "description": "Source 3 - script_queries.imageApiUrlTemplate",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0rj0WhzjMrtIlqgLzWK1v7",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 4 - script_queries.scuApiUrlTemplate",
+          "type": "datatype.string",
+          "description": "Source 4 - script_queries.scuApiUrlTemplate",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0gSIPaWmNuFZQkrwZRKYHd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 5 - script_queries.serverApiUrlTemplate",
+          "type": "datatype.string",
+          "description": "Source 5 - script_queries.serverApiUrlTemplate",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0JgaVu1eYDNRZA8eOI8LSb",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Native 6: organizationMoid",
+          "type": "datatype.string",
+          "description": "Source 6 - Inspect exact organization identity - organizationMoid",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native 7: serverApiUrl",
+          "type": "datatype.string",
+          "description": "Finalize organization-scoped OS installation routes - serverApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Zv4J3ggMVsAxhCJW4BSks",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native 8: imageApiUrl",
+          "type": "datatype.string",
+          "description": "Finalize organization-scoped OS installation routes - imageApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0TWmJ09e1dkWwo2Kl0AOvJ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Finalize organization-scoped OS installation routes - scuApiUrl",
+          "type": "datatype.string",
+          "description": "Finalize organization-scoped OS installation routes - scuApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0NEi6qRSmrN8aFJA2lBnZ8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Native 10: helperReady",
+          "type": "datatype.boolean",
+          "description": "Finalize organization-scoped OS installation routes - helperReady",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0MHdhJ2x8OVXBeRqKHJJvJ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native 11: configApiUrl",
+          "type": "datatype.string",
+          "description": "Finalize organization-scoped OS installation routes - configApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0DhSkoh9RztdXYhItJjRXd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Native 12: duplicateApiUrl",
+          "type": "datatype.string",
+          "description": "Finalize organization-scoped OS installation routes - duplicateApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ZmvymaR8BdCDIH642BThe",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "serverApiUrl",
+          "type": "datatype.string",
+          "description": "serverApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0vF3Ui75sU8cJJ5vS7slx8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "configApiUrl",
+          "type": "datatype.string",
+          "description": "configApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0oVDN3xx6HLJfVoobspGKt",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "imageApiUrl",
+          "type": "datatype.string",
+          "description": "imageApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J02ejXVQUwl5ydzdpjWI4TM",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "scuApiUrl",
+          "type": "datatype.string",
+          "description": "scuApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0v7sOOZvJsTrfuAdtVsUZ9",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "duplicateApiUrl",
+          "type": "datatype.string",
+          "description": "duplicateApiUrl",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Zf50FstJGC8P1G9EYlr2h",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "output",
+          "name": "helperReady",
+          "type": "datatype.boolean",
+          "description": "helperReady",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0HxAyZUnFbWpIlA0vN9j7i",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0P4IjPEDfIDRxc5Ty7vAnd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0LDEBAXQ3DNwC9xdmjHISp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0GIgEwVqxNSucUeFKyctPs",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"completed\":false}",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J05U5HmLxyYf2fKqCbFcxBX",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight Native Helpers",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Reusable native-only internal helper for Cisco Intersight - Start operating system installation. Keeps scalar preparation or polling below platform action and variable limits. No API calls, credentials or hardware targets. Import this helper before its caller; current-cloud native runtime verification remains required. Full internal purpose: Cisco Intersight - Native Start operating system installation - Finalize organization-scoped OS installation routes.",
+      "display_name": "Cisco Intersight - Native Start operating system instal 8fae47c3",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0VFn1zQyX4GaSx6GQ0HUuI",
+        "name": "Group",
+        "title": "Finalize organization-scoped OS installation routes",
+        "type": "logic.group",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Native placeholder validation and Replace String construct every organization-scoped route. Unresolved or repeated placeholders leave readiness false before API lookup.",
+          "display_name": "Finalize organization-scoped OS installation routes",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0c0x8JWWqcvFENxcwCPj5u",
+            "name": "Condition",
+            "title": "Require exactly one organization placeholder per route",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Require exactly one organization placeholder per route",
+              "display_name": "Require exactly one organization placeholder per route",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0u0TbI5PmwUqVjfEGineg6",
+                "name": "Condition Branch",
+                "title": "Require exactly one organization placeholder per route branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Require exactly one organization placeholder per route branch",
+                  "display_name": "Require exactly one organization placeholder per route branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": {
+                            "left_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$",
+                              "operator": "mregex",
+                              "right_operand": "^[^{}]+$"
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0JgaVu1eYDNRZA8eOI8LSb$",
+                              "operator": "mregex",
+                              "right_operand": "^[^{}]*\\{organizationMoid\\}[^{}]*$"
+                            }
+                          },
+                          "operator": "and",
+                          "right_operand": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0i9y1H6bbWCcTUy6fraLuV$",
+                            "operator": "mregex",
+                            "right_operand": "^[^{}]*\\{organizationMoid\\}[^{}]*$"
+                          }
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0rj0WhzjMrtIlqgLzWK1v7$",
+                          "operator": "mregex",
+                          "right_operand": "^[^{}]*\\{organizationMoid\\}[^{}]*$"
+                        }
+                      },
+                      "operator": "and",
+                      "right_operand": {
+                        "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0gSIPaWmNuFZQkrwZRKYHd$",
+                        "operator": "mregex",
+                        "right_operand": "^[^{}]*\\{organizationMoid\\}[^{}]*$"
+                      }
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0y2B1XZMLKA4cjUReWpegy$",
+                      "operator": "mregex",
+                      "right_operand": "^[^{}]*\\{organizationMoid\\}[^{}]*$"
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0z5eQusBXWMiYWwbjhbRNB",
+                    "name": "Replace String",
+                    "title": "Finalize serverApiUrl organization scope",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Finalize serverApiUrl organization scope",
+                      "display_name": "Finalize serverApiUrl organization scope",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0JgaVu1eYDNRZA8eOI8LSb$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "{organizationMoid}",
+                          "replacement_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0jfCVKxCNlFzkAax7kgaIG",
+                    "name": "Replace String",
+                    "title": "Finalize configApiUrl organization scope",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Finalize configApiUrl organization scope",
+                      "display_name": "Finalize configApiUrl organization scope",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0i9y1H6bbWCcTUy6fraLuV$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "{organizationMoid}",
+                          "replacement_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Jzuhckbx2sisnsNfBEkK1",
+                    "name": "Replace String",
+                    "title": "Finalize imageApiUrl organization scope",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Finalize imageApiUrl organization scope",
+                      "display_name": "Finalize imageApiUrl organization scope",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0rj0WhzjMrtIlqgLzWK1v7$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "{organizationMoid}",
+                          "replacement_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0BQBpgE3z9DBSRjYbxOdu7",
+                    "name": "Replace String",
+                    "title": "Finalize scuApiUrl organization scope",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Finalize scuApiUrl organization scope",
+                      "display_name": "Finalize scuApiUrl organization scope",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0gSIPaWmNuFZQkrwZRKYHd$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "{organizationMoid}",
+                          "replacement_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0O6n6ak7iyD6MPQ7GsUAuH",
+                    "name": "Replace String",
+                    "title": "Finalize duplicateApiUrl organization scope",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Finalize duplicateApiUrl organization scope",
+                      "display_name": "Finalize duplicateApiUrl organization scope",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0y2B1XZMLKA4cjUReWpegy$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "{organizationMoid}",
+                          "replacement_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.input.variable_workflow_02Z3AAXNVAM5J0QAkp21lydNrxjPtg7Vp5n$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0fvizpmB6qNssySmPbf0gS",
+                    "name": "Set Variables",
+                    "title": "Publish fully scoped OS installation routes",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish fully scoped OS installation routes",
+                      "display_name": "Publish fully scoped OS installation routes",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0Zv4J3ggMVsAxhCJW4BSks$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0z5eQusBXWMiYWwbjhbRNB.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0DhSkoh9RztdXYhItJjRXd$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0jfCVKxCNlFzkAax7kgaIG.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0TWmJ09e1dkWwo2Kl0AOvJ$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Jzuhckbx2sisnsNfBEkK1.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0NEi6qRSmrN8aFJA2lBnZ8$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0BQBpgE3z9DBSRjYbxOdu7.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0ZmvymaR8BdCDIH642BThe$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0O6n6ak7iyD6MPQ7GsUAuH.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0MHdhJ2x8OVXBeRqKHJJvJ$",
+                          "variable_value_new": true
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0FmbbsTBmG61mpdZG1TY5E",
+        "name": "Set Variables",
+        "title": "Publish native helper outputs",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Sets variables in the original assignment order, consolidating adjacent activities with identical failure/skip behavior. No intermediate activity output is referenced.",
+          "display_name": "Publish native helper outputs",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0vF3Ui75sU8cJJ5vS7slx8$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0Zv4J3ggMVsAxhCJW4BSks$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0oVDN3xx6HLJfVoobspGKt$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0DhSkoh9RztdXYhItJjRXd$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J02ejXVQUwl5ydzdpjWI4TM$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0TWmJ09e1dkWwo2Kl0AOvJ$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0v7sOOZvJsTrfuAdtVsUZ9$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0NEi6qRSmrN8aFJA2lBnZ8$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0Zf50FstJGC8P1G9EYlr2h$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0ZmvymaR8BdCDIH642BThe$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0HxAyZUnFbWpIlA0vN9j7i$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.local.variable_workflow_02Z3AAXNVAM5J0MHdhJ2x8OVXBeRqKHJJvJ$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0P4IjPEDfIDRxc5Ty7vAnd$",
+              "variable_value_new": 200
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0LDEBAXQ3DNwC9xdmjHISp$",
+              "variable_value_new": "Native helper execution completed."
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J0GIgEwVqxNSucUeFKyctPs$",
+              "variable_value_new": ""
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0qVtRQZLjBfULtTNjx1RSF.output.variable_workflow_02Z3AAXNVAM5J05U5HmLxyYf2fKqCbFcxBX$",
+              "variable_value_new": "{\"completed\":true}"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV"
+    ]
+  },
+  "categories": {
+    "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV": {
+      "unique_name": "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV",
+      "name": "Cisco Intersight - Compute Hardware",
+      "title": "Cisco Intersight - Compute Hardware",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  }
+}

@@ -161,7 +161,7 @@
           "is_required": false,
           "display_on_wizard": false,
           "is_invisible": false,
-          "variable_string_format": "text"
+          "variable_string_format": "json"
         },
         "unique_name": "variable_workflow_02XRJDF2HHVWW29Zke90vEcSV1AVcP5KoxV",
         "object_type": "variable_workflow"
@@ -172,7 +172,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "Creates one new Cisco Intersight Server Profile from an exact same-organization template. A read-only identity lookup resolves Server Name or Serial to exactly one organization-permitted Blade or Rack Unit and supplies its validated Moid and concrete type internally. The workflow refuses an existing destination name, waits up to ten minutes for derivation, assigns the resolved target, and submits ordered Deploy then Activate actions. Success means Cisco Intersight accepted the validated deploy-and-activate request; deployment, activation, and association completion are not monitored. Activation can reboot the server. This workflow does not start an operating-system installation. Import the four dependent atomics first and select an authorized intersight.endpoint target.",
+      "description": "Creates one new Cisco Intersight Server Profile from an exact same-organization template. A read-only identity lookup resolves Server Name or Serial to exactly one organization-permitted Blade or Rack Unit and supplies its validated Moid and concrete type internally. The workflow refuses an existing destination name, waits up to ten minutes for derivation, assigns the resolved target, and submits ordered Deploy then Activate actions. Success means Cisco Intersight accepted the validated deploy-and-activate request; deployment, activation, and association completion are not monitored. Activation can reboot the server. This workflow does not start an operating-system installation. Import the four dependent atomics first and select an authorized intersight.endpoint target. No automatic rollback or resume is provided after partial completion; inspect the created profile before retrying.",
       "display_name": "Cisco Intersight - Deploy new Server Profile from template",
       "runtime_user": {
         "override_target_runtime_user": false,

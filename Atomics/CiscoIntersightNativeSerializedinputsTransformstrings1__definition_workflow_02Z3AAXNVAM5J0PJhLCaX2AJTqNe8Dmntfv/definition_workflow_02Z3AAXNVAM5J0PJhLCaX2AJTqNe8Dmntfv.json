@@ -1,0 +1,591 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv",
+    "name": "Cisco Intersight - Native Serialized inputs - Transform c3e16d36",
+    "title": "Cisco Intersight - Native Serialized inputs - Transform c3e16d36",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 1",
+          "type": "datatype.string",
+          "description": "Source 1",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0bkgqxuKo9AoCMWofCGXIU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 2",
+          "type": "datatype.string",
+          "description": "Source 2",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0IUlg06oaTMdMGpMzu4pd2",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 3",
+          "type": "datatype.string",
+          "description": "Source 3",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0HOVWAcbk0UL5dcGPJlyAb",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 4",
+          "type": "datatype.string",
+          "description": "Source 4",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0WCeyCJfpd8a2dvhRzO04L",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 5",
+          "type": "datatype.string",
+          "description": "Source 5",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0S0fBPrznaKHzJR61PSp1X",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 6",
+          "type": "datatype.string",
+          "description": "Source 6",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0dr9jEu7L5SeUVT1zbMlUd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 1",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 1",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J04ITCOioKY8XG7PFpUyaKA",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 3",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 3",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0rTlrhIHwfFNHcwSXM0WEJ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 5",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 5",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0DRV7ftADTFWAzA1Ql3IsV",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 7",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 7",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0bbwi0Uhi2wAmDKH1Pzr9f",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 9",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 9",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0nQQzIazDBZrfVdk3SaMKZ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Prepare serialized input strings - formatted value 11",
+          "type": "datatype.string",
+          "description": "Prepare serialized input strings - formatted value 11",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0gr3sBEBBADyLdcguBjgQz",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 1",
+          "type": "datatype.string",
+          "description": "Value 1",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0fraXRNlTfvbVaNJsfA80t",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 2",
+          "type": "datatype.string",
+          "description": "Value 2",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J01t6AQenqFtaWWqKyElaML",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 3",
+          "type": "datatype.string",
+          "description": "Value 3",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J00OTH1K9mE21uoVtbq9MxM",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 4",
+          "type": "datatype.string",
+          "description": "Value 4",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0zzZkvmmmSwIVvI47bCBxB",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 5",
+          "type": "datatype.string",
+          "description": "Value 5",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0DowidM5j4QG4rfKCLKTWz",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "Value 6",
+          "type": "datatype.string",
+          "description": "Value 6",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0zDfjXBIRoyMwTMkq8VElb",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0zo1nAO2EpfhH9MH0w9Q7Q",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Internal helper execution did not complete.",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J04ubkRV362BYtz8Oy2jPuD",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Internal helper execution did not complete.",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0LgrMeNCpM61eJ0lV7XjYg",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"completed\":false}",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0EPNdXsysfFYwHiFpzglEW",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight Native Helpers",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Internal reusable native string preparation. Formats serialized arguments, trims explicit Unicode whitespace and converts case or replaces literals as requested by callers. No API calls or targets. Import before callers. Full internal purpose: Cisco Intersight - Native Serialized inputs - Transform strings 1.",
+      "display_name": "Cisco Intersight - Native Serialized inputs - Transform c3e16d36",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0TW8rB3fq7rUfzsx7H9A8c",
+        "name": "Set Variables",
+        "title": "Format scalar as text",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Format scalar as text",
+          "display_name": "Format scalar as text",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J04ITCOioKY8XG7PFpUyaKA$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0bkgqxuKo9AoCMWofCGXIU$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0rTlrhIHwfFNHcwSXM0WEJ$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0IUlg06oaTMdMGpMzu4pd2$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0DRV7ftADTFWAzA1Ql3IsV$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0HOVWAcbk0UL5dcGPJlyAb$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0bbwi0Uhi2wAmDKH1Pzr9f$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0WCeyCJfpd8a2dvhRzO04L$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0nQQzIazDBZrfVdk3SaMKZ$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0S0fBPrznaKHzJR61PSp1X$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0gr3sBEBBADyLdcguBjgQz$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.input.variable_workflow_02Z3AAXNVAM5J0dr9jEu7L5SeUVT1zbMlUd$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0sd9U7KOZokDbdPUxeo7jO",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J04ITCOioKY8XG7PFpUyaKA$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0yxfax7XHmrA8RTY3vrM6t",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0rTlrhIHwfFNHcwSXM0WEJ$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0geeVHEsSVtzWhdDF3Wu4T",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0DRV7ftADTFWAzA1Ql3IsV$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0BFgZiOoFcOC1Bu5uV4KnE",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0bbwi0Uhi2wAmDKH1Pzr9f$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0UzeIaAmj8iBv5cuzguVHP",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0nQQzIazDBZrfVdk3SaMKZ$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0ik8W40anOuZwXAHObcnyG",
+        "name": "Trim String",
+        "title": "Trim validation input",
+        "type": "core.trim_string",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Trim validation input",
+          "display_name": "Trim validation input",
+          "skip_execution": false,
+          "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.local.variable_workflow_02Z3AAXNVAM5J0gr3sBEBBADyLdcguBjgQz$",
+          "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+          "trim_leading": true,
+          "trim_trailing": true,
+          "continue_on_empty_source_string": true
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0awoth5g9IsmadOUtCkqFe",
+        "name": "Set Variables",
+        "title": "Set value5",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Set value5",
+          "display_name": "Set value5",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0fraXRNlTfvbVaNJsfA80t$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0sd9U7KOZokDbdPUxeo7jO.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J01t6AQenqFtaWWqKyElaML$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0yxfax7XHmrA8RTY3vrM6t.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J00OTH1K9mE21uoVtbq9MxM$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0geeVHEsSVtzWhdDF3Wu4T.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0zzZkvmmmSwIVvI47bCBxB$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0BFgZiOoFcOC1Bu5uV4KnE.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0DowidM5j4QG4rfKCLKTWz$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UzeIaAmj8iBv5cuzguVHP.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0zDfjXBIRoyMwTMkq8VElb$",
+              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0ik8W40anOuZwXAHObcnyG.output.trimmed$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0zo1nAO2EpfhH9MH0w9Q7Q$",
+              "variable_value_new": 200
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J04ubkRV362BYtz8Oy2jPuD$",
+              "variable_value_new": "Internal helper evaluation completed; caller-specific outputs contain validation results."
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0LgrMeNCpM61eJ0lV7XjYg$",
+              "variable_value_new": ""
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0PJhLCaX2AJTqNe8Dmntfv.output.variable_workflow_02Z3AAXNVAM5J0EPNdXsysfFYwHiFpzglEW$",
+              "variable_value_new": "{\"completed\":true}"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": []
+  }
+}

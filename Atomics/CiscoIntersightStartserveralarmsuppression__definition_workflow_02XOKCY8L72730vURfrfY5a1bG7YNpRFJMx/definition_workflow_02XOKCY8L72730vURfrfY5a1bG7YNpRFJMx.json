@@ -165,6 +165,321 @@
         },
         "unique_name": "variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr",
         "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationStatus",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationStatus",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationStatusCode",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationStatusCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0vJStLxGS7uMYQ61A4Fvzf",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationMessage",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0XpEmu278aqo81CanRHwyL",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationResultJson",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationResultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0HUahRI4O9SoJZXhDVdv4s",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Inspect exact organization match - organizationMoid",
+          "type": "datatype.string",
+          "description": "Inspect exact organization match - organizationMoid",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0C2LhIwwmfwm94jYiZ5rEn",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "OData literal escape result 115",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0tKqSB151RJ0cWh9M0TzLv",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "OData literal escape result 116",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J05QhH1l6FqynpoAgOUMBdL",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "OData literal escape result 117",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0tJKger4b86WTU1gPSykDh",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "OData literal restore result 118",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline scope returned",
+          "type": "datatype.boolean",
+          "description": "Organization inline scope returned",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "local",
+          "name": "Organization inline 1 Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Organization resolver did not complete",
+          "scope": "local",
+          "name": "Organization inline 2 Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Organization resolution did not complete.",
+          "scope": "local",
+          "name": "Organization inline 3 Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}",
+          "scope": "local",
+          "name": "Organization inline 4 Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Organization inline 5 Organization Moid",
+          "type": "datatype.string",
+          "description": "Organization Moid",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{}",
+          "scope": "local",
+          "name": "Organization inline 6 Organization JSON",
+          "type": "datatype.string",
+          "description": "Organization JSON",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0AXGo98cAogHaLCG5UWQMQ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Organization inline 7 HTTP Status Code",
+          "type": "datatype.integer",
+          "description": "HTTP Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline 8 Request Succeeded",
+          "type": "datatype.boolean",
+          "description": "Request Succeeded",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Organization inline 9 Inspection Complete",
+          "type": "datatype.boolean",
+          "description": "Inspection Complete",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0R9tPVA25Xy6Ax0KRZ0GxW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Organization inline 10 Organization Status",
+          "type": "datatype.string",
+          "description": "No semantic status is published until the embedded scope starts; its initializer restores the complete original helper-failure default.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4",
+        "object_type": "variable_workflow"
       }
     ],
     "properties": {
@@ -189,64 +504,533 @@
     "actions": [
       {
         "unique_name": "definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA",
-        "name": "Execute Python Script",
+        "name": "Group",
         "title": "Validate inputs and escape OData values",
-        "type": "python3.script",
+        "type": "logic.group",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": true,
-          "description": "Validates every required input, the current cond.AlarmSuppression name and Description schema limits, timezone-aware RFC 3339 Start Date and End Date values, the 60-second past-start limit, and End Date ordering. It also escapes apostrophes in Device Organization, Server Name or Serial, and Suppression Name for OData single-quoted literals.",
+          "description": "Uses native Trim String and Replace String for argument-derived preparation, followed by the existing validator. A failed native activity stops this group before later API operations.",
           "display_name": "Validate inputs and escape OData values",
-          "skip_execution": false,
-          "action_timeout": 180,
-          "script": "import json\nimport re\nimport sys\nfrom datetime import datetime, timedelta, timezone\n\npreparationStatus = \"helper-failure\"\npreparationStatusCode = \"500\"\npreparationMessage = \"Workflow input preparation did not complete.\"\npreparationResultJson = json.dumps({\"error\": preparationMessage}, separators=(\",\", \":\"))\nescapedOrganizationName = \"\"\nescapedServerNameOrSerial = \"\"\nescapedSuppressionName = \"\"\nRFC3339_PATTERN = re.compile(r\"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$\")\nSUPPRESSION_NAME_PATTERN = re.compile(r\"^[A-Za-z0-9][A-Za-z0-9_\\s.\\-]{1,255}$\")\n\ndef parse_rfc3339(value, label):\n    if not RFC3339_PATTERN.fullmatch(value):\n        raise ValueError(label + \" must be a complete RFC 3339 timestamp with Z or an explicit UTC offset.\")\n    parsed = datetime.fromisoformat(value[:-1] + \"+00:00\" if value.endswith(\"Z\") else value)\n    if parsed.tzinfo is None or parsed.utcoffset() is None:\n        raise ValueError(label + \" must include a timezone.\")\n    return parsed.astimezone(timezone.utc)\n\ntry:\n    organization = sys.argv[1]\n    server = sys.argv[2]\n    suppression = sys.argv[3]\n    description = sys.argv[4]\n    startText = sys.argv[5].strip()\n    endText = sys.argv[6].strip()\n    errors = []\n\n    if not organization.strip():\n        errors.append(\"Device Organization must not be blank.\")\n    if not server.strip():\n        errors.append(\"Server Name or Serial must not be blank.\")\n    if not suppression.strip():\n        errors.append(\"Suppression Name must not be blank.\")\n    elif not SUPPRESSION_NAME_PATTERN.fullmatch(suppression):\n        errors.append(\"Suppression Name must match the current cond.AlarmSuppression name schema: 2-256 characters, begin with an alphanumeric character, and contain only word characters, spaces, periods, or hyphens.\")\n    if len(description) > 120:\n        errors.append(\"Description must not exceed 120 characters.\")\n\n    now = datetime.now(timezone.utc)\n    start = None\n    end = None\n    try:\n        if startText:\n            start = parse_rfc3339(startText, \"Start Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n    try:\n        if endText:\n            end = parse_rfc3339(endText, \"End Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n\n    if start is not None and start < now - timedelta(seconds=60):\n        errors.append(\"Start Date must not be more than 60 seconds in the past.\")\n    effectiveStart = max(now, start) if start is not None else now\n    if end is not None and end <= effectiveStart:\n        errors.append(\"End Date must be later than the effective start time.\")\n\n    if errors:\n        preparationStatus = \"invalid\"\n        preparationStatusCode = \"400\"\n        preparationMessage = \" \".join(errors)\n        preparationResultJson = json.dumps({\"error\": \"Input validation failed\", \"details\": errors}, separators=(\",\", \":\"))\n    else:\n        escapedOrganizationName = organization.replace(\"'\", \"''\")\n        escapedServerNameOrSerial = server.replace(\"'\", \"''\")\n        escapedSuppressionName = suppression.replace(\"'\", \"''\")\n        preparationStatus = \"ready\"\n        preparationStatusCode = \"200\"\n        preparationMessage = \"Required inputs, schema limits, RFC 3339 timestamps, and OData values are valid.\"\n        preparationResultJson = json.dumps({\n            \"validated\": True,\n            \"descriptionLength\": len(description),\n            \"startDateProvided\": bool(startText),\n            \"endDateProvided\": bool(endText)\n        }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    preparationStatus = \"helper-failure\"\n    preparationStatusCode = \"500\"\n    preparationMessage = str(exc)\n    preparationResultJson = json.dumps({\"error\": \"Workflow input preparation failed\", \"detail\": preparationMessage}, separators=(\",\", \":\"))",
-          "script_arguments": [
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728532WdfvOPReJkVhg5WLxJn0$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72866JKyIOZFj8yRzjfIbdtSgh$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728855RSDmqLU2h8JDYwbold7b$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$"
-          ],
-          "script_queries": [
-            {
-              "script_query": "preparationStatus",
-              "script_query_name": "preparationStatus",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "preparationStatusCode",
-              "script_query_name": "preparationStatusCode",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "preparationMessage",
-              "script_query_name": "preparationMessage",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "preparationResultJson",
-              "script_query_name": "preparationResultJson",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "escapedOrganizationName",
-              "script_query_name": "escapedOrganizationName",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "escapedServerNameOrSerial",
-              "script_query_name": "escapedServerNameOrSerial",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "escapedSuppressionName",
-              "script_query_name": "escapedSuppressionName",
-              "script_query_type": "string"
-            }
-          ]
+          "skip_execution": false
         },
-        "object_type": "definition_activity"
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0dhJaUDrC9HqMWtJFSWJLX",
+            "name": "Trim String",
+            "title": "Trim Start Date",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Start Date",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J070XsQriUY5dxBAawhOIuf",
+            "name": "Trim String",
+            "title": "Trim End Date",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim End Date",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0GcSR3ouGJjYV4DRjGJ85a",
+            "name": "Trim String",
+            "title": "Trim Device Organization",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Device Organization",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728532WdfvOPReJkVhg5WLxJn0$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0YDM2wzX1Su2QldE3WKoOb",
+            "name": "Trim String",
+            "title": "Trim Server Name or Serial",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Server Name or Serial",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72866JKyIOZFj8yRzjfIbdtSgh$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0CQSMOJHCdRzakx3ArnZKk",
+            "name": "Trim String",
+            "title": "Trim Suppression Name",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Suppression Name",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0KXc7358la7PYAnxHtmGuk",
+            "name": "Group",
+            "title": "Escape Device Organization for OData",
+            "type": "logic.group",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Inline guarded OData literal escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+              "display_name": "Escape Device Organization for OData",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0963nKJWDtbeXmE3wxU17b",
+                "name": "Set Variables",
+                "title": "Initialize fresh literal result",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize fresh literal result",
+                  "display_name": "Initialize fresh literal result",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tKqSB151RJ0cWh9M0TzLv$",
+                      "variable_value_new": ""
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0lcNDHbjFXailQg222a9uU",
+                "name": "Condition",
+                "title": "Replace only nonempty source",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Replace only nonempty source",
+                  "display_name": "Replace only nonempty source",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J00oBiO3LLRgV875IiU5fRj",
+                    "name": "Condition Branch",
+                    "title": "Replace only nonempty source branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Replace only nonempty source branch",
+                      "display_name": "Replace only nonempty source branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728532WdfvOPReJkVhg5WLxJn0$",
+                        "operator": "ne",
+                        "right_operand": ""
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0UV6SZivegwGiOsEMz3MLH",
+                        "name": "Replace String",
+                        "title": "Replace nonempty literal text",
+                        "type": "core.replacestring",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace nonempty literal text",
+                          "display_name": "Replace nonempty literal text",
+                          "skip_execution": false,
+                          "input_string": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728532WdfvOPReJkVhg5WLxJn0$",
+                          "replace_list": [
+                            {
+                              "replaced_string": "'",
+                              "replacement_string": "''"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0nSvRZpk0rt6154LBLAQJL",
+                        "name": "Set Variables",
+                        "title": "Publish inline replaced text",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish inline replaced text",
+                          "display_name": "Publish inline replaced text",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tKqSB151RJ0cWh9M0TzLv$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UV6SZivegwGiOsEMz3MLH.output.result_string$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0mSpP2tfUtEjR8ByAb80OG",
+            "name": "Group",
+            "title": "Escape Server Name or Serial for OData",
+            "type": "logic.group",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Inline guarded OData literal escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+              "display_name": "Escape Server Name or Serial for OData",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0kM99o41eYiUIpU6h4r4GK",
+                "name": "Set Variables",
+                "title": "Initialize fresh literal result",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize fresh literal result",
+                  "display_name": "Initialize fresh literal result",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05QhH1l6FqynpoAgOUMBdL$",
+                      "variable_value_new": ""
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J03KNIGqZJQeFWgLAZoWHTK",
+                "name": "Condition",
+                "title": "Replace only nonempty source",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Replace only nonempty source",
+                  "display_name": "Replace only nonempty source",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0SDEVKvJuxOzOFtebGiHvv",
+                    "name": "Condition Branch",
+                    "title": "Replace only nonempty source branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Replace only nonempty source branch",
+                      "display_name": "Replace only nonempty source branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72866JKyIOZFj8yRzjfIbdtSgh$",
+                        "operator": "ne",
+                        "right_operand": ""
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0dY3XEluhnaPEAAP2BqHmd",
+                        "name": "Replace String",
+                        "title": "Replace nonempty literal text",
+                        "type": "core.replacestring",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace nonempty literal text",
+                          "display_name": "Replace nonempty literal text",
+                          "skip_execution": false,
+                          "input_string": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72866JKyIOZFj8yRzjfIbdtSgh$",
+                          "replace_list": [
+                            {
+                              "replaced_string": "'",
+                              "replacement_string": "''"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J088QKCNM76SCby40T4k6zS",
+                        "name": "Set Variables",
+                        "title": "Publish inline replaced text",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish inline replaced text",
+                          "display_name": "Publish inline replaced text",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05QhH1l6FqynpoAgOUMBdL$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0dY3XEluhnaPEAAP2BqHmd.output.result_string$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0QNmGH6wrxi8mj6MlmCuSj",
+            "name": "Group",
+            "title": "Escape Suppression Name for OData",
+            "type": "logic.group",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Inline guarded OData literal escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+              "display_name": "Escape Suppression Name for OData",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0xuEZgPSgXrLVXGW8HRojq",
+                "name": "Set Variables",
+                "title": "Initialize fresh literal result",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize fresh literal result",
+                  "display_name": "Initialize fresh literal result",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tJKger4b86WTU1gPSykDh$",
+                      "variable_value_new": ""
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0Aw7AHhEAZYNzGneik2LtR",
+                "name": "Condition",
+                "title": "Replace only nonempty source",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Replace only nonempty source",
+                  "display_name": "Replace only nonempty source",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0FiMXLIu0h8mj0NHFx9k60",
+                    "name": "Condition Branch",
+                    "title": "Replace only nonempty source branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Replace only nonempty source branch",
+                      "display_name": "Replace only nonempty source branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+                        "operator": "ne",
+                        "right_operand": ""
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0kxViqGYwHWYX1P4i33VZZ",
+                        "name": "Replace String",
+                        "title": "Replace nonempty literal text",
+                        "type": "core.replacestring",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace nonempty literal text",
+                          "display_name": "Replace nonempty literal text",
+                          "skip_execution": false,
+                          "input_string": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+                          "replace_list": [
+                            {
+                              "replaced_string": "'",
+                              "replacement_string": "''"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0QJSNoXYuOqW5mH9JfAUrF",
+                        "name": "Set Variables",
+                        "title": "Publish inline replaced text",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish inline replaced text",
+                          "display_name": "Publish inline replaced text",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tJKger4b86WTU1gPSykDh$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0kxViqGYwHWYX1P4i33VZZ.output.result_string$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg",
+            "name": "Execute Python Script",
+            "title": "Validate inputs and escape OData values",
+            "type": "python3.script",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Combined ordered input/calendar validation retained in the existing Python activity because two native scalar stages plus organization resolution exceed 200 activities. Native trimming and OData escaping remain separate; no additional Python activity is introduced for this consolidation.",
+              "display_name": "Validate inputs and escape OData values",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "script": "import json\nimport re\nimport sys\nfrom datetime import datetime, timedelta, timezone\n\npreparationStatus = \"helper-failure\"\npreparationStatusCode = \"500\"\npreparationMessage = \"Workflow input preparation did not complete.\"\npreparationResultJson = json.dumps({\"error\": preparationMessage}, separators=(\",\", \":\"))\nescapedOrganizationName = \"\"\nescapedServerNameOrSerial = \"\"\nescapedSuppressionName = \"\"\nRFC3339_PATTERN = re.compile(r\"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$\")\nSUPPRESSION_NAME_PATTERN = re.compile(r\"^[A-Za-z0-9][A-Za-z0-9_\\s.\\-]{1,255}$\")\n\ndef parse_rfc3339(value, label):\n    if not RFC3339_PATTERN.fullmatch(value):\n        raise ValueError(label + \" must be a complete RFC 3339 timestamp with Z or an explicit UTC offset.\")\n    parsed = datetime.fromisoformat(value[:-1] + \"+00:00\" if value.endswith(\"Z\") else value)\n    if parsed.tzinfo is None or parsed.utcoffset() is None:\n        raise ValueError(label + \" must include a timezone.\")\n    return parsed.astimezone(timezone.utc)\n\ntry:\n    organization = sys.argv[1]\n    server = sys.argv[2]\n    suppression = sys.argv[3]\n    description = sys.argv[4]\n    startText = sys.argv[7]\n    endText = sys.argv[8]\n    errors = []\n\n    if not sys.argv[9]:\n        errors.append(\"Device Organization must not be blank.\")\n    if not sys.argv[10]:\n        errors.append(\"Server Name or Serial must not be blank.\")\n    if not sys.argv[11]:\n        errors.append(\"Suppression Name must not be blank.\")\n    elif not SUPPRESSION_NAME_PATTERN.fullmatch(suppression):\n        errors.append(\"Suppression Name must match the current cond.AlarmSuppression name schema: 2-256 characters, begin with an alphanumeric character, and contain only word characters, spaces, periods, or hyphens.\")\n    if len(description) > 120:\n        errors.append(\"Description must not exceed 120 characters.\")\n\n    now = datetime.now(timezone.utc)\n    start = None\n    end = None\n    try:\n        if startText:\n            start = parse_rfc3339(startText, \"Start Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n    try:\n        if endText:\n            end = parse_rfc3339(endText, \"End Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n\n    if start is not None and start < now - timedelta(seconds=60):\n        errors.append(\"Start Date must not be more than 60 seconds in the past.\")\n    effectiveStart = max(now, start) if start is not None else now\n    if end is not None and end <= effectiveStart:\n        errors.append(\"End Date must be later than the effective start time.\")\n\n    if errors:\n        preparationStatus = \"invalid\"\n        preparationStatusCode = \"400\"\n        preparationMessage = \" \".join(errors)\n        preparationResultJson = json.dumps({\"error\": \"Input validation failed\", \"details\": errors}, separators=(\",\", \":\"))\n    else:\n        escapedOrganizationName = sys.argv[12]\n        escapedServerNameOrSerial = sys.argv[13]\n        escapedSuppressionName = sys.argv[14]\n        preparationStatus = \"ready\"\n        preparationStatusCode = \"200\"\n        preparationMessage = \"Required inputs, schema limits, RFC 3339 timestamps, and OData values are valid.\"\n        preparationResultJson = json.dumps({\n            \"validated\": True,\n            \"descriptionLength\": len(description),\n            \"startDateProvided\": bool(startText),\n            \"endDateProvided\": bool(endText)\n        }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    preparationStatus = \"helper-failure\"\n    preparationStatusCode = \"500\"\n    preparationMessage = str(exc)\n    preparationResultJson = json.dumps({\"error\": \"Workflow input preparation failed\", \"detail\": preparationMessage}, separators=(\",\", \":\"))",
+              "script_arguments": [
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728532WdfvOPReJkVhg5WLxJn0$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72866JKyIOZFj8yRzjfIbdtSgh$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728855RSDmqLU2h8JDYwbold7b$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0dhJaUDrC9HqMWtJFSWJLX.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J070XsQriUY5dxBAawhOIuf.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0GcSR3ouGJjYV4DRjGJ85a.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0YDM2wzX1Su2QldE3WKoOb.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0CQSMOJHCdRzakx3ArnZKk.output.trimmed$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tKqSB151RJ0cWh9M0TzLv$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05QhH1l6FqynpoAgOUMBdL$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0tJKger4b86WTU1gPSykDh$"
+              ],
+              "script_queries": [
+                {
+                  "script_query": "preparationStatus",
+                  "script_query_name": "preparationStatus",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "preparationStatusCode",
+                  "script_query_name": "preparationStatusCode",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "preparationMessage",
+                  "script_query_name": "preparationMessage",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "preparationResultJson",
+                  "script_query_name": "preparationResultJson",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "escapedOrganizationName",
+                  "script_query_name": "escapedOrganizationName",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "escapedServerNameOrSerial",
+                  "script_query_name": "escapedServerNameOrSerial",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "escapedSuppressionName",
+                  "script_query_name": "escapedSuppressionName",
+                  "script_query_type": "string"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          }
+        ]
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6Z9X1CcbgeWG9orFTuz3z4bhSG",
@@ -294,34 +1078,34 @@
                         "left_operand": {
                           "left_operand": {
                             "left_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatus$",
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatus$",
                               "operator": "eq",
                               "right_operand": "helper-failure"
                             },
                             "operator": "or",
                             "right_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatus$",
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatus$",
                               "operator": "mregex",
                               "right_operand": "^(?!(?:helper-failure|invalid|ready)$).*$"
                             }
                           },
                           "operator": "or",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatusCode$",
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatusCode$",
                             "operator": "mregex",
                             "right_operand": "^\\s*$"
                           }
                         },
                         "operator": "or",
                         "right_operand": {
-                          "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationMessage$",
+                          "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationMessage$",
                           "operator": "mregex",
                           "right_operand": "^\\s*$"
                         }
                       },
                       "operator": "or",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationResultJson$",
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationResultJson$",
                         "operator": "mregex",
                         "right_operand": "^\\s*$"
                       }
@@ -329,7 +1113,7 @@
                     "operator": "or",
                     "right_operand": {
                       "left_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatus$",
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatus$",
                         "operator": "eq",
                         "right_operand": "ready"
                       },
@@ -337,20 +1121,20 @@
                       "right_operand": {
                         "left_operand": {
                           "left_operand": {
-                            "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedOrganizationName$",
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedOrganizationName$",
                             "operator": "mregex",
                             "right_operand": "^\\s*$"
                           },
                           "operator": "or",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedServerNameOrSerial$",
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedServerNameOrSerial$",
                             "operator": "mregex",
                             "right_operand": "^\\s*$"
                           }
                         },
                         "operator": "or",
                         "right_operand": {
-                          "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedSuppressionName$",
+                          "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedSuppressionName$",
                           "operator": "mregex",
                           "right_operand": "^\\s*$"
                         }
@@ -431,7 +1215,7 @@
                 },
                 "operator": "and",
                 "right_operand": {
-                  "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatus$",
+                  "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatus$",
                   "operator": "eq",
                   "right_operand": "invalid"
                 }
@@ -453,7 +1237,7 @@
                   "variables_to_update": [
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728B1iZ80AdBAzIQrsjXMN8B35$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationStatusCode$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationStatusCode$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728D0pJpVksyqU3ob6GKqQUG1a$",
@@ -461,11 +1245,11 @@
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationMessage$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationMessage$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.preparationResultJson$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.preparationResultJson$"
                     }
                   ]
                 },
@@ -493,28 +1277,985 @@
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao",
-        "name": "Generic Cisco Intersight API Request",
+        "name": "Group",
         "title": "Get organization by exact name",
-        "type": "intersight.api_request",
+        "type": "logic.group",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": true,
-          "description": "Retrieves the exact organization needed to scope server discovery. A generic API request is used because no purpose-built organization lookup atomic is present in this export; replace it with a supported atomic if one becomes available.",
+          "description": "Resolves this exact organization through the shared resolver, inheriting the selected Intersight target. Request success and HTTP status are propagated separately from validation outcomes.",
           "display_name": "Get organization by exact name",
-          "skip_execution": false,
-          "action_timeout": 180,
-          "api_method": "GET",
-          "api_url": "/api/v1/organization/Organizations?$filter=Name eq '$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedOrganizationName$'&$select=Moid,Name",
-          "content_type": "application/json",
-          "endpoint": "primary",
-          "runtime_user": {
-            "target_default": true
-          },
-          "target": {
-            "use_workflow_target": true
-          }
+          "skip_execution": false
         },
-        "object_type": "definition_activity"
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0VdLwJbGGXIygCNrHcct9r",
+            "name": "Group",
+            "title": "Recover exact prepared organization name",
+            "type": "logic.group",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Inline guarded OData literal restore recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+              "display_name": "Recover exact prepared organization name",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0KOo62X4lDOCfbCk6p9B4z",
+                "name": "Set Variables",
+                "title": "Initialize fresh literal result",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize fresh literal result",
+                  "display_name": "Initialize fresh literal result",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                      "variable_value_new": ""
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0lEfatItqhwhquNzJu5fdU",
+                "name": "Condition",
+                "title": "Replace only nonempty source",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Replace only nonempty source",
+                  "display_name": "Replace only nonempty source",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0jMI8vXaIrFHPDg58iWPit",
+                    "name": "Condition Branch",
+                    "title": "Replace only nonempty source branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Replace only nonempty source branch",
+                      "display_name": "Replace only nonempty source branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedOrganizationName$",
+                        "operator": "ne",
+                        "right_operand": ""
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0QZ9uCJVFVWMWEe142vEjk",
+                        "name": "Replace String",
+                        "title": "Replace nonempty literal text",
+                        "type": "core.replacestring",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace nonempty literal text",
+                          "display_name": "Replace nonempty literal text",
+                          "skip_execution": false,
+                          "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedOrganizationName$",
+                          "replace_list": [
+                            {
+                              "replaced_string": "''",
+                              "replacement_string": "'"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0hj6oJMEYbvMi4wgMzmtxK",
+                        "name": "Set Variables",
+                        "title": "Publish inline replaced text",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Publish inline replaced text",
+                          "display_name": "Publish inline replaced text",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0QZ9uCJVFVWMWEe142vEjk.output.result_string$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0hiWFKBPzYeQcO8WSrjwxu",
+            "name": "Group",
+            "title": "Resolve organization through shared atomic",
+            "type": "logic.group",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": true,
+              "description": "Embedded exact organization resolution. Private return gates stop only this scope. Fresh defaults, original HTTP status, sanitized details and strict identity validation are preserved; caller semantic guards remain.",
+              "display_name": "Resolve organization through shared atomic",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0OObAwMJdhRv49wCCdfmYv",
+                "name": "Set Variables",
+                "title": "Initialize fresh organization resolution scope",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize fresh organization resolution scope",
+                  "display_name": "Initialize fresh organization resolution scope",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                      "variable_value_new": false
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                      "variable_value_new": 500
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$",
+                      "variable_value_new": "Organization resolver did not complete"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$",
+                      "variable_value_new": "Organization resolution did not complete."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$",
+                      "variable_value_new": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf$",
+                      "variable_value_new": ""
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0AXGo98cAogHaLCG5UWQMQ$",
+                      "variable_value_new": "{}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                      "variable_value_new": 0
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24$",
+                      "variable_value_new": false
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0R9tPVA25Xy6Ax0KRZ0GxW$",
+                      "variable_value_new": false
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                      "variable_value_new": "helper-failure"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0pKmTjt5rw3g9UIj5P36xu",
+                "name": "Set Variables",
+                "title": "Initialize complete organization output contract",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Initialize complete organization output contract",
+                  "display_name": "Initialize complete organization output contract",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                      "variable_value_new": 500
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$",
+                      "variable_value_new": "Organization resolver did not complete"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$",
+                      "variable_value_new": "Organization resolution did not complete."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$",
+                      "variable_value_new": "{\"status\":\"helper-failure\",\"error\":\"Organization resolution did not complete\"}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf$",
+                      "variable_value_new": ""
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0AXGo98cAogHaLCG5UWQMQ$",
+                      "variable_value_new": "{}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                      "variable_value_new": 0
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24$",
+                      "variable_value_new": false
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0R9tPVA25Xy6Ax0KRZ0GxW$",
+                      "variable_value_new": false
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                      "variable_value_new": "helper-failure"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0fLfK1DH5JbaDGtqy6ewKH",
+                "name": "Trim String",
+                "title": "Check surrounding organization whitespace",
+                "type": "core.trim_string",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": true,
+                  "description": "Check surrounding organization whitespace",
+                  "display_name": "Check surrounding organization whitespace",
+                  "skip_execution": false,
+                  "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                  "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+                  "trim_leading": true,
+                  "trim_trailing": true,
+                  "continue_on_empty_source_string": true,
+                  "action_timeout": 180
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0ZZTGVlMMSCQoTuFV1AKgB",
+                "name": "Condition",
+                "title": "Reject invalid exact organization input",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Reject invalid exact organization input",
+                  "display_name": "Reject invalid exact organization input",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0IXSc6LrBCOMb5T7zvUS9U",
+                    "name": "Condition Branch",
+                    "title": "Reject invalid exact organization input branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Reject invalid exact organization input branch",
+                      "display_name": "Reject invalid exact organization input branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": {
+                          "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0fLfK1DH5JbaDGtqy6ewKH.output.succeeded$",
+                          "operator": "ne",
+                          "right_operand": true
+                        },
+                        "operator": "or",
+                        "right_operand": {
+                          "left_operand": {
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0fLfK1DH5JbaDGtqy6ewKH.output.succeeded$",
+                            "operator": "eq",
+                            "right_operand": true
+                          },
+                          "operator": "and",
+                          "right_operand": {
+                            "left_operand": {
+                              "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                              "operator": "ne",
+                              "right_operand": "$activity.definition_activity_02Z3AAXNVAM5J0fLfK1DH5JbaDGtqy6ewKH.output.trimmed$"
+                            },
+                            "operator": "or",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                              "operator": "mregex",
+                              "right_operand": "(?s)^(?:$|.{65,}|.*[\\x00-\\x1f&?#%].*)$"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0AYiLTyCg4veqiW6jIJX2I",
+                        "name": "Set Variables",
+                        "title": "Set invalid organization input outputs",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Set invalid organization input outputs",
+                          "display_name": "Set invalid organization input outputs",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                              "variable_value_new": 400
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$",
+                              "variable_value_new": "Organization input is invalid"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$",
+                              "variable_value_new": "Provide an exact 1-64 character organization name without surrounding whitespace, controls or URL query delimiters, and Identifier Format URL-safe or Hex24."
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                              "variable_value_new": "invalid-response"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$",
+                              "variable_value_new": "{\"status\":\"invalid-input\",\"error\":\"Organization name or identifier format is invalid\"}"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0D848Fs28DpvO9DjnzBPFt",
+                        "name": "Set Variables",
+                        "title": "Return from organization resolution scope",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Return from organization resolution scope",
+                          "display_name": "Return from organization resolution scope",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                              "variable_value_new": true
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0rtTOXKOxXEBXi5RR3va8w",
+                "name": "Condition",
+                "title": "Continue only while organization scope has not returned",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Continue only while organization scope has not returned",
+                  "display_name": "Continue only while organization scope has not returned",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Xc0CArg146WSBqzls0pnf",
+                    "name": "Condition Branch",
+                    "title": "Continue only while organization scope has not returned branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Continue only while organization scope has not returned branch",
+                      "display_name": "Continue only while organization scope has not returned branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                        "operator": "eq",
+                        "right_operand": false
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0AB5h28fOijQJQI40Xq47f",
+                        "name": "Replace String",
+                        "title": "Escape organization name for OData",
+                        "type": "core.replacestring",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "The preceding exact-name guard rejects empty/invalid input before this native apostrophe replacement executes.",
+                          "display_name": "Escape organization name for OData",
+                          "skip_execution": false,
+                          "input_string": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                          "replace_list": [
+                            {
+                              "replaced_string": "'",
+                              "replacement_string": "''"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53",
+                        "name": "Intersight API Request",
+                        "title": "Get exact organization once",
+                        "type": "intersight.api_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": true,
+                          "description": "One exact-name read with all-pages Count and a two-row bound. The shared resolver owns this generic request so callers do not duplicate lookup rules.",
+                          "display_name": "Get exact organization once",
+                          "skip_execution": false,
+                          "action_timeout": 180,
+                          "api_method": "GET",
+                          "api_url": "/api/v1/organization/Organizations?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0AB5h28fOijQJQI40Xq47f.output.result_string$'&$select=Moid,Name,ObjectType,ClassId&$inlinecount=allpages&$top=2",
+                          "content_type": "application/json",
+                          "endpoint": "primary",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "target": {
+                            "use_workflow_target": true
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0kfzyXUiQZndJv14f8i14O",
+                        "name": "Set Variables",
+                        "title": "Retain underlying organization request evidence",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Retain underlying organization request evidence",
+                          "display_name": "Retain underlying organization request evidence",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53.output.status_code$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24$",
+                              "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53.output.succeeded$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d",
+                        "name": "Execute Python Script",
+                        "title": "Validate typed organization envelope and identity",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": true,
+                          "description": "Strict JSON type/cardinality/identity checks and bounded, sanitized API error response validation share one activity so the resolver can fit when embedded in atomics. Native steps retain exact input guards, escaping, GET, output publication and HTTP fallback if this activity fails. No credential access or API calls occur in Python.",
+                          "display_name": "Validate typed organization envelope and identity",
+                          "skip_execution": false,
+                          "action_timeout": 180,
+                          "script": "import json\nimport re\nimport sys\n\n# HTTP evidence is independent from strict organization identity inspection.\n# The connector contract supplies an integral HTTP status and Boolean success.\ntry:\n    httpStatus = int(sys.argv[4])\nexcept (ValueError, TypeError):\n    httpStatus = 0\nrequestSucceeded = sys.argv[5].strip().lower() == \"true\"\nif not requestSucceeded or httpStatus != 200:\n    statusCode = httpStatus if 300 <= httpStatus < 600 else 502\n    lookupStatus = \"api-failure\"\n    message = \"Organization lookup API request failed\"\n    errorMessage = \"The organization request failed or returned a non-200 response.\"\n    organizationMoid, organizationJson, inspectionComplete = \"\", \"{}\", False\n    safeCode, safeMessage = \"\", \"\"\n    try:\n        payload = json.loads(sys.argv[1])\n        # Preserve the native String projection used by the old safe allowlists.\n        def text(value):\n            return value if isinstance(value, str) else json.dumps(value, separators=(\",\", \":\"), ensure_ascii=False)\n        code = text(payload[\"Code\"]) if isinstance(payload, dict) and \"Code\" in payload else \"\"\n        detail = text(payload[\"Message\"]) if isinstance(payload, dict) and \"Message\" in payload else \"\"\n        if re.fullmatch(r\"[A-Za-z0-9_.:-]{1,128}\", code):\n            safeCode = code\n        if re.fullmatch(r\"[A-Za-z0-9 _.,:()/+\\-]{1,500}\", detail) and not re.search(r\"authorization|password|secret|token|api.?key|bearer|https?://\", detail, re.IGNORECASE):\n            safeMessage = detail\n    except Exception:\n        pass\n    if safeMessage:\n        errorMessage = safeMessage\n    resultJson = json.dumps({\"status\":\"api-failure\", \"upstreamStatus\":httpStatus, \"Code\":safeCode, \"Message\":safeMessage}, separators=(\",\", \":\"))\nelse:\n    import json\n    import re\n    import sys\n    statusCode, lookupStatus, message = 502, \"invalid-response\", \"Organization response is invalid\"\n    organizationMoid, organizationJson = \"\", \"{}\"\n    inspectionComplete = False\n    try:\n        payload = json.loads(sys.argv[1])\n        if not isinstance(payload, dict): raise ValueError(\"Organization response must be an object\")\n        count, rows = payload.get(\"Count\"), payload.get(\"Results\")\n        if isinstance(count, bool) or not isinstance(count, int) or count < 0: raise ValueError(\"Count must be a nonnegative integer\")\n        if not isinstance(rows, list): raise ValueError(\"Results must be an array\")\n        if count != len(rows): raise ValueError(\"Count and Results length differ; the bounded page is incomplete\")\n        if count > 2: raise ValueError(\"Count exceeds the two-row lookup bound\")\n        if count == 0: statusCode, lookupStatus, message = 404, \"not-found\", \"No organization matched the exact requested name\"\n        elif count != 1: statusCode, lookupStatus, message = 409, \"ambiguous\", \"More than one organization matched the exact requested name\"\n        else:\n            item = rows[0]\n            if not isinstance(item, dict) or item.get(\"Name\") != sys.argv[2]: raise ValueError(\"Organization Name does not match exactly\")\n            if item.get(\"ObjectType\") != \"organization.Organization\" or item.get(\"ClassId\") != \"organization.Organization\": raise ValueError(\"Organization discriminators do not match\")\n            moid = item.get(\"Moid\")\n            pattern = r\"[0-9a-fA-F]{24}\" if sys.argv[3] == \"Hex24\" else r\"[A-Za-z0-9][A-Za-z0-9._~-]{0,127}\"\n            if not isinstance(moid, str) or re.fullmatch(pattern, moid) is None: raise ValueError(\"Organization Moid is missing or malformed\")\n            organizationMoid = moid\n            projected = {key:item[key] for key in (\"Moid\", \"Name\", \"ObjectType\", \"ClassId\")}\n            organizationJson = json.dumps(projected, separators=(\",\", \":\"))\n            resultJson = json.dumps({\"Count\":1,\"Results\":[projected]}, separators=(\",\", \":\"))\n            statusCode, lookupStatus, message = 200, \"exact\", \"Organization resolved exactly\"\n        inspectionComplete = True\n    except Exception as exc:\n        statusCode, lookupStatus, message, inspectionComplete = 502, \"invalid-response\", str(exc), True\n    errorMessage = \"\" if statusCode == 200 else message\n    if statusCode != 200: resultJson = json.dumps({\"status\":lookupStatus,\"error\":message}, separators=(\",\", \":\"))\n",
+                          "script_arguments": [
+                            "$activity.definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53.output.response_body$",
+                            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0d9GYKc9mcoBSpgy33mIlV$",
+                            "URL-safe",
+                            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                            "$activity.definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53.output.succeeded$"
+                          ],
+                          "script_queries": [
+                            {
+                              "script_query": "statusCode",
+                              "script_query_name": "statusCode",
+                              "script_query_type": "integer"
+                            },
+                            {
+                              "script_query": "lookupStatus",
+                              "script_query_name": "lookupStatus",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "message",
+                              "script_query_name": "message",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "organizationMoid",
+                              "script_query_name": "organizationMoid",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "organizationJson",
+                              "script_query_name": "organizationJson",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "resultJson",
+                              "script_query_name": "resultJson",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "errorMessage",
+                              "script_query_name": "errorMessage",
+                              "script_query_type": "string"
+                            },
+                            {
+                              "script_query": "inspectionComplete",
+                              "script_query_name": "inspectionComplete",
+                              "script_query_type": "boolean"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0inQNZ6fJpdvoLXQ8xwLm2",
+                        "name": "Condition",
+                        "title": "Stop if organization validation did not execute",
+                        "type": "logic.if_else",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Stop if organization validation did not execute",
+                          "display_name": "Stop if organization validation did not execute",
+                          "skip_execution": false,
+                          "conditions": []
+                        },
+                        "object_type": "definition_activity",
+                        "blocks": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0lzZyPXFFE26WH3JdPl646",
+                            "name": "Condition Branch",
+                            "title": "Stop if organization validation did not execute branch",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Stop if organization validation did not execute branch",
+                              "display_name": "Stop if organization validation did not execute branch",
+                              "skip_execution": false,
+                              "condition": {
+                                "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.succeeded$",
+                                "operator": "ne",
+                                "right_operand": true
+                              }
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0qOJTH4hbD3jOTID3OXhcK",
+                                "name": "Condition",
+                                "title": "Keep HTTP failure when response validation cannot run",
+                                "type": "logic.if_else",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Keep HTTP failure when response validation cannot run",
+                                  "display_name": "Keep HTTP failure when response validation cannot run",
+                                  "skip_execution": false,
+                                  "conditions": []
+                                },
+                                "object_type": "definition_activity",
+                                "blocks": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0DTnM75Yls318wvB8zI66f",
+                                    "name": "Condition Branch",
+                                    "title": "Keep HTTP failure when response validation cannot run branch",
+                                    "type": "logic.condition_block",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Keep HTTP failure when response validation cannot run branch",
+                                      "display_name": "Keep HTTP failure when response validation cannot run branch",
+                                      "skip_execution": false,
+                                      "condition": {
+                                        "left_operand": {
+                                          "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0AGwkOgXozDfbEqtKVUe53.output.succeeded$",
+                                          "operator": "ne",
+                                          "right_operand": true
+                                        },
+                                        "operator": "or",
+                                        "right_operand": {
+                                          "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                                          "operator": "ne",
+                                          "right_operand": 200
+                                        }
+                                      }
+                                    },
+                                    "object_type": "definition_activity",
+                                    "actions": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0bW9wJC6lsNzleaW1reo17",
+                                        "name": "Set Variables",
+                                        "title": "Set safe organization API fallback",
+                                        "type": "core.set_multiple_variables",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Set safe organization API fallback",
+                                          "display_name": "Set safe organization API fallback",
+                                          "skip_execution": false,
+                                          "variables_to_update": [
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                                              "variable_value_new": 502
+                                            },
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$",
+                                              "variable_value_new": "Organization lookup API request failed"
+                                            },
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$",
+                                              "variable_value_new": "The organization request failed or returned a non-200 response."
+                                            },
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                                              "variable_value_new": "api-failure"
+                                            },
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$",
+                                              "variable_value_new": "{\"status\":\"api-failure\",\"upstreamStatus\":$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$,\"Code\":\"\",\"Message\":\"\"}"
+                                            }
+                                          ]
+                                        },
+                                        "object_type": "definition_activity"
+                                      },
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0dpYjOoF3EzeNHpWLTT1Ub",
+                                        "name": "Condition",
+                                        "title": "Keep bounded original organization HTTP failure",
+                                        "type": "logic.if_else",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Keep bounded original organization HTTP failure",
+                                          "display_name": "Keep bounded original organization HTTP failure",
+                                          "skip_execution": false,
+                                          "conditions": []
+                                        },
+                                        "object_type": "definition_activity",
+                                        "blocks": [
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0aHj4ov3BNUt6CIPQP8Vdg",
+                                            "name": "Condition Branch",
+                                            "title": "Keep bounded original organization HTTP failure branch",
+                                            "type": "logic.condition_block",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Keep bounded original organization HTTP failure branch",
+                                              "display_name": "Keep bounded original organization HTTP failure branch",
+                                              "skip_execution": false,
+                                              "condition": {
+                                                "left_operand": {
+                                                  "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                                                  "operator": "gte",
+                                                  "right_operand": 300
+                                                },
+                                                "operator": "and",
+                                                "right_operand": {
+                                                  "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
+                                                  "operator": "lt",
+                                                  "right_operand": 600
+                                                }
+                                              }
+                                            },
+                                            "object_type": "definition_activity",
+                                            "actions": [
+                                              {
+                                                "unique_name": "definition_activity_02Z3AAXNVAM5J0NW25Ao1l2Ok24gIMihsG7",
+                                                "name": "Set Variables",
+                                                "title": "Copy original organization HTTP failure",
+                                                "type": "core.set_multiple_variables",
+                                                "base_type": "activity",
+                                                "properties": {
+                                                  "continue_on_failure": false,
+                                                  "description": "Copy original organization HTTP failure",
+                                                  "display_name": "Copy original organization HTTP failure",
+                                                  "skip_execution": false,
+                                                  "variables_to_update": [
+                                                    {
+                                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                                                      "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$"
+                                                    }
+                                                  ]
+                                                },
+                                                "object_type": "definition_activity"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0hAvttJfBZHkpdDVMkq69J",
+                                "name": "Set Variables",
+                                "title": "Return from organization resolution scope",
+                                "type": "core.set_multiple_variables",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Return from organization resolution scope",
+                                  "display_name": "Return from organization resolution scope",
+                                  "skip_execution": false,
+                                  "variables_to_update": [
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                                      "variable_value_new": true
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0uSp2o6ysKdnyhHfsO4LnK",
+                        "name": "Condition",
+                        "title": "Continue only while organization scope has not returned",
+                        "type": "logic.if_else",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Continue only while organization scope has not returned",
+                          "display_name": "Continue only while organization scope has not returned",
+                          "skip_execution": false,
+                          "conditions": []
+                        },
+                        "object_type": "definition_activity",
+                        "blocks": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0ch2SNYm7id6Y0K9P2XcBa",
+                            "name": "Condition Branch",
+                            "title": "Continue only while organization scope has not returned branch",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Continue only while organization scope has not returned branch",
+                              "display_name": "Continue only while organization scope has not returned branch",
+                              "skip_execution": false,
+                              "condition": {
+                                "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                                "operator": "eq",
+                                "right_operand": false
+                              }
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0enGlDEh4bnt0YnOVUGfNw",
+                                "name": "Set Variables",
+                                "title": "Publish exact organization resolution contract",
+                                "type": "core.set_multiple_variables",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Publish exact organization resolution contract",
+                                  "display_name": "Publish exact organization resolution contract",
+                                  "skip_execution": false,
+                                  "variables_to_update": [
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.statusCode$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.lookupStatus$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.message$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.errorMessage$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.organizationMoid$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0AXGo98cAogHaLCG5UWQMQ$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.organizationJson$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.resultJson$"
+                                    },
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0R9tPVA25Xy6Ax0KRZ0GxW$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0UAnnCVXZhTnWSyCaRZ71d.output.script_queries.inspectionComplete$"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              },
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J05FjnGjSVdjdOu4x6UCxvA",
+                                "name": "Condition",
+                                "title": "Stop when organization identity is not exact",
+                                "type": "logic.if_else",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Stop when organization identity is not exact",
+                                  "display_name": "Stop when organization identity is not exact",
+                                  "skip_execution": false,
+                                  "conditions": []
+                                },
+                                "object_type": "definition_activity",
+                                "blocks": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0nT696qd7wf3BFjCEqAmNq",
+                                    "name": "Condition Branch",
+                                    "title": "Stop when organization identity is not exact branch",
+                                    "type": "logic.condition_block",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Stop when organization identity is not exact branch",
+                                      "display_name": "Stop when organization identity is not exact branch",
+                                      "skip_execution": false,
+                                      "condition": {
+                                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                                        "operator": "ne",
+                                        "right_operand": 200
+                                      }
+                                    },
+                                    "object_type": "definition_activity",
+                                    "actions": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0lThg1QCOPnYa3diwpGzyP",
+                                        "name": "Set Variables",
+                                        "title": "Return from organization resolution scope",
+                                        "type": "core.set_multiple_variables",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Return from organization resolution scope",
+                                          "display_name": "Return from organization resolution scope",
+                                          "skip_execution": false,
+                                          "variables_to_update": [
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                                              "variable_value_new": true
+                                            }
+                                          ]
+                                        },
+                                        "object_type": "definition_activity"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0ebTtgj3QXFNkZq9QIBrZq",
+                                "name": "Condition",
+                                "title": "Continue only while organization scope has not returned",
+                                "type": "logic.if_else",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Continue only while organization scope has not returned",
+                                  "display_name": "Continue only while organization scope has not returned",
+                                  "skip_execution": false,
+                                  "conditions": []
+                                },
+                                "object_type": "definition_activity",
+                                "blocks": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0AnjLAncBEAjRNQQFS8hud",
+                                    "name": "Condition Branch",
+                                    "title": "Continue only while organization scope has not returned branch",
+                                    "type": "logic.condition_block",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Continue only while organization scope has not returned branch",
+                                      "display_name": "Continue only while organization scope has not returned branch",
+                                      "skip_execution": false,
+                                      "condition": {
+                                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                                        "operator": "eq",
+                                        "right_operand": false
+                                      }
+                                    },
+                                    "object_type": "definition_activity",
+                                    "actions": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0T38jZabhNCgHXAYiQzKhz",
+                                        "name": "Set Variables",
+                                        "title": "Return from organization resolution scope",
+                                        "type": "core.set_multiple_variables",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Return from organization resolution scope",
+                                          "display_name": "Return from organization resolution scope",
+                                          "skip_execution": false,
+                                          "variables_to_update": [
+                                            {
+                                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0rxjMumY26ift6JuH1EeOt$",
+                                              "variable_value_new": true
+                                            }
+                                          ]
+                                        },
+                                        "object_type": "definition_activity"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6ZA20g0k9DxGD0zumZ6HcXiZzJ",
@@ -544,27 +2285,27 @@
               "skip_execution": false,
               "condition": {
                 "left_operand": {
-                  "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.succeeded$",
+                  "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24$",
                   "operator": "ne",
                   "right_operand": true
                 },
                 "operator": "or",
                 "right_operand": {
                   "left_operand": {
-                    "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.succeeded$",
+                    "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0gRzqbmqgwSGWL69BtJi24$",
                     "operator": "eq",
                     "right_operand": true
                   },
                   "operator": "and",
                   "right_operand": {
                     "left_operand": {
-                      "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.status_code$",
+                      "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
                       "operator": "lt",
                       "right_operand": 200
                     },
                     "operator": "or",
                     "right_operand": {
-                      "left_operand": "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.status_code$",
+                      "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IwOXAp48xfzK3hSI3WzKS$",
                       "operator": "gte",
                       "right_operand": 300
                     }
@@ -600,11 +2341,81 @@
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.response_body$"
+                      "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$"
                     }
                   ]
                 },
                 "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0HqASVER3GaS8zIZDbhopO",
+                "name": "Condition",
+                "title": "Preserve shared organization failure details",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Preserve shared organization failure details",
+                  "display_name": "Preserve shared organization failure details",
+                  "skip_execution": false,
+                  "conditions": []
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0p8pr42veOwatZyZJCje0s",
+                    "name": "Condition Branch",
+                    "title": "Preserve shared organization failure details branch",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Preserve shared organization failure details branch",
+                      "display_name": "Preserve shared organization failure details branch",
+                      "skip_execution": false,
+                      "condition": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                        "operator": "mregex",
+                        "right_operand": "^(?:api-failure|invalid-response|helper-failure|not-found|ambiguous)$"
+                      }
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0cIJm2sE7JplfHYjdPxg5v",
+                        "name": "Set Variables",
+                        "title": "Copy complete shared organization failure contract",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Copy complete shared organization failure contract",
+                          "display_name": "Copy complete shared organization failure contract",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728B1iZ80AdBAzIQrsjXMN8B35$",
+                              "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728D0pJpVksyqU3ob6GKqQUG1a$",
+                              "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr$",
+                              "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$"
+                            },
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
+                              "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "unique_name": "definition_activity_02XOKCY8L6ZA00ms62mt7c6veyYUJoJzS8o",
@@ -628,49 +2439,165 @@
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h",
-        "name": "Execute Python Script",
+        "name": "Group",
         "title": "Inspect exact organization match",
-        "type": "python3.script",
+        "type": "logic.group",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": true,
-          "description": "Parses the successful organization response, requires exactly one result, and requires a usable organization Moid and Name before server discovery.",
+          "description": "Adapts the shared resolver output to this workflow's existing organization-state labels using native conditions and variables. Typed response validation is owned by the shared resolver.",
           "display_name": "Inspect exact organization match",
-          "skip_execution": false,
-          "action_timeout": 180,
-          "script": "import json\nimport sys\n\norganizationStatus = \"helper-failure\"\norganizationStatusCode = \"500\"\norganizationMessage = \"Organization lookup inspection did not complete.\"\norganizationResultJson = json.dumps({\"error\": organizationMessage}, separators=(\",\", \":\"))\norganizationMoid = \"\"\norganizationResultCount = -1\n\ntry:\n    payload = json.loads(sys.argv[1])\n    if not isinstance(payload, dict):\n        raise ValueError(\"The organization response body is not a JSON object.\")\n    results = payload.get(\"Results\")\n    if not isinstance(results, list):\n        raise ValueError(\"The organization response does not contain a Results array.\")\n    organizationResultCount = len(results)\n    if organizationResultCount != 1:\n        organizationStatus = \"cardinality\"\n        organizationStatusCode = \"404\" if organizationResultCount == 0 else \"409\"\n        organizationMessage = \"The organization lookup returned %d matches; exactly one is required.\" % organizationResultCount\n        organizationResultJson = json.dumps({\"error\": \"Organization lookup cardinality failure\", \"matchCount\": organizationResultCount, \"requiredMatchCount\": 1}, separators=(\",\", \":\"))\n    else:\n        item = results[0]\n        if not isinstance(item, dict):\n            organizationStatus = \"invalid-resource\"\n            organizationStatusCode = \"502\"\n            organizationMessage = \"The single organization result is not a JSON object.\"\n            organizationResultJson = json.dumps({\"error\": organizationMessage}, separators=(\",\", \":\"))\n        else:\n            moid = item.get(\"Moid\")\n            name = item.get(\"Name\")\n            if not isinstance(moid, str) or not moid.strip() or not isinstance(name, str) or not name.strip():\n                organizationStatus = \"invalid-resource\"\n                organizationStatusCode = \"502\"\n                organizationMessage = \"The matching organization is missing a usable Moid or Name.\"\n                organizationResultJson = json.dumps({\"error\": organizationMessage}, separators=(\",\", \":\"))\n            else:\n                organizationMoid = moid\n                organizationStatus = \"ready\"\n                organizationStatusCode = \"200\"\n                organizationMessage = \"Exactly one organization with a usable Moid was resolved.\"\n                organizationResultJson = json.dumps({\"Moid\": moid, \"Name\": name}, separators=(\",\", \":\"))\nexcept Exception as exc:\n    organizationStatus = \"helper-failure\"\n    organizationStatusCode = \"500\"\n    organizationMessage = str(exc)\n    organizationResultJson = json.dumps({\"error\": \"Organization lookup inspection failed\", \"detail\": organizationMessage}, separators=(\",\", \":\"))",
-          "script_arguments": [
-            "$activity.definition_activity_02XOKCY8L6Z9Y1voqLfr7GTTGrJZenQexao.output.response_body$"
-          ],
-          "script_queries": [
-            {
-              "script_query": "organizationStatus",
-              "script_query_name": "organizationStatus",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "organizationStatusCode",
-              "script_query_name": "organizationStatusCode",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "organizationMessage",
-              "script_query_name": "organizationMessage",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "organizationResultJson",
-              "script_query_name": "organizationResultJson",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "organizationMoid",
-              "script_query_name": "organizationMoid",
-              "script_query_type": "string"
-            }
-          ]
+          "skip_execution": false
         },
-        "object_type": "definition_activity"
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0ypLpXVqa9xV7kN2ya3Xt9",
+            "name": "Condition",
+            "title": "Require a complete exact shared organization",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Require a complete exact shared organization",
+              "display_name": "Require a complete exact shared organization",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0bX1ZLCRhbcRy3dZoKirBj",
+                "name": "Condition Branch",
+                "title": "Require a complete exact shared organization branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Require a complete exact shared organization branch",
+                  "display_name": "Require a complete exact shared organization branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0IGOlDmfcgtpBt731O2gt4$",
+                          "operator": "ne",
+                          "right_operand": "exact"
+                        },
+                        "operator": "or",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0R9tPVA25Xy6Ax0KRZ0GxW$",
+                          "operator": "ne",
+                          "right_operand": true
+                        }
+                      },
+                      "operator": "or",
+                      "right_operand": {
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$",
+                        "operator": "ne",
+                        "right_operand": 200
+                      }
+                    },
+                    "operator": "or",
+                    "right_operand": {
+                      "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf$",
+                      "operator": "eq",
+                      "right_operand": ""
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0ymArEcsETXOOjk9KHjgXO",
+                    "name": "Set Variables",
+                    "title": "Publish shared organization resolution failure",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish shared organization resolution failure",
+                      "display_name": "Publish shared organization resolution failure",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728B1iZ80AdBAzIQrsjXMN8B35$",
+                          "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728D0pJpVksyqU3ob6GKqQUG1a$",
+                          "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr$",
+                          "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0knQOuxIOt7VPoTzZiGM2n$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
+                          "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0FuJwXxe89yRYVeOfszzJg",
+                    "name": "Completed",
+                    "title": "Shared organization resolution was not exact",
+                    "type": "logic.completed",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Shared organization resolution was not exact",
+                      "display_name": "Shared organization resolution was not exact",
+                      "skip_execution": false,
+                      "completion_type": "failed-completed",
+                      "result_message": "Shared organization resolution was not exact"
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0YsxH6uXqQQNsvQjx3UvGh",
+            "name": "Set Variables",
+            "title": "Publish exact organization contract",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Publish exact organization contract",
+              "display_name": "Publish exact organization contract",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6$",
+                  "variable_value_new": "ready"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0vJStLxGS7uMYQ61A4Fvzf$",
+                  "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0dzPYJgPjjOTv7u5c52buM$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0XpEmu278aqo81CanRHwyL$",
+                  "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J04CbToMhQ4ijcfMKvLUePl$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0HUahRI4O9SoJZXhDVdv4s$",
+                  "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J05XDCMnOfkXsf7fNAJBk5q$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0C2LhIwwmfwm94jYiZ5rEn$",
+                  "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0pLPrGvqHsZQOxVBbhJWlf$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          }
+        ]
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6ZAA7WkRYR1vu6CYBjCaavUZda",
@@ -718,34 +2645,34 @@
                         "left_operand": {
                           "left_operand": {
                             "left_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatus$",
+                              "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6$",
                               "operator": "eq",
                               "right_operand": "helper-failure"
                             },
                             "operator": "or",
                             "right_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatus$",
+                              "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6$",
                               "operator": "mregex",
                               "right_operand": "^(?!(?:helper-failure|cardinality|invalid-resource|ready)$).*$"
                             }
                           },
                           "operator": "or",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatusCode$",
+                            "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0vJStLxGS7uMYQ61A4Fvzf$",
                             "operator": "mregex",
                             "right_operand": "^\\s*$"
                           }
                         },
                         "operator": "or",
                         "right_operand": {
-                          "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationMessage$",
+                          "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0XpEmu278aqo81CanRHwyL$",
                           "operator": "mregex",
                           "right_operand": "^\\s*$"
                         }
                       },
                       "operator": "or",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationResultJson$",
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0HUahRI4O9SoJZXhDVdv4s$",
                         "operator": "mregex",
                         "right_operand": "^\\s*$"
                       }
@@ -753,13 +2680,13 @@
                     "operator": "or",
                     "right_operand": {
                       "left_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatus$",
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6$",
                         "operator": "eq",
                         "right_operand": "ready"
                       },
                       "operator": "and",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationMoid$",
+                        "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0C2LhIwwmfwm94jYiZ5rEn$",
                         "operator": "mregex",
                         "right_operand": "^\\s*$"
                       }
@@ -839,7 +2766,7 @@
                 },
                 "operator": "and",
                 "right_operand": {
-                  "left_operand": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatus$",
+                  "left_operand": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0TQjoHbBMBF5mjsTp10xu6$",
                   "operator": "mregex",
                   "right_operand": "^(?:cardinality|invalid-resource)$"
                 }
@@ -861,7 +2788,7 @@
                   "variables_to_update": [
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728B1iZ80AdBAzIQrsjXMN8B35$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationStatusCode$"
+                      "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0vJStLxGS7uMYQ61A4Fvzf$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728D0pJpVksyqU3ob6GKqQUG1a$",
@@ -869,11 +2796,11 @@
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationMessage$"
+                      "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0XpEmu278aqo81CanRHwyL$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationResultJson$"
+                      "variable_value_new": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0HUahRI4O9SoJZXhDVdv4s$"
                     }
                   ]
                 },
@@ -912,7 +2839,7 @@
           "skip_execution": false,
           "action_timeout": 180,
           "api_method": "GET",
-          "api_url": "/api/v1/compute/PhysicalSummaries?$filter=(Name eq '$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedServerNameOrSerial$' or Serial eq '$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedServerNameOrSerial$') and PermissionResources.Moid eq '$activity.definition_activity_02XOKCY8L6ZA31hXvlgt9mWqu3y4K5QJW2h.output.script_queries.organizationMoid$'&$select=Moid,Name,Serial,SourceObjectType",
+          "api_url": "/api/v1/compute/PhysicalSummaries?$filter=(Name eq '$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedServerNameOrSerial$' or Serial eq '$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedServerNameOrSerial$') and PermissionResources.Moid eq '$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.local.variable_workflow_02Z3AAXNVAM5J0C2LhIwwmfwm94jYiZ5rEn$'&$select=Moid,Name,Serial,SourceObjectType",
           "content_type": "application/json",
           "endpoint": "primary",
           "runtime_user": {
@@ -1333,7 +3260,7 @@
           "skip_execution": false,
           "action_timeout": 180,
           "api_method": "GET",
-          "api_url": "/api/v1/cond/AlarmSuppressions?$filter=Name eq '$activity.definition_activity_02XOKCY8L6Z9Q7f467utfhMuHzxrkuaN1uA.output.script_queries.escapedSuppressionName$'&$select=Moid,Name",
+          "api_url": "/api/v1/cond/AlarmSuppressions?$filter=Name eq '$activity.definition_activity_02Z3AAXNVAM5J0CSaYpYmcpaHPHhPuBLjgg.output.script_queries.escapedSuppressionName$'&$select=Moid,Name",
           "content_type": "application/json",
           "endpoint": "primary",
           "runtime_user": {
@@ -1709,54 +3636,175 @@
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh",
-        "name": "Execute Python Script",
+        "name": "Group",
         "title": "Build server alarm suppression request body",
-        "type": "python3.script",
+        "type": "logic.group",
         "base_type": "activity",
         "properties": {
           "continue_on_failure": true,
-          "description": "Revalidates timezone-aware RFC 3339 timestamps against the current time immediately before POST, enforces the 60-second past-start and effective-start End Date rules, validates the resolved server relationship, and builds the current OpenAPI cond.AlarmSuppression payload. Entity includes ClassId mo.MoRef, the server Moid, and its concrete SourceObjectType; AlarmRules is never included.",
+          "description": "Uses native Trim String for argument-derived preparation, followed by the existing validator. A failed native activity stops this group before later API operations.",
           "display_name": "Build server alarm suppression request body",
-          "skip_execution": false,
-          "action_timeout": 180,
-          "script": "import json\nimport re\nimport sys\nfrom datetime import datetime, timedelta, timezone\n\nbodyStatus = \"helper-failure\"\nbodyStatusCode = \"500\"\nbodyMessage = \"Alarm-suppression request body construction did not complete.\"\nbodyResultJson = json.dumps({\"error\": bodyMessage}, separators=(\",\", \":\"))\nrequestBody = \"\"\n\nRFC3339_PATTERN = re.compile(r\"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$\")\n\ndef parse_rfc3339(value, label):\n    if not RFC3339_PATTERN.fullmatch(value):\n        raise ValueError(label + \" must be a complete RFC 3339 timestamp with Z or an explicit UTC offset.\")\n    parsed = datetime.fromisoformat(value[:-1] + \"+00:00\" if value.endswith(\"Z\") else value)\n    if parsed.tzinfo is None or parsed.utcoffset() is None:\n        raise ValueError(label + \" must include a timezone.\")\n    return parsed.astimezone(timezone.utc)\n\ndef normalize(value):\n    return value.isoformat().replace(\"+00:00\", \"Z\")\n\ntry:\n    suppressionName = sys.argv[1]\n    description = sys.argv[2]\n    startText = sys.argv[3].strip()\n    endText = sys.argv[4].strip()\n    serverMoid = sys.argv[5]\n    serverObjectType = sys.argv[6]\n    errors = []\n\n    if not suppressionName.strip():\n        errors.append(\"Suppression Name must not be blank.\")\n    if len(description) > 120:\n        errors.append(\"Description must not exceed 120 characters.\")\n    if not serverMoid.strip():\n        errors.append(\"The resolved server Moid must not be blank.\")\n    if serverObjectType not in (\"compute.Blade\", \"compute.RackUnit\"):\n        errors.append(\"The resolved server ObjectType must be compute.Blade or compute.RackUnit.\")\n\n    now = datetime.now(timezone.utc)\n    start = None\n    end = None\n    try:\n        if startText:\n            start = parse_rfc3339(startText, \"Start Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n    try:\n        if endText:\n            end = parse_rfc3339(endText, \"End Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n\n    if start is not None and start < now - timedelta(seconds=60):\n        errors.append(\"Start Date is now more than 60 seconds in the past; no create request was sent.\")\n    effectiveStart = max(now, start) if start is not None else now\n    if end is not None and end <= effectiveStart:\n        errors.append(\"End Date must be later than the effective start time.\")\n\n    if errors:\n        bodyStatus = \"invalid\"\n        bodyStatusCode = \"400\"\n        bodyMessage = \" \".join(errors)\n        bodyResultJson = json.dumps({\"error\": \"Request body validation failed\", \"details\": errors}, separators=(\",\", \":\"))\n    else:\n        body = {\n            \"ClassId\": \"cond.AlarmSuppression\",\n            \"ObjectType\": \"cond.AlarmSuppression\",\n            \"Name\": suppressionName,\n            \"Enabled\": True,\n            \"Entity\": {\n                \"ClassId\": \"mo.MoRef\",\n                \"Moid\": serverMoid,\n                \"ObjectType\": serverObjectType\n            }\n        }\n        if description.strip():\n            body[\"Description\"] = description\n        if start is not None:\n            body[\"StartDate\"] = normalize(start)\n        if end is not None:\n            body[\"EndDate\"] = normalize(end)\n        requestBody = json.dumps(body, separators=(\",\", \":\"))\n        bodyStatus = \"ready\"\n        bodyStatusCode = \"200\"\n        bodyMessage = \"The entity-based cond.AlarmSuppression request body is valid and contains no AlarmRules.\"\n        bodyResultJson = json.dumps({\n            \"validated\": True,\n            \"entityObjectType\": serverObjectType,\n            \"startDateProvided\": start is not None,\n            \"endDateProvided\": end is not None,\n            \"alarmRulesIncluded\": \"AlarmRules\" in body\n        }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    bodyStatus = \"helper-failure\"\n    bodyStatusCode = \"500\"\n    bodyMessage = str(exc)\n    bodyResultJson = json.dumps({\"error\": \"Alarm-suppression request body construction failed\", \"detail\": bodyMessage}, separators=(\",\", \":\"))",
-          "script_arguments": [
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728855RSDmqLU2h8JDYwbold7b$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
-            "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$",
-            "$activity.definition_activity_02XOKCY8L6ZAG5hz5NE1GytPS9ct2YgXHeN.output.script_queries.serverMoid$",
-            "$activity.definition_activity_02XOKCY8L6ZAG5hz5NE1GytPS9ct2YgXHeN.output.script_queries.serverObjectType$"
-          ],
-          "script_queries": [
-            {
-              "script_query": "bodyStatus",
-              "script_query_name": "bodyStatus",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "bodyStatusCode",
-              "script_query_name": "bodyStatusCode",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "bodyMessage",
-              "script_query_name": "bodyMessage",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "bodyResultJson",
-              "script_query_name": "bodyResultJson",
-              "script_query_type": "string"
-            },
-            {
-              "script_query": "requestBody",
-              "script_query_name": "requestBody",
-              "script_query_type": "string"
-            }
-          ]
+          "skip_execution": false
         },
-        "object_type": "definition_activity"
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0raT5aKTnDeQTTKmRlsGB9",
+            "name": "Trim String",
+            "title": "Trim Start Date",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Start Date",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0DEeaoh0B2NZMnn9qa1wdL",
+            "name": "Trim String",
+            "title": "Trim End Date",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim End Date",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0DUflhllqPrXquFBU97gDO",
+            "name": "Trim String",
+            "title": "Trim Suppression Name",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Suppression Name",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0qSNmx12ehmd3lLAiBaKIS",
+            "name": "Trim String",
+            "title": "Trim Server moid",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Server moid",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$activity.definition_activity_02XOKCY8L6ZAG5hz5NE1GytPS9ct2YgXHeN.output.script_queries.serverMoid$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0R2iqknY0MSRELB9QM3Y5T",
+            "name": "Trim String",
+            "title": "Trim Description",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trims the explicit Python whitespace character set from both ends; blank values remain available to the original required-field validator.",
+              "display_name": "Trim Description",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "source": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728855RSDmqLU2h8JDYwbold7b$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc",
+            "name": "Execute Python Script",
+            "title": "Build server alarm suppression request body",
+            "type": "python3.script",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Calendar, resolved-server cross-field checks and structured JSON body construction consolidated into the existing Python activity. Native trimming remains; omits the unsupported 45-activity scalar helper without adding Python.",
+              "display_name": "Build server alarm suppression request body",
+              "skip_execution": false,
+              "action_timeout": 180,
+              "script": "import json\nimport re\nimport sys\nfrom datetime import datetime, timedelta, timezone\n\nbodyStatus = \"helper-failure\"\nbodyStatusCode = \"500\"\nbodyMessage = \"Alarm-suppression request body construction did not complete.\"\nbodyResultJson = json.dumps({\"error\": bodyMessage}, separators=(\",\", \":\"))\nrequestBody = \"\"\n\nRFC3339_PATTERN = re.compile(r\"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$\")\n\ndef parse_rfc3339(value, label):\n    if not RFC3339_PATTERN.fullmatch(value):\n        raise ValueError(label + \" must be a complete RFC 3339 timestamp with Z or an explicit UTC offset.\")\n    parsed = datetime.fromisoformat(value[:-1] + \"+00:00\" if value.endswith(\"Z\") else value)\n    if parsed.tzinfo is None or parsed.utcoffset() is None:\n        raise ValueError(label + \" must include a timezone.\")\n    return parsed.astimezone(timezone.utc)\n\ndef normalize(value):\n    return value.isoformat().replace(\"+00:00\", \"Z\")\n\ntry:\n    suppressionName = sys.argv[1]\n    description = sys.argv[2]\n    startText = sys.argv[7]\n    endText = sys.argv[8]\n    serverMoid = sys.argv[5]\n    serverObjectType = sys.argv[6]\n    errors = []\n\n    if not sys.argv[9]:\n        errors.append(\"Suppression Name must not be blank.\")\n    if len(description) > 120:\n        errors.append(\"Description must not exceed 120 characters.\")\n    if not sys.argv[10]:\n        errors.append(\"The resolved server Moid must not be blank.\")\n    if serverObjectType not in (\"compute.Blade\", \"compute.RackUnit\"):\n        errors.append(\"The resolved server ObjectType must be compute.Blade or compute.RackUnit.\")\n\n    now = datetime.now(timezone.utc)\n    start = None\n    end = None\n    try:\n        if startText:\n            start = parse_rfc3339(startText, \"Start Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n    try:\n        if endText:\n            end = parse_rfc3339(endText, \"End Date\")\n    except Exception as exc:\n        errors.append(str(exc))\n\n    if start is not None and start < now - timedelta(seconds=60):\n        errors.append(\"Start Date is now more than 60 seconds in the past; no create request was sent.\")\n    effectiveStart = max(now, start) if start is not None else now\n    if end is not None and end <= effectiveStart:\n        errors.append(\"End Date must be later than the effective start time.\")\n\n    if errors:\n        bodyStatus = \"invalid\"\n        bodyStatusCode = \"400\"\n        bodyMessage = \" \".join(errors)\n        bodyResultJson = json.dumps({\"error\": \"Request body validation failed\", \"details\": errors}, separators=(\",\", \":\"))\n    else:\n        body = {\n            \"ClassId\": \"cond.AlarmSuppression\",\n            \"ObjectType\": \"cond.AlarmSuppression\",\n            \"Name\": suppressionName,\n            \"Enabled\": True,\n            \"Entity\": {\n                \"ClassId\": \"mo.MoRef\",\n                \"Moid\": serverMoid,\n                \"ObjectType\": serverObjectType\n            }\n        }\n        if sys.argv[11]:\n            body[\"Description\"] = description\n        if start is not None:\n            body[\"StartDate\"] = normalize(start)\n        if end is not None:\n            body[\"EndDate\"] = normalize(end)\n        requestBody = json.dumps(body, separators=(\",\", \":\"))\n        bodyStatus = \"ready\"\n        bodyStatusCode = \"200\"\n        bodyMessage = \"The entity-based cond.AlarmSuppression request body is valid and contains no AlarmRules.\"\n        bodyResultJson = json.dumps({\n            \"validated\": True,\n            \"entityObjectType\": serverObjectType,\n            \"startDateProvided\": start is not None,\n            \"endDateProvided\": end is not None,\n            \"alarmRulesIncluded\": \"AlarmRules\" in body\n        }, separators=(\",\", \":\"))\nexcept Exception as exc:\n    bodyStatus = \"helper-failure\"\n    bodyStatusCode = \"500\"\n    bodyMessage = str(exc)\n    bodyResultJson = json.dumps({\"error\": \"Alarm-suppression request body construction failed\", \"detail\": bodyMessage}, separators=(\",\", \":\"))",
+              "script_arguments": [
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72876L1vMyzY2xiE9Q43kno5KP$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728855RSDmqLU2h8JDYwbold7b$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L72890F22Cm8eJqbeAinAPE1nBE$",
+                "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.input.variable_workflow_02XOKCY8L728A4bMdD5yAbqxcTFJTk4KY8I$",
+                "$activity.definition_activity_02XOKCY8L6ZAG5hz5NE1GytPS9ct2YgXHeN.output.script_queries.serverMoid$",
+                "$activity.definition_activity_02XOKCY8L6ZAG5hz5NE1GytPS9ct2YgXHeN.output.script_queries.serverObjectType$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0raT5aKTnDeQTTKmRlsGB9.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0DEeaoh0B2NZMnn9qa1wdL.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0DUflhllqPrXquFBU97gDO.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0qSNmx12ehmd3lLAiBaKIS.output.trimmed$",
+                "$activity.definition_activity_02Z3AAXNVAM5J0R2iqknY0MSRELB9QM3Y5T.output.trimmed$"
+              ],
+              "script_queries": [
+                {
+                  "script_query": "bodyStatus",
+                  "script_query_name": "bodyStatus",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "bodyStatusCode",
+                  "script_query_name": "bodyStatusCode",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "bodyMessage",
+                  "script_query_name": "bodyMessage",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "bodyResultJson",
+                  "script_query_name": "bodyResultJson",
+                  "script_query_type": "string"
+                },
+                {
+                  "script_query": "requestBody",
+                  "script_query_name": "requestBody",
+                  "script_query_type": "string"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          }
+        ]
       },
       {
         "unique_name": "definition_activity_02XOKCY8L6ZB86US4Lp1jsQRvBNlBtIUb4A",
@@ -1804,34 +3852,34 @@
                         "left_operand": {
                           "left_operand": {
                             "left_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatus$",
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatus$",
                               "operator": "eq",
                               "right_operand": "helper-failure"
                             },
                             "operator": "or",
                             "right_operand": {
-                              "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatus$",
+                              "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatus$",
                               "operator": "mregex",
                               "right_operand": "^(?!(?:helper-failure|invalid|ready)$).*$"
                             }
                           },
                           "operator": "or",
                           "right_operand": {
-                            "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatusCode$",
+                            "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatusCode$",
                             "operator": "mregex",
                             "right_operand": "^\\s*$"
                           }
                         },
                         "operator": "or",
                         "right_operand": {
-                          "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyMessage$",
+                          "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyMessage$",
                           "operator": "mregex",
                           "right_operand": "^\\s*$"
                         }
                       },
                       "operator": "or",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyResultJson$",
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyResultJson$",
                         "operator": "mregex",
                         "right_operand": "^\\s*$"
                       }
@@ -1839,13 +3887,13 @@
                     "operator": "or",
                     "right_operand": {
                       "left_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatus$",
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatus$",
                         "operator": "eq",
                         "right_operand": "ready"
                       },
                       "operator": "and",
                       "right_operand": {
-                        "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.requestBody$",
+                        "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.requestBody$",
                         "operator": "mregex",
                         "right_operand": "^\\s*$"
                       }
@@ -1925,7 +3973,7 @@
                 },
                 "operator": "and",
                 "right_operand": {
-                  "left_operand": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatus$",
+                  "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatus$",
                   "operator": "eq",
                   "right_operand": "invalid"
                 }
@@ -1947,7 +3995,7 @@
                   "variables_to_update": [
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728B1iZ80AdBAzIQrsjXMN8B35$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyStatusCode$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyStatusCode$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728D0pJpVksyqU3ob6GKqQUG1a$",
@@ -1955,11 +4003,11 @@
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728E0RIiMLLJml5QuJpHWbtiSr$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyMessage$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyMessage$"
                     },
                     {
                       "variable_to_update": "$workflow.definition_workflow_02XOKCY8L72730vURfrfY5a1bG7YNpRFJMx.output.variable_workflow_02XOKCY8L728C3nQaL2gNgDVlRgEmxHzS5a$",
-                      "variable_value_new": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.bodyResultJson$"
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.bodyResultJson$"
                     }
                   ]
                 },
@@ -1997,7 +4045,7 @@
           "display_name": "Create server alarm suppression",
           "skip_execution": false,
           "action_timeout": 180,
-          "api_body": "$activity.definition_activity_02XOKCY8L6ZB110VgPaAVq5ERMVG9YeW2Nh.output.script_queries.requestBody$",
+          "api_body": "$activity.definition_activity_02Z3AAXNVAM5J0zfGd2mS2i3AtARD7vhvoc.output.script_queries.requestBody$",
           "api_method": "POST",
           "api_url": "/api/v1/cond/AlarmSuppressions",
           "content_type": "application/json",

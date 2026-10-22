@@ -1,0 +1,939 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts",
+    "name": "Cisco Intersight - Native Recommission device - Initial f8c95d65",
+    "title": "Cisco Intersight - Native Recommission device - Initial f8c95d65",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "input",
+          "name": "Source 1 - script_queries.waitTimeoutSeconds",
+          "type": "datatype.integer",
+          "description": "Source 1 - script_queries.waitTimeoutSeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 5,
+          "scope": "input",
+          "name": "Native 2: attempt limit",
+          "type": "datatype.integer",
+          "description": "Source 2 - Initialize bounded recommission polling - attempt limit",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0vfcimb8Xw09tfTwiJTL1K",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.date",
+        "properties": {
+          "value": "1970-01-01T00:00:00+00:00",
+          "scope": "input",
+          "name": "Source 3 - Polling Unix epoch",
+          "type": "datatype.date",
+          "description": "Source 3 - Polling Unix epoch",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0dUMcNMelGgI0qU8w2oigN",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - pollIntervalSeconds",
+          "type": "datatype.number",
+          "description": "Initialize bounded recommission polling - pollIntervalSeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - pollingResultJson",
+          "type": "datatype.string",
+          "description": "Initialize bounded recommission polling - pollingResultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0kGLfRWcu0ptdNHwoDWSNP",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - pollingStatusCode",
+          "type": "datatype.string",
+          "description": "Initialize bounded recommission polling - pollingStatusCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ZKU8ksntmBu60z8Uiumdc",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - pollingMessage",
+          "type": "datatype.string",
+          "description": "Initialize bounded recommission polling - pollingMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0rj7bMAU05LbGeXyPwdyRD",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - deadlineEpoch",
+          "type": "datatype.number",
+          "description": "Initialize bounded recommission polling - deadlineEpoch",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0zZ0RrRWInoPNwUiKatT8Z",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Normalize polling timeout - typed text",
+          "type": "datatype.string",
+          "description": "Normalize polling timeout - typed text",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Bmeb9eAczTMReWmOwM6W8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - initialDelaySeconds",
+          "type": "datatype.number",
+          "description": "Initialize bounded recommission polling - initialDelaySeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Initialize bounded recommission polling - pollingStatus",
+          "type": "datatype.string",
+          "description": "Initialize bounded recommission polling - pollingStatus",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0C4ss37DD8ooHyahClsMbj",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "pollingStatus",
+          "type": "datatype.string",
+          "description": "pollingStatus",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Z1aNkDN7w7HCDO79eWT4O",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "pollingStatusCode",
+          "type": "datatype.string",
+          "description": "pollingStatusCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0g4jbQ9txyR05W8ytpdYh4",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "pollingMessage",
+          "type": "datatype.string",
+          "description": "pollingMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0h2GzCR7q7lweqyCT8XXQM",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "pollingResultJson",
+          "type": "datatype.string",
+          "description": "pollingResultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0nkgrxe6H8DzQvLZ534fOK",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "output",
+          "name": "deadlineEpoch",
+          "type": "datatype.number",
+          "description": "deadlineEpoch",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0A5UhzEvKp2udRJmA221DO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "output",
+          "name": "initialDelaySeconds",
+          "type": "datatype.number",
+          "description": "initialDelaySeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0hNWM6hqsPtmAeJrZYXExD",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "output",
+          "name": "pollIntervalSeconds",
+          "type": "datatype.number",
+          "description": "pollIntervalSeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0RdD2Qfnm0Bm2yKE0ssUmR",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0sW7EUZK2xDX8tbqC16sW1",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0H3uIZNhyDfEliUNMFVyl7",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0hD4GRFI4cjAahgjBqUyZI",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"completed\":false}",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J07gJOc0iVdlY46dEnwy8vN",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight Native Helpers",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Reusable native-only internal helper for Cisco Intersight - Recommission device. Keeps scalar preparation or polling below platform action and variable limits. No API calls, credentials or hardware targets. Import this helper before its caller; current-cloud native runtime verification remains required. Full internal purpose: Cisco Intersight - Native Recommission device - Initialize bounded recommission polling. Integer seconds are required by Cisco Calculate Date and Sleep. Fractional delays round up by less than one second; an expired deadline stops the next API call.",
+      "display_name": "Cisco Intersight - Native Recommission device - Initial f8c95d65",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0WfXbgaxQcbic68WErW7s4",
+        "name": "Group",
+        "title": "Initialize bounded recommission polling",
+        "type": "logic.group",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Native date arithmetic, Set Variables, Condition Blocks and Sleep preserve the bounded polling contract; no Python timer is required.",
+          "display_name": "Initialize bounded recommission polling",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0OyMzECis0OwDlA4ftkkWw",
+            "name": "Set Variables",
+            "title": "Initialize polling helper failure outputs",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Sets variables in the original assignment order, consolidating adjacent activities with identical failure/skip behavior. No intermediate activity output is referenced.",
+              "display_name": "Initialize polling helper failure outputs",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0C4ss37DD8ooHyahClsMbj$",
+                  "variable_value_new": "helper-failure"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0ZKU8ksntmBu60z8Uiumdc$",
+                  "variable_value_new": "500"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0rj7bMAU05LbGeXyPwdyRD$",
+                  "variable_value_new": "The normalized wait timeout must be between 1 and 600 seconds."
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0kGLfRWcu0ptdNHwoDWSNP$",
+                  "variable_value_new": "{\"error\":\"Polling deadline initialization failed\",\"detail\":\"The normalized wait timeout must be between 1 and 600 seconds.\"}"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0zZ0RrRWInoPNwUiKatT8Z$",
+                  "variable_value_new": 0
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                  "variable_value_new": 0
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$",
+                  "variable_value_new": 0
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0Bmeb9eAczTMReWmOwM6W8$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0ysA9CHJCgaqu3PmTblEHq",
+            "name": "Trim String",
+            "title": "Normalize polling timeout",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Normalize polling timeout",
+              "display_name": "Normalize polling timeout",
+              "skip_execution": false,
+              "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0Bmeb9eAczTMReWmOwM6W8$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0HTy2eSFov3r7pQHc7g0te",
+            "name": "Condition",
+            "title": "Accept timeout within documented range",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Accept timeout within documented range",
+              "display_name": "Accept timeout within documented range",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0zfazjnBgdD9dqUkVMIqSJ",
+                "name": "Condition Branch",
+                "title": "Accept timeout within documented range branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Accept timeout within documented range branch",
+                  "display_name": "Accept timeout within documented range branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$",
+                      "operator": "gte",
+                      "right_operand": 1
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$",
+                      "operator": "lt",
+                      "right_operand": 601
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0dUBUKLDNyhIvT2u8ke01q",
+                    "name": "Set Variables",
+                    "title": "Calculate first polling delay",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Calculate first polling delay",
+                      "display_name": "Calculate first polling delay",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$ / 20"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0BBLo37b5ZQauh7Q3qKhT4",
+                    "name": "Condition",
+                    "title": "Apply minimum first delay",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Apply minimum first delay",
+                      "display_name": "Apply minimum first delay",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0AMSEVVolX5fl2hIyacP6m",
+                        "name": "Condition Branch",
+                        "title": "Apply minimum first delay branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Apply minimum first delay branch",
+                          "display_name": "Apply minimum first delay branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                            "operator": "lt",
+                            "right_operand": 0.25
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J02KPdsSxbk8mMyuKMewXj9",
+                            "name": "Set Variables",
+                            "title": "Set minimum first delay",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Set minimum first delay",
+                              "display_name": "Set minimum first delay",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                                  "variable_value_new": 0.25
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0vWv0F8KJWsip160BkxrNW",
+                    "name": "Condition",
+                    "title": "Apply maximum first delay",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Apply maximum first delay",
+                      "display_name": "Apply maximum first delay",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0Tg3DCtHU4ampJbMiub2Ca",
+                        "name": "Condition Branch",
+                        "title": "Apply maximum first delay branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Apply maximum first delay branch",
+                          "display_name": "Apply maximum first delay branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                            "operator": "gt",
+                            "right_operand": 2
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Zsdph2zVqK1q2Q08ZwzG7",
+                            "name": "Set Variables",
+                            "title": "Set maximum first delay",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Set maximum first delay",
+                              "display_name": "Set maximum first delay",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$",
+                                  "variable_value_new": 2
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0pTYfD75NWJqWyPzwaP682",
+                    "name": "Set Variables",
+                    "title": "Spread remaining time across bounded attempts",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Spread remaining time across bounded attempts",
+                      "display_name": "Spread remaining time across bounded attempts",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$",
+                          "variable_value_new": "($workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$ - $workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$) / ($workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0vfcimb8Xw09tfTwiJTL1K$ - 1)"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0E3ws6YE4YkvyHG1Kipj6l",
+                    "name": "Condition",
+                    "title": "Apply minimum poll interval",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Apply minimum poll interval",
+                      "display_name": "Apply minimum poll interval",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0bEpntyhcrNw95jBwGMOi5",
+                        "name": "Condition Branch",
+                        "title": "Apply minimum poll interval branch",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Apply minimum poll interval branch",
+                          "display_name": "Apply minimum poll interval branch",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$",
+                            "operator": "lt",
+                            "right_operand": 1
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Tq8hTGgamgJk28E2vACL6",
+                            "name": "Set Variables",
+                            "title": "Set minimum poll interval",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Set minimum poll interval",
+                              "display_name": "Set minimum poll interval",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$",
+                                  "variable_value_new": 1
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0mmrDVK94sA7Z1AnhXq30Y",
+                    "name": "Calculate bounded polling deadline",
+                    "title": "Calculate bounded polling deadline",
+                    "type": "core.calculate_date",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Calculate bounded polling deadline",
+                      "display_name": "Calculate bounded polling deadline",
+                      "skip_execution": false,
+                      "original_date": "$activity.definition_activity_02Z3AAXNVAM5J0ysA9CHJCgaqu3PmTblEHq.output.end_time$",
+                      "adjustment": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0ieTxPaQJtd3XIp5Lv3jDr$"
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0bwjpEhLA6r1JNoutLdHZw",
+                    "name": "Measure deadline from Unix epoch",
+                    "title": "Measure deadline from Unix epoch",
+                    "type": "core.calculate_date_time_difference",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Measure deadline from Unix epoch",
+                      "display_name": "Measure deadline from Unix epoch",
+                      "skip_execution": false,
+                      "original_date": "$activity.definition_activity_02Z3AAXNVAM5J0mmrDVK94sA7Z1AnhXq30Y.output.result$",
+                      "subtract_date": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0dUMcNMelGgI0qU8w2oigN$"
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J02kB5TlCouLoRfxSfBSEN7",
+                    "name": "Set Variables",
+                    "title": "Set prepared initialize bounded recommission polling",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Publish polling deadline in seconds",
+                      "display_name": "Set prepared initialize bounded recommission polling",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0zZ0RrRWInoPNwUiKatT8Z$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0bwjpEhLA6r1JNoutLdHZw.output.total_milliseconds$ / 1000"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0C4ss37DD8ooHyahClsMbj$",
+                          "variable_value_new": "ready"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0ZKU8ksntmBu60z8Uiumdc$",
+                          "variable_value_new": "200"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0rj7bMAU05LbGeXyPwdyRD$",
+                          "variable_value_new": "A bounded polling deadline and safe delay schedule were initialized."
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0kGLfRWcu0ptdNHwoDWSNP$",
+                          "variable_value_new": "{\"waitTimeoutSeconds\":$activity.definition_activity_02Z3AAXNVAM5J0ysA9CHJCgaqu3PmTblEHq.output.trimmed$,\"initialDelaySeconds\":$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$,\"pollIntervalSeconds\":$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$,\"maximumPollAttempts\":$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.input.variable_workflow_02Z3AAXNVAM5J0vfcimb8Xw09tfTwiJTL1K$}"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0RO72kVKH9tWBgYLCUgKRB",
+        "name": "Set Variables",
+        "title": "Publish native helper outputs",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Sets variables in the original assignment order, consolidating adjacent activities with identical failure/skip behavior. No intermediate activity output is referenced.",
+          "display_name": "Publish native helper outputs",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0Z1aNkDN7w7HCDO79eWT4O$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0C4ss37DD8ooHyahClsMbj$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0g4jbQ9txyR05W8ytpdYh4$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0ZKU8ksntmBu60z8Uiumdc$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0h2GzCR7q7lweqyCT8XXQM$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0rj7bMAU05LbGeXyPwdyRD$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0nkgrxe6H8DzQvLZ534fOK$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0kGLfRWcu0ptdNHwoDWSNP$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0A5UhzEvKp2udRJmA221DO$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0zZ0RrRWInoPNwUiKatT8Z$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0hNWM6hqsPtmAeJrZYXExD$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0AHUF6RrFvLpq7uUZblA3q$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0RdD2Qfnm0Bm2yKE0ssUmR$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.local.variable_workflow_02Z3AAXNVAM5J0dFbkb5Wkn4LULhHeCPxRG$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0sW7EUZK2xDX8tbqC16sW1$",
+              "variable_value_new": 200
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0H3uIZNhyDfEliUNMFVyl7$",
+              "variable_value_new": "Native helper execution completed."
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0hD4GRFI4cjAahgjBqUyZI$",
+              "variable_value_new": ""
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J07gJOc0iVdlY46dEnwy8vN$",
+              "variable_value_new": "{\"completed\":true}"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0MHOGueyBefmz2oxVwjp69",
+        "name": "Condition",
+        "title": "Preserve semantic helper status",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Preserve semantic helper status",
+          "display_name": "Preserve semantic helper status",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0EgddgQA5kvjgqEAzwokOP",
+            "name": "Condition Branch",
+            "title": "Preserve semantic helper status branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Preserve semantic helper status branch",
+              "display_name": "Preserve semantic helper status branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0g4jbQ9txyR05W8ytpdYh4$",
+                "operator": "mregex",
+                "right_operand": "^[1-5][0-9]{2}$"
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0ps4DHUedlGsuBEy9E4AyO",
+                "name": "JSONPath Query",
+                "title": "Parse validated semantic HTTP status as Integer",
+                "type": "corejava.jsonpathquery",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Parse validated semantic HTTP status as Integer",
+                  "display_name": "Parse validated semantic HTTP status as Integer",
+                  "skip_execution": false,
+                  "input_json": "{\"code\":\"$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0g4jbQ9txyR05W8ytpdYh4$\"}",
+                  "jsonpath_queries": [
+                    {
+                      "jsonpath_query": "$.code",
+                      "jsonpath_query_name": "code",
+                      "jsonpath_query_type": "integer",
+                      "set_default_value": false,
+                      "default_value": 500,
+                      "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0be70SZsireVWGl8k9kW9f",
+                "name": "Set Variables",
+                "title": "Publish semantic native helper status",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish semantic native helper status",
+                  "display_name": "Publish semantic native helper status",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0ZfJSqrMJx92WDcp6EYKts.output.variable_workflow_02Z3AAXNVAM5J0sW7EUZK2xDX8tbqC16sW1$",
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0ps4DHUedlGsuBEy9E4AyO.output.jsonpath_queries.code$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV"
+    ]
+  },
+  "categories": {
+    "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV": {
+      "unique_name": "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV",
+      "name": "Cisco Intersight - Compute Hardware",
+      "title": "Cisco Intersight - Compute Hardware",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  }
+}

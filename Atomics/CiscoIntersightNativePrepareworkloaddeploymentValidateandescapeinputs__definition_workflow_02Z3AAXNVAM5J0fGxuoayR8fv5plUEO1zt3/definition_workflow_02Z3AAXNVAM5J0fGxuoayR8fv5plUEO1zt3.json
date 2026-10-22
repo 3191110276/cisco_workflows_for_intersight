@@ -1,0 +1,3420 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3",
+    "name": "Cisco Intersight - Native Prepare workload deployment - 2b610044",
+    "title": "Cisco Intersight - Native Prepare workload deployment - 2b610044",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 1 - trimmed",
+          "type": "datatype.string",
+          "description": "Source 1 - trimmed",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0f1fC7mBPPi2g9XJhhMcwb",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 2 - trimmed",
+          "type": "datatype.string",
+          "description": "Source 2 - trimmed",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0A0lKVgP6GK6w1D3vUEuEn",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 3 - trimmed",
+          "type": "datatype.string",
+          "description": "Source 3 - trimmed",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0UxxkytiafAgB0cWkLSbuX",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 4 - trimmed",
+          "type": "datatype.string",
+          "description": "Source 4 - trimmed",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 5 - trimmed",
+          "type": "datatype.string",
+          "description": "Source 5 - trimmed",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0p19IGbh1lJqp6Rcxnuszi",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": true,
+          "scope": "input",
+          "name": "Source 6 - Wait for Completion",
+          "type": "datatype.boolean",
+          "description": "Source 6 - Wait for Completion",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0jlijdidGvMJXHnKXKdFsD",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 300,
+          "scope": "input",
+          "name": "Source 7 - Wait Timeout Seconds",
+          "type": "datatype.integer",
+          "description": "Source 7 - Wait Timeout Seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0XHhkUiwumrnZsiKKnX3MG",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "input",
+          "name": "Source 8 - Confirm Instance Creation",
+          "type": "datatype.boolean",
+          "description": "Source 8 - Confirm Instance Creation",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0uF9f38ACSWJQgjXRDyFq7",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - failureResult 5",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - failureResult 5",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Sk5re4McpJLJsi81xCZdp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - failureMessage 3",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - failureMessage 3",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Validate and escape inputs - condition 24",
+          "type": "datatype.boolean",
+          "description": "Validate and escape inputs - condition 24",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0b2Q6RlcpbU4EZZPhkIAyj",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Validate and escape inputs - condition 10",
+          "type": "datatype.boolean",
+          "description": "Validate and escape inputs - condition 10",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0GUscqLXvSUPtyO4pKXNej",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Trim validation input - scalar text",
+          "type": "datatype.string",
+          "description": "Trim validation input - scalar text",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0sZIGQfRfIeDuxnDZaKYgh",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - waitRequestedText 37",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - waitRequestedText 37",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0XLEs8KLE08svS694qqaf8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - error separator 23",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - error separator 23",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - validation errors 20",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - validation errors 20",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - failureError 4",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - failureError 4",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Validate and escape inputs - condition 18",
+          "type": "datatype.boolean",
+          "description": "Validate and escape inputs - condition 18",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J04KbHtf3kxfLW7879x6fdX",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - action 27",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - action 27",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Trim validation input - scalar text [2]",
+          "type": "datatype.string",
+          "description": "Trim validation input - scalar text",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0oXfdTVpVDZZImkvWSkQ77",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Validate and escape inputs - waitTimeout 32",
+          "type": "datatype.integer",
+          "description": "Validate and escape inputs - waitTimeout 32",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - route value 30",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - route value 30",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0EpQts2T1ZZ6XhTpQuJCYp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - validation error JSON 21",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - validation error JSON 21",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Trim validation input - scalar text [3]",
+          "type": "datatype.string",
+          "description": "Trim validation input - scalar text",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J06GE1GhBoabAaLII6ML5QR",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - status 1",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - status 1",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0xJPyRIFt4bmBXjf5odJVr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Validate and escape inputs - validation error count 22",
+          "type": "datatype.integer",
+          "description": "Validate and escape inputs - validation error count 22",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Validate and escape inputs - failureCode 2",
+          "type": "datatype.string",
+          "description": "Validate and escape inputs - failureCode 2",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0z6VdkyTHlPjZtUMFqgYnq",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Validate and escape inputs - condition 13",
+          "type": "datatype.boolean",
+          "description": "Validate and escape inputs - condition 13",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0JtNUc2AqHiXpbV7HJN5I3",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "status",
+          "type": "datatype.string",
+          "description": "status",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0JIKw0nPkHf82OecZo0ejv",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "failureCode",
+          "type": "datatype.string",
+          "description": "failureCode",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0MsnAPrgTqxRLRHYc6WX3j",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "failureMessage",
+          "type": "datatype.string",
+          "description": "failureMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0xLaWyftm0vPrROt8YcG18",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "failureError",
+          "type": "datatype.string",
+          "description": "failureError",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0q6ihbbqq519FNjsRgdV1V",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "failureResult",
+          "type": "datatype.string",
+          "description": "failureResult",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0yWXDtl5q7xZmMP0m4U7WC",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "organizationName",
+          "type": "datatype.string",
+          "description": "organizationName",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0HWVQjuixyneEvQiECNww8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "deploymentName",
+          "type": "datatype.string",
+          "description": "deploymentName",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0VJhS21Igydq7NkvtwVpO6",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "escapedOrganizationName",
+          "type": "datatype.string",
+          "description": "escapedOrganizationName",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0gtQuUVHeHLuD4SrPX2yZW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "escapedDeploymentName",
+          "type": "datatype.string",
+          "description": "escapedDeploymentName",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Jq108JNiYrfKPR0WBy6NX",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "action",
+          "type": "datatype.string",
+          "description": "action",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0QuycWf93QLs8pr2B0GNYO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J03mfVYURiFVR0TuO2dh44Y",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0KNPK7aoReMaziZtG7thHg",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0driiIRZVVYIGXcUet3O9f",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"completed\":false}",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0GqhzAvYKq9QRB6BqjHXzH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 9 - legacy value",
+          "type": "datatype.string",
+          "description": "Source 9 - legacy value",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J03FnnFS96ImLpqB2ZNCVtw",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "Source 10 - legacy value",
+          "type": "datatype.string",
+          "description": "Source 10 - legacy value",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0i6kEx33F0sl8DJEFtMYBp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "JSON string escape result 110",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J033HsgP5jQ5rDBLuItSYV0",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "JSON string escape result 111",
+          "type": "datatype.string",
+          "description": "Fresh inline literal replacement result; cleared before each invocation.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0had418xBeobiyusQkXqPc",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": true,
+          "scope": "local",
+          "name": "Native unconditional branch",
+          "type": "datatype.boolean",
+          "description": "Native unconditional branch",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J04wBsWSVbZZ3BqK6Irhb3k",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight Native Helpers",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Reusable native-only internal helper for Cisco Intersight - Prepare workload deployment. Keeps scalar preparation or polling below platform action and variable limits. No API calls, credentials or hardware targets. Import this helper before its caller; current-cloud native runtime verification remains required. Full internal purpose: Cisco Intersight - Native Prepare workload deployment - Validate and escape inputs.",
+      "display_name": "Cisco Intersight - Native Prepare workload deployment - 2b610044",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0Esb1EDN8jVfsWX2lGkV2B",
+        "name": "Group",
+        "title": "Validate and escape inputs",
+        "type": "logic.group",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Native input validation, conditions, variable assignments and literal string preparation replace this scalar Python helper. Existing success/failure outputs and confirmation requirements are preserved.",
+          "display_name": "Validate and escape inputs",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0WlE0Uq3wQmFNxUfasleGz",
+            "name": "Set Variables",
+            "title": "Set prepared and escape inputs",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Set status",
+              "display_name": "Set prepared and escape inputs",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0xJPyRIFt4bmBXjf5odJVr$",
+                  "variable_value_new": "invalid"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0z6VdkyTHlPjZtUMFqgYnq$",
+                  "variable_value_new": "400"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ$",
+                  "variable_value_new": "Input validation failed"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$",
+                  "variable_value_new": "One or more lifecycle inputs are invalid."
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0Sk5re4McpJLJsi81xCZdp$",
+                  "variable_value_new": "{}"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J06GE1GhBoabAaLII6ML5QR$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0uF9f38ACSWJQgjXRDyFq7$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0jdXHDBDfNB3OiXBNTL5Gr",
+            "name": "Trim String",
+            "title": "Trim validation input",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trim validation input",
+              "display_name": "Trim validation input",
+              "skip_execution": false,
+              "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J06GE1GhBoabAaLII6ML5QR$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0VkLjItd9DpUR4QKwami8m",
+            "name": "Condition",
+            "title": "Evaluate validation condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Evaluate validation condition",
+              "display_name": "Evaluate validation condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0FwwQKiD8sccBJjGL5FFjR",
+                "name": "Condition Branch",
+                "title": "Evaluate validation condition branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Evaluate validation condition branch",
+                  "display_name": "Evaluate validation condition branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0jdXHDBDfNB3OiXBNTL5Gr.output.trimmed$",
+                    "operator": "mregex",
+                    "right_operand": "(?i)^true$"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0kG9NYXAmYjR2h10W36CJC",
+                    "name": "Set Variables",
+                    "title": "Mark matching condition",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Mark matching condition",
+                      "display_name": "Mark matching condition",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0GUscqLXvSUPtyO4pKXNej$",
+                          "variable_value_new": true
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0iAT2ZGEy7CuKKWAtC1jjD",
+            "name": "Set Variables",
+            "title": "Format scalar input as text",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Format scalar input as text",
+              "display_name": "Format scalar input as text",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0oXfdTVpVDZZImkvWSkQ77$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0jlijdidGvMJXHnKXKdFsD$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0ZDJyPGDqSaqDXDpCSfTZr",
+            "name": "Trim String",
+            "title": "Trim validation input",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trim validation input",
+              "display_name": "Trim validation input",
+              "skip_execution": false,
+              "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0oXfdTVpVDZZImkvWSkQ77$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J06iwWxDOTqa9OJL7FicZyn",
+            "name": "Condition",
+            "title": "Evaluate validation condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Evaluate validation condition",
+              "display_name": "Evaluate validation condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J07yMv3Xk99skUORGw0zO7g",
+                "name": "Condition Branch",
+                "title": "Evaluate validation condition branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Evaluate validation condition branch",
+                  "display_name": "Evaluate validation condition branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0ZDJyPGDqSaqDXDpCSfTZr.output.trimmed$",
+                    "operator": "mregex",
+                    "right_operand": "(?i)^true$"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0iLHWV6z9z3fxgkEaDjeXF",
+                    "name": "Set Variables",
+                    "title": "Mark matching condition",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Mark matching condition",
+                      "display_name": "Mark matching condition",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0JtNUc2AqHiXpbV7HJN5I3$",
+                          "variable_value_new": true
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0kCNpkrn3mToe4FtpR8sv6",
+            "name": "Set Variables",
+            "title": "Format scalar input as text",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Format scalar input as text",
+              "display_name": "Format scalar input as text",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0sZIGQfRfIeDuxnDZaKYgh$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0XHhkUiwumrnZsiKKnX3MG$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0K9IGcHrlnLqFzK1VEU5ls",
+            "name": "Trim String",
+            "title": "Trim validation input",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trim validation input",
+              "display_name": "Trim validation input",
+              "skip_execution": false,
+              "source": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0sZIGQfRfIeDuxnDZaKYgh$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J01zyUJ5D2xAXlHMHDLSWMt",
+            "name": "Condition",
+            "title": "Evaluate validation condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Evaluate validation condition",
+              "display_name": "Evaluate validation condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0y590mvm5Ege5KdEifhc7k",
+                "name": "Condition Branch",
+                "title": "Evaluate validation condition branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Evaluate validation condition branch",
+                  "display_name": "Evaluate validation condition branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0p19IGbh1lJqp6Rcxnuszi$",
+                    "operator": "mregex",
+                    "right_operand": "(?i)^true$"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0spAb34NEPWF38ayflx7Qg",
+                    "name": "Set Variables",
+                    "title": "Mark matching condition",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Mark matching condition",
+                      "display_name": "Mark matching condition",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J04KbHtf3kxfLW7879x6fdX$",
+                          "variable_value_new": true
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0OsaTglju36UwRNq1ZyLA2",
+            "name": "Set Variables",
+            "title": "Initialize native validation errors",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Initialize native validation errors",
+              "display_name": "Initialize native validation errors",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                  "variable_value_new": "[]"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0gYc92ild2sKuC7oLhcd9o",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J078Vz9FN9HqqLFJ4hKPYRX",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0f1fC7mBPPi2g9XJhhMcwb$",
+                    "operator": "eq",
+                    "right_operand": ""
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0H99ued2OEwCKhEIqya6Tg",
+                    "name": "Set Variables",
+                    "title": "Append validation error text",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error text",
+                      "display_name": "Append validation error text",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Workload Organization must not be blank."
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0KZ3JsLnPGsqT4UvkAKzFl",
+                    "name": "Replace String",
+                    "title": "Append validation error JSON",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error JSON",
+                      "display_name": "Append validation error JSON",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "]",
+                          "replacement_string": ",\"Workload Organization must not be blank.\"]"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Ue2zspWQRbnfygYHazp96",
+                    "name": "Replace String",
+                    "title": "Remove first error separator",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Remove first error separator",
+                      "display_name": "Remove first error separator",
+                      "skip_execution": false,
+                      "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0KZ3JsLnPGsqT4UvkAKzFl.output.result_string$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "[,",
+                          "replacement_string": "["
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0RnIYyNsG94s5Qzz9MvyTb",
+                    "name": "Set Variables",
+                    "title": "Count validation error",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Count validation error",
+                      "display_name": "Count validation error",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0Ue2zspWQRbnfygYHazp96.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                          "variable_value_new": " "
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0BuPZzXbQsDNCGHlLY2IaL",
+            "name": "Condition",
+            "title": "Evaluate validation condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Evaluate validation condition",
+              "display_name": "Evaluate validation condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0ypMXynt1kIIZrx9HJ0FKk",
+                "name": "Condition Branch",
+                "title": "Evaluate validation condition branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Evaluate validation condition branch",
+                  "display_name": "Evaluate validation condition branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0A0lKVgP6GK6w1D3vUEuEn$",
+                    "operator": "mregex",
+                    "right_operand": "^(?:[a-zA-Z0-9][a-zA-Z0-9\\- _]{0,31})$"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0XYTOyNAriLZ7scwhkqHiW",
+                    "name": "Set Variables",
+                    "title": "Mark matching condition",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Mark matching condition",
+                      "display_name": "Mark matching condition",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0b2Q6RlcpbU4EZZPhkIAyj$",
+                          "variable_value_new": true
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0fXGPwv6SwfsXmywo284ba",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0lpQytW2ZZCWfjWlZcafnn",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0b2Q6RlcpbU4EZZPhkIAyj$",
+                    "operator": "eq",
+                    "right_operand": false
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0U8pJNMzqEgUMoQG6osxzD",
+                    "name": "Set Variables",
+                    "title": "Append validation error text",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error text",
+                      "display_name": "Append validation error text",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Workload Deployment Name is invalid."
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0ac1penm3vc8mtTJmFrT56",
+                    "name": "Replace String",
+                    "title": "Append validation error JSON",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error JSON",
+                      "display_name": "Append validation error JSON",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "]",
+                          "replacement_string": ",\"Workload Deployment Name is invalid.\"]"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0LrlVhd3tVHNPSL5So0ztI",
+                    "name": "Replace String",
+                    "title": "Remove first error separator",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Remove first error separator",
+                      "display_name": "Remove first error separator",
+                      "skip_execution": false,
+                      "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0ac1penm3vc8mtTJmFrT56.output.result_string$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "[,",
+                          "replacement_string": "["
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J06myI8P5k22ozrxMHOvyEP",
+                    "name": "Set Variables",
+                    "title": "Count validation error",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Count validation error",
+                      "display_name": "Count validation error",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0LrlVhd3tVHNPSL5So0ztI.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                          "variable_value_new": " "
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0ZUdP1m0WL3xH8d54X1AxK",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0Xc4La7hSp35oqLM7bb2bF",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                          "operator": "eq",
+                          "right_operand": "undeploy"
+                        },
+                        "operator": "or",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                          "operator": "eq",
+                          "right_operand": "prepare"
+                        }
+                      },
+                      "operator": "or",
+                      "right_operand": {
+                        "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                        "operator": "eq",
+                        "right_operand": "deploy"
+                      }
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0GUscqLXvSUPtyO4pKXNej$",
+                      "operator": "ne",
+                      "right_operand": true
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0F4LyLoFXwCjRJPCmBc4Xt",
+                    "name": "Set Variables",
+                    "title": "Append validation error text",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error text",
+                      "display_name": "Append validation error text",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$The required confirmation input must be true."
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0BkbPJ6z4LRsukp4kzNHcM",
+                    "name": "Replace String",
+                    "title": "Append validation error JSON",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error JSON",
+                      "display_name": "Append validation error JSON",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "]",
+                          "replacement_string": ",\"The required confirmation input must be true.\"]"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0fBxQVefZ99NKLVt9maBBM",
+                    "name": "Replace String",
+                    "title": "Remove first error separator",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Remove first error separator",
+                      "display_name": "Remove first error separator",
+                      "skip_execution": false,
+                      "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0BkbPJ6z4LRsukp4kzNHcM.output.result_string$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "[,",
+                          "replacement_string": "["
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0P2r6NYefOdpcc9o7b9b01",
+                    "name": "Set Variables",
+                    "title": "Count validation error",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Count validation error",
+                      "display_name": "Count validation error",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0fBxQVefZ99NKLVt9maBBM.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                          "variable_value_new": " "
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0Q3E0GPLsiOPY78k12YOSd",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0rpMZVS4xbRUUt41aQXFbc",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                    "operator": "eq",
+                    "right_operand": "manage"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0HWqAbBTOvWJcENtRT0FfV",
+                    "name": "Set Variables",
+                    "title": "Set action",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set action",
+                      "display_name": "Set action",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0UxxkytiafAgB0cWkLSbuX$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0KLp6JrbQZqJRNrFh2P7SB",
+                    "name": "Condition",
+                    "title": "Validate input condition",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Validate input condition",
+                      "display_name": "Validate input condition",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0XJ1IEgI8yjlqg6676BVeV",
+                        "name": "Condition Branch",
+                        "title": "Condition matches",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Condition matches",
+                          "display_name": "Condition matches",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": {
+                                "left_operand": {
+                                  "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                                  "operator": "ne",
+                                  "right_operand": "Resume"
+                                },
+                                "operator": "and",
+                                "right_operand": {
+                                  "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                                  "operator": "ne",
+                                  "right_operand": "Retry"
+                                }
+                              },
+                              "operator": "and",
+                              "right_operand": {
+                                "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                                "operator": "ne",
+                                "right_operand": "ReEvaluateQualifiers"
+                              }
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                              "operator": "ne",
+                              "right_operand": "Suspend"
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Y2nPJsKeZqntbxTyc9Sf0",
+                            "name": "Set Variables",
+                            "title": "Append validation error text",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append validation error text",
+                              "display_name": "Append validation error text",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Action must be Suspend, Resume, Retry, or ReEvaluateQualifiers."
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0ZvZJjcaTohkcvckR9ERjS",
+                            "name": "Replace String",
+                            "title": "Append validation error JSON",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append validation error JSON",
+                              "display_name": "Append validation error JSON",
+                              "skip_execution": false,
+                              "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "]",
+                                  "replacement_string": ",\"Action must be Suspend, Resume, Retry, or ReEvaluateQualifiers.\"]"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0dnmZCAruF6MOGS3S2gQyw",
+                            "name": "Replace String",
+                            "title": "Remove first error separator",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Remove first error separator",
+                              "display_name": "Remove first error separator",
+                              "skip_execution": false,
+                              "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0ZvZJjcaTohkcvckR9ERjS.output.result_string$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "[,",
+                                  "replacement_string": "["
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J08tqwvfK2p4S4djBbvCS0f",
+                            "name": "Set Variables",
+                            "title": "Count validation error",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Count validation error",
+                              "display_name": "Count validation error",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0dnmZCAruF6MOGS3S2gQyw.output.result_string$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                                  "variable_value_new": " "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0dmk0VMCq2fAEpvzWuAYdF",
+                    "name": "Condition",
+                    "title": "Validate input condition",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Validate input condition",
+                      "display_name": "Validate input condition",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0EgGaUQdMMBZxtuyLPReFJ",
+                        "name": "Condition Branch",
+                        "title": "Condition matches",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Condition matches",
+                          "display_name": "Condition matches",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                              "operator": "eq",
+                              "right_operand": "ReEvaluateQualifiers"
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J04KbHtf3kxfLW7879x6fdX$",
+                              "operator": "ne",
+                              "right_operand": true
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0qpnfifuy3aySm7orbz3Kj",
+                            "name": "Set Variables",
+                            "title": "Append validation error text",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append validation error text",
+                              "display_name": "Append validation error text",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Confirm Placement Re-evaluation must be true for ReEvaluateQualifiers."
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Q1ae8tMd6OoSVaKoLS6Gm",
+                            "name": "Replace String",
+                            "title": "Append validation error JSON",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Append validation error JSON",
+                              "display_name": "Append validation error JSON",
+                              "skip_execution": false,
+                              "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "]",
+                                  "replacement_string": ",\"Confirm Placement Re-evaluation must be true for ReEvaluateQualifiers.\"]"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J023YFUcZ3K0HNBwbTCf7bN",
+                            "name": "Replace String",
+                            "title": "Remove first error separator",
+                            "type": "core.replacestring",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Remove first error separator",
+                              "display_name": "Remove first error separator",
+                              "skip_execution": false,
+                              "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0Q1ae8tMd6OoSVaKoLS6Gm.output.result_string$",
+                              "replace_list": [
+                                {
+                                  "replaced_string": "[,",
+                                  "replacement_string": "["
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J00VArMXijubseB6bSCLgu7",
+                            "name": "Set Variables",
+                            "title": "Count validation error",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Count validation error",
+                              "display_name": "Count validation error",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J023YFUcZ3K0HNBwbTCf7bN.output.result_string$"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                                  "variable_value_new": " "
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0IntlgibLZWKdv2zJJDYaq",
+                "name": "Condition Branch",
+                "title": "Otherwise",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Otherwise",
+                  "display_name": "Otherwise",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J04wBsWSVbZZ3BqK6Irhb3k$",
+                    "operator": "eq",
+                    "right_operand": true
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0yR3Gia3TnCVkGbTARDiXc",
+                    "name": "Condition",
+                    "title": "Select documented route",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Select documented route",
+                      "display_name": "Select documented route",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0zu3ONiMTZGwMDwukIAz6x",
+                        "name": "Condition Branch",
+                        "title": "Route prepare",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Route prepare",
+                          "display_name": "Route prepare",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                            "operator": "eq",
+                            "right_operand": "prepare"
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J04uWVRIXFnpSBw3SbQQkvh",
+                            "name": "Set Variables",
+                            "title": "Use prepare route",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Use prepare route",
+                              "display_name": "Use prepare route",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0EpQts2T1ZZ6XhTpQuJCYp$",
+                                  "variable_value_new": "PrepareToDeploy"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0AuqjD1Ag57BW3ZTplLn58",
+                        "name": "Condition Branch",
+                        "title": "Route deploy",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Route deploy",
+                          "display_name": "Route deploy",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                            "operator": "eq",
+                            "right_operand": "deploy"
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0vaQXR8JQ6R5UFRiANoESg",
+                            "name": "Set Variables",
+                            "title": "Use deploy route",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Use deploy route",
+                              "display_name": "Use deploy route",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0EpQts2T1ZZ6XhTpQuJCYp$",
+                                  "variable_value_new": "Deploy"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J02Zb2FhfGCGpnItlwOQctz",
+                        "name": "Condition Branch",
+                        "title": "Route undeploy",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Route undeploy",
+                          "display_name": "Route undeploy",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0Z0SUnvReApAGTLtNeT0dw$",
+                            "operator": "eq",
+                            "right_operand": "undeploy"
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J09wBNunzCiGu09aCDCd0bM",
+                            "name": "Set Variables",
+                            "title": "Use undeploy route",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Use undeploy route",
+                              "display_name": "Use undeploy route",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0EpQts2T1ZZ6XhTpQuJCYp$",
+                                  "variable_value_new": "Undeploy"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0uWT7lqxJBjYsVovdFa54B",
+                    "name": "Set Variables",
+                    "title": "Set action",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set action",
+                      "display_name": "Set action",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0EpQts2T1ZZ6XhTpQuJCYp$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0kHVWH1s6Qet91fF4na1Q7",
+            "name": "Trim String",
+            "title": "Trim integer input",
+            "type": "core.trim_string",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Trim integer input",
+              "display_name": "Trim integer input",
+              "skip_execution": false,
+              "source": "$activity.definition_activity_02Z3AAXNVAM5J0K9IGcHrlnLqFzK1VEU5ls.output.trimmed$",
+              "characters_to_trim": "\t\n\u000b\f\r\u001c\u001d\u001e\u001f                  　",
+              "trim_leading": true,
+              "trim_trailing": true,
+              "continue_on_empty_source_string": true
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0cF6n8psjO8jyQUCuezQfs",
+            "name": "Condition",
+            "title": "Parse integer only after format validation",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Parse integer only after format validation",
+              "display_name": "Parse integer only after format validation",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0kNBL0TKu2ubclcX4Ba9VJ",
+                "name": "Condition Branch",
+                "title": "Parse integer only after format validation branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Parse integer only after format validation branch",
+                  "display_name": "Parse integer only after format validation branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$activity.definition_activity_02Z3AAXNVAM5J0kHVWH1s6Qet91fF4na1Q7.output.trimmed$",
+                    "operator": "mregex",
+                    "right_operand": "^[+-]?[0-9]{1,18}$"
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0WvncukZs6K3kT35aLr53T",
+                    "name": "Set Variables",
+                    "title": "Read validated integer input",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Read validated integer input",
+                      "display_name": "Read validated integer input",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0XHhkUiwumrnZsiKKnX3MG$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0zJC7tXbs22rCyYIypDruE",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0BwWFq3KTTQdjBuDv2Fn1q",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0JtNUc2AqHiXpbV7HJN5I3$",
+                      "operator": "eq",
+                      "right_operand": true
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                            "operator": "lt",
+                            "right_operand": 1
+                          },
+                          "operator": "or",
+                          "right_operand": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                            "operator": "eq",
+                            "right_operand": 1
+                          }
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "ne",
+                          "right_operand": 1
+                        }
+                      },
+                      "operator": "or",
+                      "right_operand": {
+                        "left_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "gte",
+                          "right_operand": 600
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "ne",
+                          "right_operand": 600
+                        }
+                      }
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J01ZH6gogvwyU9ek20hTag3",
+                    "name": "Set Variables",
+                    "title": "Append validation error text",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error text",
+                      "display_name": "Append validation error text",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Wait Timeout Seconds must be 1 through 600 when waiting."
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0ca90ZciYDD1wbQTocv4Dz",
+                    "name": "Replace String",
+                    "title": "Append validation error JSON",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error JSON",
+                      "display_name": "Append validation error JSON",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "]",
+                          "replacement_string": ",\"Wait Timeout Seconds must be 1 through 600 when waiting.\"]"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0pIU7bt5Vj7TJGWEWPQfLw",
+                    "name": "Replace String",
+                    "title": "Remove first error separator",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Remove first error separator",
+                      "display_name": "Remove first error separator",
+                      "skip_execution": false,
+                      "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0ca90ZciYDD1wbQTocv4Dz.output.result_string$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "[,",
+                          "replacement_string": "["
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0u0VO6sad7GdtXEYnbX3Xa",
+                    "name": "Set Variables",
+                    "title": "Count validation error",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Count validation error",
+                      "display_name": "Count validation error",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0pIU7bt5Vj7TJGWEWPQfLw.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                          "variable_value_new": " "
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0LtjFknD2Y98VbSsfDIiSV",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0LlSrFJ96JeNiezMN43ZNR",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0JtNUc2AqHiXpbV7HJN5I3$",
+                      "operator": "ne",
+                      "right_operand": true
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                            "operator": "lt",
+                            "right_operand": 0
+                          },
+                          "operator": "or",
+                          "right_operand": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                            "operator": "eq",
+                            "right_operand": 0
+                          }
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "ne",
+                          "right_operand": 0
+                        }
+                      },
+                      "operator": "or",
+                      "right_operand": {
+                        "left_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "gte",
+                          "right_operand": 600
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0HfzETdxtbleJfX31J82dc$",
+                          "operator": "ne",
+                          "right_operand": 600
+                        }
+                      }
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0l6bDhhWw0LTmJaW6mhq3r",
+                    "name": "Set Variables",
+                    "title": "Append validation error text",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error text",
+                      "display_name": "Append validation error text",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$Wait Timeout Seconds must be 0 through 600 when not waiting."
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0kGXliakGA79UE9IjN6RrK",
+                    "name": "Replace String",
+                    "title": "Append validation error JSON",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Append validation error JSON",
+                      "display_name": "Append validation error JSON",
+                      "skip_execution": false,
+                      "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "]",
+                          "replacement_string": ",\"Wait Timeout Seconds must be 0 through 600 when not waiting.\"]"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0tCkY18exlVvfLGqize4jr",
+                    "name": "Replace String",
+                    "title": "Remove first error separator",
+                    "type": "core.replacestring",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Remove first error separator",
+                      "display_name": "Remove first error separator",
+                      "skip_execution": false,
+                      "input_string": "$activity.definition_activity_02Z3AAXNVAM5J0kGXliakGA79UE9IjN6RrK.output.result_string$",
+                      "replace_list": [
+                        {
+                          "replaced_string": "[,",
+                          "replacement_string": "["
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0l9KKFrQODa29MHU8VlPwW",
+                    "name": "Set Variables",
+                    "title": "Count validation error",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Count validation error",
+                      "display_name": "Count validation error",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0YNJtQwq3DywozZQmBgUrs$",
+                          "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0tCkY18exlVvfLGqize4jr.output.result_string$"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$ + 1"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FLAD6qpKXVPxdFGvgmoY3$",
+                          "variable_value_new": " "
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0GFkAY28Xz2DjQcEQfgixC",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0J7b7UQI6aFB951o8O2i5l",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0JtNUc2AqHiXpbV7HJN5I3$",
+                    "operator": "eq",
+                    "right_operand": true
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0a7LR64GzviCzoqYQIilKA",
+                    "name": "Set Variables",
+                    "title": "Set waitRequestedText",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set waitRequestedText",
+                      "display_name": "Set waitRequestedText",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0XLEs8KLE08svS694qqaf8$",
+                          "variable_value_new": "true"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0CNJFUnJPC2CPRt4hAULhE",
+                "name": "Condition Branch",
+                "title": "Otherwise",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Otherwise",
+                  "display_name": "Otherwise",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J04wBsWSVbZZ3BqK6Irhb3k$",
+                    "operator": "eq",
+                    "right_operand": true
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J09SF9Exbz7rVl3CIV7zPlo",
+                    "name": "Set Variables",
+                    "title": "Set waitRequestedText",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set waitRequestedText",
+                      "display_name": "Set waitRequestedText",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0XLEs8KLE08svS694qqaf8$",
+                          "variable_value_new": "false"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0G2vuNv6SbeagB1j61TjmH",
+            "name": "Condition",
+            "title": "Validate input condition",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Validate input condition",
+              "display_name": "Validate input condition",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0C2QUNAyOK1xTsxbCgPVmh",
+                "name": "Condition Branch",
+                "title": "Condition matches",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Condition matches",
+                  "display_name": "Condition matches",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0FJFnS6UjKmLRSB2dWyobr$",
+                    "operator": "gt",
+                    "right_operand": 0
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0DKeg5qu3klCIBMXn9OzBP",
+                    "name": "Set Variables",
+                    "title": "Set failureError",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set failureError",
+                      "display_name": "Set failureError",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0BkdN7oQYr4x6OKxkpD2jK$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0xQsdZLbm1KVoCP5xNxCaR",
+                    "name": "Group",
+                    "title": "Escape validated scalar for JSON",
+                    "type": "logic.group",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Inline guarded JSON string escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+                      "display_name": "Escape validated scalar for JSON",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0i8Jt3z6J52PYM9enk10LH",
+                        "name": "Set Variables",
+                        "title": "Initialize fresh literal result",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Initialize fresh literal result",
+                          "display_name": "Initialize fresh literal result",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J033HsgP5jQ5rDBLuItSYV0$",
+                              "variable_value_new": ""
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0HjCkoF4BSCnroxQkI5ajm",
+                        "name": "Condition",
+                        "title": "Replace only nonempty source",
+                        "type": "logic.if_else",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace only nonempty source",
+                          "display_name": "Replace only nonempty source",
+                          "skip_execution": false,
+                          "conditions": []
+                        },
+                        "object_type": "definition_activity",
+                        "blocks": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0gqzm2OajS2NL604jaAgPR",
+                            "name": "Condition Branch",
+                            "title": "Replace only nonempty source branch",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Replace only nonempty source branch",
+                              "display_name": "Replace only nonempty source branch",
+                              "skip_execution": false,
+                              "condition": {
+                                "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ$",
+                                "operator": "ne",
+                                "right_operand": ""
+                              }
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0u0P1M0O95DkFUZU0pQm3S",
+                                "name": "Replace String",
+                                "title": "Replace nonempty literal text",
+                                "type": "core.replacestring",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Replace nonempty literal text",
+                                  "display_name": "Replace nonempty literal text",
+                                  "skip_execution": false,
+                                  "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ$",
+                                  "replace_list": [
+                                    {
+                                      "replaced_string": "\\",
+                                      "replacement_string": "\\\\"
+                                    },
+                                    {
+                                      "replaced_string": "\"",
+                                      "replacement_string": "\\\""
+                                    },
+                                    {
+                                      "replaced_string": "\u0000",
+                                      "replacement_string": "\\u0000"
+                                    },
+                                    {
+                                      "replaced_string": "\u0001",
+                                      "replacement_string": "\\u0001"
+                                    },
+                                    {
+                                      "replaced_string": "\u0002",
+                                      "replacement_string": "\\u0002"
+                                    },
+                                    {
+                                      "replaced_string": "\u0003",
+                                      "replacement_string": "\\u0003"
+                                    },
+                                    {
+                                      "replaced_string": "\u0004",
+                                      "replacement_string": "\\u0004"
+                                    },
+                                    {
+                                      "replaced_string": "\u0005",
+                                      "replacement_string": "\\u0005"
+                                    },
+                                    {
+                                      "replaced_string": "\u0006",
+                                      "replacement_string": "\\u0006"
+                                    },
+                                    {
+                                      "replaced_string": "\u0007",
+                                      "replacement_string": "\\u0007"
+                                    },
+                                    {
+                                      "replaced_string": "\b",
+                                      "replacement_string": "\\u0008"
+                                    },
+                                    {
+                                      "replaced_string": "\t",
+                                      "replacement_string": "\\u0009"
+                                    },
+                                    {
+                                      "replaced_string": "\n",
+                                      "replacement_string": "\\u000a"
+                                    },
+                                    {
+                                      "replaced_string": "\u000b",
+                                      "replacement_string": "\\u000b"
+                                    },
+                                    {
+                                      "replaced_string": "\f",
+                                      "replacement_string": "\\u000c"
+                                    },
+                                    {
+                                      "replaced_string": "\r",
+                                      "replacement_string": "\\u000d"
+                                    },
+                                    {
+                                      "replaced_string": "\u000e",
+                                      "replacement_string": "\\u000e"
+                                    },
+                                    {
+                                      "replaced_string": "\u000f",
+                                      "replacement_string": "\\u000f"
+                                    },
+                                    {
+                                      "replaced_string": "\u0010",
+                                      "replacement_string": "\\u0010"
+                                    },
+                                    {
+                                      "replaced_string": "\u0011",
+                                      "replacement_string": "\\u0011"
+                                    },
+                                    {
+                                      "replaced_string": "\u0012",
+                                      "replacement_string": "\\u0012"
+                                    },
+                                    {
+                                      "replaced_string": "\u0013",
+                                      "replacement_string": "\\u0013"
+                                    },
+                                    {
+                                      "replaced_string": "\u0014",
+                                      "replacement_string": "\\u0014"
+                                    },
+                                    {
+                                      "replaced_string": "\u0015",
+                                      "replacement_string": "\\u0015"
+                                    },
+                                    {
+                                      "replaced_string": "\u0016",
+                                      "replacement_string": "\\u0016"
+                                    },
+                                    {
+                                      "replaced_string": "\u0017",
+                                      "replacement_string": "\\u0017"
+                                    },
+                                    {
+                                      "replaced_string": "\u0018",
+                                      "replacement_string": "\\u0018"
+                                    },
+                                    {
+                                      "replaced_string": "\u0019",
+                                      "replacement_string": "\\u0019"
+                                    },
+                                    {
+                                      "replaced_string": "\u001a",
+                                      "replacement_string": "\\u001a"
+                                    },
+                                    {
+                                      "replaced_string": "\u001b",
+                                      "replacement_string": "\\u001b"
+                                    },
+                                    {
+                                      "replaced_string": "\u001c",
+                                      "replacement_string": "\\u001c"
+                                    },
+                                    {
+                                      "replaced_string": "\u001d",
+                                      "replacement_string": "\\u001d"
+                                    },
+                                    {
+                                      "replaced_string": "\u001e",
+                                      "replacement_string": "\\u001e"
+                                    },
+                                    {
+                                      "replaced_string": "\u001f",
+                                      "replacement_string": "\\u001f"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              },
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0UJIUete1mh9yz8qT5GDgq",
+                                "name": "Set Variables",
+                                "title": "Publish inline replaced text",
+                                "type": "core.set_multiple_variables",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Publish inline replaced text",
+                                  "display_name": "Publish inline replaced text",
+                                  "skip_execution": false,
+                                  "variables_to_update": [
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J033HsgP5jQ5rDBLuItSYV0$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0u0P1M0O95DkFUZU0pQm3S.output.result_string$"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0k0o55R0RmPbVu3ROVqCGi",
+                    "name": "Group",
+                    "title": "Escape validated scalar for JSON",
+                    "type": "logic.group",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Inline guarded JSON string escape recipe. Clears a fresh result and skips Replace String for empty source. No nested workflow or helper Completed activity.",
+                      "display_name": "Escape validated scalar for JSON",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0iV5yLNNKw1A8J97lG5FuD",
+                        "name": "Set Variables",
+                        "title": "Initialize fresh literal result",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Initialize fresh literal result",
+                          "display_name": "Initialize fresh literal result",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0had418xBeobiyusQkXqPc$",
+                              "variable_value_new": ""
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0maK6fwXV5eHUdwXNCYhrR",
+                        "name": "Condition",
+                        "title": "Replace only nonempty source",
+                        "type": "logic.if_else",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Replace only nonempty source",
+                          "display_name": "Replace only nonempty source",
+                          "skip_execution": false,
+                          "conditions": []
+                        },
+                        "object_type": "definition_activity",
+                        "blocks": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0mFoYl5GPWT0p5uZ7M1GmG",
+                            "name": "Condition Branch",
+                            "title": "Replace only nonempty source branch",
+                            "type": "logic.condition_block",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Replace only nonempty source branch",
+                              "display_name": "Replace only nonempty source branch",
+                              "skip_execution": false,
+                              "condition": {
+                                "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$",
+                                "operator": "ne",
+                                "right_operand": ""
+                              }
+                            },
+                            "object_type": "definition_activity",
+                            "actions": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0eHptEd4MaEzXlyoWPXYxW",
+                                "name": "Replace String",
+                                "title": "Replace nonempty literal text",
+                                "type": "core.replacestring",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Replace nonempty literal text",
+                                  "display_name": "Replace nonempty literal text",
+                                  "skip_execution": false,
+                                  "input_string": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$",
+                                  "replace_list": [
+                                    {
+                                      "replaced_string": "\\",
+                                      "replacement_string": "\\\\"
+                                    },
+                                    {
+                                      "replaced_string": "\"",
+                                      "replacement_string": "\\\""
+                                    },
+                                    {
+                                      "replaced_string": "\u0000",
+                                      "replacement_string": "\\u0000"
+                                    },
+                                    {
+                                      "replaced_string": "\u0001",
+                                      "replacement_string": "\\u0001"
+                                    },
+                                    {
+                                      "replaced_string": "\u0002",
+                                      "replacement_string": "\\u0002"
+                                    },
+                                    {
+                                      "replaced_string": "\u0003",
+                                      "replacement_string": "\\u0003"
+                                    },
+                                    {
+                                      "replaced_string": "\u0004",
+                                      "replacement_string": "\\u0004"
+                                    },
+                                    {
+                                      "replaced_string": "\u0005",
+                                      "replacement_string": "\\u0005"
+                                    },
+                                    {
+                                      "replaced_string": "\u0006",
+                                      "replacement_string": "\\u0006"
+                                    },
+                                    {
+                                      "replaced_string": "\u0007",
+                                      "replacement_string": "\\u0007"
+                                    },
+                                    {
+                                      "replaced_string": "\b",
+                                      "replacement_string": "\\u0008"
+                                    },
+                                    {
+                                      "replaced_string": "\t",
+                                      "replacement_string": "\\u0009"
+                                    },
+                                    {
+                                      "replaced_string": "\n",
+                                      "replacement_string": "\\u000a"
+                                    },
+                                    {
+                                      "replaced_string": "\u000b",
+                                      "replacement_string": "\\u000b"
+                                    },
+                                    {
+                                      "replaced_string": "\f",
+                                      "replacement_string": "\\u000c"
+                                    },
+                                    {
+                                      "replaced_string": "\r",
+                                      "replacement_string": "\\u000d"
+                                    },
+                                    {
+                                      "replaced_string": "\u000e",
+                                      "replacement_string": "\\u000e"
+                                    },
+                                    {
+                                      "replaced_string": "\u000f",
+                                      "replacement_string": "\\u000f"
+                                    },
+                                    {
+                                      "replaced_string": "\u0010",
+                                      "replacement_string": "\\u0010"
+                                    },
+                                    {
+                                      "replaced_string": "\u0011",
+                                      "replacement_string": "\\u0011"
+                                    },
+                                    {
+                                      "replaced_string": "\u0012",
+                                      "replacement_string": "\\u0012"
+                                    },
+                                    {
+                                      "replaced_string": "\u0013",
+                                      "replacement_string": "\\u0013"
+                                    },
+                                    {
+                                      "replaced_string": "\u0014",
+                                      "replacement_string": "\\u0014"
+                                    },
+                                    {
+                                      "replaced_string": "\u0015",
+                                      "replacement_string": "\\u0015"
+                                    },
+                                    {
+                                      "replaced_string": "\u0016",
+                                      "replacement_string": "\\u0016"
+                                    },
+                                    {
+                                      "replaced_string": "\u0017",
+                                      "replacement_string": "\\u0017"
+                                    },
+                                    {
+                                      "replaced_string": "\u0018",
+                                      "replacement_string": "\\u0018"
+                                    },
+                                    {
+                                      "replaced_string": "\u0019",
+                                      "replacement_string": "\\u0019"
+                                    },
+                                    {
+                                      "replaced_string": "\u001a",
+                                      "replacement_string": "\\u001a"
+                                    },
+                                    {
+                                      "replaced_string": "\u001b",
+                                      "replacement_string": "\\u001b"
+                                    },
+                                    {
+                                      "replaced_string": "\u001c",
+                                      "replacement_string": "\\u001c"
+                                    },
+                                    {
+                                      "replaced_string": "\u001d",
+                                      "replacement_string": "\\u001d"
+                                    },
+                                    {
+                                      "replaced_string": "\u001e",
+                                      "replacement_string": "\\u001e"
+                                    },
+                                    {
+                                      "replaced_string": "\u001f",
+                                      "replacement_string": "\\u001f"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              },
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J080HT2lzJ1FkHoN8uVrsEK",
+                                "name": "Set Variables",
+                                "title": "Publish inline replaced text",
+                                "type": "core.set_multiple_variables",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Publish inline replaced text",
+                                  "display_name": "Publish inline replaced text",
+                                  "skip_execution": false,
+                                  "variables_to_update": [
+                                    {
+                                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0had418xBeobiyusQkXqPc$",
+                                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0eHptEd4MaEzXlyoWPXYxW.output.result_string$"
+                                    }
+                                  ]
+                                },
+                                "object_type": "definition_activity"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Ypw0KP5LHubXP2SycqWlW",
+                    "name": "Set Variables",
+                    "title": "Set failureResult",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set failureResult",
+                      "display_name": "Set failureResult",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0Sk5re4McpJLJsi81xCZdp$",
+                          "variable_value_new": "{\"error\":\"$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J033HsgP5jQ5rDBLuItSYV0$\",\"details\":\"$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0had418xBeobiyusQkXqPc$\"}"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J000axnN23lxoBsARSCbBGZ",
+                "name": "Condition Branch",
+                "title": "Otherwise",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Otherwise",
+                  "display_name": "Otherwise",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J04wBsWSVbZZ3BqK6Irhb3k$",
+                    "operator": "eq",
+                    "right_operand": true
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0oGDQRQ4fouEVjceRNG3IY",
+                    "name": "Set Variables",
+                    "title": "Set prepared and escape inputs",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Set status",
+                      "display_name": "Set prepared and escape inputs",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0xJPyRIFt4bmBXjf5odJVr$",
+                          "variable_value_new": "ready"
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0z6VdkyTHlPjZtUMFqgYnq$",
+                          "variable_value_new": ""
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ$",
+                          "variable_value_new": ""
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$",
+                          "variable_value_new": ""
+                        },
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0Sk5re4McpJLJsi81xCZdp$",
+                          "variable_value_new": "{}"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J01YwhNQ65u8VRSRct2cjP1",
+        "name": "Set Variables",
+        "title": "Publish native helper outputs",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Sets variables in the original assignment order, consolidating adjacent activities with identical failure/skip behavior. No intermediate activity output is referenced.",
+          "display_name": "Publish native helper outputs",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0JIKw0nPkHf82OecZo0ejv$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0xJPyRIFt4bmBXjf5odJVr$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0MsnAPrgTqxRLRHYc6WX3j$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0z6VdkyTHlPjZtUMFqgYnq$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0xLaWyftm0vPrROt8YcG18$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0OMkdpOu2F5mnO4aHne3xJ$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0q6ihbbqq519FNjsRgdV1V$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0lHRbIHm0ioTh8PUeE2DRh$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0yWXDtl5q7xZmMP0m4U7WC$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0Sk5re4McpJLJsi81xCZdp$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0HWVQjuixyneEvQiECNww8$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0f1fC7mBPPi2g9XJhhMcwb$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0VJhS21Igydq7NkvtwVpO6$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0A0lKVgP6GK6w1D3vUEuEn$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0gtQuUVHeHLuD4SrPX2yZW$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J03FnnFS96ImLpqB2ZNCVtw$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0Jq108JNiYrfKPR0WBy6NX$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.input.variable_workflow_02Z3AAXNVAM5J0i6kEx33F0sl8DJEFtMYBp$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0QuycWf93QLs8pr2B0GNYO$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.local.variable_workflow_02Z3AAXNVAM5J0ygqo8aks3yr7J5mHPZekH$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J03mfVYURiFVR0TuO2dh44Y$",
+              "variable_value_new": 200
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0KNPK7aoReMaziZtG7thHg$",
+              "variable_value_new": "Native helper execution completed."
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0driiIRZVVYIGXcUet3O9f$",
+              "variable_value_new": ""
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0GqhzAvYKq9QRB6BqjHXzH$",
+              "variable_value_new": "{\"completed\":true}"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0BWf9pKqan1Y2IGMqbiLo4",
+        "name": "Condition",
+        "title": "Preserve semantic helper status",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Preserve semantic helper status",
+          "display_name": "Preserve semantic helper status",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0gSESkGqNnY8FFYTPfE2zj",
+            "name": "Condition Branch",
+            "title": "Preserve semantic helper status branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Preserve semantic helper status branch",
+              "display_name": "Preserve semantic helper status branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0MsnAPrgTqxRLRHYc6WX3j$",
+                "operator": "mregex",
+                "right_operand": "^[1-5][0-9]{2}$"
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0c5kznRAqJ6QyaWLbGi4AE",
+                "name": "JSONPath Query",
+                "title": "Parse validated semantic HTTP status as Integer",
+                "type": "corejava.jsonpathquery",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Parse validated semantic HTTP status as Integer",
+                  "display_name": "Parse validated semantic HTTP status as Integer",
+                  "skip_execution": false,
+                  "input_json": "{\"code\":\"$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J0MsnAPrgTqxRLRHYc6WX3j$\"}",
+                  "jsonpath_queries": [
+                    {
+                      "jsonpath_query": "$.code",
+                      "jsonpath_query_name": "code",
+                      "jsonpath_query_type": "integer",
+                      "set_default_value": false,
+                      "default_value": 500,
+                      "zdate_type_format": "yyyy-MM-dd'T'HH:mm:ssZ"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0p1nNGGDhQDu7730znTJlo",
+                "name": "Set Variables",
+                "title": "Publish semantic native helper status",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish semantic native helper status",
+                  "display_name": "Publish semantic native helper status",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J0fGxuoayR8fv5plUEO1zt3.output.variable_workflow_02Z3AAXNVAM5J03mfVYURiFVR0TuO2dh44Y$",
+                      "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0c5kznRAqJ6QyaWLbGi4AE.output.jsonpath_queries.code$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "category_02XOMFAGO64RD1QJmJ4HllBZCBt4SqRXGUs"
+    ]
+  },
+  "categories": {
+    "category_02XOMFAGO64RD1QJmJ4HllBZCBt4SqRXGUs": {
+      "unique_name": "category_02XOMFAGO64RD1QJmJ4HllBZCBt4SqRXGUs",
+      "name": "Cisco Intersight - Workload Deployment Management",
+      "title": "Cisco Intersight - Workload Deployment Management",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  }
+}

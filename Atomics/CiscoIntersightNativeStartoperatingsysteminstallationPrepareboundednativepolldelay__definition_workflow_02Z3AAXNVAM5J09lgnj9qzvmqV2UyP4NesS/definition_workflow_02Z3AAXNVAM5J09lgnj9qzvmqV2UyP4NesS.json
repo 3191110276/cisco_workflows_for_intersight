@@ -1,0 +1,1181 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS",
+    "name": "Cisco Intersight - Native Start operating system instal fc70b91e",
+    "title": "Cisco Intersight - Native Start operating system instal fc70b91e",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0.0,
+          "scope": "input",
+          "name": "Source 1 - Initial delay seconds",
+          "type": "datatype.number",
+          "description": "Caller-provided Initial delay seconds. Internal polling parameter; the public atomic validates and resolves it before calling this helper.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J00526sMNNd141AHnFA8bts",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0.0,
+          "scope": "input",
+          "name": "Source 2 - Poll interval seconds",
+          "type": "datatype.number",
+          "description": "Caller-provided Poll interval seconds. Internal polling parameter; the public atomic validates and resolves it before calling this helper.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0411f79B7f9H5dyFM5mtQy",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0.0,
+          "scope": "input",
+          "name": "Source 3 - Deadline epoch seconds",
+          "type": "datatype.number",
+          "description": "Caller-provided Deadline epoch seconds. Internal polling parameter; the public atomic validates and resolves it before calling this helper.",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0fkirzUPuqWfZCTdfVdlNU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.date",
+        "properties": {
+          "value": "1970-01-01T00:00:00+00:00",
+          "scope": "input",
+          "name": "Source 4 - Polling Unix epoch",
+          "type": "datatype.date",
+          "description": "Source 4 - Polling Unix epoch",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0qUw0TcSk7jt7FtLU7eAz6",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 1,
+          "scope": "input",
+          "name": "Source 5 - Polling Attempt",
+          "type": "datatype.integer",
+          "description": "Source 5 - Polling Attempt",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Wait before OS installation polling attempt - waitStatus",
+          "type": "datatype.string",
+          "description": "Wait before OS installation polling attempt - waitStatus",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Prepare bounded native poll delay - now seconds",
+          "type": "datatype.number",
+          "description": "Prepare bounded native poll delay - now seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0GFXYQDZVza4Prn3r62ATk",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Wait before OS installation polling attempt - waitMessage",
+          "type": "datatype.string",
+          "description": "Wait before OS installation polling attempt - waitMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "Wait before OS installation polling attempt - helperReady",
+          "type": "datatype.boolean",
+          "description": "Wait before OS installation polling attempt - helperReady",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Prepare bounded native poll delay - remaining seconds",
+          "type": "datatype.number",
+          "description": "Prepare bounded native poll delay - remaining seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Prepare bounded native poll delay - requested seconds",
+          "type": "datatype.number",
+          "description": "Prepare bounded native poll delay - requested seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Wait before OS installation polling attempt - nativeSleepSeconds",
+          "type": "datatype.number",
+          "description": "Wait before OS installation polling attempt - nativeSleepSeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Wait before OS installation polling attempt - waitResultJson",
+          "type": "datatype.string",
+          "description": "Wait before OS installation polling attempt - waitResultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "waitStatus",
+          "type": "datatype.string",
+          "description": "waitStatus",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0iZ3QS2Yy7OMT9ra4WaKqp",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "waitMessage",
+          "type": "datatype.string",
+          "description": "waitMessage",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J07B0ZfcIDEvWqldx4fRgW2",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "waitResultJson",
+          "type": "datatype.string",
+          "description": "waitResultJson",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0mlqfRLpZG1VeTRmISeqtw",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "output",
+          "name": "helperReady",
+          "type": "datatype.boolean",
+          "description": "helperReady",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J06O0HjNGZpxC1joAaveOzO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "output",
+          "name": "nativeSleepSeconds",
+          "type": "datatype.number",
+          "description": "nativeSleepSeconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0c12vaLvMSo8INISWr5WMs",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 500,
+          "scope": "output",
+          "name": "Status Code",
+          "type": "datatype.integer",
+          "description": "Status Code",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0zCyolZQZvWaG0CjB5r3x1",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Status Message",
+          "type": "datatype.string",
+          "description": "Status Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0rQdVoW2WFFXPeEVKAG8Yr",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "Native helper execution did not complete.",
+          "scope": "output",
+          "name": "Error Message",
+          "type": "datatype.string",
+          "description": "Error Message",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "text"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0NQXB62WIJgmkEZcueQgUQ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "{\"completed\":false}",
+          "scope": "output",
+          "name": "Result",
+          "type": "datatype.string",
+          "description": "Result",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false,
+          "variable_string_format": "json"
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J011Web4ZnFOWHoWVLfXqwz",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Rounded native wait seconds",
+          "type": "datatype.integer",
+          "description": "Rounded native wait seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.number",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Comparable rounded native wait seconds",
+          "type": "datatype.number",
+          "description": "Comparable rounded native wait seconds",
+          "is_required": false,
+          "display_on_wizard": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_02Z3AAXNVAM5J0lPPQA1vbiLiRWwtrn52Bn",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "atomic_group": "Cisco Intersight Native Helpers",
+        "is_atomic": true
+      },
+      "delete_workflow_instance": false,
+      "description": "Reusable native-only internal helper for Cisco Intersight - Start operating system installation. Keeps scalar preparation or polling below platform action and variable limits. No API calls, credentials or hardware targets. Import this helper before its caller; current-cloud native runtime verification remains required. Full internal purpose: Cisco Intersight - Native Start operating system installation - Prepare bounded native poll delay. Integer seconds are required by Cisco Calculate Date and Sleep. Fractional delays round up by less than one second; an expired deadline stops the next API call.",
+      "display_name": "Cisco Intersight - Native Start operating system instal fc70b91e",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0v3hZsjl9tKCDPnrR3hmh2",
+        "name": "Group",
+        "title": "Wait before OS installation polling attempt",
+        "type": "logic.group",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": true,
+          "description": "Native date arithmetic, Set Variables, Condition Blocks and Sleep preserve the bounded polling contract; no Python timer is required.",
+          "display_name": "Wait before OS installation polling attempt",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0wXk0MPFppDAftmV1YpKXI",
+            "name": "Set Variables",
+            "title": "Initialize bounded delay failure outputs",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Initialize bounded delay failure outputs",
+              "display_name": "Initialize bounded delay failure outputs",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$",
+                  "variable_value_new": "helper-failure"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo$",
+                  "variable_value_new": "Native polling delay could not be prepared."
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04$",
+                  "variable_value_new": "{\"error\":\"Native polling delay could not be prepared\"}"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8$",
+                  "variable_value_new": false
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                  "variable_value_new": 0
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0V4rHsA5PF7r0pynZit4Lm",
+            "name": "Measure current time from Unix epoch",
+            "title": "Measure current time from Unix epoch",
+            "type": "core.calculate_date_time_difference",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Measure current time from Unix epoch",
+              "display_name": "Measure current time from Unix epoch",
+              "skip_execution": false,
+              "original_date": "$activity.definition_activity_02Z3AAXNVAM5J0wXk0MPFppDAftmV1YpKXI.output.end_time$",
+              "subtract_date": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0qUw0TcSk7jt7FtLU7eAz6$"
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0Xbv1cbyb9KDkygu1LRpz0",
+            "name": "Set Variables",
+            "title": "Set prepared wait before os installation polling attempt",
+            "type": "core.set_multiple_variables",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Convert elapsed minutes to seconds",
+              "display_name": "Set prepared wait before os installation polling attempt",
+              "skip_execution": false,
+              "variables_to_update": [
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0GFXYQDZVza4Prn3r62ATk$",
+                  "variable_value_new": "$activity.definition_activity_02Z3AAXNVAM5J0V4rHsA5PF7r0pynZit4Lm.output.total_milliseconds$ / 1000"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0fkirzUPuqWfZCTdfVdlNU$ - $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0GFXYQDZVza4Prn3r62ATk$"
+                },
+                {
+                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$",
+                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0411f79B7f9H5dyFM5mtQy$"
+                }
+              ]
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0NvnvbkOO7BxFCf9tFqbkz",
+            "name": "Condition",
+            "title": "Use first polling interval",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Use first polling interval",
+              "display_name": "Use first polling interval",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0Mlu2BNWy0Lf9WLGAxcUBA",
+                "name": "Condition Branch",
+                "title": "Use first polling interval branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Use first polling interval branch",
+                  "display_name": "Use first polling interval branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$",
+                    "operator": "eq",
+                    "right_operand": 1
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0VIIVxt1hQn6xggU1hYpKF",
+                    "name": "Set Variables",
+                    "title": "Use first polling delay",
+                    "type": "core.set_multiple_variables",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Use first polling delay",
+                      "display_name": "Use first polling delay",
+                      "skip_execution": false,
+                      "variables_to_update": [
+                        {
+                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$",
+                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J00526sMNNd141AHnFA8bts$"
+                        }
+                      ]
+                    },
+                    "object_type": "definition_activity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J0aNd3fCw3zJPkV3NUafELf",
+            "name": "Condition",
+            "title": "Use only a bounded attempt and delay",
+            "type": "logic.if_else",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Use only a bounded attempt and delay",
+              "display_name": "Use only a bounded attempt and delay",
+              "skip_execution": false,
+              "conditions": []
+            },
+            "object_type": "definition_activity",
+            "blocks": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J02ZpvZSWfCzXLcJnAMXuHD",
+                "name": "Condition Branch",
+                "title": "Use only a bounded attempt and delay branch",
+                "type": "logic.condition_block",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Use only a bounded attempt and delay branch",
+                  "display_name": "Use only a bounded attempt and delay branch",
+                  "skip_execution": false,
+                  "condition": {
+                    "left_operand": {
+                      "left_operand": {
+                        "left_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$",
+                          "operator": "gte",
+                          "right_operand": 1
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$",
+                          "operator": "lt",
+                          "right_operand": 6
+                        }
+                      },
+                      "operator": "and",
+                      "right_operand": {
+                        "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$",
+                        "operator": "gte",
+                        "right_operand": 0
+                      }
+                    },
+                    "operator": "and",
+                    "right_operand": {
+                      "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$",
+                      "operator": "lt",
+                      "right_operand": 180
+                    }
+                  }
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_02Z3AAXNVAM5J0JVU6Ejbo7t749XENikMJc",
+                    "name": "Condition",
+                    "title": "Delay or report expired deadline",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "description": "Delay or report expired deadline",
+                      "display_name": "Delay or report expired deadline",
+                      "skip_execution": false,
+                      "conditions": []
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0IkHmojEtQtQwtJaVPF6YJ",
+                        "name": "Condition Branch",
+                        "title": "Deadline remains live",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Deadline remains live",
+                          "display_name": "Deadline remains live",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+                            "operator": "gt",
+                            "right_operand": 0
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0f3JpX8ZagasARTxvAvEO3",
+                            "name": "Set Variables",
+                            "title": "Start with requested polling delay",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Start with requested polling delay",
+                              "display_name": "Start with requested polling delay",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$"
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J02jsM3fRFYMvC6WeUAbE9r",
+                            "name": "Condition",
+                            "title": "Cap delay at remaining deadline",
+                            "type": "logic.if_else",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Cap delay at remaining deadline",
+                              "display_name": "Cap delay at remaining deadline",
+                              "skip_execution": false,
+                              "conditions": []
+                            },
+                            "object_type": "definition_activity",
+                            "blocks": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0R5na0BMvGPBld3sC6CRC8",
+                                "name": "Condition Branch",
+                                "title": "Cap delay at remaining deadline branch",
+                                "type": "logic.condition_block",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Cap delay at remaining deadline branch",
+                                  "display_name": "Cap delay at remaining deadline branch",
+                                  "skip_execution": false,
+                                  "condition": {
+                                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                                    "operator": "gt",
+                                    "right_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$"
+                                  }
+                                },
+                                "object_type": "definition_activity",
+                                "actions": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0Io7caKLhaaMkH7xyLhl2c",
+                                    "name": "Set Variables",
+                                    "title": "Use remaining deadline",
+                                    "type": "core.set_multiple_variables",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Use remaining deadline",
+                                      "display_name": "Use remaining deadline",
+                                      "skip_execution": false,
+                                      "variables_to_update": [
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$"
+                                        }
+                                      ]
+                                    },
+                                    "object_type": "definition_activity"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0oG73fYlliBoZYpfjfBe6q",
+                            "name": "Condition",
+                            "title": "Sleep for a positive bounded delay",
+                            "type": "logic.if_else",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Sleep for a positive bounded delay",
+                              "display_name": "Sleep for a positive bounded delay",
+                              "skip_execution": false,
+                              "conditions": []
+                            },
+                            "object_type": "definition_activity",
+                            "blocks": [
+                              {
+                                "unique_name": "definition_activity_02Z3AAXNVAM5J0TrhNqBtE4KvrCAtBs26rh",
+                                "name": "Condition Branch",
+                                "title": "Sleep for a positive bounded delay branch",
+                                "type": "logic.condition_block",
+                                "base_type": "activity",
+                                "properties": {
+                                  "continue_on_failure": false,
+                                  "description": "Sleep for a positive bounded delay branch",
+                                  "display_name": "Sleep for a positive bounded delay branch",
+                                  "skip_execution": false,
+                                  "condition": {
+                                    "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                                    "operator": "gt",
+                                    "right_operand": 0
+                                  }
+                                },
+                                "object_type": "definition_activity",
+                                "actions": [
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0rTuMkxqb2pyzMfkdeyTYT",
+                                    "name": "Set Variables",
+                                    "title": "Initialize whole-second wait",
+                                    "type": "core.set_multiple_variables",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Initialize whole-second wait",
+                                      "display_name": "Initialize whole-second wait",
+                                      "skip_execution": false,
+                                      "variables_to_update": [
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$",
+                                          "variable_value_new": 0
+                                        },
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0lPPQA1vbiLiRWwtrn52Bn$",
+                                          "variable_value_new": 0
+                                        }
+                                      ]
+                                    },
+                                    "object_type": "definition_activity"
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0C4lVc81VxvA5h47K3dhi5",
+                                    "name": "While Loop",
+                                    "title": "Round bounded delay up to whole seconds",
+                                    "type": "logic.while",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Round bounded delay up to whole seconds",
+                                      "display_name": "Round bounded delay up to whole seconds",
+                                      "skip_execution": false
+                                    },
+                                    "object_type": "definition_activity",
+                                    "blocks": [
+                                      {
+                                        "unique_name": "definition_activity_02Z3AAXNVAM5J0UIWUqMvb76UxOAHAlQB5a",
+                                        "name": "Condition Branch",
+                                        "title": "Whole seconds below bounded delay",
+                                        "type": "logic.condition_block",
+                                        "base_type": "activity",
+                                        "properties": {
+                                          "continue_on_failure": false,
+                                          "description": "Whole seconds below bounded delay",
+                                          "display_name": "Whole seconds below bounded delay",
+                                          "skip_execution": false,
+                                          "condition": {
+                                            "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0lPPQA1vbiLiRWwtrn52Bn$",
+                                            "operator": "lt",
+                                            "right_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$"
+                                          }
+                                        },
+                                        "object_type": "definition_activity",
+                                        "actions": [
+                                          {
+                                            "unique_name": "definition_activity_02Z3AAXNVAM5J0sXn91ZgLCB0B7Qnhw4EO8",
+                                            "name": "Set Variables",
+                                            "title": "Increase native wait by one second",
+                                            "type": "core.set_multiple_variables",
+                                            "base_type": "activity",
+                                            "properties": {
+                                              "continue_on_failure": false,
+                                              "description": "Increase native wait by one second",
+                                              "display_name": "Increase native wait by one second",
+                                              "skip_execution": false,
+                                              "variables_to_update": [
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$",
+                                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$ + 1"
+                                                },
+                                                {
+                                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0lPPQA1vbiLiRWwtrn52Bn$",
+                                                  "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0lPPQA1vbiLiRWwtrn52Bn$ + 1"
+                                                }
+                                              ]
+                                            },
+                                            "object_type": "definition_activity"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0v05mOAeCnVVpzYFMMFB9z",
+                                    "name": "Set Variables",
+                                    "title": "Record rounded native delay",
+                                    "type": "core.set_multiple_variables",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Record rounded native delay",
+                                      "display_name": "Record rounded native delay",
+                                      "skip_execution": false,
+                                      "variables_to_update": [
+                                        {
+                                          "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$",
+                                          "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$"
+                                        }
+                                      ]
+                                    },
+                                    "object_type": "definition_activity"
+                                  },
+                                  {
+                                    "unique_name": "definition_activity_02Z3AAXNVAM5J0YamiUBMe0QpphBvfJTQ03",
+                                    "name": "Wait before the next polling request",
+                                    "title": "Wait before the next polling request",
+                                    "type": "core.sleep",
+                                    "base_type": "activity",
+                                    "properties": {
+                                      "continue_on_failure": false,
+                                      "description": "Wait before the next polling request",
+                                      "display_name": "Wait before the next polling request",
+                                      "skip_execution": false,
+                                      "sleep_interval": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$"
+                                    },
+                                    "object_type": "definition_activity"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0zSGfVQhKijfQqmH9ggjQA",
+                            "name": "Set Variables",
+                            "title": "Publish bounded delay outcome",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Publish bounded delay outcome",
+                              "display_name": "Publish bounded delay outcome",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$",
+                                  "variable_value_new": "ready"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo$",
+                                  "variable_value_new": "The bounded delay before OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$ completed."
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04$",
+                                  "variable_value_new": "{\"stage\":\"OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$\",\"attempt\":$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$,\"requestedDelaySeconds\":$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ZBccK0v78WgEuKtZYfuuy$,\"actualDelaySeconds\":$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$}"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8$",
+                                  "variable_value_new": true
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_02Z3AAXNVAM5J0XKhSLs9Gguys1W9BoWXpc",
+                        "name": "Condition Branch",
+                        "title": "Deadline has expired",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "description": "Deadline has expired",
+                          "display_name": "Deadline has expired",
+                          "skip_execution": false,
+                          "condition": {
+                            "left_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+                              "operator": "lt",
+                              "right_operand": 0
+                            },
+                            "operator": "or",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+                              "operator": "eq",
+                              "right_operand": 0
+                            }
+                          }
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_02Z3AAXNVAM5J0Z10iiS1FuH5qH832o2I2E",
+                            "name": "Set Variables",
+                            "title": "Publish bounded delay outcome",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "description": "Publish bounded delay outcome",
+                              "display_name": "Publish bounded delay outcome",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$",
+                                  "variable_value_new": "timeout"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo$",
+                                  "variable_value_new": "The OS installation wait deadline was reached before OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$."
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04$",
+                                  "variable_value_new": "{\"requestAccepted\":true,\"completed\":false,\"timeout\":true,\"stage\":\"OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$\",\"attempt\":$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$}"
+                                },
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8$",
+                                  "variable_value_new": true
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0kgrv3hNx4nJdPVTNuanMm",
+        "name": "Set Variables",
+        "title": "Capture time after native wait",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Capture time after native wait",
+          "display_name": "Capture time after native wait",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BZxV23tDurUy770VhPoXe$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J06SMntfeZjtHO0VpSRA5DE",
+        "name": "Measure time after native wait",
+        "title": "Measure time after native wait",
+        "type": "core.calculate_date_time_difference",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Measure time after native wait",
+          "display_name": "Measure time after native wait",
+          "skip_execution": false,
+          "original_date": "$activity.definition_activity_02Z3AAXNVAM5J0kgrv3hNx4nJdPVTNuanMm.output.end_time$",
+          "subtract_date": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0qUw0TcSk7jt7FtLU7eAz6$"
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0tGHzhAQwdC6ZGLQsxhqXz",
+        "name": "Set Variables",
+        "title": "Recheck remaining time before another API call",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Recheck remaining time before another API call",
+          "display_name": "Recheck remaining time before another API call",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0fkirzUPuqWfZCTdfVdlNU$ - ($activity.definition_activity_02Z3AAXNVAM5J06SMntfeZjtHO0VpSRA5DE.output.total_milliseconds$ / 1000)"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0vsKtABvnVcN7UJlE8EMSW",
+        "name": "Condition",
+        "title": "Stop polling when the deadline has expired",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Stop polling when the deadline has expired",
+          "display_name": "Stop polling when the deadline has expired",
+          "skip_execution": false,
+          "conditions": []
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_02Z3AAXNVAM5J02VWXdls8MwZl6ahZgMSyN",
+            "name": "Condition Branch",
+            "title": "Stop polling when the deadline has expired branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "description": "Stop polling when the deadline has expired branch",
+              "display_name": "Stop polling when the deadline has expired branch",
+              "skip_execution": false,
+              "condition": {
+                "left_operand": {
+                  "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$",
+                  "operator": "eq",
+                  "right_operand": "ready"
+                },
+                "operator": "and",
+                "right_operand": {
+                  "left_operand": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0yi965sNdMtPQ2eImYlqKi$",
+                  "operator": "lt",
+                  "right_operand": 1e-06
+                }
+              }
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_02Z3AAXNVAM5J0gVMNdGn42Th8JxxW5inr2",
+                "name": "Set Variables",
+                "title": "Publish bounded delay outcome",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "description": "Publish bounded delay outcome",
+                  "display_name": "Publish bounded delay outcome",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$",
+                      "variable_value_new": "timeout"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo$",
+                      "variable_value_new": "The OS installation wait deadline was reached before OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$."
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04$",
+                      "variable_value_new": "{\"requestAccepted\":true,\"completed\":false,\"timeout\":true,\"stage\":\"OS installation poll $workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$\",\"attempt\":$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.input.variable_workflow_02Z3AAXNVAM5J0Ne9Uiwh3fm7FJO6r0ckuX$}"
+                    },
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8$",
+                      "variable_value_new": true
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_02Z3AAXNVAM5J0Hf6N0aoIhKnmnsKmiwXXk",
+        "name": "Set Variables",
+        "title": "Publish native helper outputs",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "Sets variables in the original assignment order, consolidating adjacent activities with identical failure/skip behavior. No intermediate activity output is referenced.",
+          "display_name": "Publish native helper outputs",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0iZ3QS2Yy7OMT9ra4WaKqp$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0ry5RriauE0SuwHqTdtpae$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J07B0ZfcIDEvWqldx4fRgW2$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0mKJb7Hpz5ygIN97ZvhNEo$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0mlqfRLpZG1VeTRmISeqtw$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0nOmgkPKtxmeWgkXLkuG04$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J06O0HjNGZpxC1joAaveOzO$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0BV1GJ8drZOnTaIp6i0SR8$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0c12vaLvMSo8INISWr5WMs$",
+              "variable_value_new": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.local.variable_workflow_02Z3AAXNVAM5J0G0GjdkZbL9ojxJwzfG6DW$"
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0zCyolZQZvWaG0CjB5r3x1$",
+              "variable_value_new": 200
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0rQdVoW2WFFXPeEVKAG8Yr$",
+              "variable_value_new": "Native helper execution completed."
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J0NQXB62WIJgmkEZcueQgUQ$",
+              "variable_value_new": ""
+            },
+            {
+              "variable_to_update": "$workflow.definition_workflow_02Z3AAXNVAM5J09lgnj9qzvmqV2UyP4NesS.output.variable_workflow_02Z3AAXNVAM5J011Web4ZnFOWHoWVLfXqwz$",
+              "variable_value_new": "{\"completed\":true}"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV"
+    ]
+  },
+  "categories": {
+    "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV": {
+      "unique_name": "category_02WXYT3NCCPFL7eQW3PLJcPF5NEiRc5PmKV",
+      "name": "Cisco Intersight - Compute Hardware",
+      "title": "Cisco Intersight - Compute Hardware",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  }
+}
